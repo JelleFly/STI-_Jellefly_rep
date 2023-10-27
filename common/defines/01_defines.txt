@@ -1,0 +1,444 @@
+	NGraphics = {
+		# Entity that is used at the end of the arrow 
+		MOVE_ARROW_GALAXY_TARGET_ENTITY = "galaxy_move_indicator_entity"
+		MOVE_ARROW_SYSTEM_TARGET_ENTITY = "move_indicator_entity" # Entity that is used at the end of the arrow
+		TASK_ARROW_GALAXY_TARGET_ENTITY = "galaxy_task_indicator_entity"
+		TASK_ARROW_SYSTEM_TARGET_ENTITY = "task_indicator_entity" # Entity that is used at the end of the arrow
+		ATTACK_ARROW_GALAXY_TARGET_ENTITY = "galaxy_attack_indicator_entity" # Entity that is used at the end of the arrow
+		ATTACK_ARROW_SYSTEM_TARGET_ENTITY = "attack_indicator_entity" # Entity that is used at the end of the arrow
+		
+		BYPASS_ARROW_GALAXY_TARGET_ENTITY = "galaxy_warp_indicator_entity" # Entity used for special FTL jumps - for now use the default move target
+
+
+		WARP_AREA_CUSTOM_TEXTURE = "gfx/map/warp_particles.dds"
+		
+		NOISE_TEXTURE = "gfx/map/noise.dds"
+		NOISE_TEXTURE_2 = "gfx/map/noise2.dds"		
+
+		DUST_TEXTURE = "gfx/map/dust.dds"
+		DUST_COLOR_TEXTURE = "gfx/map/galaxycolor.dds"
+
+		NEBULA_TEXTURE = "gfx/map/nebula.dds"
+		NEBULA_COLOR_TEXTURE = "gfx/map/nebulacolor.dds"
+
+		#CENTER_TEXTURE = "gfx/map/center.dds"
+
+		NON_PLAYABLE_AREA = "gfx/map/nonplayablearea.dds"
+
+		GRID_AREA = "gfx/map/grid.dds"
+		GRID_FADE_AREA = "gfx/map/fade_grid.dds"
+
+		SHIP_CLOAKING_FADE_IN_RATE = 2.0
+		SHIP_CLOAKING_FADE_OUT_RATE = 0.5
+	}
+
+	NMatchSettings = {
+		TECH_COST_MULTIPLIER = 1.1
+		TRADITION_COST_MULTIPLIER = 3.0
+	}
+
+	NGameplay = {
+		SILENCE_DESTROY_EVENT = "silence_destroy_event" # For action.62
+		CIVIC_VICTORY_THRESHOLD = 12 # Civic victory is granted by total civic count being greater than this, discount base mayor power civics
+
+		# UFOP Assimilation
+		UFOP_ASSIMILATION_LIKENESS_MIN = -1.0
+		UFOP_ASSIMILATION_LIKENESS_MAX = 3.0
+		UFOP_ASSIMILATION_LIKENESS_BASE = 1.0
+		UFOP_ASSIMILATION_LIKENESS_ETHIC_VALUE = 1.0
+		UFOP_ASSIMILATION_LIKENESS_SPECIES_PROFILE_VALUE = 1.0
+		UFOP_ASSIMILATION_LIKENESS_POLICY_SLAVERY_VALUE = -1.0
+		UFOP_ASSIMILATION_LIKENESS_TECHNOLOGY_VALUE = 2.0
+		UFOP_ASSIMILATION_LIKENESS_TECHNOLOGY_LTHRESHOLD = 0.2
+		UFOP_ASSIMILATION_LIKENESS_TECHNOLOGY_HTHRESHOLD = 0.5
+		UFOP_ASSIMILATION_LIKENESS_STABILITY_VALUE = 2.0
+		UFOP_ASSIMILATION_LIKENESS_STABILITY_LTHRESHOLD = 0.3
+		UFOP_ASSIMILATION_LIKENESS_STABILITY_HTHRESHOLD = 0.6
+		UFOP_ASSIMILATION_LIKENESS_REQ_PROGRESS_BASE = 120.0
+		UFOP_ASSIMILATION_LIKENESS_REQ_PROGRESS_FACTOR = -4.0
+		UFOP_ASSIMILATION_STOPPED_PROGRESS_DECAY = 0
+
+		UFOP_ASSIMILATION_ACEPTANCE_PRINCIPLE_LOW_PERCENTAGE = 0.1 
+		UFOP_ASSIMILATION_ACEPTANCE_PRINCIPLE_HIGH_PERCENTAGE = 0.25
+		UFOP_ASSIMILATION_LIKENESS_PRINCIPLE_LOW_THRESHOLD = -1
+		UFOP_ASSIMILATION_LIKENESS_PRINCIPLE_MID_THRESHOLD = 1
+		UFOP_ASSIMILATION_LIKENESS_PRINCIPLE_HIGH_THRESHOLD = 3
+		
+		# Romulan Assimilation
+		RML_ASSIMILATION_MIN_RELATION_TIER = 2
+		RML_ASSIMILATION_OBJ_SKIP_PER_LEVEL = 1
+		RML_ASSIMILATION_STABILITY_PROGRESS_DIVISOR = 10.0
+		RML_ASSIMILATION_MIN_STABILITY_PENALTY = 0.0
+		RML_ASSIMILATION_MAX_STABILITY_PENALTY = 30.0
+		RML_ASSIMILATION_POW_STABILITY_PENALTY = 2.5
+		RML_ASSIMILATION_IN_PROGRESS_FLAG = "puppet_state_conversion_in_progress"
+		RML_ASSIMILATION_STOPPED_PROGRESS_DECAY = -5.0
+		RML_ASSIMILATION_FAILED_FLAG = "romulan_assimilation_failed"
+		RML_ASSIMILATION_FAILED_OPINION_MULT = 0.2
+		
+		# Cardassian Assimilation
+		CRD_ASSIMILATION_DAYS_TO_WAIT = 360 # 1 year
+		CRD_ASSIMILATION_OPINION_MULT = 0.2
+		CRD_ASSIMILATION_IN_PROGRESS_FLAG = "occupied_state_assimilation_in_progress"
+
+		WAR_DEVASTATION_LEVEL_TERRIBLE_OPINION = 50.0
+		WAR_DEVASTATION_LEVEL_POOR_OPINION = 40.0
+		WAR_DEVASTATION_LEVEL_NEUTRAL_OPINION = 30.0
+		WAR_DEVASTATION_LEVEL_GOOD_OPINION = 20.0
+		WAR_DEVASTATION_LEVEL_EXCELLENT_OPINION = 10.0
+
+		# Klingon Assimilation
+		KLG_COUP_MONTHS_TERRIBLE_OPINION = 6 # 96 Months - 8 Years
+		KLG_COUP_MONTHS_POOR_OPINION = 5 # 60 Months - 5 Years
+		KLG_COUP_MONTHS_NEUTRAL_OPINION = 4 # 36 Months - 3 Years 
+		KLG_COUP_MONTHS_GOOD_OPINION = 3 # 24 Months - 2 Years
+		KLG_COUP_MONTHS_EXCELLENT_OPINION = 2 # 12 Months - 1 Year
+
+		KLG_OVERTHROWN_OBJECTIVE_TERRIBLE_OPINION = 100 #420
+		KLG_OVERTHROWN_OBJECTIVE_POOR_OPINION = 360
+		KLG_OVERTHROWN_OBJECTIVE_NEUTRAL_OPINION = 300
+		KLG_OVERTHROWN_OBJECTIVE_GOOD_OPINION = 240
+		KLG_OVERTHROWN_OBJECTIVE_EXCELLENT_OPINION = 180
+
+		KLG_OVERTHROWN_OBJECTIVE_INITIAL_PERCENT = 0.15
+
+		# Stability < 30%: 		-5.0
+		# Stability [30%,50%): 	+2.5
+		# Stability [50%,70%]: 	+5.0
+		# Stability > 70%: 		+7.5
+		KLG_OVERTHROWN_STABILITY_LVL_1 = 0.3
+		KLG_OVERTHROWN_STABILITY_LVL_2 = 0.5
+		KLG_OVERTHROWN_STABILITY_LVL_3 = 0.7
+		KLG_OVERTHROWN_PROGRESS_THRESHOLD_1 = -5.0 # Stability < KLG_OVERTHROWN_STABILITY_LVL_1
+		KLG_OVERTHROWN_PROGRESS_THRESHOLD_2 =  2.5 # Stability [KLG_OVERTHROWN_STABILITY_LVL_1, KLG_OVERTHROWN_STABILITY_LVL_2)
+		KLG_OVERTHROWN_PROGRESS_THRESHOLD_3 =  5.0 # Stability [KLG_OVERTHROWN_STABILITY_LVL_2, KLG_OVERTHROWN_STABILITY_LVL_3]
+		KLG_OVERTHROWN_PROGRESS_THRESHOLD_4 =  7.5 # Stability > KLG_OVERTHROWN_STABILITY_LVL_3
+		
+		KLG_ASSIMILATION_FAILED_FLAG = "klingon_assimilation_failed"
+		KLG_ASSIMILATION_FAILED_OPINION_MULT = 0.2
+		KLG_ASSIMILATION_FAILED_IMPROVE_RELATIONS_PENALTY_TIME_PHASE_1 = 1800 
+		KLG_ASSIMILATION_FAILED_IMPROVE_RELATIONS_PENALTY_TIME_PHASE_2 = 3600 
+
+		KLG_OVERTHROWN_TECH_RESEARCH_BONUS_PERCENT = 0.003
+
+		# Combat rewards modifiers
+		LOWER_MILITARY_POWER_MULT = 1.5
+		SIMILAR_MILITARY_POWER_MULT = 1.0
+		GREATER_MILITARY_POWER_MULT = 0.5
+		MILITARY_POWER_THRESHOLD_PERCENT = 0.1
+
+		# Officers
+		SHIP_OFFICERS_ADD_DEBUFF_MULT = -0.75		 # Penalty when adding officers outside the territory.
+
+		SHIP_OFFICERS_ADD_PERCENTAGE = 0.2 			 # Max percentage of officers a ship can receive monthly
+		SHIP_OFFICERS_OPERATIVE_THRESHOLD = 0.8 	 # Threshold where a ship is considered operative capacity
+		SHIP_OFFICERS_RETURNED_ON_DISBAND_PERC = 1.0 # Percentage of officers returned when the ship is dibanded
+
+		OFFICERS_MAX_FIRE_RATE_BONUS = 0.2 		# Max fire rate bonus depending on the percentage of officers
+		OFFICERS_MAX_FIRE_RATE_PENALTY = 1.0 	# Max fire rate penalty depending on the percentage of officers
+		OFFICERS_MAX_EVASION_BONUS = 0.1 		# Max evasion bonus depending on the percentage of officers
+		OFFICERS_MAX_EVASION_PENALTY = 0.2 		# Max evasion penalty depending on the percentage of officers
+
+		OFFICERS_CASUALTIES_REL_DAMAGE_THRESHOLD_L = 0.05			# Relative hull damage up to this value will be considered LOW
+		OFFICERS_CASUALTIES_REL_DAMAGE_THRESHOLD_M = 0.2			# Relative hull damage up to this value will be considered MID
+		OFFICERS_CASUALTIES_REL_DAMAGE_THRESHOLD_H = 0.6			# Relative hull damage up to this value will be considered HIGH
+		OFFICERS_CASUALTIES_CHANCES_REL_DAMAGE_THRESHOLD_L = 0.5	# Chance of generating officers casualties when taking LOW relative hull damage
+		OFFICERS_CASUALTIES_CHANCES_REL_DAMAGE_THRESHOLD_M = 0.7	# Chance of generating officers casualties when taking MID relative hull damage
+		OFFICERS_CASUALTIES_CHANCES_REL_DAMAGE_THRESHOLD_H = 0.9	# Chance of generating officers casualties when taking HIGH relative hull damage
+		
+		OFFICERS_CASUALTIES_NUM_REL_DAMAGE_MIN_L = 1			# Min number of officers casualties when taking LOW relative hull damage
+		OFFICERS_CASUALTIES_NUM_REL_DAMAGE_MIN_M = 10			# Min number of officers casualties when taking MID relative hull damage
+		OFFICERS_CASUALTIES_NUM_REL_DAMAGE_MIN_H = 30			# Min number of officers casualties when taking HIGH relative hull damage
+
+		OFFICERS_CASUALTIES_NUM_REL_DAMAGE_THRESHOLD_L = 5			# Max number of officers casualties when taking LOW relative hull damage
+		OFFICERS_CASUALTIES_NUM_REL_DAMAGE_THRESHOLD_M = 30			# Max number of officers casualties when taking MID relative hull damage
+		OFFICERS_CASUALTIES_NUM_REL_DAMAGE_THRESHOLD_H = 40			# Max number of officers casualties when taking HIGH relative hull damage
+		OFFICERS_CASUALTIES_NUM_SHIELD_DEPLETED_MULT = 1.1			# Max number of officers casualties multiplier when taking damage with no shield
+		
+		OFFICERS_ESCAPE_PERC_MAX = 80.0	# Max percentage of officers that can escape from the Ship when it gets hit or destroyed
+		
+		# Balance of Power
+		BOP_SCORE_NO_ECONOMY = 5000 # For countries with no economy that still count for victory
+		BOP_SCORE_ECONOMIC_POWER = 1 # Per economic power
+		BOP_SCORE_TECH_POWER = 0.25 # Per tech power
+		BOP_SCORE_MILITARY_POWER = 0.001 # Per fleet power
+		BOP_SCORE_POPS = 2 # Per pop
+		BOP_SCORE_PLANETS = 50 # Per colony
+		BOP_SCORE_SYSTEMS = 10 # Per system
+		BOP_SCORE_SUBJECTS = 0.5 # Fraction of subject's own score
+		BOP_SCORE_DEBUG = 1.0 # Debug score multiplier
+
+		# Combat configurations
+		HYPERLANE_VALUE = 40.0
+
+		# Magnitude of the BoP effect
+		BOP_MAGNITUDE_FACTOR = 500
+		BOP_PEACE_MAGNITUDE = 1000
+		BOP_PROTECTION_PACT = 500
+		BOP_DEFENSIVE_PACT = 1000
+		BOP_NONAGRESSION_PACT = 1000
+		BOP_COMMERCIAL_PACT = 1000
+		BOP_RESEARCH_AGREEMENT = 1000
+		BOP_SHARE_WARP_AGREEMENT = 1000
+		BOP_GUARANTEE_INDEPENDENCE = 1000
+		BOP_NONAGGRESSION = 1000
+		BOP_EMBASSY = 0
+		BOP_MIGRATION = 1000
+		BOP_TRADE_DEAL = 500
+		BOP_DEMAND_VASSALIZATION_PROTECTORATE = 0
+		
+		# BoP War Values
+		BOP_JOIN_WAR_THRESHOLD = 0.40
+		BOP_WAR_UTILITY_VALUE_SCALER = 100.0
+		BOP_JOIN_WAR_OPINION_THRESHOLD = 0		# Opinion of the country considering war to the one proposed to be attacked.
+		
+		# BoP Rivalry
+		BOP_IS_RIVAL_THRESHOLD = 0.40
+		
+		# Neutral Zone
+		NZ_RELATION_CHANGE_OVER_TIME = 5
+		NZ_AVG_SYSTEMS_DISTANCE_PADDING_FACTOR = 0.10
+		
+		# Borg Assimilation
+		# Borg Fleet Assimilation Percent
+		BORG_ASSIMILATION_FLEET = 0.5
+		BORG_ASSIMILATION_OFFICERS_RECOVERY_PERC_MIN = 0.2
+		BORG_ASSIMILATION_OFFICERS_RECOVERY_PERC_MAX = 0.6
+		BORG_ASSIMILATION_POP_RECOVERY_PERC_MIN = 0.4
+		BORG_ASSIMILATION_POP_RECOVERY_PERC_MAX = 0.8
+		
+		# Major Assimilation
+		ROMULAN_PUPPET_STATE_DIPLO_ACTION_FREQUENCY = 20
+		UFOP_ASK_TO_START_INTEGRATION_DIPLO_ACTION_FREQUENCY = 20
+		UFOP_START_INTEGRATION_DIPLO_ACTION_FREQUENCY = 100
+		UFOP_REQUEST_INTEGRATION_DIPLO_ACTION_FREQUENCY = 0
+		UFOP_BREAK_INTEGRATION_DIPLO_ACTION_FREQUENCY = 100
+		
+		# AI Intervene In War
+		AI_INTERVENE_IN_WAR_FREQUENCY = 100
+
+		GLOBAL_TENSION_MONTHLY_DECAY = 0.1
+		GLOBAL_TENSION_MAX_EVENT_HISTORY = 50 # Max amount of global tension events to store
+
+		# Claim limit
+		BASE_CLAIM_LIMIT = 3 # Limits the amount of systems a country can claim
+		CLAIM_COSTS_FACTOR_DEFAULT = 1.0
+		
+		CLAIM_COSTS_FACTOR_SCALE_MIN = 1.0
+		CLAIM_COSTS_FACTOR_SCALE_MAX = 10.0
+		CLAIM_COSTS_FACTOR_SCALE_SLIDER_INTERVAL = 0.25
+
+		# War exhaustion settings
+		WAR_EXHAUSTION_PASSIVE_FACTOR_DEFAULT = 1.0
+		WAR_EXHAUSTION_STATIC_FACTOR_DEFAULT = 1.0
+		WAR_EXHAUSTION_SHIPS_FACTOR_DEFAULT = 1.0
+		WAR_EXHAUSTION_ARMIES_FACTOR_DEFAULT = 1.0
+		WAR_EXHAUSTION_OFFICERS_FACTOR_DEFAULT = 1.0
+
+		WAR_EXHAUSTION_FACTOR_SCALE_MIN = 1.0
+		WAR_EXHAUSTION_FACTOR_SCALE_MAX = 10.00
+		WAR_EXHAUSTION_FACTOR_SCALE_SLIDER_INTERVAL = 0.25
+
+		WAR_BASE_VICTORY_SCORE = 150.0
+		WAR_GAINS_SYSTEM_FACTOR = 10.0
+		WAR_GAINS_PLANET_FACTOR = 20.0
+		WAR_GAINS_CAPITAL_FACTOR = 40.0
+		WAR_GAINS_CONQUEST_DAYS_PER_CLAIM = 60.0
+		WAR_GAINS_CONQUEST_ATTACKER = 1.0
+		WAR_GAINS_CONQUEST_DEFENDER = 1.0
+		WAR_GAINS_HUMILIATION_DAYS = 45.0
+		WAR_GAINS_HUMILIATION_ATTACKER = 1.0
+		WAR_GAINS_HUMILIATION_DEFENDER = 1.0
+
+		# Mine Fields
+		MINE_FIELD_BASE_DENSITY = 1.0
+		MINE_FIELD_TRIGGERING_PROBABILITY_MAX = 0.6
+		MINE_FIELD_DENSITY_DROP_ON_TRIGGERING = 0.05
+		MINE_FIELD_DENSITY_RISE_ON_RESTOCKING = 0.2
+
+		# Research
+		RESEARCH_FOCUS_YEARS_LIMIT = 5
+
+		# Leaders capacity
+		LEADERS_ADMIRALS_CAPACITY = 2
+		LEADERS_GOVERNORS_CAPACITY = 3
+		LEADERS_SCIENTISTS_CAPACITY = 5
+		LEADERS_GENERALS_CAPACITY = 2
+		LEADERS_SPIES_CAPACITY = 2
+
+		SPY_SHIP_FLEET_MISSION_OFFSET = 1		# Distance to the Fleet that the Spy ship is collecting data
+		MAX_SUCCESSFUL_MISSIONS_PER_SYSTEM_BONUS = 5
+
+		# Pops conversion - Principles
+		POPS_CONVERSION_TOTAL_UNDECIDED_POPS_DIV = 100.0					# 
+		POPS_CONVERSION_TOTAL_STABILITY_DIV = 50.0							# 
+        POPS_CONVERSION_RULER_LEVEL_DIV = 10.0								# 
+
+		POPS_RECONVERSION_PERIOD_IN_MONTHS = 6								# Every X months, a pop with a different Principle will be reconverted to the Power Principle if the country can do it.
+
+		POPS_DEFECTION_UPDATE_FREQUENCY_MONTHS = 3							# With what frequency the Country will update Pops Defection (months)
+		POPS_DEFECTION_STARTING_YEARS_LAPSE = 10							# The years it takes for Pops to start defecting after the game starts
+		POPS_DEFECTION_MIGRATION_CHANCE_MINOR_POWER_MULT = 1.0				# Multiplier to the chance of Emigration roll if Minor Power
+		POPS_DEFECTION_POPS_TO_MIGRATE_MINOR_POWER_PERC_MULT = 1.0			# Multiplier to the percentage of Pops that will migrate if Minor Power
+		POPS_DEFECTION_CHANCE_NORMALIZED_MULT = 0.01						# Multiplier to normalize/convert the percentage (formula yields = [0.0, 100]) to the random roll dice ([0.0, 1.0]). This sould be 0.01, but designers can tweak it to obtain whatever they want. 
+		POPS_DEFECTION_DEPARTURE_LIST_UPDATE_FREQUENCY_MONTHS = 12			# The "Departure List" will be updated if more than this amount of months have passed since last update.
+
+		POPS_FOREIGN_CONVERSION_STARTING_YEARS_LAPSE = 5					# The years it takes to start converting after the game starts
+		POPS_FOREIGN_CONVERSION_BORDER_FRICTION_NO_BORDER = 2.0				# If there are no mutual borders between the empires
+		POPS_FOREIGN_CONVERSION_BORDER_FRICTION_BORDER = 1.0				# If there are mutual borders between the empires
+		POPS_FOREIGN_CONVERSION_BORDER_FRICTION_WITH_NEUTRAL_ZONE = 1.5		# If there is only a Neutral Zone between the empires
+		POPS_FOREIGN_CONVERSION_WAR_STATUS_AT_PEACE_MULT = 1.0				# If the empires are at peace
+		POPS_FOREIGN_CONVERSION_WAR_STATUS_DEFENSIVE_WAR_MULT = 2.0			# If the Foreign Principle owner is in a Defensive War against the local empire
+		POPS_FOREIGN_CONVERSION_WAR_STATUS_AT_WAR_AS_ATTACKER_MULT = 0.33	# If the Foreign Principle owner is in War against the local Empire as an attacker
+		POPS_FOREIGN_CONVERSION_TOTAL_UNDECIDED_POPS_DIV = 100.0			# 
+		POPS_FOREIGN_CONVERSION_TOTAL_STABILITY_DIV = 100.0					# 
+        POPS_FOREIGN_CONVERSION_RULER_LEVEL_MULT = 10.0						# 
+        POPS_FOREIGN_CONVERSION_OTHER_STABILITY_DIV = 5.0					# 
+        POPS_FOREIGN_CONVERSION_RESULTANT_DIV = 2.0							# 
+
+		PLANET_POPS_INDOCTRINATE_POPS_FLAG = "indoctrinate_pops"
+		PLANET_POPS_INDOCTRINATE_POPS_GOVERNOR_SKILL_DIV = 20.0
+		PLANET_POPS_INDOCTRINATE_POPS_RESULTANT_DIV = 10.0
+
+		PLANET_POPS_REEDUCATE_POPS_FLAG= "reeducate_pops"
+		PLANET_POPS_REEDUCATE_POPS_LOCAL_STABILITY_DIV = 100.0
+		PLANET_POPS_REEDUCATE_POPS_POPS_INFLUENCE = 4.0
+		PLANET_POPS_REEDUCATE_POPS_STABILITY_INFLUENCE = 6.0 
+		PLANET_POPS_REEDUCATE_POPS_RESULTANT_DIV = 200.0
+
+		PLANET_POPS_PROPAGANDA_POPS_BASE_VALUE = 25.0
+		PLANET_POPS_PROPAGANDA_POPS_MULT = 25.0
+		PLANET_POPS_PROPAGANDA_BASE_STABILITY = 100.0
+		PLANET_POPS_PROPAGANDA_DIV = 3.0
+		PLANET_POPS_PROPAGANDA_SPY_LEVEL_DIV = 3.0
+		PLANET_POPS_PROPAGANDA_RESULTANT_DIV = 100.0
+
+		PLANET_POPS_COUNTER_PROPAGANDA_BASE_VALUE = 90.0
+		PLANET_POPS_COUNTER_PROPAGANDA_STABILITY_MULT = 0.5
+		PLANET_POPS_COUNTER_PROPAGANDA_JOBS_MULT = 3.0
+		PLANET_POPS_COUNTER_PROPAGANDA_SPY_LEVEL_MULT = 7.0
+
+		BORDER_SYSTEM_RANGE_RADIUS = 25.0										# Systems in this Radius are considered Neighbors
+	
+		TUTORIAL_COMPLETED_FLAG = "tutorial_completed"
+
+		ASSIMILATION_DISPLAY_INTEL = 40.0										# Intel amount for displaying assimilation info in diplomacy. Set to -1 to disable
+	
+		# Willing to Support range is -100 to 100
+		# [-100, -50]: Supports defender
+		# (-50, 50): Stays neutral
+		# [50, 100]: Supports attacker
+		WAR_WILLING_TO_SUPPORT_MIN                = -100   # Lowest possible value for Willing to Support during war
+		WAR_WILLING_TO_SUPPORT_DEFENDER_THRESHOLD = -50    # If Willing to Support value is <= this, then the power is supporting the war defenders
+		WAR_WILLING_TO_SUPPORT_DEFAULT            = 0      # Default Willing to Support value (initial value when a war starts)
+		WAR_WILLING_TO_SUPPORT_ATTACKER_THRESHOLD = 50     # If Willing to Support value is >= this, then the power is supporting the attackers
+		WAR_WILLING_TO_SUPPORT_MAX                = 100    # Highest possible value for Willing to Support during war
+
+
+
+		WAR_APPROACH_NEUTRAL_3RD_PARTY = "war_approach_neutral_3rd_party"
+		WAR_APPROACH_ATTACKER_3RD_PARTY = "war_approach_attacker_3rd_party"
+		WAR_APPROACH_DEFENDER_3RD_PARTY = "war_approach_defender_3rd_party"
+	}
+
+	NPop = {
+		PRIORITY_JOB_EMPLOYMENT_BONUS = 1000.0 									# How much will be added to a Job's weight if it's prioritized (this will be multiplied by the priority level)
+	}
+
+	NAI = {
+		SILENT_ALARM_ACTIVE_DURATION = 90										# How long do we care about a silent alarm in Days
+
+		# Claims 
+		ONLY_MAJOR_POWERS_MAKE_CLAIMS = yes										# Only Major Powers will claim Systems if enabled
+		CLAIM_SYSTEM_RANGE_RADIUS = 25.0										# Systems in this Radius are considered for Claims Evaluation
+
+		MAX_CLAIM_DISTANCE = 2													# Max number of jumps away AI will make claims on
+		MAX_CLAIM_DISTANCE_SUBJECT = 2											# Max number of jumps away AI subjects will make claims on
+
+		# Strategic Value Calculation
+		CLAIM_BASE_VALUE = 100
+		CLAIM_INFLUENCE_COST_FACTOR = -0.2										# How much will AI factor in Influence Costs when making claims
+		CLAIM_RELATIONS_FACTOR = -0.1											# How much will AI factor in Opinion when making claims
+		CLAIM_RESOURCE_FACTOR = 2												# How much will AI prioritize Resource-rich systems when making claims
+
+		# HRB_TODO: placeholder values (War = Peace)
+		CLAIM_STRATEGIC_RESOURCES_FACTOR_PEACE = 4								# How much will AI prioritize Strategic resource-rich systems when making claims at Peace
+		CLAIM_STRATEGIC_RESOURCES_FACTOR_WAR = 4								# How much will AI prioritize Strategic resource-rich systems when making claims at War
+
+		CLAIM_STARBASE_WITH_SHIPYARD_FACTOR_PEACE = 10							# How much will AI prioritize systems with Shipyard Starbases when making claims at Peace
+		CLAIM_STARBASE_WITH_SHIPYARD_FACTOR_WAR = 10							# How much will AI prioritize systems with Shipyard Starbases when making claims at War
+
+		CLAIM_COLONY_FACTOR_PEACE = 25											# How much will AI prioritize systems with Colonies when making claims at Peace
+		CLAIM_COLONY_FACTOR_WAR = 25											# How much will AI prioritize systems with Colonies when making claims at War
+
+		CLAIM_COLONIZABLE_FACTOR_PEACE = 15										# How much will AI prioritize systems with Colonizable Planets when making claims at Peace
+		CLAIM_COLONIZABLE_FACTOR_WAR = 15										# How much will AI prioritize systems with Colonizable Planets when making claims at War
+
+		CLAIM_BORDERING_FACTOR_PEACE = 100										# How much will AI prioritize bordering systems when making claims at Peace
+		CLAIM_BORDERING_FACTOR_WAR = 100										# How much will AI prioritize bordering systems when making claims at War
+		
+		PEACE_NEUTRAL_ZONE_FACTOR = 0											# Weight to accept a Neutral Zone peace (see 00_defines for example values)
+		PEACE_HIGH_WE_STATUS_NEUTRAL_ZONE_FACTOR = 100							# Additional weight if high war exhastion.
+
+		
+		MAJOR_POWER_MAX_INTERVENE_SCORE			= 500							# How badly do I want to intervene in a war based on how much I like the combatants.
+		MAJOR_POWER_EXCELLENT_INTERVENE_SCORE	= 250							# Major poers and minor powers have different score levels.
+		MAJOR_POWER_GOOD_INTERVENE_SCORE		= 100							# The scores are relative, so Good relations with a major is 100
+		MAJOR_POWER_POOR_INTERVENE_SCORE		= -100							# Good relations with a minor is 150,
+		MAJOR_POWER_TERRIBLE_INTERVENE_SCORE	= -250							# So the score to enter on the side of the major is -50 and on the side of the minor 50.
+		MAJOR_POWER_MIN_INTERVENE_SCORE			= -500							# This will be further modified by the type of war.
+		
+		MINOR_POWER_MAX_INTERVENE_SCORE			= 750
+		MINOR_POWER_EXCELLENT_INTERVENE_SCORE	= 325
+		MINOR_POWER_GOOD_INTERVENE_SCORE		= 150
+		MINOR_POWER_POOR_INTERVENE_SCORE		= -150
+		MINOR_POWER_TERRIBLE_INTERVENE_SCORE	= -325
+		MINOR_POWER_MIN_INTERVENE_SCORE			= -750
+		
+		INTERVENE_SCORE_THRESHOLD				= 100							# At what score will the AI intervene in a war. 	
+		
+	}
+
+	NInterface = {
+
+		COMBAT_REWARD_RESOURCES = { 
+			"unity"
+		}
+
+		COMBAT_REWARD_RESOURCES_AMOUNT_ADD = {
+			100
+		}
+
+		MATERIAL_RESOURCES	= {
+			"energy"
+			"minerals"
+			"food"
+			"alloys"
+			"deuterium"
+		}
+
+		ABSTRACT_RESOURCES	= {
+			"influence"
+			"unity"
+			"research"
+			"physics_research"
+			"society_research"
+			"engineering_research"
+			"officers"
+		}
+
+		STRATEGIC_RESOURCES	= {
+			"tetryons"
+			"dilithium"
+			"gravitons"
+			"nanites"
+		}
+
+		COUNTRY_IDS_THAT_USE_ARTIFICIAL_SINGULARITIES = {
+			"romulan"
+		}
+
+		ADVISOR_WINDOW_KEY = "advisor_window"
+		ADVISOR_EVENT_WINDOW_KEY = "advisor_event_window"
+		ADVISOR_WINDOWS_OFFSET_X = 260 # Based on Outliner size
+	}

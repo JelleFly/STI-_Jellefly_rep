@@ -1,0 +1,78 @@
+bolian = {
+	name = "Bolian Democracy"
+	short_name = "EMPIRE_SHORT_NAME_bolian"
+	country_id = "bolian"
+	adjective = "PRESCRIPTED_adjective_bolian"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = no
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_bolian"
+
+	species = {
+		class = "HRB"
+		portrait = "bolian"
+		name = "PRESCRIPTED_species_name_bolian"
+		plural = "PRESCRIPTED_species_plural_bolian"
+		adjective = "PRESCRIPTED_species_adjective_bolian"
+		name_list = "BOLI"
+		trait = "trait_entrepreneurial_bolian"
+		trait = "trait_blueblood_bolian"
+		trait = "trait_digestor_bolian"
+	}
+
+	room = "minor_05_transmission_room"
+
+	authority = "auth_democratic"
+	civics = { "void_civic" "civic_wealth_trust" }
+	government = gov_capitalist_democracy
+
+	ethic = "ethic_xenophile"
+	ethic = "ethic_fanatic_materialist"
+
+	origin = "origin_default"
+
+	flags = { human_2 bolian starting_gov }
+
+	system_name = "NAME_Bolian"
+	planet_name = "NAME_Bolarus"
+	planet_class = "pc_desert"
+	planet_subclass = psc_class_m
+	initializer = "bolian_bolarus_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Bolian_16"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Bolian_16.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Bolian"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_bolian"
+		portrait = "bolian_male_01"
+		gender = male
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

@@ -1,0 +1,79 @@
+tanugan = {
+	name = "Tanugan Anocracy"
+	short_name = "EMPIRE_SHORT_NAME_tanugan"
+	country_id = "tanugan"
+	adjective = "PRESCRIPTED_adjective_tanugan"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_tanugan"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "tanugan"
+		name = "PRESCRIPTED_species_name_tanugan"
+		plural = "PRESCRIPTED_species_plural_tanugan"
+		adjective = "PRESCRIPTED_species_adjective_tanugan"
+		name_list = "TANU"
+		
+		trait = "trait_inquisitive_tanugan" 
+		trait = "trait_law_abiding_tanugan" 
+		trait = "trait_skeptics_tanugan"
+	}
+
+	room = "minor_04_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_question_everything" } #HRB_TODO
+	government = gov_inquisitorial_anocracy
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 tanugan starting_spy }
+
+	system_name = "NAME_Tanugan"
+	planet_name = "NAME_Tanugan_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "tanugan_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Tanugan_25" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Tanugan_25.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Tanugan"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_tanugan" #HRB_TODO
+		portrait = "tanugan_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

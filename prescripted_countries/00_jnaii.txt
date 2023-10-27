@@ -1,0 +1,81 @@
+jnaii = {
+	name = "J'naii Council"
+	short_name = "EMPIRE_SHORT_NAME_jnaii"
+	country_id = "jnaii"
+	adjective = "PRESCRIPTED_adjective_jnaii"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_jnaii"
+
+	species = {
+		class = "JNA" 		# TODO: Add the individual class 
+		portrait = "jnaii" # TODO: Add a portrait
+		name = "PRESCRIPTED_species_name_jnaii"
+		plural = "PRESCRIPTED_species_plural_jnaii"
+		adjective = "PRESCRIPTED_species_adjective_jnaii"
+		name_list = "JNAI" # TODO: Add later
+		
+		trait = "trait_kindred_jnaii"
+		trait = "trait_enlightened_jnaii"
+		trait = "trait_conformist_jnaii"
+	}
+
+	room = "minor_02_transmission_room"
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_road_most_traveled" } 
+	government = gov_panel_of_judges 
+
+	ethic = "ethic_pacifist"
+	ethic = "ethic_materialist"
+	ethic = "ethic_xenophobe"
+
+	origin = "origin_default"
+
+	flags = { human_2 jnaii starting_gov }
+
+	system_name = "NAME_Jnaii"
+	planet_name = "NAME_Jnaii_Home_Planet"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+
+	initializer = "jnaii_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Jnaii_19"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Jnaii_19.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Jnaii"
+			"black"
+			"null"
+			"null"		
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_jnaii"
+		portrait = "jnaii" # TODO: Add J'naii portrait
+		# gender = male
+		texture = 1
+		hair = 1
+		clothes = 1
+		leader_class = ruler
+	}
+}

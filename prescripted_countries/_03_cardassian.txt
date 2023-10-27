@@ -1,0 +1,141 @@
+cardassian1 = {
+	name = "Cardassian Union"
+	short_name = "EMPIRE_SHORT_NAME_cardassian"
+	country_id = "cardassian"
+	adjective = "PRESCRIPTED_adjective_cardassian"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = no
+	is_major = yes
+	is_bespoke = yes
+	ship_prefix = "PRESCRIPTED_ship_prefix_cardassian"
+	in_previous_contact = yes
+	home_planet_initial_pops = 25
+
+	species = {
+		class = "CRD"
+		portrait = "cardassian"
+		name = "PRESCRIPTED_species_name_cardassian"
+		plural = "PRESCRIPTED_species_plural_cardassian"
+		adjective = "PRESCRIPTED_species_adjective_cardassian"
+		name_list = "CRD1"
+		trait = "trait_talented"
+		trait = "trait_enduring"
+		trait = "trait_decadent"
+	}
+
+	additional_species = {
+		70 = {
+			# Don't fill this option
+			# Overrided with the main species
+			# If you don't want the main species on the random modify the number (chance) to -1
+		}
+
+		##Bajorans
+		10 = {
+			class = "HRB"
+			portrait = "bajoran"
+			name = "PRESCRIPTED_species_name_bajoran"
+			plural = "PRESCRIPTED_species_plural_bajoran"
+			adjective = "PRESCRIPTED_species_adjective_bajoran"
+			name_list = "BAJO"
+			trait = "trait_survivors_bajoran"
+			trait = "trait_prophetic_believer_bajoran"
+			trait = "trait_selective_researchers_bajoran"
+		}
+
+		##Andorians
+		10 = {
+			class = "HRB"
+			portrait = "andorian"
+			name = "PRESCRIPTED_species_name_andorians"
+			plural = "PRESCRIPTED_species_plural_andorians"
+			adjective = "PRESCRIPTED_species_adjective_andorians"
+			name_list = "UFP3"
+			trait = "trait_environmental_resistance"
+			trait = "trait_militaristic_life"
+			trait = "trait_andorian_code_of_honor"
+		}
+
+		##Tellarites
+		10 = {
+			class = "HRB"
+			portrait = "tellarite"
+			name = "PRESCRIPTED_species_name_tellarites"
+			plural = "PRESCRIPTED_species_plural_tellarites"
+			adjective = "PRESCRIPTED_species_adjective_tellarites"
+			name_list = "UFP4"
+			trait = "trait_tellarite_dyspnea"
+			trait = "trait_born_to_argue"
+			trait = "trait_sharp_wits"
+		}
+	}
+
+	additional_modules = {
+		cardassian_assimilation_module = {}
+	}
+
+	room = "cardassian_01_transmission_room"
+
+	authority = "auth_central_command"
+	civics = { "civic_raider_corps" "civic_intelligence_zeal" }
+	government = gov_military_dictatorship
+
+	origin = "origin_cardassian"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_authoritarian"
+
+	flags = { human_2 custom_start_screen cardassia }
+	# initial_technologies = { tech_replicator_1 }
+
+	system_name = "NAME_Cardassia"
+	planet_name = "NAME_Cardassia_Prime"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+	initializer = "cardassian_cardassia_initializer"
+	conquered_system_initializers = { 
+		"cardassian_cardassia_initializer" "cardassian_cardassia_initializer" "cardassian_amleth_initializer"
+		"cardassian_septimus_initializer" "cardassian_outpost_initializer" "cardassian_celtris_initializer"
+		"cardassian_velos_initializer" "cardassian_sheva_initializer" "cardassian_avenal_initializer"
+		"cardassian_unefra_initializer"
+	}
+
+	graphical_culture = "cardassian_01"
+	city_graphical_culture = "cardassian_01"
+
+	emblem_key = "flag_Cardassian_13"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Cardassian_13.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Cardassian"
+			"black"
+			"null"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_cardassian"
+		portrait = "unique_35"
+		gender = male
+		texture = 0
+		hair = 0
+		clothes = 0
+		is_bespoke = yes
+		leader_class = ruler
+		trait = leader_trait_investor
+		trait = leader_trait_military_pioneer
+	}
+}

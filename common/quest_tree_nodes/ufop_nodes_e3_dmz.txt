@@ -1,0 +1,78 @@
+# E3
+qt_ufop_control_demilitarized_zone_21 = {
+	position = { x = 7 y = 6 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = {
+		qt_ufop_reform_the_charters_12
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = sheva_system
+			}
+			fail_text = qt_ufop_control_demilitarized_zone_sheva_fail_tooltip
+			success_text = qt_ufop_control_demilitarized_zone_sheva_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = setlik_system
+			}
+			fail_text = qt_ufop_control_demilitarized_zone_setlik_fail_tooltip
+			success_text = qt_ufop_control_demilitarized_zone_setlik_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = dorvan_system
+			}
+			fail_text = qt_ufop_control_demilitarized_zone_dorvan_fail_tooltip
+			success_text = qt_ufop_control_demilitarized_zone_dorvan_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = umoth_system
+			}
+			fail_text = qt_ufop_control_demilitarized_zone_umoth_fail_tooltip
+			success_text = qt_ufop_control_demilitarized_zone_umoth_possible_tooltip
+		}
+	}
+
+	on_started = {
+
+	}
+
+	on_blocked = {
+
+	}
+
+	on_finished = {
+
+		add_modifier = {
+			modifier = qt_ufop_control_demilitarized_zone_21_effect
+		}
+
+		add_resource = { 
+			influence = 250 
+		} 
+
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

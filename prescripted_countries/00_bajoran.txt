@@ -1,0 +1,80 @@
+bajoran = {
+	name = "Bajoran Republic"
+	short_name = "EMPIRE_SHORT_NAME_bajoran"
+	country_id = "bajoran"
+	adjective = "PRESCRIPTED_adjective_bajoran"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = no
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_bajoran"
+
+	species = {
+		class = "HRB"
+		portrait = "bajoran"
+		name = "PRESCRIPTED_species_name_bajoran"
+		plural = "PRESCRIPTED_species_plural_bajoran"
+		adjective = "PRESCRIPTED_species_adjective_bajoran"
+		name_list = "BAJO"
+		trait = "trait_survivors_bajoran"
+		trait = "trait_prophetic_believer_bajoran"
+		trait = "trait_selective_researchers_bajoran"
+	}
+
+	room = "minor_06_transmission_room"
+
+	authority = "auth_democratic"
+	civics = { "void_civic" "civic_past_guides_future" }
+	government = gov_theodemocratic_republic
+
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+
+	origin = "origin_default"
+
+	flags = { human_2 bajoran starting_spy }
+
+	system_name = "NAME_Bajoran_System"
+	planet_name = "NAME_Bajor"
+	planet_class = "pc_desert"
+	planet_subclass = psc_class_m
+	initializer = "bajoran_bajor_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Bajoran_15"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Bajoran_15.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Bajoran"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_bajoran"
+		portrait = "bajoran_female_03"
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+		trait = leader_trait_expansionist
+		trait = leader_trait_explorer
+	}
+}

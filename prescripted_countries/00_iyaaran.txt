@@ -1,0 +1,79 @@
+iyaaran = {
+	name = "Iyaaran Scientocracy"
+	short_name = "EMPIRE_SHORT_NAME_iyaaran"
+	country_id = "iyaaran"
+	adjective = "PRESCRIPTED_adjective_iyaaran"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_iyaaran"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "iyaaran"
+		name = "PRESCRIPTED_species_name_iyaaran"
+		plural = "PRESCRIPTED_species_plural_iyaaran"
+		adjective = "PRESCRIPTED_species_adjective_iyaaran"
+		name_list = "IYAA"
+		
+		trait = "trait_leisureless_iyaaran"
+	 	trait = "trait_undemanding_iyaaran"
+		trait = "trait_unhurried_iyaaran"
+	}
+
+	room = "minor_03_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_democratic"
+	civics = { "void_civic" "civic_systematized_structure" } #HRB_TODO
+	government = gov_scientocracy
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 iyaaran starting_gov }
+
+	system_name = "NAME_Iyaaran"
+	planet_name = "NAME_Iyaaran_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "iyaaran_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Iyaaran_32" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Iyaaran_32.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Iyaaran"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_iyaaran" #HRB_TODO
+		portrait = "iyaaran_male_01" # HRB_TODO: Change Ruler Portrait
+		gender = male
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

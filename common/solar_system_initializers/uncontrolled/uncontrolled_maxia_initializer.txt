@@ -1,0 +1,110 @@
+uncontrolled_maxia_initializer = {
+	name = "NAME_Maxia"
+	class = "sc_b"
+	flags = { boxer }
+
+	planet = {
+		name = "NAME_Maxia"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_Maxia_Prime"
+		class = "pc_barren"
+		orbit_distance = 80
+		orbit_angle = 76
+		size = 25
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_10
+			add_deposit = d_research_10
+			add_deposit = d_energy_10
+		}
+
+		moon = {
+			name = "NAME_Maxia_Ia"
+			class = "pc_barren_cold"
+			size = 7
+			orbit_distance = 8
+			orbit_angle = 210
+			has_ring = no
+		}
+		moon = {
+			name = "NAME_Maxia_Ib"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 95
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "NAME_Maxia_II"
+		class = "pc_toxic"
+		orbit_distance = 30
+		orbit_angle = 320
+		size = 30
+		has_ring = no
+
+		moon = {
+			name = "NAME_Maxia_IIa"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 180
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "NAME_Maxia_III"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 220
+		size = 25
+		has_ring = yes
+
+		init_effect = {
+			prevent_anomaly = no
+			set_deposit = d_gravitons_deposit_1
+		}
+	}
+
+	planet = {
+		name = "NAME_Maxia_IV"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 40
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		moon = {
+			name = "NAME_Maxia_IVa"
+			class = "pc_ice"
+			size = 4
+			orbit_distance = 20
+			orbit_angle = 15
+			has_ring = no
+		}
+		moon = {
+			name = "NAME_Maxia_IVb"
+			class = "pc_barren_cold"
+			size = 9
+			orbit_distance = 20
+			orbit_angle = 20
+			has_ring = yes
+		}
+	}
+}

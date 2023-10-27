@@ -1,0 +1,72 @@
+klingon_khitomer_initializer = {
+	name = "NAME_Khitomer"
+	class = "sc_k"
+	usage = custom_empire
+	flags = { klingon klingon_system colony }
+	
+	planet = {
+		name = "NAME_Khitomer-A"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect
+			change_pc = pc_k_star
+			set_deposit = d_deuterium_6
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:klingon_country
+			}
+		}
+	}
+	
+	change_orbit = 20
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+
+	planet = {
+		name = "NAME_Khitomer"
+		class = "pc_tropical"
+
+		subclass = psc_class_m
+		orbit_distance = 25
+		size = 19
+		starting_planet = yes
+		has_ring = no
+		modifiers = none
+		flags = { bespoke_colony mapo_colony planet_khitomer }
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			create_khitomer_colony = yes
+		}
+	}
+	
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:klingon_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}

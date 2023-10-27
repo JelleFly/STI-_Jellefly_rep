@@ -1,0 +1,79 @@
+pelian = {
+	name = "Pelian Republic"
+	short_name = "EMPIRE_SHORT_NAME_pelian"
+	country_id = "pelian"
+	adjective = "PRESCRIPTED_adjective_pelian"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_pelian"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "pelian"
+		name = "PRESCRIPTED_species_name_pelian"
+		plural = "PRESCRIPTED_species_plural_pelian"
+		adjective = "PRESCRIPTED_species_adjective_pelian"
+		name_list = "PELI"
+		
+		trait = "trait_smart_workers_pelian"
+		trait = "trait_organized_pelian"
+		trait = "trait_busy_minds_pelian"
+	}
+
+	room = "minor_03_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_democratic"
+	civics = { "void_civic" "civic_unrepenting_exploitation" } #HRB_TODO
+	government = gov_gubernatorial_republic
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 pelian starting_gov }
+
+	system_name = "NAME_pelian"
+	planet_name = "NAME_pelian_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "pelian_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Pelian_27" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Pelian_27.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Pelian"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_pelian" #HRB_TODO
+		portrait = "pelian_female_03" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

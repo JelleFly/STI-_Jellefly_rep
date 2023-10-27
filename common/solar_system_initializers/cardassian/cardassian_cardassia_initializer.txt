@@ -1,0 +1,123 @@
+cardassian_cardassia_initializer = {
+	name = "NAME_Cardassia"
+	class = "sc_k"
+	usage = custom_empire
+	flags = { empire_home_system cardassia_system cardassia cardassian_system cardassian }
+	
+	planet = {
+		name = "NAME_Cardassia"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+
+		init_effect = {
+			change_pc = pc_k_star
+			save_global_event_target_as = cardassian_primary_star
+		}
+	}
+	
+	change_orbit = 40
+
+	planet = {
+		name = "NAME_Cardassia_I"
+		count = 1
+		orbit_distance = { min = 35 max = 45 }
+		class = rl_unhabitable_planets
+		subclass = psc_class_e
+		flags = { planet_cardassia_i }
+	}
+
+	planet = {
+		name = "NAME_Cardassia_Prime"
+		class = "pc_savannah"
+		subclass = psc_class_m
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 23
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		home_planet = yes
+
+		flags = { planet_cardassia cardassia mapo_colony }
+
+		moon = {
+			name = "NAME_Cardassia_Prime_a"
+			count = 1
+			orbit_distance = 6
+			class = rl_unhabitable_planets
+			has_ring = no
+			size = 5
+		}
+		
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = cardassian_homeworld
+			
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+		}
+
+		late_init_effect = {
+		}
+		
+	}
+	
+	planet = {
+		name = "NAME_Cardassia_III"
+		count = 1
+		orbit_distance = { min = 20 max = 35 }
+		class = rl_unhabitable_planets
+		flags = { planet_cardassia_iii }
+	}
+
+	planet = {
+		name = "NAME_Cardassia_IV"
+		count = 1
+		orbit_distance = { min = 35 max = 50 }
+		class = rl_unhabitable_planets
+	}
+
+	planet = {
+		name = "NAME_Cardassia_V"
+		class = "pc_arid"
+		subclass = psc_class_m
+		orbit_distance = 25
+		size = 18
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		flags = { mapo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:cardassian_country 
+			}
+			create_cardassia_v_colony = yes
+		}
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
+		
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = cardassia
+				}
+
+				save_global_event_target_as = cardassian_country
+			}
+		}
+	}
+}

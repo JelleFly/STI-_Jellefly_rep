@@ -1,0 +1,79 @@
+farian = {
+	name = "Farian Syndicate"
+	short_name = "EMPIRE_SHORT_NAME_farian"
+	country_id = "farian"
+	adjective = "PRESCRIPTED_adjective_farian"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_farian"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "farian"
+		name = "PRESCRIPTED_species_name_farian"
+		plural = "PRESCRIPTED_species_plural_farian"
+		adjective = "PRESCRIPTED_species_adjective_farian"
+		name_list = "FARI"
+		
+		trait = "trait_cunning_farians"
+		trait = "trait_entrepreneurial_farians"
+		trait = "trait_exploitative_farians" 
+	}
+
+	room = "minor_05_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_corporate" 
+	civics = { "void_civic" "civic_back_alley_diplomacy" }
+	government = gov_corrupt_syndicate
+
+	ethic = "ethic_fanatic_materialist" 
+	ethic = "ethic_xenophile"
+
+	origin = "origin_default"
+
+	flags = { human_2 farian starting_spy }
+
+	system_name = "NAME_Farian"
+	planet_name = "NAME_Farian_Home_Planet"
+	planet_class = "pc_tundra"
+	planet_subclass = psc_class_m
+	initializer = "farian_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Farian_24"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Farian_24.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Farian"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_farian"
+		portrait = "farian_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

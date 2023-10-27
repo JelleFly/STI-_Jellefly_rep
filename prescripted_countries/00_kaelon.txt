@@ -1,0 +1,79 @@
+kaelon = {
+	name = "Kaelon Republic"
+	short_name = "EMPIRE_SHORT_NAME_kaelon"
+	country_id = "kaelon"
+	adjective = "PRESCRIPTED_adjective_kaelon"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_kaelon"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "kaelon"
+		name = "PRESCRIPTED_species_name_kaelon"
+		plural = "PRESCRIPTED_species_plural_kaelon"
+		adjective = "PRESCRIPTED_species_adjective_kaelon"
+		name_list = "KAEL"
+		
+		trait = "trait_conservative_kaelon"
+		trait = "trait_resourceful_kaelon"
+		trait = "trait_secluded_kaelon" 
+	}
+
+	room = "minor_06_transmission_room"
+
+	authority = "auth_democratic"
+	civics = { "void_civic" "civic_utopian_beliefs" }
+	government = gov_protectionist_republic
+
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_materialist" 
+
+	origin = "origin_default"
+
+	flags = { human_2 kaelon starting_gov }
+
+	system_name = "NAME_Kaelon"
+	planet_name = "NAME_Kaelon_Home_Planet"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+	initializer = "kaelon_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Kaelon_23"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Kaelon_23.dds" # TODO: Adding the actual .dds
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Kaelon"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_kaelon"
+		portrait = "kaelon_female_01" # TODO: Add Kaelon portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

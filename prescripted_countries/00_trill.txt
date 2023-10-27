@@ -1,0 +1,80 @@
+trill = {
+	name = "Trill Assembly" 
+	short_name = "EMPIRE_SHORT_NAME_trill"
+	country_id = "trill"
+	adjective = "PRESCRIPTED_adjective_trill"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = no
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_trill"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "trill"
+		name = "PRESCRIPTED_species_name_trill"
+		plural = "PRESCRIPTED_species_plural_trill"
+		adjective = "PRESCRIPTED_species_adjective_trill"
+		name_list = "TRIL"
+		
+		trait = "trait_joined_elite_trill"
+		trait = "trait_experience_seekers_trill" 
+		trait = "trait_private_trill"
+	}
+
+	room = "minor_01_transmission_room"
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_cumulative_knowledge" }
+	government = gov_ascendant_meritocracy
+
+	ethic = "ethic_spiritualist"
+	ethic = "ethic_pacifist"
+	ethic = "ethic_xenophile" 
+
+	origin = "origin_default"
+
+	flags = { human_2 trill starting_spy }
+
+	system_name = "NAME_Trill"
+	planet_name = "NAME_Trill_Home_Planet"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+	initializer = "trill_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Trill_21"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Trill_21.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Trill"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_trill"
+		portrait = "trill_female_01" # TODO: Add Trill portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

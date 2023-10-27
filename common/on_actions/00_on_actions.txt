@@ -1,0 +1,2080 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		game_start.1 		# Spawn special/hidden countries
+		game_start.2 		# Removes random planet modifiers from homeworlds
+		#game_start.50 		# Set up Nebula system art
+		game_start.60		# HRB: Policies initialization
+		
+		# game_start.100    # HRB: Enable Strategic Resources knowledge for Major Countries 
+		game_start.101      # HRB: Creates bespoke UFoP-Romulan Neutral Zone
+		game_start.102      # HRB: Creates bespoke UFoP-Romulan Truce
+		# game_start.103    # HRB: Creates bespoke UFoP-Klingon Defensive Pact
+
+		game_start.105		# HRB: Major Powers obtain Intel about Systems owned by Majors
+
+		game_start.220		# HRB: Betazoid starting relationship with the UFOP + treaties
+		game_start.240		# HRB: Romulan starting relationship with the UFOP + treaties
+		game_start.260		# HRB: Klingon starting relationship with the UFOP + treaties
+		game_start.280		# HRB: Cardassia starting relationship with the UFOP + treaties
+		game_start.110		# HRB: Bajoran starting relationship with the Majors
+		game_start.106		# HRB: Bajor starts as Cardassian's Subject
+
+		game_start.150		# HRB: Non Tutorial Initializer
+		hrb_tutorial.0		# HRB: Tutorial Initializer
+
+		game_start.155		# HRB: Add traits to scientists
+		game_start.200		# HRB: Setup Correct Names for Pre-Warp Civs
+		game_start.10		# HRB: Add spies or governors for MiPos
+
+		game_start.40		# HRB: Master initializer event
+	}
+}
+
+on_game_start_country = {
+	events = {
+		game_start.33 		# Populate system with stations
+		
+		hrb_advisor.999		# HRB: Advisor fix for order of execution issues
+		
+		country.9000 		# HRB: UFOP Initial Fleets
+		country.9001 		# HRB: Klingon Initial Fleets
+		country.9002 		# HRB: Romulan Initial Fleets
+		country.9003 		# HRB: Cardassian Initial Fleets
+		country.9004 		# HRB: Minor Initial Fleets
+		country.9005 		# HRB: Klingon Modifier country_by_the_house Effect
+		game_start.1337		# HRB: UFOP and Bajor starting relationship
+		
+		quest_tree.206 		# HRB: Klingon Mission/Quest E1
+		quest_tree.205 		# HRB: Klingon Mission/Quest D2
+		quest_tree.402      # HRB: Cardassian C1
+		quest_tree.406		# HRB: Mission/Quest Cardassian A2 - "Education is Power" initializer
+		
+		hrb_tutorial.1		# HRB: Delete unwanted Fleets
+		hrb_tutorial.2		# HRB: Exile Leaders
+		hrb_action.40100    # HRB: Make ship designs
+	}
+}
+
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		hrb_tutorial.300 # Disable Time Controls if saved in a particular section of the Tutorial
+	}
+}
+
+# No scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+		marauder.113
+		leviathans.170
+		action.85 # flip planets to starbase owner
+		marauder.150 # AI hires Marauder raids
+		marauder.151 # AI hires Marauder mercs
+		action.92 # make sure the swarm infests
+		action.93 # make sure extradimensionals have no planets
+		action.90 # rebuild outpost for orphaned colonies
+
+		assimilation.1 	# Check if Romulan Assimilation should fail based on @stability_fail_threshold
+		country.27010 		# Talarian Unity Bonus while at war
+		country.27020 		# Bajoran research bonus
+		country.27030 		# Acamarian resource bonus
+		country.27050 		# Cairn monthly opinion bonus/malus
+		country.27060 		# Betazoid monthly opinion bonus/malus with minors
+		action.4130 		# Disorder on [Colony] Governor Mission
+		action.4140 		# Addressing Inequality Governor Mission
+		country.2819 		# Trigger return of the spies when global tension is high
+		country.2830 		# Balance of Power - Check monthly status
+	}
+}
+
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+		action.64 # species assimilation
+		marauder.100
+		marauder.85
+		marauder.160
+	}
+}
+
+# No scope, like on_game_start
+on_bi_yearly_pulse = {
+	events = {
+	}
+}
+
+# No scope, like on_game_start
+on_five_year_pulse = {
+	events = {
+		country.2818 # Trigger return of the spies after 5 years
+	}
+}
+
+# No scope, like on_game_start
+on_decade_pulse = {
+	events = {
+	}
+}
+
+# No scope, like on_game_start
+on_mid_game_pulse = {
+	events = {
+	}
+}
+
+# No scope, like on_game_start
+on_late_game_pulse = {
+	events = {
+	}
+}
+
+# this = country
+on_monthly_pulse_country = {
+	events = {
+		cara.333 		# AI checks if it can/wants to play with the caravaneers
+		action.330
+		hrb_tutorial_mission.3   # Tutorial: Mission Tree
+		country.8100  # Set country flag for meeting Acamarians
+	}
+}
+
+# this = country
+on_yearly_pulse_country = {
+	events = {
+		country.8015 # Odd Flares
+		country.8044 # Kurak's Breakthrough
+		country.8050 # Tea for Courage
+		country.8055 # Captain's Log
+		country.8065 # Yrrnh Mnrrh
+		country.8070 # Shut Up, Wesley!
+		country.8075 # High Councilor's Bimillenial Poem
+		country.8080 # Slug-o-Cola
+		country.8085 # Terra Terraria Thrives
+		country.8090 # Memory Alpha 
+		terraform.50 # Early Terraformers
+	}
+}
+
+# this = country
+on_bi_yearly_pulse_country = {
+	events = {
+	}
+}
+
+# this = country
+on_five_year_pulse_country = {
+	events = {
+		action.220
+		unique_mechanic.1 # Cardassian Unique Mechanic - Non-Cardassian worker exploitation
+		hrb_action.30000 # Remove Klingon Starting Opinion Modifier
+	}
+}
+
+# this = country, fired via action.220 from on_five_year_pulse_country
+on_five_year_random_pulse_country = {
+	random_events = {
+		100 = action.2211		# on_five_year_random_pulse_country_negative_list
+		2000 = 0
+	}
+}
+
+# Why do this, you might ask, and not just use a random_list? Because on_actions check the triggers of the event before they try to fire them and exclude them from the list if they are false, so a list with no 0 weight will always fire an event so long as any of them are able to be fired
+# Used in operation_diplomatic_incident. Beware when changing.
+# this = country, fired via action.2211 from on_five_year_random_pulse_country
+on_five_year_random_pulse_country_negative_list = {
+	random_events = {
+		20 = action.2212		# Nothing, done differently because of operation_diplomatic_incident
+	}
+}
+
+# this = country
+on_decade_pulse_country = {
+	events = {
+		action.240 #Misc error checking
+	}
+}
+
+# this = country
+on_mid_game_pulse_country = {
+	events = {
+		highways.3 # Highway Discovery if player has not interacted with them previously
+	}
+}
+
+# this = country
+on_late_game_pulse_country = {
+	events = {
+	}
+}
+
+
+# setup advanced colony. So far it has a pop on the capital and a colony shelter building matching the is_colony trigger
+# scope: planet
+# from: country
+on_initialize_advanced_colony = {
+	events = {
+		game_start.20	# remove blockers on capital
+		game_start.21	# upgrade colony shelter on additional colonies
+		game_start.22	# set up additional buildings (mines, farms, power plants)
+		game_start.23	# add additional pops
+	}
+}
+
+on_become_advanced_empire = {
+	events = {
+	}
+}
+
+# Triggers when pressing begin in the intro window
+# This = country to press begin
+on_press_begin = {
+	events = {
+		hrb_advisor.0		# Launches A.I. Advisor Event
+		hrb_tutorial.3		# Tutorial: Launch Welcome Event
+	}
+}
+
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		leviathans.100
+		leviathans.104
+		leviathans.299
+		leviathans.313
+		support.1		# El-Aurian set-up
+		leviathans.157
+		leviathans.160
+		leviathans.163
+		leviathans.597
+		marauder.20
+		marauder.102
+		marauder.112
+		cara.100		# Caravaneer Home Base
+		cara.101		# Hostile Caravaneers
+	}
+}
+
+# Triggered when two empires discover each other
+# This = Empire 1
+# From = Empire 2
+# Fromfromfrom = System where contact occurred
+on_first_contact = {
+	events = {
+		first_contact_critters.1000 #Establish comms for most cases
+		country.2810 # "HRB How Shall We Treat Them?" Trigger
+		hrb_tutorial_mission.23 #Tutorial: First Contact
+	}
+}
+
+# Triggered when a first contact process is finished
+# This = first contact scope
+# From = other country
+on_first_contact_finished = {
+	events = {
+		# tutorial.2004 #First Contact Established (setup)
+		quest_tree.5
+		country.27500
+	}
+}
+
+# Triggered when an Empire has fleets within another Empire's borders.
+# This = receiver
+# From = sender
+# FromFrom = fleet
+# FromFromFrom = system
+on_enforce_borders = {
+	events = {
+	}
+}
+
+# Triggers when ground combat starts
+# This = planet
+# From = country attacking
+on_ground_combat_started = {
+}
+
+# Triggers country_event for the attacker upon victory
+# (Before controller is switched)
+# This = country, leader attacker
+# From = country, planet owner
+# FromFrom = planet
+# IDENTITIES: attacker is the side that "IsHostile" to
+# the planet controller; e.g. spawned monster armies
+# are attackers, but if they win and the player attempts
+# to retake the planet, the player is the attacker
+on_planet_attackers_win = {
+	events = {
+		action.8
+		action.14
+		factions.12
+		quest_tree.403 # Cardassian Mission/Quest C1
+	}
+}
+
+# Triggers country_event for the attacker upon defeat
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
+on_planet_attackers_lose = {
+	events = {
+	}
+}
+
+# Triggers country_event for the defender upon victory
+# Root = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_win = {
+	events = {
+	}
+}
+
+# Triggers country_event for the defender upon defeat
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_lose = {
+	events = {
+	}
+}
+
+# Fires when you first get intel (_low and up) on a new system
+# Scope = Country
+# From = System
+on_system_first_visited = {
+	events = {
+	}
+}
+
+# Triggers event when each country first sends a ship into the system (once per country)
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system_first_time = {
+	events = {
+		crystalline.60 #Triggers Crystalline entity part 4 when you have the propper flag and enter an appropriate system
+	}
+	# random_events = {
+	# 	200 = 0
+	# 	10 = leader.19
+	# }
+}
+
+# Triggers event when ship enters a system. It's usually better to use on_entering_system_first_time or on_entering_system_fleet
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system = {
+	events = {
+	}
+}
+
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
+	events = {
+		borg_crisis.30 	# Borg Crisis: Owned Science Ship goes MIA
+		borg_crisis.282 # Borg Crisis: First Borg Cube enters Player Home System
+		borg_crisis.402 # Borg Crisis: Invasion Fleet enters Colony System
+		hrb_action.3	# Check if breached a NZ and give the Casus Belli
+		hrb_pirates.140 # Check to see if you're meeting the Nausicaan Dreadnought for the first time
+		hrb_pirates.160 # Check to see if you're meeting the Nausicaan Redoubt for the first time
+		country.29100   # Checks if the starbase has been hacked and adds fire rate penalties
+	}
+}
+
+# A fleet executes a move order to exit borders
+# Scope = Fleet
+# From = Origin System
+# FromFrom = Destination System
+on_crossing_border = {
+	events = {
+		cara.1010 # Caravaneer Fleet 1 intro
+		cara.2010 # Caravaneer Fleet 2 intro
+		cara.3010 # Caravaneer Fleet 3 intro
+		cara.1250 # Caravaneer Fleet 1 Re-Deal
+		cara.2250 # Caravaneer Fleet 2 Re-Deal
+		cara.3250 # Caravaneer Fleet 3 Re-Deal
+	}
+}
+
+# A ship has surveyed a planet.
+# Scope = Ship
+# From = Planet
+on_survey = {
+	events = {
+		action.24
+		action.94 # strategic resource discovered
+		action.4090
+	}
+}
+
+# A country has gained a surveyed status on a planet. Happens after "on_survey" if a science ship surveyed a planet.
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+on_planet_surveyed = {
+	events = {
+		action.46
+		communications_spread.4
+		hrb_tutorial_mission.6 			# Triggers Tutorial: Habitable Planet
+		hrb_tutorial_mission.48			# Triggers Tutorial: Habitable Planet (Finish Early)
+		country.8200					# Tradition: Undaunted Exploration Modifier and bonus Research
+		country.8300					# Tradition: Hard Science deposit
+	}
+}
+
+# A country has gained a surveyed status on a planet. Happens after "on_survey" if a science ship surveyed a planet.
+# Root = Country
+# From = system
+# FromFrom = Fleet of the science ship that surveyed it, if any
+on_system_survey = {
+	events = {
+	}
+}
+
+# A country has gained a surveyed status on a Highway Node.
+# Root = Country
+# From = System (Highway Node)
+# FromFrom = Fleet of the science ship that surveyed it, if any
+on_highway_survey = {
+	events = {
+		highways.1 # First Highway Node surveyed
+		highways.2 # New Highway Node surveyed (HIDDEN)
+		hrb_advisor.7 #A.I. Advisor tip about highways MAYBE USE!
+	}
+}
+
+# A ship is done surveying the last unsurveyed planet in a system
+# Scope = ship
+# From = system
+on_system_survey_ship = {
+	events = {
+		hrb_tutorial_mission.1	# Tutorial: a system has been surveyed
+	}
+}
+
+# A planet has begun the colonization process.
+# Scope = Planet
+on_colonization_started = {
+	events = {
+	}
+}
+
+# A planet has been colonized.
+# Scope = Planet
+on_colonized = {
+	events = {
+		quest_tree.1
+		# quest_tree.403	# HRB_TODO: remove? old 403 quest
+		action.4070
+		action.4080 # Galactic Marvels Tradition
+		action.4100
+		action.4150 # HRB_TODO Planetary Inauguration Governor Mission
+		action.4160 # HRB_TODO Too Many Blockers
+		action.4220 # Criminal Sciences Cardassian
+		action.4170 # Settlement Initiatives Tradition
+		quest_tree.408  # Cardassian C4 - Mission/Quest Tree Modifier "Newcomes"
+		quest_tree.407  # Cardassian C4 - Mission/Quest Tree "Fruitful Arranges"
+		hrb_tutorial_mission.15 #Tutorial: Colonize Planet
+		hrb_tutorial_mission.56 #Tutorial: Colonize Planet (Finish early)
+		country.8210 # Undaunted Exploration remove Modifier
+	}
+}
+
+# A colony has been destroyed. Called just before owner and controller is cleared
+# Scope = Planet
+on_colony_destroyed = {
+	events = {
+		quest_tree.2
+	}
+}
+
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle = {
+	events = {
+		leviathans.330
+		leviathans.155
+		leviathans.158
+		leviathans.161
+		leviathans.595
+	}
+}
+
+# Note: event scopes (fleets for example) don't exist anymore at this point
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+		leviathans.3002
+		leviathans.592
+		leviathans.140
+		marauder.4
+		marauder.14
+		cara.900 # Tradestation Destroyed
+		# country.8037 # Borg Cube Destroyed (From vertical slice)
+		borg_crisis.331 # Borg Cube Destroyed
+	}
+}
+
+# Note: event scopes (fleets for example) don't exist anymore at this point
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_perp = {
+	events = {
+		hrb_pirates.100         # Triggers on destroying the Nausicaan Dreadnought
+		crystalline.72          # Triggers on destroying the Crystalline entity
+	}
+}
+
+# This = starbase being destroyed
+# From = fleet that destroyed the starbase
+on_starbase_destroyed = {
+	events = {
+		action.225 # Cleanup
+		hrb_pirates.90 # Triggers when pirates destroy a player's starbase
+	}
+}
+
+# This = owner of starbase
+# From = dismantled starbase
+on_starbase_dismantled = {
+	events = {
+	}
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_disengaged_victim = {
+	events = {
+	}
+}
+
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_disengaged_perp = {
+	events = {
+	}
+}
+
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_victim = {
+	events = {
+		leviathans.331
+		marauder.51
+		#marauder.13 - Marauder infighting aftermath - commented out for now
+		marauder.115
+
+		borg_crisis.403 # Borg Crisis Invasion Fleet Destroys Colony System Starbase
+		borg_crisis.405 # First Invasion fleet destroyed
+		borg_crisis.510 # Imperatoris Cube Destroyed
+		borg_crisis.600 # Invasion Wave Fleet Destroyed
+	}
+}
+
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_perp = {
+	events = {
+		leviathans.334
+		factions.10
+		cara.1002                   # Destroyed Caravaneer Fleet 1
+		cara.2002                   # Destroyed Caravaneer Fleet 2
+		cara.3002                   # Destroyed Caravaneer Fleet 3
+		hrb_pirates.130             # Checks to see if you've destroyed the Pirate Redoubt
+	}
+}
+
+# This = owner of fleet 1 (winner)
+# From = owner of fleet 2 (loser)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_space_battle_won = {
+	events = {
+		hrb_action.5
+	}
+}
+
+# This = owner of fleet 1 (loser)
+# From = owner of fleet 2 (winner)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_space_battle_lost = {
+	events = {
+		hrb_action.1
+	}
+}
+
+# This = owner of ship
+# From = disbanded ship
+on_ship_disbanded = {
+	events = {
+		ship.1 # Ships Artificial Singularities recovery from scuttling
+	}
+}
+
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+	}
+}
+
+# This = owner of fleet
+# From = fleet
+# FromFrom = planet (if any)
+on_fleet_auto_move_arrival = {
+	events = {
+	}
+}
+
+# The game will generate one on_building_X on_action for every station ship-size
+# Orbital stations will get the planet in FROM, space stations only get they building ship
+
+# This = construction ship
+# From = planet it is built on
+# Fires when construction is complete,
+# immediately before station is created
+on_building_mining_station = {
+	events = {
+		hrb_tutorial.42			# Tutorial Mining Station Completed
+		achievement.402			# Achievement: Build a Mining/Research station inside a Hazard
+	}
+}
+
+# This = construction ship
+# From = planet it is built on
+# Fires when construction is complete,
+# immediately before station is created
+on_building_research_station = {
+	events = {
+		achievement.402			# Achievement: Build a Mining/Research station inside a Hazard
+	}
+}
+
+# This = construction ship
+# From = planet it is built on
+# Fires when construction is complete,
+# immediately before station is created
+on_building_outpost_station = {
+	events = {
+	}
+}
+
+# This = construction ship
+# Fires when construction is complete,
+# immediately before station is created
+on_building_wormhole_station = {
+	events = {
+	}
+}
+
+on_building_starbase_outpost = {
+	events = {
+		quest_tree.3
+		hrb_action.7
+		hrb_planet_modifier.30 # Planet Modifier Events - Microbrains
+		hrb_tutorial_mission.9 # Tutorial: Build Outpost
+		hrb_tutorial_mission.49 # Tutorial: Build Outpost (finish early)
+	}
+}
+
+# This = observation station ship
+# From = Planet
+# Fires when construction is complete,
+# immediately before station is created
+on_building_observation_station = {
+	events = {
+	}
+}
+
+on_building_starbase_ai = {
+	events = {
+	}
+}
+
+# This = construction ship
+# Fires when construction is complete,
+# immediately before station is created
+
+on_building_starbase_exd_0 = {
+	events = {
+	}
+}
+
+on_building_starbase_exd = {
+	events = {
+	}
+}
+
+on_building_starbase_swarm = {
+	events = {
+	}
+}
+
+on_building_starbase_marauder = {
+	events = {
+	}
+}
+
+# This = country
+# From = opponent war leader
+# FromFrom = war
+on_entering_war = {
+	events = {
+		assimilation.60
+		country.3000
+		country.3010
+	}
+}
+
+# This = Country
+# From = Fleet
+on_fleet_detected = {
+	events = {
+	}
+}
+
+# NOTE: THESE EVENTS ARE HIDDEN, THEY CAN'T CONTAIN OPTIONS...
+# This = Ship
+# From = Disabler Ship
+on_ship_disabled = {
+	events = {
+		anomaly.7073 # Disabled Bird of Prey Fleet
+		country.8032 # Borg Cube disabled Sol Starbase
+	}
+}
+
+# This = Ship
+on_ship_enabled = {
+	events = {
+	}
+}
+
+# Triggers when a Special Project to uplift a pre-sapient species is completed.
+# Note that this will trigger once for each combination of planet & original
+# species (but for uplifting this should be only once).
+#
+# Scope = planet_event
+# This = planet scope
+# From = uplifted species (pre-modification)
+on_uplift_completion = {
+	events = {
+	}
+}
+
+# This = Pop scope
+# From = Planet
+on_purge_begun = {
+	events = {
+
+	}
+}
+
+# This = Pop scope
+# From = Planet
+on_purge_canceled = {
+}
+
+# Planets starts being terraformed
+# This = Planet
+# From = Terraforming country
+on_terraforming_begun = {
+	events = {
+		terraform.10
+	}
+}
+
+# Planet has been terraformed
+# This = Planet
+# From = Terraforming country
+on_terraforming_complete = {
+	events = {
+		action.68
+		terraform.60
+		terraform.310
+		terraform.320
+		terraform.53
+		country.27040 #Kaelon Utopian Beliefs civic
+	}
+}
+
+# Planet has taken damage from orbital bombardment - Damage is applied daily
+# This = Planet
+# From = Bombarder
+on_planet_bombarded = {
+	events = {
+		marauder.103
+		quest_tree.404
+	}
+}
+
+# Planet has reached 0 pops from orbital bombardment
+# This = Planet
+# From = Bombarder
+on_planet_zero_pops = {
+	events = {
+	}
+}
+
+# Planet has reached 0 pops from collateral damage
+# This = Planet
+# From = Army owner
+on_planet_zero_pops_ground_combat = {
+	
+}
+
+# Pop is abducted by raiding stance
+# This = Pop scope
+# From = planet abducted from
+on_pop_abducted  = {
+	events = {
+		action.122
+	}
+}
+
+
+# Pop is enslaved
+# This = Pop scope
+# owner_species = { (species)
+# owner = { owner_species = { (empire main species)
+# owner = { (empire)
+on_pop_enslaved = {
+	events = {
+	}
+}
+
+
+# Pop is released from slavery
+# This = Pop scope
+# owner_species = { (species)
+# owner = { owner_species = { (empire main species)
+# owner = { (empire)
+on_pop_emancipated = {
+	events = {
+	}
+}
+
+# Executed right before a country has established communications with another country
+# This = Country which established the communications
+# From = Country which communications were established with
+on_pre_communications_established = {
+	events = {
+		action.7
+		action.19
+	}
+}
+
+# Executed right after country has established communications with another country
+# This = Country which established the communications
+# From = Country which communications were established with
+on_post_communications_established = {
+	events = {
+		action.11
+		first_contact.1050 #establish comms via first contact process
+		factions.11
+		hrb_tutorial_mission.24 # Tutorial: First Contact
+	}
+}
+
+# Executed just after country has established communications with another country
+# This = Planet where the pop was bombed to death
+# From = Country which is raining down fire and brimstone
+on_pop_bombed_to_death = {
+	events = {
+	}
+}
+
+# Executed as a leader has died
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		marauder.70
+		quest.40 		# Check if the leader who died is the enterprise leader and replace
+		borg_crisis.386 # Check if Janeway died
+		borg_crisis.387 # Check if Janeway died Pop-up
+		action.4200     # Check if the owner had the Klingon cloning tech
+		action.4230     # Check if Governor who died had a mission-investigation trait.
+	}
+}
+
+# Executed as a leader has been fired
+# This = Country
+# From = Leader
+on_leader_fired = {
+	events = {
+		marauder.70
+		action.4230   # Check if Governor who was dismissed had a mission-investigation trait.
+	}
+}
+
+# A leader leveled up.
+# Scope = Country
+# From = Leader
+on_leader_level_up = {
+	events = {
+		leader.20 # Give leader a trait on lvl up
+		action.4110
+		action.4120
+		country.2770 # Governor Improve Workers mission update on lvl up
+		country.2780 # Governor Improve Specialist mission update on lvl up
+		country.2790 # Governor Improve Stability mission update on lvl up
+		country.2795 # Governor Emergency Package mission update on lvl up
+		country.2796 # Governor Leader trait modifiers update on lvl up
+	}
+}
+
+# Scope: Leader (after assignment)
+on_leader_assigned = {
+	events = {
+	# 	envoy_events.230
+		envoy.1 # HRB
+		envoy.2 # HRB
+		envoy.3 # HRB
+		envoy.4 # HRB
+		hrb_tutorial.170	# Science Ship Leader Assigned
+		hrb_tutorial_mission.27  #Tutorial: Diplomacy
+		hrb_tutorial_mission.50  #Tutorial: Diplomacy (finish early)
+		hrb_tutorial_mission.58 # Tutorial: Technology
+		hrb_tutorial_mission.63 # Tutorial: Technology (finish early)
+	}
+}
+
+# Scope: Leader (just before unassignment)
+# Fires if a leader is unassigned from their position for any reason (including being assigned elsewhere)
+on_leader_unassigned = {
+	events = {
+		country.3300 # Remove modifiers from planet on Governor getting elected as Ruler	
+	}
+}
+
+# Executed as new ruler has been set
+# This = Country
+on_ruler_set = {
+	events = {	
+		action.47	# Remove election-filler leaders when ruler is set
+		country.9006 # Klingon Modifier country_by_the_house effect
+	}
+}
+
+# Executed when a ruler has been removed
+# From = Previous Ruler
+# This = Country
+on_ruler_removed = {
+	events = {
+		country.2850 # Bespoke Leader retirement
+	}
+}
+
+# Executed when the ruler is ousted and goes back to their pre-ruler class
+# From = Previous Ruler, already has the new class
+# This = Country
+on_ruler_back_to_pre_ruler_class = {
+	events = {
+	}
+}
+
+# This = Planet
+on_blocker_cleared = {
+	events = {
+		hrb_action.4
+	}
+}
+
+# A ship has started a new order
+# Root = Ship
+# From = Country
+on_ship_order = {
+	events = {
+	}
+}
+
+# Executes after a policy has been changed
+# use last_changed_policy to identify which policy it was
+# This = Country
+on_policy_changed = {
+	events = {
+		action.35
+		# leader.30 # banning AI will remove AI-dependent traits from leaders
+		hrb_tutorial_mission.36 # Tutorial: Policies
+		hrb_tutorial_mission.53 # Tutorial: Policies (finish early)
+	}
+}
+
+# A ship has been built
+# Root = Ship
+# From = Planet
+on_ship_built = {
+	events = {
+		hrb_tutorial.130	# 1st Science Ship Built
+		quest_tree.7
+		quest_tree.201		# Klingon Mission/Quest D2 - Restoring Honor - Birds of prey check
+		quest_tree.202		# Klingon Mission/Quest D2 - Restoring Honor - Warbird check
+		quest_tree.401
+	}
+}
+
+# A ship design has been finished
+# Root = Country
+on_ship_designed = {
+	events = {
+	}
+}
+
+# A ship has been upgraded
+#  Root = Ship
+on_ship_upgraded = {
+	events = {
+		hrb_tutorial_mission.12 # Tutorial: Starport
+	}
+}
+
+# A war started, executed once.
+# This = Country (Main Attacker)
+# From = Country (Main Defender)
+# FromFrom = War
+on_war_started = {
+	events = {
+		country.25000 # Global Tension
+		country.26002 # Dissolve Neutral Zone
+		global_situation.17 # War Situation
+	}
+}
+
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+		action.41
+		factions.13
+	}
+}
+
+# A war has ended, executed one time only per War
+# Root = Loser
+# From = Winner
+# FromFrom = War
+on_war_ended_one_time = {
+	events = {
+		war.1
+		assimilation.55
+		global_situation.24		# Ends war_situation and deletes temporary modifiers
+		global_situation.103	# Ends Negotiation Situation
+		war.100					# Humiliation effects
+		war.101					# Territorial Reparations effects
+		achievement.401			# Achievement: Liberate a Minor Power from another MaPo
+		achievement.403			# Achievement: As Klingons, Win a war with the "Glory to the Empire" Wargoal
+		hrb_action.30			# Global Tension Reduction on war ended
+		country.8500			# Destroy War Situation Mercenaries when the war ends
+	}
+}
+
+# A war has ended
+# Root = Loser
+# From = Main Winner
+on_war_ended = {
+	events = {
+		war.2
+	}
+}
+
+# A country has been released through a peace deal in a war
+# Root = new country
+# From = country forcing the release
+# FromFrom = country they are released from
+# FromFromFrom = war
+on_country_released_in_war = {
+	events = {
+		action.320
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		# country.90004 # Tech Starfleet Academy
+		# country.90005
+		# country.90006
+		# country.90007
+		# country.90008
+		# country.90009 # ~ Tech Starfleet Academy
+		hrb_action.6
+		hrb_action.10	# UFOP Tradition Tree Adopt Effect
+		action.4210     # Romulan Spy tech
+		hrb_advisor.6
+		hrb_action.40000
+	}
+}
+
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+	}
+}
+
+# A planets controller becomes a country not the same as the owner.
+# Root = Planet
+# From = Planet Owner
+# FromFrom = Planet Controller (the one occupying)
+on_planet_occupied = {
+	events = {
+		country.4000
+	}
+}
+
+# A fleet has successfully escaped from combat, executed right before the fleet enters FTL
+# This = escaping fleet
+# From = system escaped from
+# FromFrom = system escaping to
+on_emergency_ftl = {
+	events = {
+	}
+}
+
+#An army construction has been completed.
+# This = Planet
+# From = Army
+on_army_recruited = {
+	events = {
+	}
+}
+
+#An army has been killed in ground combat
+# This = owner
+# From = army
+# FromFrom = opponent
+# FromFromFrom = planet
+on_army_killed_in_combat = {
+	events = {
+		hrb_action.2
+		hrb_action.8
+	}
+}
+
+#An army has ceased to exist for any other reason
+# This = country
+# From = army
+on_army_killed_no_combat = {
+	events = {
+	}
+}
+
+#A building construction has been completed.
+# This = Planet
+on_building_complete = {
+	events = {
+		quest_tree.203
+		quest_tree.204
+		buildings.2 # Construction complete message
+	}
+}
+
+# A building construction has been queued.
+# This = Planet
+on_building_queued = {
+	events = {
+		hrb_tutorial.65
+	}
+}
+
+# A building construction has been unqueued.
+# This = Planet
+on_building_unqueued = {
+	events = {
+	}
+}
+
+# A building construction has been completed, which is an upgrade of previous building.
+# This = Planet
+on_building_upgraded = {
+	events = {
+		buildings.1
+		hrb_action.16  # civic_unrepenting_exploitation Effect
+	}
+}
+
+# A building construction has demolished.
+# This = Planet
+on_building_demolished = {
+	events = {
+		leviathans.305
+	}
+}
+
+# A district construction has been completed.
+# This = Planet
+on_district_complete = {
+	events = {
+		hrb_action.15 # civic_unrepenting_exploitation Effect
+	}
+}
+
+# A district construction has been replaced.
+# This = Planet
+on_district_replaced = {
+	events = {
+		hrb_action.14  # civic_unrepenting_exploitation Effect
+	}
+}
+
+# A building construction has finished, replacing another building.
+# This = Planet
+on_building_replaced = {
+	events = {
+		quest_tree.203
+		quest_tree.204
+		leviathans.305
+	}
+}
+
+# A district construction has been queued.
+# This = Planet
+on_district_queued = {
+	events = {
+		hrb_tutorial.75
+	}
+}
+
+# A district construction has been unqueued.
+# This = Planet
+on_district_unqueued = {
+	events = {
+	}
+}
+
+# A district construction has demolished.
+# This = Planet
+on_district_demolished = {
+	events = {
+		hrb_action.14  # civic_unrepenting_exploitation Effect
+	}
+}
+
+# Tutorial level for a country has changed
+# This = Country
+on_tutorial_level_changed = {
+	events = {
+		hrb_advisor.100 # Show what has been Disabled
+		hrb_advisor.101 # Show what has been Enabled
+	}
+}
+
+# A war has been won
+# Root = Winner Warleader
+# From = Loser Warleader
+# FromFrom = War
+on_war_won = {
+	events = {
+		action.37 # Default victory message
+		action.48 # Country destroyed victory message
+		action.32
+		action.44
+	}
+}
+
+# A war has been lost
+# Root = Loser Warleader
+# From = Winner Warleader
+# FromFrom = War
+on_war_lost = {
+	events = {
+		action.38 # Default defeat message
+	}
+}
+
+# A status quo has been signed
+# Root = Actor
+# From = Recipient
+# FromFrom = Main Attacker
+# FromFromFrom = Main Defender
+# FromFromFromFrom = War
+on_status_quo = {
+	events = {
+		action.39
+		action.45
+		country.25010 # Global Tension
+	}
+}
+
+# A status quo has been signed, by force
+# Root = Recipient
+# From = Actor
+# FromFrom = Main Attacker
+# FromFromFrom = Main Defender
+# FromFromFromFrom = War
+on_status_quo_forced = {
+	events = {
+		action.39
+	}
+}
+
+# A neutral zone has been signed
+# Root = Actor
+# From = Recipient
+# FromFrom = Main Attacker
+# FromFromFrom = Main Defender
+# FromFromFromFrom = War
+on_neutral_zone = {
+	events = {
+		country.25060
+	}
+}
+
+# A neutral zone has been signed, by force
+# Root = Recipient
+# From = Actor
+# FromFrom = Main Attacker
+# FromFromFrom = Main Defender
+# FromFromFromFrom = War
+on_neutral_zone_forced = {
+	events = {
+	}
+}
+
+# A pop has been added to the planet
+# Root = pop
+# From = planet
+on_pop_added = {
+	events = {
+	}
+}
+
+# We changed a species right
+# This = pop
+on_pop_rights_change = {
+	events = {
+	}
+}
+
+# A pop has finished growing
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_grown = {
+	events = {
+	}
+}
+
+# A pop has finished assembling
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_assembled = {
+	events = {
+	}
+}
+
+# A pop has finished purging
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_purged = {
+	events = {
+		action.21 # Opinion effect on other empires
+		action.22 # Resources from Forced Labor/Processing/Chemical Processing
+		country.8400 # Experimental Treatments research bonus
+	}
+}
+
+# A pop has finished declining (while not being purged)
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_declined = {
+	events = {
+	}
+}
+
+
+# A pop has been displaced
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_displaced = {
+	events = {
+		refugees.3
+	}
+}
+
+# Initial rebels manage to take control of the planet, happens before the new owner is set, after the war is created.
+# This = Rebel Country
+# From = Planet
+# FromFrom = War
+on_rebels_take_planet = {
+	events = {
+		action.30
+	}
+}
+
+# Initial rebels manage to take control of the planet, happens after the new owner is set, after the war is created.
+# This = Rebel Country
+# From = Planet
+# FromFrom = War
+on_rebels_take_planet_owner_switched = {
+	events = {
+		action.36
+	}
+}
+
+#From = Country scope
+#This = Planet scope
+on_planet_ownerless = {
+	events = {
+		action.85
+		action.89
+	}
+}
+
+#Fired whenever a new owner is set for a planet,
+#be it after a war or through a trade
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_transfer = {
+	events = {
+		borg_crisis.610	# Borg Assimilates a Planet
+	}
+}
+
+#Fired whenever a new owner is set for a planet, and the planet was aggressively conquered
+#Fired in ADDITION to on_planet_transfer
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_conquer = {
+	events = {
+		# action.42		# HRB_CHECK: Land appropriation
+		action.84
+		action.89
+		hrb_action.9
+		quest_tree.200  # To unlock mission/quest B2 for klingons, claim supremacy
+		quest_tree.408  # Cardassian C4 - Mission/Quest Tree Modifier "Newcomes"
+		quest_tree.407  # Cardassian C4 - Mission/Quest Tree "Fruitful Arranges"
+	}
+}
+
+#Fired whenever a new owner is set for a capital planet, and the planet was aggressively conquered
+#Fired in ADDITION to on_planet_transfer and on_planet_conquer
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_capital_conquer = {
+	events = {
+		action.70
+	}
+}
+
+# HRB_TODO: this should work fine now, pending QA
+#From = Planet scope
+#This = Fleet scope
+on_fleet_enter_orbit = {
+	events = {
+	}
+}
+
+# Fleet leaves the orbit
+#From = Planet scope
+#This = Fleet scope
+on_fleet_leave_orbit = {
+	events = {
+		hrb_action.12 # civic_unrepenting_exploitation Effect
+	}
+}
+
+# The bombardment begins
+#From = Planet scope
+#This = Fleet scope
+on_fleet_bombardment_start = {
+	events = {
+		hrb_action.11 # civic_unrepenting_exploitation Effect
+	}
+}
+
+# Planet reaches the maximum possible devastation
+# This = Planet
+# From = Bombarder
+on_max_planet_devastation_reached = {
+	events = {
+		hrb_action.13  # civic_unrepenting_exploitation Effect
+	}
+}
+
+#This = destroyed country
+#From = optional, destroyer (country)
+on_country_destroyed = {
+	events = {
+		action.61
+		borg_crisis.995 # HRB_TODO: test event to check if the Borg country is destroyed
+	}
+}
+
+# A Megastructure has been built
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+# FromFromFrom = Fleet
+on_megastructure_built = {
+	events = {
+	}
+}
+
+# A Megastructure has begun to be upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+on_megastructure_upgrade_begin = {
+	events = {
+	}
+}
+
+# A Megastructure has been upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+on_megastructure_upgraded = {
+	events = {
+	}
+}
+
+# X years has passed since a planet was colonized (won't trigger on empire homeworld)
+on_colony_1_year_old = {
+	events = {
+	}
+
+	random_events = {
+		150 = 0
+
+		#### Colony Events
+		10 = hrb_colony.10 # METAMORPHOSIS
+		10 = hrb_colony.30 # FEMNOVA
+		10 = hrb_colony.40 # PARADISE
+		50 = hrb_colony.60 # THE BIRDS AND THE BEEPS
+		10 = hrb_colony.80 # STELLA MARIS
+	}
+}
+
+on_colony_2_years_old = {
+	events = {
+	}
+
+	random_events = {
+		150 = 0
+
+		#### Colony Events
+		10 = hrb_colony.10 # METAMORPHOSIS
+		10 = hrb_colony.30 # FEMNOVA
+		10 = hrb_colony.40 # PARADISE
+		30 = hrb_colony.70 # RUINS UNCOVERED
+		50 = hrb_colony.80 # STELLA MARIS
+	}
+}
+
+on_colony_3_years_old = {
+	events = {
+	}
+
+	random_events = {
+		150 = 0
+
+		#### Colony Events
+		10 = hrb_colony.10 # METAMORPHOSIS
+		10 = hrb_colony.30 # FEMNOVA
+		10 = hrb_colony.40 # PARADISE
+		30 = hrb_colony.70 # RUINS UNCOVERED
+	}
+}
+
+on_colony_4_years_old = {
+	events = {
+	}
+	
+	random_events = {
+		150 = 0
+
+		#### Colony Events
+		10 = hrb_colony.10 # METAMORPHOSIS
+		10 = hrb_colony.30 # FEMNOVA
+		10 = hrb_colony.40 # PARADISE
+		30 = hrb_colony.70 # RUINS UNCOVERED
+	}
+}
+
+on_colony_5_years_old = {
+	events = {
+	}
+
+	random_events = {
+		150 = 0
+
+		50 = hrb_planet_modifier.20 # DEEP ROOTS
+	}
+}
+
+
+on_colony_6_years_old = {
+
+}
+
+on_colony_7_years_old = {
+
+}
+
+on_colony_8_years_old = {
+
+}
+
+on_colony_9_years_old = {
+
+}
+
+on_colony_10_years_old = {
+
+}
+
+# Fires for each planet every 5 years (counting up from colonisation date, includes home planet)
+on_colony_5_year_pulse = {
+	events = {
+		# action.222 #Help for AI with Doomsday
+	}
+	
+	random_events = {
+		100 = 0
+		
+		#### Colony Events
+		10 = hrb_colony.10 			# METAMORPHOSIS
+		10 = hrb_colony.20 			# OF KLINGONS AND ROMULANS
+		10 = hrb_colony.30 			# FEMNOVA
+		10 = hrb_colony.40 			# PARADISE
+		10 = hrb_colony.50 			# FOREVER YOUNG
+		20 = hrb_colony.70 			# RUINS UNCOVERED
+		
+		10 = hrb_planet_modifier.10 # THE GAS DILEMMA
+		10 = hrb_planet_modifier.40 # LOST BENEATH THE WAVES
+		10 = hrb_colony.90 			# CAPTAIN DAD
+	}
+}
+
+on_colony_10_year_pulse = {
+	events = {
+
+	}
+}
+
+# a new leader is generated for an empire, to be available for recruitment
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		# action.4051	# HRB_TODO: commented until implemented
+		country.28000
+		action.4060
+		hrb_tutorial_mission.41 # Tutorial: Spies
+	}
+}
+
+# called during empire initialization when starting a new game
+# scope: country
+empire_init_add_technologies = {
+	events = {
+	}
+}
+
+# Called during empire initialization when starting a new game if has_secondary_species game rule is true.
+# Called before empire_init_create_capital_pops.
+# scope: planet
+# from: founder species
+# fromfrom: secondary species (if exists)
+empire_init_capital_planet = {
+	events = {
+		game_start.12 # starting buildings, districts & pops
+		# at this point the species might have changed (because we added traits), so FROMFROM might not be the secondary species anymore
+	}
+}
+
+# called during empire initialization when starting a new game
+# scope: country
+empire_init_create_ships = {
+	events = {
+		game_start.9
+		game_start.10 # Spies & Governors for MiPos
+	}
+}
+
+# Called when an election starts
+# scope: country
+on_election_started = {
+}
+
+# Called when an election ends
+# scope: country
+on_election_ended = {
+}
+
+# Called upon entering FTL (on-action name scripted on the Bypass type)
+# THIS = Fleet
+# FROM = System jumping to
+# FROMFROM = System jumped from
+on_entering_wormhole = {
+	events = {
+	}
+}
+
+# THIS = Fleet
+on_jump_drive = {
+}
+
+# this = country
+on_pirate_spawn = {
+	events = {
+	}
+}
+
+# Called when a Starbase changes owner
+# THIS = Ship (Starbase)
+# FROM = Former Owner (Country)
+on_starbase_transfer = {
+	events = {
+		action.223
+	}
+}
+
+
+#
+# Both the following on_action are called when fleet joined combat
+# (The first one is called for the attacker fleet, the second one is called for the defending fleet)
+#
+
+
+# This = Aggressor Fleet
+# From = Attacked Fleet
+# FromFrom = Additional Attacked Fleet (if part of ongoing combat)
+# FromFromFrom = Additional Attacked Fleet (if part of ongoing combat)
+on_fleet_combat_joined_attacker = {
+	events = {
+	}
+}
+
+# This = Attacked Fleet
+# From = Aggressor Fleet
+# FromFrom = Additional Attacked Fleet (if joining ongoing combat)
+# FromFromFrom = Additional Attacked Fleet (if joining ongoing combat)
+on_fleet_combat_joined_defender = {
+	events = {
+		cara.1001 # Caravaneer Fleet 1
+		cara.2001 # Caravaneer Fleet 2
+		cara.3001 # Caravaneer Fleet 3
+	}
+}
+
+# From = system
+# FromFrom = country (new owner)
+# This = country (previous owner)
+on_system_lost = {
+	events = {
+		action.200				# Recalc strategic war data
+		romulan_supernova.10	# Romulans lose Romulus system after the Supernova
+	}
+}
+
+# From = system
+# FromFrom = country (previous owner)
+# This = country (new owner)
+on_system_gained = {
+	events = {
+		country.450
+		country.460
+		action.200				# Recalc strategic war data
+		communications_spread.5 # Establish comms with any other countries in the system
+		romulan_supernova.11	# Romulans gain Romulus system after the Supernova
+		romulan_supernova.12	# Romulans gain Romulus system after the Supernova ~ first time
+		romulan_supernova.13	# Random country gains ownership of Romulus before the explosion
+	}
+}
+
+# This = Pop
+# From = Country (buyer)
+# Fromfrom = Country (seller)
+on_slave_sold_on_market = {
+}
+
+# This = Country
+on_relic_activated = {
+	events = {
+	}
+}
+
+# This = Fleet ( science vessel )
+# From = Archaeological Site
+on_arch_stage_finished = {
+
+}
+
+on_arch_site_finished = {
+	events = {
+	}
+}
+
+# This = Country, first member added
+on_galactic_community_formed = {
+	# events = {
+	# 	galcom.60
+	# }
+
+}
+on_galactic_council_established = {
+	# events = {
+	# 	galcom.50
+	# }
+}
+
+# This = Country
+on_add_community_member = {
+	# events = {
+	# 	galcom.60
+	# 	# crisis.4116
+	# }
+}
+
+on_remove_community_member = {
+	# events = {
+	# 	galcom.61
+	# 	galcom.62
+	# 	crisis.4115
+	# }
+}
+
+on_add_to_council = {
+	# events = {
+	# 	emperor.95
+	# }
+}
+
+on_remove_from_council = {
+}
+
+on_join_alliance = {
+}
+
+on_leave_alliance = {
+}
+
+# This = subject
+# From = subject's overlord
+on_becoming_subject = {
+	events = {
+		country.25020 			# Global Tension
+		country.91000			# Liberation Wars
+
+		subject.1000			# Romulan gain puppets, update puppets effect
+		# ai_assimilation.1		# Triggers Cardassian Assimilation Timegate
+		# ai_assimilation.100	# Triggers Klingon Assimilation Timegate
+		country.3100			# Romulan Assimilation Special Project trigger
+	}
+}
+
+# This = subject
+# From = subject's overlord
+on_subject_change = {
+	events = {
+		assimilation.100
+		country.25010 # Global Tension
+		country.91005 # Liberation Wars
+		subject.1000  # Update Romulan puppets effect
+	}
+}
+
+# This = subject
+# From = subject's ex-overlord
+on_releasing_subject = {
+	events = {
+		country.25030 # Global Tension
+		country.91010 # Liberation Wars
+		subject.1000 # Romulan lose puppets, update puppets effect
+	}
+}
+
+# fires when a country finishes being integrated
+# This = overlord
+# From = subject
+on_subject_integrated = {
+	events = {
+		# crisis.2620 # BtC vassal integrated
+		subject.1000 # Update puppets effect on Romulan country
+	}
+}
+
+# Fires when a country finishes an Assimilation Process
+# This = assimilator
+# From = assimilated
+on_assimilation_completed = {
+	events = {
+		assimilation.110	# Klingon Assimilation Completed
+		assimilation.111	# UFOP Assimilation Completed
+
+		assimilation.200	# Bajor - UFOP integration
+		assimilation.205	# Bajor - Cardassian integration	
+		assimilation.210 	# qt_romulan_c2
+		country.25040 		# Global Tension
+
+		subject.1001  		# Romulan lose puppets state, forced update
+	}
+}
+
+# Fires when a country fails an Assimilation Process
+# This = assimilator
+# From = assimilated
+on_assimilation_failed = {
+	events = {
+		assimilation.120 # Klingon Assimilation Failed
+		assimilation.121 # Klingon Assimilation Failed -> Opinion Penalty
+		assimilation.122 # Romulan Assimilation Failed -> Opinion Penalty
+		assimilation.123 # Klingon Assimilation Failed -> Improve Relations Penalty
+	}
+}
+
+# fires when a country releases a sector as a vassal
+# This = released vassal
+# From = overlord
+on_released_as_vassal = {
+	events = {
+		action.229 # Sort out their origin
+	}
+}
+
+#spynetwork scope
+on_spynetwork_formed = {
+	events = {
+	}
+}
+
+# THIS = Country: Emperor
+# FROM = Country added to council
+on_add_to_imperial_council = {
+}
+
+# THIS = Country: Emperor
+# FROM = Country removed from council
+on_remove_from_imperial_council = {
+}
+
+#these three are fired from script, basically for modders who want to change how first contact works or add some extra flavour stories in without overwriting things
+# THIS = first_contact
+on_first_contact_started = {
+	events = {
+	}
+}
+
+#use for custom country types that need first contact paths
+# THIS = first_contact
+on_first_contact_stage_1_no_path = {
+}
+
+# THIS = first_contact
+on_first_contact_generic_stage_2 = {
+	events = {
+	}
+}
+
+# THIS = Planet: Branch office planet
+# FROM = Country: Branch office owner
+on_branch_office_established = {
+	events = {
+	}
+}
+
+# THIS = Planet: Branch office planet
+# FROM = Country: Branch office owner
+on_branch_office_closed = {
+	# events = {
+	# 	emperor.62
+	# }
+}
+
+# THIS = System: system being occupied
+# FROM = Country: Conqueror of the system
+# FROMFROM = Country: Original owner of the system
+on_system_occupied = {
+	events = {
+	}
+}
+
+# THIS = System: system being returned from occupation
+# FROM = Country: Previous owner of the  system
+# FROMFROM = Country: Occupier of the system
+on_system_returned = {
+	events = {
+	}
+}
+
+# THIS = Espionage operation
+# FROM = Operation target
+on_operation_chapter_finished = {
+}
+
+# THIS = Espionage operation
+# FROM = Operation target
+on_operation_finished = {
+}
+
+# Executed just as country is changing its government, before the new one is applied
+# THIS = country
+on_pre_government_changed = {
+	events = {
+	}
+}
+
+# Executed just as country is changing its government, after the new one is applied
+# THIS = country
+on_post_government_changed = {
+	events = {
+	}
+}
+
+# Executed when the Custodian's term ends
+# THIS = country
+on_custodian_term_ends = {
+	# events = {
+	# 	custodian.10
+	# }
+}
+
+# Executed when a megastructure has a new owner
+# this = new owner
+# from = megastructure
+# fromfrom = old owner (if existing)
+on_megastructure_change_owner = {
+	events = {
+	}
+}
+
+# Executed when a megastructure is rendered ownerless
+# this = solar system containing megastructure
+# from = megastructure
+# fromfrom = old owner (if existing)
+on_megastructure_ownerless = {
+}

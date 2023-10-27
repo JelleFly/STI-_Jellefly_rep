@@ -1,0 +1,147 @@
+# E4
+qt_ufop_control_neutral_zone = {
+	position = { x = 7 y = 7 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_control_demilitarized_zone_21
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = belcer_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_belcer_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_belcer_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = devron_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_devron_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_devron_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = draken_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_draken_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_draken_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = eden_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_eden_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_eden_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = epsilon_legato_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_epsilon_legato_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_epsilon_legato_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = fenris_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_fenris_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_fenris_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = galorndon_core_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_galorndon_core_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_galorndon_core_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = iconia_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_iconia_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_iconia_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = iota_pavonis_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_iota_pavonis_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_iota_pavonis_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = moores_star_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_moores_star_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_moores_star_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = nelvana_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_nelvana_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_nelvana_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = nimbus_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_nimbus_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_nimbus_possible_tooltip
+		}
+
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = theta_curry_system
+			}
+			fail_text = qt_ufop_control_neutral_zone_theta_curry_fail_tooltip
+			success_text = qt_ufop_control_neutral_zone_theta_curry_possible_tooltip
+		}
+	}
+
+	on_started = {
+
+	}
+
+	on_blocked = {
+
+	}
+
+	on_finished = {
+		custom_tooltip = qt_ufop_control_neutral_zone_starfleet_officer_produce
+		set_country_flag = qt_ufop_control_neutral_zone_finished
+		add_research_option = tech_cloaking_device_1
+		
+		add_resource = {
+			influence = 250
+		}	
+	}
+
+	modifier = {
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
