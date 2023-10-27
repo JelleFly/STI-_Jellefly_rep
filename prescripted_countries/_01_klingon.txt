@@ -1,0 +1,94 @@
+klingon1 = {
+	name = "Klingon Empire"
+	short_name = "EMPIRE_SHORT_NAME_klingon"
+	country_id = "klingon"
+	adjective = "PRESCRIPTED_adjective_klingon"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = no
+	is_major = yes
+	is_bespoke = yes
+	in_previous_contact = yes
+	ship_prefix = "PRESCRIPTED_ship_prefix_klingon"
+
+	species = {
+		class = "HRB"
+		portrait = "klingon"
+		name = "PRESCRIPTED_species_name_klingon"
+		plural = "PRESCRIPTED_species_plural_klingon"
+		adjective = "PRESCRIPTED_species_adjective_klingon"
+		name_list = "KLG1"
+		trait = "trait_traditional"
+		trait = "trait_strong"
+		trait = "trait_unruly"
+	}
+
+	additional_modules = {
+		klingon_assimilation_module = {}
+	}
+
+	room = "klingon_01_transmission_room"
+
+	authority = "auth_clan_empire"
+	civics = { "civic_followers_of_kahless" "civic_warriors_honor" }
+	government = gov_martial_empire
+
+	origin = "origin_klingon"
+
+	ethic = "ethic_spiritualist"
+	ethic = "ethic_fanatic_militarist"
+
+	flags = { human_2 custom_start_screen klingon }
+	# initial_technologies = { tech_replicator_1 tech_cloaking_device_1 }
+
+	system_name = "NAME_Qonos"
+	planet_name = "NAME_Qonos"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+	initializer = "klingon_qonos_initializer"
+	conquered_system_initializers = {
+		"klingon_qonos_initializer" "klingon_boreth_initializer" "klingon_narendra_initializer"
+		"klingon_ogat_initializer" "klingon_outpost_initializer" "klingon_tygokor_initializer"
+		"krios_system_initializer" "klingon_hatoria_initializer" "quvat_system_initializer"
+		"klingon_khitomer_initializer"
+	}
+
+	graphical_culture = "klingon_01"
+	city_graphical_culture = "klingon_01"
+
+	emblem_key = "flag_Klingon_11"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Klingon_11.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Klingon"
+			"black"
+			"null"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_klingon"
+		portrait = "unique_37"
+		gender = male
+		texture = 0
+		hair = 0
+		clothes = 0
+		is_bespoke = yes
+		leader_class = ruler
+		trait = leader_trait_from_ranks
+		trait = leader_trait_deep_connections
+	}
+
+	combat_rewards = "klingon_combat_rewards"
+}

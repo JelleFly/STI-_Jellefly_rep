@@ -1,0 +1,79 @@
+Hupyrian = {
+	name = "Hupyrian Autocracy"
+	short_name = "EMPIRE_SHORT_NAME_hupyrian"
+	country_id = "hupyrian"
+	adjective = "PRESCRIPTED_adjective_hupyrian"
+	spawn_enabled = always 
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = no
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_hupyrian"
+
+	species = {
+		class = "HRB"
+		portrait = "hupyrian"
+		name = "PRESCRIPTED_species_name_hupyrian"
+		plural = "PRESCRIPTED_species_plural_hupyrian"
+		adjective = "PRESCRIPTED_species_adjective_hupyrian"
+		name_list = "HUPY"
+		
+		trait = "trait_devout_hupyrian"
+	 	trait = "trait_sturdy_hupyrian"
+		trait = "trait_great_needs_hupyrian"
+	}
+
+	room = "minor_01_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_solid_reputation" } #HRB_TODO
+	government = gov_social_autocracy
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 hupyrian starting_gov }
+
+	system_name = "NAME_Hupyrian"
+	planet_name = "NAME_Hupyrian_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "hupyrian_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Hupyrian_30" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Hupyrian_30.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Hupyrian"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_hupyrian" #HRB_TODO
+		portrait = "hupyrian_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

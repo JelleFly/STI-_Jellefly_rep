@@ -1,0 +1,79 @@
+idanian = {
+	name = "Idanian Clans" # HRB_TODO: TBD
+	short_name = "EMPIRE_SHORT_NAME_idanian"
+	country_id = "idanian"
+	adjective = "PRESCRIPTED_adjective_idanian"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_idanian"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "idanian"
+		name = "PRESCRIPTED_species_name_idanian"
+		plural = "PRESCRIPTED_species_plural_idanian"
+		adjective = "PRESCRIPTED_species_adjective_idanian"
+		name_list = "IDAN"
+		
+		trait = "trait_secretive_idanian"
+	 	trait = "trait_observant_idanian"
+		trait = "trait_reserved_idanian"
+	}
+
+	room = "minor_06_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_twofold_chances" } #HRB_TODO
+	government = gov_clan_of_spies
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 idanian starting_spy }
+
+	system_name = "NAME_Idanian"
+	planet_name = "NAME_Idanian_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "idanian_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Idanian_28" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Idanian_28.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Idanian"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_idanian" #HRB_TODO
+		portrait = "idanian_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

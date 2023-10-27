@@ -1,0 +1,142 @@
+ufop = {
+	name = "United Federation of Planets"
+	short_name = "EMPIRE_SHORT_NAME_ufop"
+	country_id = "ufop"
+	adjective = "PRESCRIPTED_adjective_ufop"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+
+	shuffle_starting_position = no
+	is_major = yes
+	is_bespoke = yes
+	in_previous_contact = yes
+	ship_prefix = "PRESCRIPTED_ship_prefix_ufop"
+
+	species = {
+		class = "HRB"
+		portrait = "fedhuman"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "UFP1"
+		trait = "trait_universal_settlers"
+		trait = "trait_natural_explorers"
+		trait = "trait_high_maintenance"
+	}
+
+	additional_species = {
+		85 = {
+			# Don't fill this option
+			# Overrided with the main species
+			# If you don't want the main species on the random modify the number (chance) to -1
+		}
+
+		##Vulcans
+		10 = {
+			class = "HRB"
+			portrait = "vulcan"
+			name = "PRESCRIPTED_species_name_vulcans"
+			plural = "PRESCRIPTED_species_plural_vulcans"
+			adjective = "PRESCRIPTED_species_adjective_vulcans"
+			name_list = "UFP2"
+			trait = "trait_vulcan_longevity"
+			trait = "trait_logical_mind"
+			trait = "trait_low_reproduction_rate"
+		}
+
+		##Andorians
+		10 = {
+			class = "HRB"
+			portrait = "andorian"
+			name = "PRESCRIPTED_species_name_andorians"
+			plural = "PRESCRIPTED_species_plural_andorians"
+			adjective = "PRESCRIPTED_species_adjective_andorians"
+			name_list = "UFP3"
+			trait = "trait_environmental_resistance"
+			trait = "trait_militaristic_life"
+			trait = "trait_andorian_code_of_honor"
+		}
+
+		##Tellarites
+		10 = {
+			class = "HRB"
+			portrait = "tellarite"
+			name = "PRESCRIPTED_species_name_tellarites"
+			plural = "PRESCRIPTED_species_plural_tellarites"
+			adjective = "PRESCRIPTED_species_adjective_tellarites"
+			name_list = "UFP4"
+			trait = "trait_tellarite_dyspnea"
+			trait = "trait_born_to_argue"
+			trait = "trait_sharp_wits"
+		}
+	}
+
+	additional_modules = {
+		ufop_assimilation_module = {}
+	}
+
+	room = "ufop_01_transmission_room"
+
+	authority = "auth_federated_democracy"
+	civics = { "civic_higher_education" "civic_diplomatic_expertise" }
+	government = gov_representative_democracy
+	origin = "origin_ufop"
+
+	ethic = "ethic_pacifist"
+	ethic = "ethic_materialist"
+	ethic = "ethic_egalitarian"
+
+	flags = { human_1 custom_start_screen ufop }
+	# initial_technologies = { tech_replicator_1 tech_ufop_starfleet_academy }
+
+	system_name = "NAME_Sol"
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+	initializer = "ufop_sol_initializer"
+	home_planet_initial_pops = 26
+
+	conquered_system_initializers = {
+		"ufop_andor_initializer" "ufop_vulcan_initializer" "ufop_tellar_initializer"
+		"ufop_outpost_initializer" "zone_rom_ufop_eden_initializer" "zone_rom_ufop_draken_initializer"
+		"denobula_outpost_initializer" "risa_outpost_initializer" "cordian_outpost_initializer"
+		"ufop_wolf_initializer" "ufop_qualor_initializer" "ufop_setlik_initializer"
+	}
+
+	graphical_culture = "ufop_01"
+	city_graphical_culture = "ufop_01"
+
+	emblem_key = "flag_UFOP_10"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_UFOP_10.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"ufop"
+			"black"
+			"null"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ufop"
+		gender = female
+		portrait = "unique_34"
+		texture = 0
+		hair = 0
+		clothes = 0
+		is_bespoke = yes
+		leader_class = ruler
+		trait = leader_trait_explorer
+		trait = leader_trait_frontier_spirit
+	}
+}

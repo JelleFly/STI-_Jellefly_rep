@@ -1,0 +1,95 @@
+ufop_setlik_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost ufop_system ufop }
+	usage = static_system_init
+	flags = { setlik }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = {
+			change_pc = pc_b_star 
+			save_global_event_target_as = setlik_star
+		}
+	}
+
+	change_orbit = 50
+	planet = {
+		name = "NAME_Setlik_I"
+		count = 1
+		class = pc_tundra
+		subclass = psc_class_m
+		orbit_distance = { min = 20 max = 30 }
+		size = 12
+		home_planet = no
+
+		init_effect = {
+			add_modifier = {
+				modifier = pre_existing_colony
+				days = -1
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Setlik_II"
+		count = 1
+		class = pc_arid
+		subclass = psc_class_m
+		orbit_distance = { min = 40 max = 45 }
+		size = 16
+		home_planet = no
+
+		init_effect = {
+			add_modifier = {
+				modifier = pre_existing_colony
+				days = -1
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Setlik_III"
+		count = 1
+		class = pc_continental
+		subclass = psc_class_m
+		orbit_distance = { min = 25 max = 35 }
+		size = 16
+		home_planet = no
+
+		init_effect = {
+			add_modifier = {
+				modifier = pre_existing_colony
+				days = -1
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Setlik_IV"
+		count = 1
+		class = pc_barren
+		subclass = psc_class_m
+		orbit_distance = { min = 40 max = 45 }
+		size = 23
+		home_planet = no
+
+		init_effect = {
+			add_modifier = {
+				modifier = pre_existing_colony
+				days = -1
+			}
+		}
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:ufop_country
+		}
+	}
+}

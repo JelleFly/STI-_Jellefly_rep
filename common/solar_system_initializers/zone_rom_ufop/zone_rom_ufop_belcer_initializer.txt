@@ -1,0 +1,49 @@
+zone_rom_ufop_belcer_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { belcer }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = belcer_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}

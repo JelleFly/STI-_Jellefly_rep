@@ -1,0 +1,97 @@
+romulan1 = {
+	name = "Romulan Star Empire"
+	short_name = "EMPIRE_SHORT_NAME_romulan"
+	country_id = "romulan"
+	adjective = "PRESCRIPTED_adjective_romulan"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = no
+	is_major = yes
+	is_bespoke = yes
+	ship_prefix = "PRESCRIPTED_ship_prefix_romulan"
+	in_previous_contact = yes
+	species = {
+		class = "HRB"
+		portrait = "romulan"
+		name = "PRESCRIPTED_species_name_romulan"
+		plural = "PRESCRIPTED_species_plural_romulan"
+		adjective = "PRESCRIPTED_species_adjective_romulan"
+		name_list = "RML1"
+		trait = "trait_everlasting"
+		trait = "trait_quick_learners"
+		trait = "trait_solitary"
+	}
+
+	additional_modules = {
+		romulan_assimilation_module = {}
+	}
+
+	room = "romulan_01_transmission_room"
+
+	authority = "auth_state_senate"
+	civics = { "civic_closet_politics" "civic_state_vigilance" }
+	government = gov_executive_committee
+	
+	origin = "origin_romulan"
+
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_materialist"
+	ethic = "ethic_xenophobe"
+
+	flags = { human_2 custom_start_screen romulan }
+	# initial_technologies = { tech_replicator_1 tech_cloaking_device_1 }
+
+	system_name = "NAME_Romula"
+	planet_name = "NAME_Romulus"
+	planet_class = "pc_continental"
+	planet_subclass = psc_class_m
+	initializer = "romulan_romulus_initializer"
+
+	conquered_system_initializers = { 
+		"romulan_romulus_initializer" "romulan_kithomer_initializer" "romulan_unroth_initializer"
+		"romulan_chaltok_initializer" "romulan_achernar_initializer" "romulan_outpost_initializer" 
+		"romulan_romii_initializer" "romulan_rator_initializer" "romulan_cheron_initializer"
+		"romulan_glintara_initializer" "zone_rom_ufop_galorndon_core_initializer"
+		"zone_rom_ufop_devron_initializer" "zone_rom_ufop_iota_pavonis_initializer"
+		"zone_rom_ufop_fenris_initializer" "zone_rom_ufop_belcer_initializer" "zone_rom_ufop_moores_star_initializer"
+		"zone_rom_ufop_epsilon_legato_initializer" "zone_rom_ufop_theta_curry_initializer" "zone_rom_ufop_iconia_initializer"
+		"zone_rom_ufop_nelvana_initializer" "zone_rom_ufop_nimbus_initializer"
+	}
+
+	graphical_culture = "romulan_01"
+	city_graphical_culture = "romulan_01"
+
+	emblem_key = "flag_Romulan_12"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Romulan_12.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Romulan"
+			"black"
+			"null"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_romulan"
+		portrait = "unique_38"
+		gender = male
+		texture = 0
+		hair = 0
+		clothes = 0
+		is_bespoke = yes
+		leader_class = ruler
+		trait = leader_trait_eye_talent_governor
+		trait = leader_trait_champion_people
+	}
+}

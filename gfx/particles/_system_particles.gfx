@@ -1,0 +1,130 @@
+objectTypes = {
+
+
+	pdxparticle = {
+		name = "ed_class_star_particle"
+		type = "ed_class_star_file"
+		scale = 1.0
+	}
+##### Nebula
+	pdxparticle = {	
+	name = "nebula_core_particle"
+	type = "nebula_core"
+	scale = 1.0
+
+}
+
+	pdxparticle = {	
+	name = "nebula_core_s_particle"
+	type = "nebula_core"
+	scale = 0.05
+
+}
+
+	pdxparticle = {	
+	name = "nebula_core_2_particle"
+	type = "nebula_core_2"
+	scale = 1.0
+
+}
+
+	pdxparticle = {	
+	name = "nebula_core_3_particle"
+	type = "nebula_core_3"
+	scale = 1.0
+
+}
+
+	pdxparticle = {	
+	name = "nebula_core_2_s_particle"
+	type = "nebula_core_2"
+	scale = 0.05
+
+}
+	pdxparticle = {	
+	name = "nebula_planet_smoke"
+	type = "nebula_planet_smoke"
+	scale = 1
+
+}
+
+	pdxparticle = {	
+	name = "nebula_planet_smoke_s"
+	type = "nebula_planet_smoke"
+	scale = 0.1
+
+}
+
+#### Space Storm
+	pdxparticle = {               
+		name = "space_storm_1_effect"
+		type = "space_storm_1_file"
+		scale = 1
+	}
+
+	pdxparticle = {               
+		name = "space_storm_1_2_effect"
+		type = "space_storm_1_2_file"
+		scale = 1
+	}
+	
+		pdxparticle = {               
+		name = "space_storm_1_1_effect"
+		type = "space_storm_1_1_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "space_storm_2_effect"
+		type = "space_storm_2_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "psi_storm_1_effect"
+		type = "psi_storm_1_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "extra_dimensional_storm_effect"
+		type = "extra_dimensional_storm_file"
+		scale = 1
+	}
+
+
+	#################
+
+
+pdxparticle = {	
+	name = "nebula_core_xl_1_effect"
+	type = "nebula_core_xl_1_file"
+	scale = 1.0
+
+}
+
+pdxparticle = {	
+	name = "space_storm_xl_orange_effect"
+	type = "space_storm_xl_orange_file"
+	scale = 1.0
+
+}
+
+pdxparticle = {	
+	name = "nebula_core_xl_2_effect"
+	type = "nebula_core_xl_2_file"
+	scale = 1.0
+
+}
+
+pdxparticle = {	
+	name = "space_storm_xl_purple_effect"
+	type = "space_storm_xl_purple_file"
+	scale = 2.0
+
+}
+
+}
+
+
+

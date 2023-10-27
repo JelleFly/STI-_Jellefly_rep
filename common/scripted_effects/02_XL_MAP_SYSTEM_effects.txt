@@ -1,0 +1,164 @@
+# Nebulae - Use in System Scope
+
+
+create_orange_nebula_1 = {
+	
+
+
+		while = {
+			count = 2
+			create_ambient_object = {
+				type = "orange_nebula_1"
+				entity_offset_height = { min = 10 max = -15 }
+				location = this
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 70
+					angle = random
+				}
+			}				
+		}
+
+		while = {
+			count = 2
+			create_ambient_object = {
+				type = "orange_nebula_1"
+				entity_offset_height = { min = 10 max = -15 }
+				location = this
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 30
+					angle = random
+				}
+			}				
+		}
+
+		while = {
+			count = 2
+			create_ambient_object = {
+				type = "orange_storm_1"
+				entity_offset_height = { min = 10 max = -15 }
+				location = this
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 30
+					angle = random
+				}
+			}				
+		}
+
+	}
+
+	create_purple_nebula_1 = {
+	
+
+
+		while = {
+			count = 2
+			create_ambient_object = {
+				type = "purple_nebula_1"
+				entity_offset_height = { min = 10 max = -15 }
+				location = this
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 70
+					angle = random
+				}
+			}				
+		}
+
+		while = {
+			count = 2
+			create_ambient_object = {
+				type = "purple_nebula_1"
+				entity_offset_height = { min = 10 max = -15 }
+				location = this
+			}
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 30
+					angle = random
+				}
+			}				
+		}
+
+		
+		create_ambient_object = {
+			type = "purple_storm_1"
+			entity_offset_height = { min = 10 max = -15 }
+			location = this
+		}
+		last_created_ambient_object = { 
+			set_location = {
+				target = prev
+				distance = 1
+				angle = random
+			}
+		}
+				create_ambient_object = {
+					type = "purple_storm_1"
+					entity_offset_height = { min = 10 max = -15 }
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 100
+						angle = 90
+					}
+				}
+
+				create_ambient_object = {
+					type = "purple_storm_1"
+					entity_offset_height = { min = 10 max = -15 }
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 100
+						angle = -90
+					}
+				}
+
+				create_ambient_object = {
+					type = "purple_storm_1"
+					entity_offset_height = { min = 10 max = -15 }
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 100
+						angle = 180
+					}
+				}
+
+				create_ambient_object = {
+					type = "purple_storm_1"
+					entity_offset_height = { min = 10 max = -15 }
+					location = this
+				}
+				last_created_ambient_object = { 
+					set_location = {
+						target = prev
+						distance = 100
+						angle = 0
+					}
+				}
+							
+		}
+
+	
+
+
+

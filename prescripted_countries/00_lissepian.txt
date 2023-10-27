@@ -1,0 +1,79 @@
+lissepian = {
+	name = "Lissepian Corporatocracy"
+	short_name = "EMPIRE_SHORT_NAME_lissepian"
+	country_id = "lissepian"
+	adjective = "PRESCRIPTED_adjective_lissepian"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_lissepian"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "lissepian"
+		name = "PRESCRIPTED_species_name_lissepian"
+		plural = "PRESCRIPTED_species_plural_lissepian"
+		adjective = "PRESCRIPTED_species_adjective_lissepian"
+		name_list = "LISS"
+		
+		trait = "trait_eye_for_business_lissepian"
+		trait = "trait_timely_lissepian"
+		trait = "trait_intermediaries_lissepian"
+	}
+
+	room = "minor_02_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_corporate"
+	civics = { "void_civic" "civic_debts_repaid" } #HRB_TODO
+	government = gov_corporatocracy
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 lissepian starting_spy }
+
+	system_name = "NAME_lissepian"
+	planet_name = "NAME_lissepian_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "lissepian_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Lissepian_26" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Lissepian_26.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Lissepian"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_lissepian" #HRB_TODO
+		portrait = "lissepian_female_02" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

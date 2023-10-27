@@ -1,0 +1,79 @@
+cairn = {
+	name = "Cairn Democracy" # HRB_TODO: TBD
+	short_name = "EMPIRE_SHORT_NAME_cairn"
+	country_id = "cairn"
+	adjective = "PRESCRIPTED_adjective_cairn"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_cairn"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "cairn"
+		name = "PRESCRIPTED_species_name_cairn"
+		plural = "PRESCRIPTED_species_plural_cairn"
+		adjective = "PRESCRIPTED_species_adjective_cairn"
+		name_list = "CAIR"
+		
+		trait = "trait_uninhibited_cairn"
+	 	trait = "trait_telepathic_cairn"
+		trait = "trait_pacifists_cairn"
+	}
+
+	room = "minor_04_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_democratic"
+	civics = { "void_civic" "civic_efficient_communication" } #HRB_TODO
+	government = gov_socialist_democracy
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 cairn starting_spy }
+
+	system_name = "NAME_Cairn"
+	planet_name = "NAME_Cairn_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "cairn_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Cairn_31" #HRB_TODO
+
+	empire_flag = { #HRB_TODO
+		icon= {
+			category = "emblem"
+			file = "flag_Cairn_31.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Cairn"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_cairn" #HRB_TODO
+		portrait = "cairn_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

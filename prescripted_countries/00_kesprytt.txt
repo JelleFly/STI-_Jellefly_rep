@@ -1,0 +1,79 @@
+kesprytt = {
+	name = "Kesprytt Republic" # HRB_TODO: TBD
+	short_name = "EMPIRE_SHORT_NAME_kesprytt"
+	country_id = "kesprytt"
+	adjective = "PRESCRIPTED_adjective_kesprytt"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = no
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_kesprytt"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "kesprytt"
+		name = "PRESCRIPTED_species_name_kesprytt"
+		plural = "PRESCRIPTED_species_plural_kesprytt"
+		adjective = "PRESCRIPTED_species_adjective_kesprytt"
+		name_list = "KESP"
+		
+		trait = "trait_disbelieving_kesprytt"
+	 	trait = "trait_utilitarian_kesprytt"
+		trait = "trait_ununified_kesprytt"
+	}
+
+	room = "minor_05_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_paranoia" } #HRB_TODO
+	government = gov_split_republics
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 kesprytt starting_spy }
+
+	system_name = "NAME_Kesprytt"
+	planet_name = "NAME_Kesprytt_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "kesprytt_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Kesprytt_29"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Kesprytt_29.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Kesprytt"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_kesprytt" #HRB_TODO
+		portrait = "kesprytt_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

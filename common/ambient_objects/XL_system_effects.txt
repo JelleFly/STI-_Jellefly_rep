@@ -1,0 +1,42 @@
+### Storms
+
+# Example
+#ambient_object = {
+#	name = "space_storm_1"
+#	entity = "space_storm_1_entity"
+#	selectable = no
+#	show_name = no
+#}
+
+
+# Orange nebula 1
+ambient_object = {
+	name = "orange_nebula_1"
+	entity = "orange_nebula_1_entity"
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "orange_storm_1"
+	entity = "orange_storm_1_entity"
+	selectable = no
+	show_name = no
+}
+
+# Purple nebula 1
+ambient_object = {
+	name = "purple_nebula_1"
+	entity = "purple_nebula_1_entity"
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "purple_storm_1"
+	entity = "purple_storm_1_entity"
+	selectable = no
+	show_name = no
+}
+
+

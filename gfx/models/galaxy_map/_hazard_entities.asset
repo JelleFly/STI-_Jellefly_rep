@@ -1,0 +1,178 @@
+##############################################
+##############	Hazards	######################
+##############################################
+
+entity = {
+	name = "hazard01_entity"
+	pdxmesh = "hazard01_mesh"
+	scale = 1
+
+	locator = { name = "one" 	position = { 0 0 0 }}
+	
+	default_state = "idle"
+
+	state = { name = "idle" animation = "idle" animation_speed = 0.75 looping = yes
+		event = { time = 0 node = "one" particle = "hazard01_particle" trigger_once = yes keep_particle = yes }
+		start_event = { trigger_once = no sound = { soundeffect = "hazard01" } } 
+
+	}
+
+	game_data = {
+
+		ship_color = {0.7 0.6 0.9 0.2} #hazard UI blob color
+
+	}
+
+
+}
+
+entity = {
+	name = "hazard02_entity"
+	pdxmesh = "hazard02_mesh"
+	scale = 1
+
+	locator = { name = "one" 	position = { 0 0 0 }}
+
+	default_state = "idle"
+
+	state = { name = "idle"	animation = "idle" animation_speed = 0.02 looping = yes
+		event = { time = 0 node = "one" particle = "hazard02_particle" trigger_once = yes keep_particle = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "hazard02" } } 
+
+	}
+
+	game_data = {
+
+		ship_color = {0.85 0.5 0.1 0.3} #hazard UI blob color
+
+	}
+
+}
+
+entity = {
+	name = "hazard03_entity"
+	pdxmesh = "hazard03_mesh"
+	scale = 1
+
+	locator = { name = "one" 	position = { 0 0 0 }}
+
+	default_state = "idle"
+
+	state = { name = "idle"	animation = "idle" animation_speed = 0.02 looping = yes
+		event = { time = 0 node = "one" particle = "hazard03_particle" trigger_once = yes keep_particle = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "hazard03" } } 
+
+	}
+
+	game_data = {
+
+		ship_color = {0.1 0.5 0.8 0.3} #hazard UI blob color
+		uv_animation_speed   = 0.012
+		bloom_factor   = 0.25
+
+	}
+
+}
+
+
+entity = {
+	name = "hazard04_core_entity"
+	pdxmesh = "hazard04_core"
+	scale = 1
+
+	default_state = "idle"
+
+	state = { name = "idle"	animation = "idle" animation_speed = 0.05 looping = yes
+	}
+	game_data = {
+		uv_animation_speed   = 0.005
+		dissolve_on_death = 0.17 #UV DISTORTION FACTOR
+	}
+
+}
+
+entity = {
+	name = "hazard04_entity"
+	pdxmesh = "hazard04_mesh"
+	scale = 1
+
+	locator = { name = "one" 	position = { 0 0 0 }}
+	locator = { name = "PS" 	position = { -0.1 0.0 0 }}
+	
+	default_state = "idle"
+	
+	state = { name = "idle"	animation = "idle" animation_speed = 0.05 looping = yes
+		event = { time = 0 node = "PS" particle = "hazard04_particle" trigger_once = yes keep_particle = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "hazard04" } } 
+
+}
+	attach = { one 		= "hazard04_core_entity" }
+
+	game_data = {
+		uv_animation_speed   = 0.0025
+		bloom_factor   = 0.38
+		dissolve_on_death = 0.17 #UV DISTORTION FACTOR
+
+	}
+}
+
+entity = {
+	name = "hazard05_entity"
+	pdxmesh = "hazard05_mesh"
+	  
+	locator = { name = "root"				position = { 0	0  0 } }
+
+	#default_state = "idle"
+   
+	state = { 
+		name = "idle" state_time = 5
+
+		event = { time = 0 node = "locator_01" particle = "hazard05_particle" trigger_once = yes keep_particle = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "hazard05" } } 
+
+		  
+	}
+
+	attach = { "root" = "hazard05_02_entity" }
+	game_data = {
+		ship_color = {0.5 0.5 0.8 0.4} #hazard UI blob color
+		bloom_factor		= 0.3
+		uv_animation_speed   = -0.0025
+					}
+
+}
+
+entity = {
+	name = "hazard05_02_entity"
+	pdxmesh = "hazard05_02_mesh"
+
+	game_data = {
+		uv_animation_speed   = -0.018
+				}
+}
+
+entity = {
+	name = "hazard06_entity"
+	pdxmesh = "hazard06_mesh"
+	  
+	# locator = { name = "root"				position = { 0	-1  0 } }
+
+	#default_state = "idle"
+   
+	state = { 
+		name = "idle" state_time = 5
+		event = { time = 0 node = "locator_01" particle = "hazard06_particle" trigger_once = yes keep_particle = yes }	 
+		start_event = { trigger_once = yes sound = { soundeffect = "hazard06" } } 
+
+	}
+	
+	# attach = { "root" = "hazard06_02_entity" }
+	
+	game_data = {
+		uv_animation_speed   = 0.0025
+		ship_color = {0.5 0.5 0.8 0.4} #hazard UI blob color
+		bloom_factor		= 1.5
+		# uv_animation_speed   = -0.025
+		}
+
+}

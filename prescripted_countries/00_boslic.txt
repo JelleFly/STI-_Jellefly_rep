@@ -1,0 +1,80 @@
+boslic = {
+	name = "Boslic Anarchy"
+	short_name = "EMPIRE_SHORT_NAME_boslic"
+	country_id = "boslic"
+	adjective = "PRESCRIPTED_adjective_boslic"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes
+	shuffle_starting_position = yes
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_boslic"
+
+	species = {
+		class = "HRB"
+		portrait = "boslic"
+		name = "PRESCRIPTED_species_name_boslic"
+		plural = "PRESCRIPTED_species_plural_boslic"
+		adjective = "PRESCRIPTED_species_adjective_boslic"
+		name_list = "BOSL"
+		trait = "trait_smugglers_boslic"
+		trait = "trait_roamers_boslic"
+		trait = "trait_amoral_boslic"
+	}
+
+	room = "minor_04_transmission_room"
+
+	authority = "auth_pirate_guild"
+	civics = { "void_civic" "civic_under_nose" }
+	#civics = { "civic_smugglers" "civic_slave_traders" } 
+	#government = gov_representative_democracy
+	government = gov_capitalist_anarchy
+
+	ethic = "ethic_fanatic_materialist"
+	ethic = "ethic_xenophile"
+
+	origin = "origin_default"
+
+	flags = { human_2 boslic starting_spy }
+
+	system_name = "NAME_Boslic"
+	planet_name = "NAME_Boslic"
+	planet_class = "pc_desert"
+	planet_subclass = psc_class_m
+	initializer = "boslic_boslic_initializer"
+
+	graphical_culture = "minor_01"
+	city_graphical_culture = "minor_01"
+
+	emblem_key = "flag_Boslic_17"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Boslic_17.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Boslic"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_boslic"
+		portrait = "boslic_female_01"
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}

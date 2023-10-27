@@ -1,0 +1,50 @@
+ufop_wolf_initializer = {
+	name = "NAME_Wolf"
+	class = sc_f
+	usage = static_system_init
+	flags = { ufop_country ufop_system }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { change_pc = pc_f_star }
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 5
+		orbit_distance = { min = 20 max = 55 }
+		class = rl_unhabitable_planets
+	}
+	
+	planet = {
+		orbit_distance = 40
+		class = pc_desert
+		subclass = psc_class_m
+		size = 12
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no		
+		
+		moon = {
+			count = 1
+			orbit_distance = 6
+			class = rl_unhabitable_planets
+			has_ring = no
+			size = 5
+		}
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:ufop_country
+		}
+	}
+}

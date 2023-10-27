@@ -1,0 +1,79 @@
+betazoid = {
+	name = "Betazoid Houses"
+	short_name = "EMPIRE_SHORT_NAME_betazoid"
+	country_id = "betazoid"
+	adjective = "PRESCRIPTED_adjective_betazoid"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes
+	match_home_system_initializer = yes	
+	shuffle_starting_position = no
+	is_minor = yes
+	is_bespoke = yes
+	in_previous_contact = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_betazoid"
+
+	species = {
+		class = "HRB" # TODO: Create custom class
+		portrait = "betazoid"
+		name = "PRESCRIPTED_species_name_betazoid"
+		plural = "PRESCRIPTED_species_plural_betazoid"
+		adjective = "PRESCRIPTED_species_adjective_betazoid"
+		name_list = "BETA"
+		
+		trait = "trait_empath_betazoid"
+		trait = "trait_matriarcal_houses_betazoid"
+		trait = "trait_hard_to_please_betazoid"
+	}
+
+	room = "minor_01_transmission_room" # HRB_TODO: Define a proper room
+
+	authority = "auth_oligarchic"
+	civics = { "void_civic" "civic_forthcoming" } #HRB_TODO
+	government = gov_matriarchal_aristocracy
+
+	ethic = "ethic_fanatic_materialist" #HRB_TODO
+	ethic = "ethic_xenophile" #HRB_TODO
+
+	origin = "origin_default"
+
+	flags = { human_2 betazoid starting_gov }
+
+	system_name = "NAME_Betazoid"
+	planet_name = "NAME_Betazoid_Home_Planet"
+	planet_class = "pc_tundra" #HRB_TODO
+	planet_subclass = psc_class_m
+	initializer = "betazoid_initializer"
+
+	graphical_culture = "minor_01" #HRB_TODO
+	city_graphical_culture = "minor_01" #HRB_TODO
+
+	emblem_key = "flag_Betazoid_34"
+
+	empire_flag = {
+		icon= {
+			category = "emblem"
+			file = "flag_Betazoid_34.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"Betazoid"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_betazoid" #HRB_TODO
+		portrait = "betazoid_female_01" # HRB_TODO: Change Ruler Portrait
+		gender = female
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+}
