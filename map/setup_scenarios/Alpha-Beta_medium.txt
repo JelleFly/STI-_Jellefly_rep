@@ -1,14 +1,14 @@
 bespoke_procedural_scenario = {
-	name = "Star Charts - XL"
+	name = "Star Charts - Large"
 	default = yes
-	priority = 2					#priority decides in which order the scenarios are listed
+	priority = 2
 
 	# Everything below this line should be copied to tutorial.txt
-	num_stars = 2048
-	radius = 800					#should be less than 500, preferably less than ~460
+	num_stars = 1280
+	radius = 800
 
-	num_empires = { min = 25 max = 25 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
-	num_empire_default = 25		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
+	num_empires = { min = 24 max = 24 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
+	num_empire_default = 24		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
 	advanced_empire_default = 0
 	fallen_empire_default = 0
 	fallen_empire_max = 0
@@ -46,21 +46,74 @@ bespoke_procedural_scenario = {
 	nebula_size = 60
 	nebula_min_dist = 200
 
-	nebula = { name = "Briar Patch" position = { x = -19 y = 407 } radius = 8 }
-	nebula = { name = "Badlands" position = { x = 72 y = 376 } radius = 8 }
-	nebula = { name = "Typon Expanse" position = { x = -48 y = 252 } radius = 15 }
-	nebula = { name = "Klach D'krel Brakt" position = { x = -177 y = 378 } radius = 20 }
+	nebula = { name = "Briar Patch" position = { x = -13 y = 407 } radius = 10 }
+	nebula = { name = "Badlands" position = { x = 72 y = 370 } radius = 8 }
+	nebula = { name = "Typhon Expanse" position = { x = -48 y = 252 } radius = 15 }
+	nebula = { name = "Azure Nebula" position = { x = -86 y = 394} radius = 4}
+	nebula = { name = "Rolor Nebula" position = { x = 81 y = 360} radius = 3}
+	nebula = { name = "Argolis Cluster" position = { x = 21 y = 397} radius = 5}
+	nebula = { name = "Vaulterra Nebula" position = { x = 56 y = 454} radius = 9}
+	nebula = { name = "Mutara Nebula" position = { x = -53 y = 604} radius = 16}
+	nebula = { name = "Mutara Nebula" position = { x = 59 y = 552} radius = 7}
+	nebula = { name = "Basen Rift" position = { x = -16 y = 330 } radius = 7}
 
 	num_wormhole_pairs = { min = 0 max = 0 }
 	num_wormhole_pairs_default = 0
 	num_gateways = { min = 0 max = 0 }
 	num_gateways_default = 0
-	num_hyperlanes = 0
-	num_hyperlanes_default = 0
+	num_hyperlanes = 1
+	num_hyperlanes_default = 1
+
+	#--------- Highway Systems ---------#
+	#------ String 1 ------#
+	system = {
+		id = "1"
+		name = "NAME_Highway_Node"
+		#position_set = { x = -545 y = 429 } 
+		#position_set = { x = -196 y = 112 } 
+		#position_set = { x = 451 y = 442 }
+		#position_set = { x = 539 y = 158 }
+		initializer = highway_system_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "2"
+		name = "NAME_Highway_Node"
+		#position_set = { x = 436 y = 126 } 
+		#position_set = { x = 505 y = 215 } 
+		#position_set = { x = 556 y = 187 }
+		#position_set = { x = -379 y = 623 }
+		position = { x = -45 y = 262 }
+		initializer = highway_system_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	#--------- Highways ---------#
+	highway = {
+		highway_id = "1"
+		highway_node_id = "1"
+		highway_node_id = "2"
+	}
+
+	system = {
+		# Borg transwarp conduit
+		# Needs to be first system, before Bespoke systems
+		name = "NAME_Highway_Node" position = { x = -400 y = -150 }
+		spawn_weight = { base = 1 } 
+	}
+
+	#system = {
+		# Borg transwarp conduit
+		# Needs to be first system, before Bespoke systems
+		#name = "NAME_Highway_Node" position = { x = 0 y = 300 }
+	#	spawn_weight = { base = 1 } 
+	#}
 
 	#--------- Bespoke Systems ---------#
 
 	system = {
+    id = "4"
 		name = "NAME_Acamarian" position = { x = -82 y = 384 }
 		initializer = acamarian_initializer spawn_weight = { base = 1 } 
 	}
@@ -818,6 +871,11 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Andor" position = { x = -7 y = 360 }
 		initializer = ufop_andor_initializer spawn_weight = { base = 1 } 
+	}
+
+	system = {
+		name = "NAME_Illyria" position = { x = 56 y = 454 }
+		initializer = ufop_illyria_initializer spawn_weight = { base = 1 }
 	}
 
 	system = { position = { x = -24 y = 391 }

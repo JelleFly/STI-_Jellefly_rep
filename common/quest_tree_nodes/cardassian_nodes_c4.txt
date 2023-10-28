@@ -30,7 +30,7 @@ qt_cardassian_c4 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = setlik_system
+				has_star_flag = setlik
 			}
 			fail_text = qt_cardassian_c4_tooltip_setlik_check_fail
 			success_text = qt_cardassian_c4_tooltip_setlik_check_success
@@ -38,7 +38,7 @@ qt_cardassian_c4 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = dorvan_system
+				has_star_flag = dorvan
 			}
 			fail_text = qt_cardassian_c4_tooltip_dorvan_check_fail
 			success_text = qt_cardassian_c4_tooltip_dorvan_check_success
@@ -46,7 +46,7 @@ qt_cardassian_c4 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = umoth_system
+				has_star_flag = umoth
 			}
 			fail_text = qt_cardassian_c4_tooltip_umoth_check_fail
 			success_text = qt_cardassian_c4_tooltip_umoth_check_success

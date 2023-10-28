@@ -1,0 +1,36 @@
+ufop_illyria_initializer = {
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 1 max = 2 }
+		has_ring = no
+
+		init_effect = {
+			create_purple_nebula_1 = yes
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = 50
+
+	planet = {
+		count = { min = 1 max = 1 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			# Creating a Starbase
+			create_starbase = {
+				size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+				owner = event_target:ufop_country # Using the event_target saved on ufop_system_initializer
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		game_start.1 		# Spawn special/hidden countries
+		game_start.2 		# Removes random planet modifiers from homeworlds
+		game_start.60		# HRB: Policies initialization
+
+    game_start.101      # HRB: Creates bespoke UFoP-Romulan Neutral Zone
+		game_start.102      # HRB: Creates bespoke UFoP-Romulan Truce
+
+		game_start.105		# HRB: Major Powers obtain Intel about Systems owned by Majors
+
+		game_start.220		# HRB: Betazoid starting relationship with the UFOP + treaties
+		game_start.240		# HRB: Romulan starting relationship with the UFOP + treaties
+		game_start.260		# HRB: Klingon starting relationship with the UFOP + treaties
+		game_start.280		# HRB: Cardassia starting relationship with the UFOP + treaties
+		game_start.110		# HRB: Bajoran starting relationship with the Majors
+		game_start.106		# HRB: Bajor starts as Cardassian's Subject
+
+		game_start.150		# HRB: Non Tutorial Initializer
+		hrb_tutorial.0		# HRB: Tutorial Initializer
+
+		game_start.155		# HRB: Add traits to scientists
+		game_start.200		# HRB: Setup Correct Names for Pre-Warp Civs
+		game_start.10		# HRB: Add spies or governors for MiPos
+
+		game_start.40		# HRB: Master initializer event
+	}
+}
