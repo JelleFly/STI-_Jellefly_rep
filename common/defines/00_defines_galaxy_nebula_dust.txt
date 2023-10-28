@@ -1,0 +1,3 @@
+NGraphics = {
+	GALAXY_NEBULA_DUST_SIZE_EXTRA 		= 5.0	# This is what makes nebulas not adhere to their set radius?
+}

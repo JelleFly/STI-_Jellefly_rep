@@ -1,0 +1,32 @@
+# Bespoke UFoP-Romulan Neutral Zone
+event = {
+	id = game_start.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:ufop_country = {
+			create_neutral_zone = { 
+				target = event_target:romulan_country
+				empty = yes
+			}
+
+			last_created_neutral_zone = { 
+				add_system_to_neutral_zone = event_target:eden_star.solar_system
+				add_system_to_neutral_zone = event_target:iconia_star.solar_system
+				add_system_to_neutral_zone = event_target:draken_star.solar_system
+				add_system_to_neutral_zone = event_target:galorndon_core_star.solar_system
+				add_system_to_neutral_zone = event_target:nelvana_star.solar_system
+				add_system_to_neutral_zone = event_target:devron_star.solar_system
+				add_system_to_neutral_zone = event_target:iota_pavonis_star.solar_system
+				add_system_to_neutral_zone = event_target:fenris_star.solar_system
+				add_system_to_neutral_zone = event_target:belcer_star.solar_system
+				add_system_to_neutral_zone = event_target:moores_star_star.solar_system
+				add_system_to_neutral_zone = event_target:epsilon_legato_star.solar_system
+				add_system_to_neutral_zone = event_target:theta_curry_star.solar_system
+				add_system_to_neutral_zone = event_target:nimbus_star.solar_system
+				# HRB-2033: Add more Systems here
+			}
+		}
+	}
+}

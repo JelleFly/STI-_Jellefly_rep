@@ -17,7 +17,7 @@ qt_ufop_control_demilitarized_zone_21 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = sheva_system
+				has_star_flag = sheva
 			}
 			fail_text = qt_ufop_control_demilitarized_zone_sheva_fail_tooltip
 			success_text = qt_ufop_control_demilitarized_zone_sheva_possible_tooltip
@@ -25,7 +25,7 @@ qt_ufop_control_demilitarized_zone_21 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = setlik_system
+				has_star_flag = setlik
 			}
 			fail_text = qt_ufop_control_demilitarized_zone_setlik_fail_tooltip
 			success_text = qt_ufop_control_demilitarized_zone_setlik_possible_tooltip
@@ -33,7 +33,7 @@ qt_ufop_control_demilitarized_zone_21 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = dorvan_system
+				has_star_flag = dorvan
 			}
 			fail_text = qt_ufop_control_demilitarized_zone_dorvan_fail_tooltip
 			success_text = qt_ufop_control_demilitarized_zone_dorvan_possible_tooltip
@@ -41,7 +41,7 @@ qt_ufop_control_demilitarized_zone_21 = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = umoth_system
+				has_star_flag = umoth
 			}
 			fail_text = qt_ufop_control_demilitarized_zone_umoth_fail_tooltip
 			success_text = qt_ufop_control_demilitarized_zone_umoth_possible_tooltip

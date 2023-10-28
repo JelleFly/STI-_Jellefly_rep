@@ -1,0 +1,38 @@
+#################################################
+#
+############### Hornblower Traits ###############
+#
+#################################################
+
+##### Ferengi traits ######
+
+#Traditionalists
+trait_traditionalists_ferengi = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.15
+	}
+}
+
+trait_eye_for_business_ferengi = { 
+	cost = 1
+	potential_crossbreeding_chance = 1.0
+
+	opposites = { "trait_repugnant" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		trade_value_add = 2.25
+	}
+}
+
+trait_high_maintenance = {
+	cost = -1
+	potential_crossbreeding_chance = 1.0
+	opposites = { "trait_conservational" "trait_hive_mind" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		planet_pops_energy_upkeep_mult = 0.2
+	}
+}

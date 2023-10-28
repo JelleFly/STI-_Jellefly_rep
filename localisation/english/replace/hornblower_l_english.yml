@@ -1,0 +1,18 @@
+﻿l_english:
+
+ #######################
+ #
+ #      Bypasses
+ #
+ #######################
+
+ HIGHWAY_GALACTIC: "Transwarp Conduit"
+ HIGHWAY_DESC: "This system contains a §Y$HIGHWAY_GALACTIC$§!"
+ HIGHWAY_DESC_UNEXPLORED: "This system contains an §Runexplored§! §Y$HIGHWAY_GALACTIC$§!"
+ HIGHWAY_COUNTRY_CANNOT_USE: "$TRIGGER_FAIL$ We do not have the means to use the §Y$HIGHWAY_GALACTIC$!."
+
+ ################################
+ # Star Classes
+ ################################
+
+ pc_node_black_hole_desc: "While some §HSpacetime Distortions§! appear to be §HBlack Holes§!, they behave in almost opposite ways. By bending the spacetime continuum, they allow for travel through the §HGalaxy§! via §H$HIGHWAY_GALACTIC$§!."

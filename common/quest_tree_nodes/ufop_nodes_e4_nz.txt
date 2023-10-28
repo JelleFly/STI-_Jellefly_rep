@@ -17,7 +17,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = belcer_system
+				has_star_flag = belcer
 			}
 			fail_text = qt_ufop_control_neutral_zone_belcer_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_belcer_possible_tooltip
@@ -25,7 +25,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = devron_system
+				has_star_flag = devron
 			}
 			fail_text = qt_ufop_control_neutral_zone_devron_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_devron_possible_tooltip
@@ -33,7 +33,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = draken_system
+				has_star_flag = draken
 			}
 			fail_text = qt_ufop_control_neutral_zone_draken_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_draken_possible_tooltip
@@ -41,7 +41,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = eden_system
+				has_star_flag = eden
 			}
 			fail_text = qt_ufop_control_neutral_zone_eden_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_eden_possible_tooltip
@@ -49,7 +49,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = epsilon_legato_system
+				has_star_flag = epsilon_legato
 			}
 			fail_text = qt_ufop_control_neutral_zone_epsilon_legato_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_epsilon_legato_possible_tooltip
@@ -57,7 +57,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = fenris_system
+				has_star_flag = fenris
 			}
 			fail_text = qt_ufop_control_neutral_zone_fenris_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_fenris_possible_tooltip
@@ -65,7 +65,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = galorndon_core_system
+				has_star_flag = galorndon_core
 			}
 			fail_text = qt_ufop_control_neutral_zone_galorndon_core_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_galorndon_core_possible_tooltip
@@ -73,7 +73,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = iconia_system
+				has_star_flag = iconia
 			}
 			fail_text = qt_ufop_control_neutral_zone_iconia_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_iconia_possible_tooltip
@@ -81,7 +81,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = iota_pavonis_system
+				has_star_flag = iota_pavonis
 			}
 			fail_text = qt_ufop_control_neutral_zone_iota_pavonis_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_iota_pavonis_possible_tooltip
@@ -89,7 +89,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = moores_star_system
+				has_star_flag = moores_star
 			}
 			fail_text = qt_ufop_control_neutral_zone_moores_star_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_moores_star_possible_tooltip
@@ -97,7 +97,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = nelvana_system
+				has_star_flag = nelvana
 			}
 			fail_text = qt_ufop_control_neutral_zone_nelvana_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_nelvana_possible_tooltip
@@ -105,7 +105,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = nimbus_system
+				has_star_flag = nimbus
 			}
 			fail_text = qt_ufop_control_neutral_zone_nimbus_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_nimbus_possible_tooltip
@@ -113,7 +113,7 @@ qt_ufop_control_neutral_zone = {
 
 		custom_tooltip = {
 			any_system_within_border = {
-				has_star_flag = theta_curry_system
+				has_star_flag = theta_curry
 			}
 			fail_text = qt_ufop_control_neutral_zone_theta_curry_fail_tooltip
 			success_text = qt_ufop_control_neutral_zone_theta_curry_possible_tooltip
