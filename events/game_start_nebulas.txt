@@ -7,28 +7,26 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-			every_system =  {
-				limit = { is_inside_nebula = yes}
-				if = {
-					limit = {
-						has_star_flag = orange
-					}
-					
-					
-						create_orange_nebula_1 = yes
-				
+		every_system =  {
+			limit = { is_inside_nebula = yes}
+			if = {
+				limit = {
+					has_star_flag = orange
 				}
-		
-				else = {
-					limit = {
-						has_star_flag = purple
-					}
+
+				log = "Adding orange nebula to [from.GetStarName]"
+				create_orange_nebula_1 = yes
 			
-						create_purple_nebula_1 = yes
-
+			}
+	
+			else = {
+				limit = {
+					has_star_flag = purple
 				}
 
+				log = "Adding orange nebula to [from.GetStarName]"
+				create_purple_nebula_1 = yes
 			}
-		
+		}
 	}
 }
