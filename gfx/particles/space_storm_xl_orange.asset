@@ -320,7 +320,7 @@ particle={
 		slave_particles=0
 		sort="depth"
 		emitter_type="box"
-		box_emitter_x={ -20 25 }
+		box_emitter_x={ -1000 25 }
 		box_emitter_y={ 0 5 }
 		box_emitter_z={ 0 20 }
 		invert=no
@@ -338,7 +338,7 @@ particle={
 			x={ 255 50 }
 			y={ 153 30 }
 			z={ 51 10 }
-			alpha=255,alpha_fade
+			alpha=155,alpha_fade
 		}
 		position={
 			x=-25

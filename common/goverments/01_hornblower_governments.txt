@@ -1,0 +1,12 @@
+# Nagus Authority
+
+gov_theocratic_oligarchy_fer = {
+	ruler_title = RT_NAGUS
+	ruler_title_female = RT_NAGUS_FEMALE
+
+	should_force_rename = yes
+
+	possible = { OR = { has_authority = auth_oligarchic }  } #auth_dictatorial_fer_alliance
+	weight = { base = 10000 }
+
+}

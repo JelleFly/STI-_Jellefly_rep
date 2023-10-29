@@ -20,31 +20,38 @@ ferengi = {
 		name = "PRESCRIPTED_species_name_ferengi"
 		plural = "PRESCRIPTED_species_plural_ferengi"
 		adjective = "PRESCRIPTED_species_adjective_ferengi"
-		name_list = "BETA"
+		name_list = "FERE"
 		
-		#trait = "trait_empath_betazoid"
-	 	#trait = "trait_matriarcal_houses_betazoid"
-		#trait = "trait_hard_to_please_betazoid"
+		trait = "trait_traditionalists_ferengi"
+	 	trait = "trait_eye_for_business_ferengi"
+		trait = "trait_high_maintenance"
 	}
 
 	room = "minor_01_transmission_room" # HRB_TODO: Define a proper room
 
+	#authority = "auth_dictatorial_fer_alliance"
 	authority = "auth_oligarchic"
 	civics = { "void_civic" "civic_forthcoming" } #HRB_TODO
 	government = gov_matriarchal_aristocracy
 
 	ethic = "ethic_fanatic_materialist" #HRB_TODO
-	ethic = "ethic_xenophile" #HRB_TODO
+	ethic = "ethic_authoritarian" #HRB_TODO
 
 	origin = "origin_default"
 
-	flags = { human_2 betazoid starting_gov }
+	flags = { human_2 ferengi starting_gov }
 
 	system_name = "NAME_Ferenginar"
 	planet_name = "NAME_Ferengi_Home_Planet"
 	planet_class = "pc_tropical" #HRB_TODO
 	planet_subclass = psc_class_m
 	initializer = "ferengi_ferenginar_initializer"
+
+
+	conquered_system_initializers = {
+		"ferengi_thalos_initializer"
+	}
+
 
 	graphical_culture = "minor_01" #HRB_TODO
 	city_graphical_culture = "minor_01" #HRB_TODO

@@ -1,0 +1,58 @@
+########################################################
+##########        QUESTS, MISSION TREES    #############
+########################################################
+
+- Federation FLagship customization event chains
+- KDF Flagship customization event chains
+- Romulan Flagship customization event chains
+- Cardassian Flagship customization event chains
+- Romulan-federation Neutral zone events
+- Cardassian-Federation Border wars event
+- Carsassian-federation border wars missions
+- Borg fleet building missions and events (builld anti-borg fleet)
+- Iconia event chain
+- Acamerian "Gatherers" raiders, quest line to pacify them.
+- Fenris rangers event after romulan supernova
+
+########################################################
+##########        More Empires             #############
+########################################################
+- Add ferengi
+- add Sheliac
+- Add Gorn
+- add tholians
+- add Son'a
+- add Breen
+- add dominion
+- Add Tzenkethi
+- Fenris rangers (After supernova)
+########################################################
+##########        Species                   ############
+########################################################
+- Add Aenar 
+- Add Remans 
+- Add Species for all previously mentioned empires
+- Add Denobulans
+
+
+########################################################
+##########        Canon locations           ############
+########################################################
+- Add canon equivalent systems for empires
+- add canon structures to the game for example (or support through other modders):
+ - Utopia Planetia 
+ - mars colony
+ - luna colony 
+ - Midas array
+ - argolus cluster listening post (fed-dominion war)
+- refine Nebulas
+- add nebula galaxy map system icon (similar to ST:NH)
+- Add bajoran wormhole (leading to small part of gamma quadrant, for mid-game crisis)
+
+########################################################
+##########        Exploration               ############
+########################################################
+- experiment with adding back in archeological sites
+- add more Anomalies
+- add more event to account for bigger man
+- Iconia event chain

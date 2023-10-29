@@ -1,5 +1,37 @@
 # Nebulae - Use in System Scope
+create_nebula_1 = {
 
+}
+
+create_nebula_2 = {
+
+}
+
+create_nebula_3 = {
+
+}
+
+create_nebula_4 = {
+
+}
+
+create_rare_nebula_1 = {
+
+}
+
+create_rare_nebula_2 = {
+
+}
+
+create_turbulent_nebula_1 = {
+
+}
+
+create_turbulent_nebula_2 = {
+
+}
+
+# Nebulae - Use in System Scope
 
 create_orange_nebula_1 = {
 	
@@ -159,6 +191,5 @@ create_orange_nebula_1 = {
 		}
 
 	
-
 
 

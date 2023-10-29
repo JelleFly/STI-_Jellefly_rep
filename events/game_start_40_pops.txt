@@ -1,0 +1,391 @@
+# HRB Master initializer event
+event = {
+	id = game_start.40
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Take away Spies for MaPos
+		every_country = {
+			limit = { is_major = yes }
+			add_modifier = {
+				modifier = khitomer_aftershock days = -1
+			}
+		}
+
+		# Set Species Profiles
+		every_country = {
+			limit = { is_romulan = yes }
+
+			country_event = { id = game_start.41 days = 1 }
+			
+			# Launch "Romulan Supernova" chain
+			# For the tutorial match, this is handled right after the end
+			if = {
+				limit = { is_tutorial = no }
+				country_event = { id = romulan_supernova.1 }
+			}
+		}
+
+		every_country = {
+			limit = { is_minor = yes }
+			country_event = { id = game_start.42 days = 1 }
+		}
+
+		every_country = {
+			limit = {
+				is_minor = yes
+			}
+			country_event = {
+				id = game_start.9898
+			}
+		}
+
+		# Launch "The Ashes of Khitomer" chain for human players
+		# For the tutorial match, this is handled right after the end
+		if = {
+			limit = { is_tutorial = no }
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = country.2800 days = 30 }
+			}
+		}
+
+		### Trigger recruitable bespoke leaders per MaPo
+
+		# Creation of custom species
+
+		# Android
+		create_species = {
+			class = "HRB"
+			portrait = random
+			name = "PRESCRIPTED_species_name_android"
+			plural = "PRESCRIPTED_species_plural_android"
+			adjective = "PRESCRIPTED_species_adjective_android"
+			name_list = "HUMAN2"
+			traits = random
+			effect = {
+				save_global_event_target_as = data_species
+			}
+		}
+
+		# Vulcan
+		create_species = {
+			class = "HRB"
+			portrait = "vulcan"
+			name = "PRESCRIPTED_species_name_vulcans"
+			plural = "PRESCRIPTED_species_plural_vulcans"
+			adjective = "PRESCRIPTED_species_adjective_vulcans"
+			name_list = "UFP2"
+			traits = {
+				trait = trait_vulcan_longevity
+				trait = trait_logical_mind
+				trait = trait_low_reproduction_rate
+			}
+			effect = {
+				save_global_event_target_as = spock_species
+			}
+		}
+
+		# Klingon
+		create_species = {
+			class = "HRB"
+			portrait = "klingon"
+			name = "PRESCRIPTED_species_name_klingon"
+			plural = "PRESCRIPTED_species_plural_klingon"
+			adjective = "PRESCRIPTED_species_adjective_klingon"
+			name_list = "KLG1"
+			traits = {
+				trait = trait_traditional
+				trait = trait_strong
+				trait = trait_unruly
+			}
+			effect = {
+				save_global_event_target_as = worf_species
+			}
+		}
+
+		# Betazoid
+		create_species = {
+			class = "HRB"
+			portrait = "betazoid"
+			name = "PRESCRIPTED_species_name_betazoid"
+			plural = "PRESCRIPTED_species_plural_betazoid"
+			adjective = "PRESCRIPTED_species_adjective_betazoid"
+			name_list = "BETA"
+			traits = {
+				trait = trait_empath_betazoid
+				trait = trait_matriarcal_houses_betazoid
+				trait = trait_hard_to_please_betazoid
+			}
+			effect = {
+				save_global_event_target_as = troi_species
+			}
+		}
+
+		#UFOP Leaders
+		every_country = {
+			limit = { is_ufop = yes }
+			country_event = { id = country.2900 days = 1 }
+		}
+		#KLINGON Leaders
+		every_country = {
+			limit = { is_klingon = yes }
+			country_event = { id = country.2901 days = 1 }
+		}
+		#ROMULAN Leaders
+		every_country = {
+			limit = { is_romulan = yes }
+			country_event = { id = country.2902 days = 1 }
+		}
+		#CARDASSIAN Leaders
+		every_country = {
+			limit = { is_cardassian = yes }
+			country_event = { id = country.2903 days = 1 }
+		}
+
+
+		# Leader Education Policy
+		every_country = {
+			limit = { 
+				OR = {
+					is_minor = yes
+					is_major = yes
+				}
+			}
+			set_policy = {
+				policy = leader_education
+				option = leader_education_standard_protocols
+				cooldown = no
+			}
+		}
+
+		#UFOP Suplemental pop Initializers
+		event_target:ufop_country = {
+			#VULCAN
+			random_owned_planet = {
+				limit = {
+					has_planet_flag = planet_vulcan
+				}
+				while = {
+					count = 10
+					create_pop = { species = "Vulcan" }
+				}
+				while = {
+					count = 1
+					create_pop = { species = "Human" }
+				}
+				while = {
+					count = 1
+					create_pop = { species = "Tellarite" }
+				}
+			}
+
+			#ANDORIA
+#			random_owned_planet = {
+#				limit = {
+#					has_planet_flag = planet_andoria
+#				}
+#				while = {
+#					count = 10
+#					create_pop = { species = "Andorian" }
+#				}
+#				while = {
+#					count = 1
+#					create_pop = { species = "Human" }
+#				}
+#				while = {
+#					count = 1
+#					create_pop = { species = "Tellarite" }
+#				}
+#
+			#}
+
+			#TELLAR
+			random_owned_planet = {
+				limit = {
+					has_planet_flag = planet_tellar_prime
+				}
+				while = {
+					count = 9
+					create_pop = { species = "Tellarite" }
+				}
+				while = {
+					count = 1
+					create_pop = { species = "Human" }
+				}
+				while = {
+					count = 1
+					create_pop = { species = "Vulcan" }
+				}
+				while = {
+					count = 1
+					create_pop = { species = "Andorian" }
+				}
+			}
+		}
+
+		
+		#Lore orbital deposits
+
+		#LUNAR ONE COLONY
+		event_target:ufop_country = {
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = moon_luna
+				}
+
+				clear_deposits = yes
+
+				add_modifier = {
+					modifier = lunar_one_colony
+					days = -1
+				}
+
+				add_deposit = d_research_2_lunar
+
+				create_research_station = {
+					owner = event_target:ufop_country
+				}
+			}
+		}
+
+		#UTOPIA PLANITIA FLEET YARD
+		event_target:ufop_country = {
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = planet_mars
+				}
+
+				add_modifier = {
+					modifier = utopia_planitia_shipyard
+					days = -1
+				}
+			}
+		}
+
+		#RURA PENTHE MINING-PRISON COLONY
+		random_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_rura_penthe
+			}
+
+			clear_deposits = yes
+
+			add_deposit = d_dilithium_2_rura
+
+			add_modifier = {
+				modifier = rura_penthe_prison_colony
+				days = -1
+			}
+		}
+
+		#REMUS PRISON CAMP
+		event_target:romulan_country = {
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = planet_remus
+				}
+
+				add_modifier = {
+					modifier = remus_prison_colony
+					days = -1
+				}
+			}
+		}
+
+		#RISA WEATHER CONTROL SYSTEM
+		event_target:ufop_country = {
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = planet_risa
+				}
+
+				add_modifier = {
+					modifier = rise_weather_control
+					days = -1
+				}
+			}
+		}
+
+		#CARDASSIA I AND III MODIFIER
+		event_target:cardassian_country = {
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = planet_cardassia_i
+				}
+
+				add_modifier = {
+					modifier = cardassia_i_minor_colony
+					days = -1
+				}
+
+				add_deposit = d_trade_value_2_cardassia_i
+			}
+		}
+		event_target:cardassian_country = {
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = planet_cardassia_iii
+				}
+
+				add_modifier = {
+					modifier = cardassia_iii_minor_colony
+					days = -1
+				}
+
+				add_deposit = d_trade_value_3_cardassia_iii
+			}
+		}
+
+		# GIVE THE CERRITOS HERO SHIP TO THE UFOP IF THEY HAVE THE DLC
+		event_target:ufop_country = {
+			country_event = {
+				id = country.3199 days = 1
+			}
+		}
+
+		# MAKE T'PRAGH VULCAN
+		event_target:ufop_country = {
+			random_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_species = event_target:spock_species
+			}
+		}
+	}
+}
+
+
+
+
+
+# HRB Master initializer event
+event = {
+	id = game_start.999
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Take away Spies for MaPos
+		every_country = {
+			limit = { is_major = yes }
+
+			random_owned_planet = {
+				limit = {
+					has_planet_flag = planet_andoria
+				}
+
+			
+				while = {
+					limit = { num_pops > 12 }
+					kill_pop = { species = random }
+					}
+			}
+		}
+	}
+}
+

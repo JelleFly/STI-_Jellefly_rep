@@ -101,7 +101,7 @@ ufop = {
 		"ufop_andor_initializer" "ufop_vulcan_initializer" "ufop_tellar_initializer"
 		"ufop_outpost_initializer" "zone_rom_ufop_eden_initializer" "zone_rom_ufop_draken_initializer"
 		"denobula_outpost_initializer" "risa_outpost_initializer" "cordian_outpost_initializer"
-		"ufop_wolf_initializer" "ufop_qualor_initializer" "ufop_setlik_initializer"
+		"ufop_wolf_initializer" "ufop_qualor_initializer" "ufop_setlik_initializer" "ufop_illyria_initializer"
 	}
 
 	graphical_culture = "ufop_01"

@@ -1,0 +1,34 @@
+namespace = XL_MAP
+### Nebula System Art
+event = {
+	id = XL_MAP.001
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+			every_system =  {
+				limit = { is_inside_nebula = yes}
+				if = {
+					limit = {
+						has_star_flag = orange
+					}
+					
+					
+						create_orange_nebula_1 = yes
+				
+				}
+		
+				else = {
+					limit = {
+						has_star_flag = purple
+					}
+			
+						create_purple_nebula_1 = yes
+
+				}
+
+			}
+		
+	}
+}

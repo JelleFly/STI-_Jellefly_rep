@@ -1,0 +1,749 @@
+﻿l_english:
+
+ ###############################################
+ # Mission Tree (Formerly Quest Tree) Nodes 
+ ###############################################
+
+ # UFoP Missions
+
+ #### A1
+ qt_ufop_where_none_has_gone_before_1:0 "Where No One Has Gone Before"
+ qt_ufop_where_none_has_gone_before_1_desc:0 "After centuries of turmoil, a new §HGolden Age§! has dawned upon our §HGalaxy§!. It is time for us to fulfill §HStarfleet§!'s true charter: to explore strange new worlds, to boldly go in the name of peace and science.\n\n"
+
+ # A2
+ qt_ufop_understand_the_unknown_2:0 "Understand the Unknown"
+ qt_ufop_understand_the_unknown_2_desc:0 "True power lies not in conquest or subjugation, but in knowledge. Those who are dedicated and curious enough to explore beyond their homeworld are rewarded with an unparalleled understanding of the universe and all the captivating abnormalities yet to be studied.\n\n"
+
+ qt_ufop_understand_the_unknown_2_custom_tooltip:0 "§YRenewed Charter§! Edict is unlocked\n"
+ 
+ # A3
+ qt_ufop_first_contacts_3:0 "First Contacts"
+ qt_ufop_first_contacts_3_desc:0 "Our goal is to bring as many Warp-capable species as we can into the Federation under the shared values of peace, equality, universal rights, and scientific discovery - though we must uphold the Prime Directive.\n\n"
+ 
+ # A4
+ qt_ufop_multilateral_accords:0 "Multilateral Accords"
+ qt_ufop_multilateral_accords_desc:0 "Collaborating with other civilizations on matters such as trade, research, and diplomacy is the cornerstone of our interstellar union. The prosperity of the §HFederation§! and the entire §HGalaxy§! depends on the preservation of mutual aid.\n\n"
+
+ qt_ufop_multilateral_accords_custom_tooltip:0 "§YChekhov's Law§! Edict is unlocked\n"
+
+ #### B1
+ qt_ufop_build_the_enterprise_4:0 "Build the Enterprise"
+ qt_ufop_build_the_enterprise_4_desc:0 "The time has come for a new flagship to lead §HStarfleet§!'s endeavors. The §HU.S.S. Enterprise-D§! recently passed its shakedown voyage from the §HUtopia Planitia§! fleet yard. It will be the fifth vessel to bear this name, and will be helmed by the decorated §HCaptain Jean-Luc Picard§!.\n\n"
+
+ # B2
+ qt_ufop_empathic_diplomacy_26:0 "Troi - Empathic Diplomacy"
+ qt_ufop_empathic_diplomacy_26_desc:0 "Shaped by her §HBetazoid§! heritage and extra-sensory empathy, §HLieutenant Commander Deanna Troi§! of the §HEnterprise§! is trained in understanding the psychology of a variety of species. Her talent for diplomatic relations allows us to carry out even the most delicate of missions.\n\n"
+ qt_ufop_empathic_diplomacy_26_recruit_deanna_tooltip:0 "Recruit §HDeanna Troi§!"
+ # B3
+ qt_ufop_lightyears_experienced_25:0 "La Forge - Light-years of Experience"
+ qt_ufop_lightyears_experienced_25_desc:0 "A starship can only go as far as its most capable §HEngineer§!. The §HEnterprise's Lieutenant Geordi La Forge§! has survived alien parasites, time travel, even Romulan brainwashing in his pursuit to explore the furthest reaches of our universe. With him at our helm, there is nowhere we cannot go.\n\n"
+
+ # B4
+ qt_ufop_positronic_computation_28:0 "Data - Positronic Computation"
+ qt_ufop_positronic_computation_28_desc:0 "What do §HSoong-type androids§! dream of? The answer, at least for the §HEnterprise's Lieutenant Commander Data§!, is the secrets of our universe. His positronic brain holds 800 quadrillion bits of memory. It would be a terrible waste to leave it empty.\n\n"
+ qt_ufop_positronic_computation_28_tooltip:0 "Recruit §HData§!"
+
+ # B5
+ qt_ufop_worf_klingon_might_28:0 "Worf - Klingon Warfare"
+ qt_ufop_worf_klingon_might_28_desc:0 "§HStarfleet§!'s first Klingon officer, §HWorf, son of Mogh§! has held many titles, but what never changes is his sense of duty and strength in combat. Intent on becoming a warrior since the age of fifteen, §HWorf§! has since proven himself to be an invaluable asset in matters of security and warfare, and instrumental in winning many battles.\n\n"
+ qt_ufop_worf_klingon_might_28_recruit_worf_tooltip:0 "Recruit §HWorf§!"
+
+ # B6
+ qt_ufop_doctors_orders_27:0 "Crusher - Doctor's Orders"
+ qt_ufop_doctors_orders_27_desc:0 "Developing groundbreaking antidotes, combating ferocious parasitic infestations, and containing epidemics aboard the §HEnterprise§!; there is no medical anomaly that §HDoctor Beverly Crusher§! will not find the answer to. A fully-certified bridge officer, §HDr. Crusher§! is not only a pioneer in her field, but also a capable commander in case of emergencies.\n\n"
+
+ # B7
+ qt_ufop_upgrade_the_enterprise:0 "Upgrade the Enterprise"
+ qt_ufop_upgrade_the_enterprise_desc:0 "On stardate 49027.5, the §HSovereign-class Enterprise-E§!, seen as the pinnacle of §HStarfleet§! ship design, was launched from §HSan Francisco Fleet Yards§!, with §HCaptain Jean-Luc Picard§! in command once more."
+
+ #### C1
+ qt_ufop_establish_trade_affiliations_11:0 "Establish Trade Routes"
+ qt_ufop_establish_trade_affiliations_11_desc:0 "Developing a network of transport for commercial cargo is crucial to the longevity of the §HFederation§!. Yet, we seek not only to further our economic gain, but hope also to learn from other cultures by exchanging our goods and services.\n\n"
+ qt_ufop_establish_trade_affiliations_11_tooltip:0 "§Y$trade_conversion_ufop_quest_unity$§! trade policy will be unlocked"
+
+ # C2
+ qt_ufop_expand_memory_alpha_8:0 "Expand Memory Alpha"
+ qt_ufop_expand_memory_alpha_8_desc:0 "As we reach more remote parts of the §HGalaxy§!, encounter new civilizations, and travel further than we have before, our base for central information storage grows accordingly. In order to write and record History, we expand the capacity of our library computer's §Hcentral brain§!.\n\n"
+
+ #C3
+ qt_ufop_dead_to_life:0 "Revival"
+ qt_ufop_dead_to_life_desc:0 "By modifying the environment around us, we terraform entire worlds often with the goal of ensuring their conversion to §HMinshara-class§! planets. But not always. If §HGideon Seyetik§! could create continuous rainbows and oceans the color of sapphire wine, then we are still only at the tip of the iceberg.\n\n"
+
+ # C4
+ qt_ufop_ds9_station:0 "DS9 Space Station"
+ qt_ufop_ds9_station_desc:0 "By establishing a §HFederation§! presence aboard §HDeep Space 9§!, which includes our leadership of the station, we ensure stability and peace. In time, our integration will become seamless, and new alliances will be forged.\n\n"
+ qt_ufop_ds9_station_fail_tooltip:0 "$TRIGGER_FAIL$ §YBajor§! System is within §HUnited Federation of Planets§! borders."
+ qt_ufop_ds9_station_possible_tooltip:0 "$TRIGGER_PASS$ §YBajor§! System is within §HUnited Federation of Planets§! borders."
+
+ # C5
+ qt_ufop_inevitable:0 "The Inevitable"
+ qt_ufop_inevitable_desc:0 "It is only a matter of time before the §HBorg§! invade. In the face of such unavoidable adversity, we can only grow stronger. We shall show those who endanger peace that their oppression will never outweigh the strength of the §HFederation§!'s founding cause.\n\n"
+ qt_ufop_inevitable_sovereign_custom_tooltip_success:0 "£trigger_yes£ §YSovereign Class Ships§!: §Y[This.qt_ufop_inevitable_sovereign_ships]§!/§Y15§!"
+ qt_ufop_inevitable_sovereign_custom_tooltip_fail:0 "£trigger_no£ §YSovereign Class Ships§!: §Y[This.qt_ufop_inevitable_sovereign_ships]§!/§Y15§!"
+
+ qt_ufop_inevitable_shipyard_custom_tooltip_fail:0 "£trigger_no£ Have any starbase with 2 §YShipyards§!. §Y[event_target:qt_ufop_inevitable_starbase.GetName]§! Starbase currently has §Y[This.qt_ufop_inevitable_starbase_with_shipyards]§! §YShipyards§!."
+ qt_ufop_inevitable_shipyard_custom_tooltip_success:0 "£trigger_yes£ Have a Starbase with 2 §YShipyards§!. §Y[event_target:qt_ufop_inevitable_starbase.GetName]§! Starbase currently has §Y[This.qt_ufop_inevitable_starbase_with_shipyards]§! §YShipyards§!."
+
+ # C6
+ qt_ufop_extermination_futile:0 "Extermination is Futile"
+ qt_ufop_extermination_futile_desc:0 "As the last enemy ships are shot down, we regain control of the §HQuadrants§!. We will take our chances when gathering as much information about this galactic disaster as we can, ensuring to the best of our ability that such a threat never surfaces again. In time, we will restore our §HGalaxy§!.\n\n"
+ qt_ufop_extermination_futile_tooltip_fail:0 "$TRIGGER_FAIL$ §HUnited Federation of Planets§! survived the §Ycrisis§!."
+ qt_ufop_extermination_futile_tooltip_success:0 "$TRIGGER_PASS$ §HUnited Federation of Planets§! emerged victorious from the §Yborg crisis§!."
+
+ # D1
+ qt_ufop_grow_the_federation_5:0 "Grow the Federation"
+ qt_ufop_grow_the_federation_5_desc:0 "Through peaceful integration of other civilizations, the §HFederation§! maintains its position in the §HGalaxy§! as the first union founded on shared ideals rather than birthrights.\n\n"
+
+ # D2
+ qt_ufop_liberate_the_oppressed:0 "Liberate the Oppressed"
+ qt_ufop_liberate_the_oppressed_desc:0 "After many years of being subjugated by §HCardassia§!, §HBajor§! is now liberated. As the Bajorans begin to remove symbols of the occupation from their homeworld, we vow to see that their liberation marks the beginning of better times.\n\n"
+
+ qt_ufop_liberate_the_oppressed_custom_tooltip:0 "§YPeace Is Transparency§! Edict is unlocked\n"
+
+ qt_ufop_liberate_the_oppressed_fail_a_tooltip:0 "$TRIGGER_FAIL$ Free Bajor\na. Through Liberation War\nb. Through Requesting it their Overlord\n    This is a diplo action called §HRequest Subject Liberation§!"
+ qt_ufop_liberate_the_oppressed_success_a_tooltip:0 "$TRIGGER_PASS$ Free Bajor\na. Through Liberation War\nb. Through Requesting it their Overlord\n    This is a diplo action called §HRequest Subject Liberation§!"
+
+ # D3
+ qt_ufop_bajoran_membership:0 "Bajoran Membership"
+ qt_ufop_bajoran_membership_desc:0 "A new era of freedom begins. Autonomy is key in the development of any civilization. We support our §HBajoran§! neighbors in their fight for a better life, in which their beliefs are safeguarded, and their plan for their nation's future may flourish.\n\n"
+ qt_ufop_bajoran_membership_custom_tooltip_fail:0 "£trigger_no£ Own §HBajor§! System"
+ qt_ufop_bajoran_membership_custom_tooltip_success:0 "£trigger_yes£ Own §HBajor§! System"
+ 
+ # D4
+ qt_ufop_starburst:0 "Starburst"
+ qt_ufop_starburst_desc:0 "Sightings of errant fluctuations and unusual solar explosions near the §HRomulan homeworld§! have been reported as a cause for galactic concern. In an effort to uncover what exactly is causing these abnormal readings, we have joined the §HRomulans§! in their investigations for the time being.\n\n"
+ qt_ufop_starburst_custom_tooltip_success:0 "£trigger_yes£ Complete §YSuspicious Flares§! Situation."
+ qt_ufop_starburst_custom_tooltip_fail:0 "£trigger_no£ Complete §YSuspicious Flares§! Situation."
+ qt_ufop_starburst_custom_tooltip_on_finished:0 "Mutual opinion with §HRomulan Star Empire§! changes by §G+100§!\n§YBulk Carrier Schematics§! unlocked."
+ qt_ufop_starburst_suspicious_flares_blocked_tooltip_success:0 "Situation §YSuspicious Flares§! failed."
+ qt_ufop_starburst_suspicious_flares_blocked_tooltip_fail:0 "§RSituation §YSuspicious Flares§! must NOT fail.§!"
+
+ # D5
+ qt_ufop_exodus:0 "Exodus"
+ qt_ufop_exodus_desc:0 "We see it as our moral duty to mobilize §HStarfleet§! in order to assist in a system-wide evacuation of millions of citizens. Our §Htransport ships§! stand ready.\n\n"
+ qt_ufop_exodus_custom_tooltip_success:0 "£trigger_yes£ The §YImmediate Evacuation§! Special Project was successfully completed."
+ qt_ufop_exodus_custom_tooltip_fail:0 "£trigger_no£ The §YImmediate Evacuation§! Special Project was successfully completed."
+ qt_ufop_exodus_immediate_evacuation_blocked_tooltip_success:0 "Special Project §YImmediate Evacuation§! failed."
+ qt_ufop_exodus_immediate_evacuation_blocked_tooltip_fail:0 "§RSpecial Project §YImmediate Evacuation§! must NOT fail.§!"
+ qt_ufop_exodus_tooltip:0 "Mutual opinion with §HRomulan Star Empire§! changes by §G+200§!"
+
+ #### E1
+ qt_ufop_empower_section_31_9:0 "Empower Section 31"
+ qt_ufop_empower_section_31_9_desc:0 "Our enemies work tirelessly toward humanity's downfall. A handful of individuals operating from the shadows of §HStarfleet§! are now our only counterweight against the blind xenophilia of the §HTop Brass§!. Sabotage, clandestine operations, assassination. There is nothing we won't do to save our kind from extinction.\n\n"
+ 
+ # E2
+ qt_ufop_reform_the_charters_12:0 "Reform the Charters"
+ qt_ufop_reform_the_charters_12_desc:0 "Our mission has changed. As threats loom beyond our borders, the goals of spreading scientific progress must take second priority to defense, intelligence-gathering, and checkmating our enemies before they ever have the chance to attack.\n\n"
+
+ qt_ufop_reform_the_charters_12_custom_tooltip:0 "§YSecure the Timeline§! Edict is unlocked\n"
+
+ qt_ufop_reform_the_charters_12_custom_tooltip_fail:0 "£trigger_no£ Reach Empire Admiral Cap for number of Admirals assigned to Fleets: §Y[This.qt_ufop_reform_the_charters_12_admirals_assigned_to_fleets]§!/§Y[This.qt_ufop_reform_the_charters_12_admiral_cap]§!"
+ qt_ufop_reform_the_charters_12_custom_tooltip_success:0 "£trigger_yes£ Reach Empire Admiral Cap for number of Admirals assigned to Fleets: §Y[This.qt_ufop_reform_the_charters_12_admirals_assigned_to_fleets]§!/§Y[This.qt_ufop_reform_the_charters_12_admiral_cap]§!"
+ 
+ qt_ufop_reform_the_charters_picard_resigns:0 "§RCaptain Jean-Luc Picard will resign from his present assignment with§! §HStarfleet§!"
+
+ # E3
+ qt_ufop_control_demilitarized_zone_21:0 "Control Demilitarized Zone"
+ qt_ufop_control_demilitarized_zone_21_desc:0 "As the §HFederation§! grows in strength, we find ourselves in a position to claim what historically belonged to us. A combination of uninformed decision-making and inadequate leadership led us down this path. It's time to return to better ways.\n\n"
+ qt_ufop_control_demilitarized_zone_21_unity_by_officer:0 "§G+2§! £unity£ produced by $job_starfleet_officer_ufop_plural$."
+
+ qt_ufop_control_demilitarized_zone_sheva_fail_tooltip:0 "$TRIGGER_FAIL$ §YSheva§! System is within §HUnited Federation of Planets§! borders."
+ qt_ufop_control_demilitarized_zone_sheva_possible_tooltip:0 "$TRIGGER_PASS$ §YSheva§! System is within §HUnited Federation of Planets§! borders."
+ qt_ufop_control_demilitarized_zone_denobula_fail_tooltip:0 "$TRIGGER_FAIL$ §YDenobula§! System is within §HUnited Federation of Planets§! borders."
+ qt_ufop_control_demilitarized_zone_denobula_possible_tooltip:0 "$TRIGGER_PASS$ §YDenobula§! System is within §HUnited Federation of Planets§! borders."
+
+ # E4
+ qt_ufop_control_neutral_zone:0 "Control Neutral Zone"
+ qt_ufop_control_neutral_zone_desc:0 "As we begin to reclaim galactic territories that should never have slipped away from us in the first place, we recognize that the §HNeutral Zone§! is strategically crucial. From now on, we take back what is rightfully ours.\n\n"
+
+ qt_ufop_control_neutral_zone_romii_fail_tooltip:0 "$TRIGGER_FAIL$ §YRomii§! System is within §HUnited Federation of Planets§! borders." 
+ qt_ufop_control_neutral_zone_romii_possible_tooltip:0 "$TRIGGER_PASS$ §YRomii§! System is within §HUnited Federation of Planets§! borders." 
+
+ qt_ufop_control_neutral_zone_galador_fail_tooltip:0 "$TRIGGER_FAIL$ §YGalador§! System is within §HUnited Federation of Planets§! borders." 
+ qt_ufop_control_neutral_zone_galador_possible_tooltip:0 "$TRIGGER_PASS$ §YGalador§! System is within §HUnited Federation of Planets§! borders." 
+
+ qt_ufop_control_neutral_zone_draken_fail_tooltip:0 "$TRIGGER_FAIL$ §YDraken§! System is within §HUnited Federation of Planets§! borders." 
+ qt_ufop_control_neutral_zone_draken_possible_tooltip:0 "$TRIGGER_PASS$ §YDraken§! System is within §HUnited Federation of Planets§! borders." 
+
+ qt_ufop_control_neutral_zone_eden_fail_tooltip:0 "$TRIGGER_FAIL$ §YEden§! System is within §HUnited Federation of Planets§! borders." 
+ qt_ufop_control_neutral_zone_eden_possible_tooltip:0 "$TRIGGER_PASS$ §YEden§! System is within §HUnited Federation of Planets§! borders." 
+
+ qt_ufop_control_neutral_zone_starfleet_officer_produce:0 "§G+2§! £officers£ produced by $job_starfleet_officer_ufop_plural$."
+
+ # E5
+ qt_ufop_major_strike:0 "A Major Strike"
+ qt_ufop_major_strike_desc:0 "Peace is not enough without glory. Survival is not only about existing, but being recorded in time. The §HUnited Federation of Planets§! will continue on its course of expansion, so that the memory of our people may live forever, and prosper always.\n\n"
+ qt_ufop_major_strike_custom_tooltip_fail:0 "£trigger_no£ Conquest a §GMajor Power Capital§! colony"
+ qt_ufop_major_strike_custom_tooltip_success:0 "£trigger_yes£ Conquest a §GMajor Power Capital§! colony"
+ qt_ufop_major_strike_admiral_add_skill:0 "All §YAdmirals§! gains §G3§! levels"
+ 
+ # Klingon Missions
+ 
+ # A1
+ qt_klingon_a1:0 "We are Klingons!"
+ qt_klingon_a1_desc:0 "There are no Klingon defeats, only honorable deaths. No matter if we win or die, the strength of our people is anchored in the minds of all throughout time. History is written by the victors, but also by those worth remembering. §HtlhIngan maH!§!.\n\n"
+ 
+ qt_klingon_a1_admirals_fail:0 "£trigger_no£ §YAdmirals§! assigned to Military Ships: §Y[This.qt_klingon_a1_assigned_admirals_count]§!/§Y2§!"
+ qt_klingon_a1_admirals_success:0 "£trigger_yes£ §YAdmirals§! assigned to Military Ships: §Y[This.qt_klingon_a1_assigned_admirals_count]§!/§Y2§!"
+ 
+ qt_klingon_a1_general_fail:0 "£trigger_no£ §YGenerals§! assigned to Army Transport Ship: §Y[This.qt_klingon_a1_assigned_general_count]§!/§Y1§!"
+ qt_klingon_a1_general_success:0 "£trigger_yes£ §YGenerals§! assigned to Army Transport Ship: §Y[This.qt_klingon_a1_assigned_general_count]§!/§Y1§!"
+
+ # A2
+ qt_klingon_a2:0 "In Our Blood"
+ qt_klingon_a2_desc:0 "By nature, Klingons are glorious combattants. From the §HAge of Ascension§! to the §HDeath Ritual§!, we will never bow down. We come to this world warriors, and we leave it as warriors too.\n\n"
+ qt_klingon_a2_fight_buildings_fail_custom_tooltip:0 "£trigger_no£ §Y$building_hall_of_warriors_klingon$§! or §Y$building_stronghold$§! Building: §Y[This.fight_buildings]§!/§Y2§!"
+ qt_klingon_a2_fight_buildings_success_custom_tooltip:0 "£trigger_yes£ §Y$building_hall_of_warriors_klingon$§! or §Y$building_stronghold$§! Building: §Y[This.fight_buildings]§!/§Y2§!"
+ 
+ #B1
+ qt_klingon_b1:0 "The Empire Grows"
+ qt_klingon_b1_desc:0 "As we forge our own future, we successfully lay claim to colonies that will become part of the §HKlingon Empire§!. Those who are unable to defend what they own were never worthy of ownership to begin with.\n\n"
+
+ qt_klingon_b1_custom_tooltip:0 "§YSoul of Empire§! Edict is unlocked"
+
+ qt_klingon_b1_colony_foundry_success_custom_tooltip:0 "£trigger_yes£ Colonies with §Y$col_foundry$§! designation: §Y[This.qt_klingon_b1_col_foundry_count]§!/§Y2§!"
+ qt_klingon_b1_colony_foundry_fail_custom_tooltip:0 "£trigger_no£ Colonies with §Y$col_foundry$§! designation: §Y[This.qt_klingon_b1_col_foundry_count]§!/§Y2§!"
+ qt_klingon_b1_mineral_alloys_tooltip:0 "Metallurgist: §YMineral§! Upkeep §G+1§!\nMetallurgist: §YAlloys§! Produce §G+1§!"
+
+ # A3
+ qt_klingon_a3:0 "Prepare for Sto-vo-kor"
+ qt_klingon_a3_desc:0 "Following the ancient tradition of §Hak'voh§!, our comrades gather on sacred grounds to stay with the fallen so their spirits may pass on to §HSto-vo-kor§!.\n\n"
+
+ qt_klingon_a3_custom_tooltip:0 "§YForged in Starfire§! Edict is unlocked"
+ 
+ # B2
+ qt_klingon_b2:0 "Claim Supremacy"
+ qt_klingon_b2_desc:0 "So you wish to wage war against the mighty §HKlingon Empire§!? §Hmaj§!! So you wish to die. It seems fate is on your side. §HHeghlu'meH QaQ jajvam§!.\n\n"
+
+ qt_klingon_b2_fail:0 "$TRIGGER_FAIL$ Conquer a planet winning a war."
+ qt_klingon_b2_success:0 "$TRIGGER_PASS$ You have conquered a planet winning a war."
+
+ # C1
+ qt_klingon_c1:0 "Hearts of a Warrior"
+ qt_klingon_c1_desc:0 "Loyalty amongst allies is something to be celebrated with §Hfirewine§! and the beat of a drum. Recognizing and rewarding acts of good faith come naturally to us.\n\n"
+ qt_klingon_c1_civic_tooltip:0 "§Y$civic_followers_of_kahless$§! civic is replaced by §Y$civic_devoted_to_kahless$§! civic, giving the following effects:\n$civic_tooltip_devoted_of_kahless_effects$\n$MOD_ARMY_DAMAGE_MULT$: §G+20%§!\n\n"
+ qt_klingon_c1_opinion_tooltip:0 "Mutual opinion with §HUnited Federation of Planets§! changes by §G+250§!\n"
+
+ # C2
+ qt_klingon_c2:0 "Battlefield Sense"
+ qt_klingon_c2_desc:0 "Many seem to forget that the Klingon does not boast force of body alone. Our force of mind is tested in trials such as the §HRite of MajQa§!'s lengthy meditations. The ability to enter star systems unseen is a skill we, too, have honed.\n\n"
+
+ # C3
+ qt_klingon_c3:0 "botjan yIchu'!"
+ qt_klingon_c3_desc:0 "To die in pursuit of battlefield glory is a good death. Yet, we must also be prepared to live. We are always ready to raise our shields in defense of the warriors who stand beside us.\n\n"
+
+ qt_klingon_c3_custom_tooltip:0 "§YEvolution of the Blade§! Edict is unlocked"
+
+ qt_klingon_c3_district_tooltip:0 "§Y$district_hunting_grounds_klingon_plural$§! gives §G+2§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! and §G+2§! £amenities£ §Y$MOD_PLANET_AMENITIES_MULT$§!"
+
+ qt_klingon_c3_fail:0 "£trigger_no£ §Y$military_station_small_plural$§!: §Y[This.qt_klingon_c3_military_stations]§!/§Y10§!"
+ qt_klingon_c3_success:0 "£trigger_yes£ §Y$military_station_small_plural$§!: §Y[This.qt_klingon_c3_military_stations]§!/§Y10§!"
+
+ # C4
+ qt_klingon_c4:0 "Glory in Battle"
+ qt_klingon_c4_desc:0 "We are and always shall be victorious. The blood courses through our veins, the drums beat to the rhythm of our hearts, the stars shine bright and guide us in our galactic conquest. Rise up, §HtlhIngan§!!\n\n"
+
+ # D1
+ qt_klingon_d1:0 "No Negotiations"
+ qt_klingon_d1_desc:0 "A pseudo-pacifist influence won't be tolerated. Cease all negotiations with the §HFederation§!. We no longer follow their lily-livered politics. These futile accords stop now.\n\n"
+ qt_klingon_d1_civic_tooltip:0 "§Y$civic_warriors_honor$§! civic is replaced by §Y$civic_by_the_batleth$§! civic, giving the following effects:\n$MOD_SHIP_EVASION_MULT$: §G20%§!\n$MOD_SHIP_TRACKING_MULT$: §G20%§!\n$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$: §G-20%§!\n\n"
+ qt_klingon_d1_romulan_opinion_tooltip:0 "Mutual opinion with §HRomulan Star Empire§! changes by §G+200§!\n"
+ qt_klingon_d1_ufop_opinion_tooltip:0 "Mutual opinion with §HUnited Federation of Planets§! changes by §R-200§!\n"
+
+ qt_klingon_d1_owned_leaders_success:0 "£trigger_yes£ Owned Leaders: §Y[This.qt_klingon_d1_owned_leaders]§!/§Y12§!"
+ qt_klingon_d1_owned_leaders_fail:0 "£trigger_no£ Owned Leaders: §Y[This.qt_klingon_d1_owned_leaders]§!/§Y12§!"
+
+ #D2
+ qt_klingon_d2:0 "Restoring Honor"
+ qt_klingon_d2_desc:0 "Klingons are a proud people. We do not think twice about conquering the weak or weeding out the unworthy. Most of our enemies flee at the first sight of our approach, and those who do not flee, cower before us.\n\n"
+
+ qt_klingon_d2_bird_of_prey_fail:0 "£trigger_no£ §Y$NAME_Bird_Of_Prey$§! ships built: §Y[This.qt_klingon_d2_bird_of_prey]§!/§Y20§!"
+ qt_klingon_d2_bird_of_prey_success:0 "£trigger_yes£ §Y$NAME_Bird_Of_Prey$§! ships built: §Y[This.qt_klingon_d2_bird_of_prey]§!/§Y20§!"
+ qt_klingon_d2_warbird_fail:0 "£trigger_no£ §Y$NAME_Warbird$§! ships built: §Y[This.qt_klingon_d2_warbird]§!/§Y15§!"
+ qt_klingon_d2_warbird_success:0 "£trigger_yes£ §Y$NAME_Warbird$§! ships built: §Y[This.qt_klingon_d2_warbird]§!/§Y15§!"
+ qt_klingon_d2_max_garrison_fail:0 "£trigger_no£ $GARRISON_POWER_HEADER$ in any owned planet: §Y[This.planet_with_max_garrison_strength]§!/§Y2400§!"
+ qt_klingon_d2_max_garrison_success:0 "£trigger_yes£ $GARRISON_POWER_HEADER$ in any owned planet: §Y[This.planet_with_max_garrison_strength]§!/§Y2400§!"
+
+ # D3
+ qt_klingon_d3:0 "Tame the Threat"
+ qt_klingon_d3_desc:0 "Humans lack our corporeal strength and psychological stamina. The weak are not fit for survival. Our warriors have an innate understanding of what it takes to persist through time. Kill, or be killed, such is the law of life. \n\n"
+ qt_klingon_d3_custom_tooltip_set_wg:0 "§YGlory to the Empire§! War Goal."
+
+ qt_klingon_d3_custom_tooltip:0 "§YThe Razor's Edge§! Edict is unlocked"
+
+ qt_klingon_d3_controlled_systems_ufop_fail:0 "£trigger_no£ §HUnited Federation of Planets§! systems owned: §Y[This.qt_klingon_d3_controlled_systems_ufop]§!/§Y3§!."
+ qt_klingon_d3_controlled_systems_ufop_success:0 "£trigger_yes£  §HUnited Federation of Planets§! systems owned: §Y[This.qt_klingon_d3_controlled_systems_ufop]§! /§Y3§!."
+
+ qt_klingon_d3_controlled_systems_fail:0 "£trigger_no£ Systems conquered: §Y[This.qt_klingon_d3_controlled_systems]§!/§Y3§!"
+ qt_klingon_d3_controlled_systems_success:0 "£trigger_yes£ Systems conquered: §Y[This.qt_klingon_d3_controlled_systems]§!/§Y3§!"
+
+ # E1
+ qt_klingon_e1:0 "A Day to Remember"
+ qt_klingon_e1_desc:0 "The fabled stories passed down from generation to generation have come true. Those most faithful always knew the day would come. §HKahless The Unforgettable§!, slayer of §HMolor§! and §HFek'Ihiri§! has returned.\n\n"
+ qt_klingon_e1_volcanic_shrine_fail:0 "£trigger_no£ §Y$building_volcanic_shrine_klingon$§! building built: §Y[This.qt_klingon_e1_volcanic_shrine]§!/§Y5§!"
+ qt_klingon_e1_volcanic_shrine_success:0 "£trigger_yes£ §Y$building_volcanic_shrine_klingon$§! building built: §Y[This.qt_klingon_e1_volcanic_shrine]§!/§Y5§!"
+ qt_klingon_e1_memorial_monument_fail:0 "£trigger_no£ §Y$building_autochthon_monument$§! building built: §Y[This.qt_klingon_e1_memorial_monument]§!/§Y5§!"
+ qt_klingon_e1_memorial_monument_success:0 "£trigger_yes£ §Y$building_autochthon_monument$§! building built: §Y[This.qt_klingon_e1_memorial_monument]§!/§Y5§!"
+
+ # E2
+ qt_klingon_e2:0 "Spiritual Prosperity"
+ qt_klingon_e2_desc:0 "Our people are united now more than ever. As the legends foretold, the return of §HKahless§! has boded well for Klingon harmony. We seek now to slay our enemies rather than fight each other. Live long and die well, §HqeylIS lIjlaHbogh pagh§!!\n\n"
+ 
+ qt_klingon_e2_warrior_tooltip:0 "§G+1§! £unity£ produced by $job_warrior_klingon_plural$."
+ qt_klingon_e2_planet_tooltip:0 "§G+5§! £stability£ for a random Colony planet."
+ qt_klingon_e2_desicion_tooltip:0 "Planetary decision added: §Y$kahless_festival$§!."
+ qt_klingon_e2_sactum_fail:0 "£trigger_no£ Colonies with §Y$col_sanctum$§! designation: §Y[This.qt_klingon_e2_col_sanctum_count]§!/§Y1§!"
+ qt_klingon_e2_sactum_success:0 "£trigger_yes£ Colonies with §Y$col_sanctum$§! designation: §Y[This.qt_klingon_e2_col_sanctum_count]§!/§Y1§!"
+
+ # E3
+ qt_klingon_e3:0 "Kahless Reborn"
+ qt_klingon_e3_desc:0 "Other Empires have not seen what the §HKlingon Empire§! has, other beings have not experienced even a morsel of our sacred lives. The unfaithful chose to mock the might of our spirituality, but §HHagh qoHpu' neH HeghtaHvIS SuvwI'pu'§!. §HKahless§! is returned. Through him, we are everlasting. \n\n"
+
+ qt_klingon_e3_hunting_grounds_fail:0 "   £trigger_no£ §Y$district_hunting_grounds_plural$§! districts: §Y[This.qt_klingon_e3_max_hunting_grounds_planet_count]§!/§Y5§!"
+ qt_klingon_e3_hunting_grounds_success:0 "   £trigger_yes£ §Y$district_hunting_grounds_plural$§! districts: §Y[This.qt_klingon_e3_max_hunting_grounds_planet_count]§!/§Y5§!"
+
+ qt_klingon_e3_kahless_festival_effect:0 "§H$kahless_festival_unimaginable_guest$§! modifier applied where the §YKahless Festival§! Planetary Decision is currently active"
+
+ # F1
+ qt_klingon_f1:0 "Fraudulent Heir"
+ qt_klingon_f1_desc:0 "What we thought was the return of the §HRightful Heir§! to the throne of our Empire was nothing more than a repulsive ruse. Using his name in vain, a fraud has infiltrated our ranks and posed as none other than the great §HKahless§!. No such insult will be tolerated. We will send this vile pretender to §HGre'thor§!!\n\n"
+ qt_klingon_f1_reward_tooltip:0 "New War Doctrine: §Y$klingon_honor_doctrine$§!"
+ qt_klingon_f1_success_tooltip:0 "£trigger_yes£ Envoys §YHarming Relations§! on any Power: §Y[This.qt_klingon_f1_harming_relations_count]§!/§Y1§!"
+ qt_klingon_f1_fail_tooltip:0 "£trigger_no£ Envoys §YHarming Relations§! on any Power: §Y[This.qt_klingon_f1_harming_relations_count]§!/§Y1§!"
+ 
+ # F2
+ qt_klingon_f2:0 "The Taste of Victory"
+ qt_klingon_f2_desc:0 "Formidable armament, incomparable maneuverability, and hyper-resilient hulls. Investing in our combat capabilities is not only our people's priority, but the key to our superiority.\n\n"
+
+ # F3
+ qt_klingon_f3:0 "The Dreaded"
+ qt_klingon_f3_desc:0 "Waging war is not for the weak of mind. Not only are we committed to striking first, but to defending that which we have already conquered. Do not underestimate a Klingon's strategical intelligence. §HSuvlu'taHvIS yapbe' HoS neH§!.\n\n"
+
+ qt_klingon_f3_reward_tooltip:0 "Admirals have no upkeep"
+ qt_klingon_f3_starfortress_fail:0 "£trigger_no£ Have a §YStar Fortress§! with all Buildings slot and Modules slot occupied"
+ qt_klingon_f3_starfortress_success:0 "£trigger_yes£ Have a §YStar Fortress§! with all Buildings slot and Modules slot occupied"
+
+ # F4
+ qt_klingon_f4:0 "Born to Brawl"
+ qt_klingon_f4_desc:0 "§HB'aht Qul§! challenges. §HJa'chuq §! ceremonies. Rites of Vengence. From the Age of Ascension to the Death Ritual, we are born to fight, and fight to die. By the lit §Hkor'tova§! candles of our young, §HmaH DoQ batlh§!!\n\n"
+ qt_klingon_f4_warrior_tooltip:0 "§YHunting Grounds§! district gives §G+1§! £job_warrior_klingon£ §Y$job_warrior_klingon$§! and §G+1§! £job_martial_artist_klingon£ §Y$job_martial_artist_klingon$§!"
+ qt_klingon_f4_tradition_success:0 "£trigger_yes£ Have completed §YKlingon Tradition§! branch"
+ qt_klingon_f4_tradition_fail:0 "£trigger_no£ Have completed §YKlingon Tradition§! branch"
+
+ # Romulan missions
+   
+ ### A1
+ 
+ qt_romulan_a1:0 "Shadow Politics"
+ qt_romulan_a1_desc:0 "The first mistake all fallen civilizations once made was establishing relationships based on trust alone. Romulans know that faith in the Other is reckless, uncontrollable, and short-sighted. As such, we ensure other species are not granted free passage to our territory."
+ qt_romulan_a1_spies_success:0 "$TRIGGER_PASS$ §YSpies§! recruited: §Y[This.qt_romulan_a1_spies_count]§!/§Y2§!"
+ qt_romulan_a1_spies_fail:0 "$TRIGGER_FAIL$§YSpies§! recruited: §Y[This.qt_romulan_a1_spies_count]§!/§Y2§!"
+
+ # A2
+ qt_romulan_a2:0 "Omniscient"
+ qt_romulan_a2_desc:0 "There are many viable ways of operating unseen. One is by building a network of bases that only those with the highest security clearance can access. There the most §Hmandukar rh'iovir§! perform hololink analysis on classified cases without disruption.\n\n"
+
+ qt_romulan_a2_custom_tooltip:0 "§YOur Nation, A Fortress§! Edict is unlocked"
+ 
+ # A3
+ qt_romulan_a3:0 "Tal Shiar"
+ qt_romulan_a3_desc:0 "For centuries, legend has held that a shadow group known as the §HZhat Vash§! secretly runs Romulan society. Our intelligence agency, the §HTal Shiar§!, encourages the public to remember that no myth, no matter how potent, affects the efficiency of our organization. Unlike the incompetent spoonheads running the §HObsidian Order§!, our agents pay no mind to propaganda.\n\n"
+ 
+ # A4
+ qt_romulan_a4:0 "Event Horizons"
+ qt_romulan_a4_desc:0 "The use of §Hartificial quantum singularities§! to generate energy is far superior to any method relying on matter-antimatter reaction. Whereas other civilizations are too cautious to harvest powerful resources, Romulans are fearless in their exploration of black holes. Life is expendable; our energy cannot be.\n\n"
+
+ qt_romulan_a4_custom_tooltip:0 "§YThe Sharpest Minds§! Edict is unlocked"
+
+ # A5
+ qt_romulan_a5:0 "Majestus"
+ qt_romulan_a5_desc:0 "Imagine this: our enemy's poor excuse for a flagship finds itself traveling through space unguarded, its commander eager and impetuous. Much to their surprise, our coordinated warbirds decloak at once, forcing the commander to surrender. Funny, what superior foresight can achieve.\n\n"
+ qt_romulan_a5_custom_tooltip_success:0 "£trigger_yes£ §YMajestus Class Ships§!: §Y[This.qt_romulan_a5_majestus]§!/§Y10§!"
+ qt_romulan_a5_custom_tooltip_fail:0 "£trigger_no£ §YMajestus Class Ships§!: §Y[This.qt_romulan_a5_majestus]§!/§Y10§!"
+  
+ ### B1
+ qt_romulan_b1:0 "Flickering Sun"
+ qt_romulan_b1_desc:0 "Unusual activity near our homeworld has become a galactic cause for concern. It appears our sun is nearing the end of its hydrogen-burning phase, and will soon lose its hydrostatic equilibrium. Now more than ever is the time to prove that Romulans handle a calamity better than any other species.\n\n"
+ qt_romulan_b1_tooltip_success:0 "£trigger_yes£ Complete Situation: §Y$suspicious_flares_situation$§!"
+ qt_romulan_b1_tooltip_fail:0 "£trigger_no£ Complete Situation: §Y$suspicious_flares_situation$§!"
+
+ # B2
+ qt_romulan_b2:0 "End of An Era"
+ qt_romulan_b2_desc:0 "To accept the assistance of the §HFederation§! so that the Romulan people may endure through time is a necessary sacrifice. §HRashant… sudan ropeng Ihir nah§!. However, do not mistake this alliance for an act of miscalculated  desperation. Everything we do is born from strategy.\n\n"
+ qt_romulan_b2_tooltip_success:0 "£trigger_yes£ §HUnited Federation of Planets§! §Gis helping§! in §Y$suspicious_flares_situation$§! Situation"
+ qt_romulan_b2_tooltip_fail:0 "£trigger_no£ §HUnited Federation of Planets§! §Gis helping§! in §Y$suspicious_flares_situation$§! Situation"
+ qt_romulan_b2_blocked_tooltip_fail:0 "§RThe §Y$suspicious_flares_situation$§! situation must NOT fail and the §YImmediate Evacuation§! special project must NOT fail§!"
+ qt_romulan_b2_blocked_tooltip_success:0 "The §Y$suspicious_flares_situation$§! situation must NOT fail and the §YImmediate Evacuation§! special project failed"
+
+ # B3
+ qt_romulan_b3:0 "Talla"
+ qt_romulan_b3_desc:0 "Be it a ruse, or a sincere gesture towards our people, the §HRihannsu§! will never accept foreign aid on such a monumental scale. We shape our own future, and refuse to be indebted to others. This is how we have prospered, and upheld our lleiset.\n\n"
+ qt_romulan_b3_blocked_tooltip_success:0 "§RThe §YSuspicios Flares§! Situation is completed successfully or the §YImmediate Evacuation§! special project is completed.§!"
+ qt_romulan_b3_blocked_tooltip_fail:0 "§RThe §YSuspicios Flares§! Situation must NOT be completed successfully and the §YImmediate Evacuation§! special project must NOT be completed either.§!"
+ qt_romulan_b3_possible_tooltip_success:0 "£trigger_yes£ §HUnited Federation of Planets§! §Ris not helping§! in §Y$suspicious_flares_situation$§! Situation"
+ qt_romulan_b3_possible_tooltip_fail:0 "£trigger_no£ §HUnited Federation of Planets§! §Ris not helping§! in §Y$suspicious_flares_situation$§! Situation"
+ qt_romulan_b3_tooltip:0 "Mutual opinion with §HUnited Fedaration of Planets§! changes by §G+300§!"
+ qt_romulan_b3_resettlement_cost_tooltip:0 "Rulers and Specialists §YResettlement Cost§!: §G-30%§!"
+
+ ### C1
+ qt_romulan_c1:0 "Web of Spies"
+ qt_romulan_c1_desc:0 "Be it a silhouette in the shadows, a tracking device in the moulding of a sculpture, a compromised cask of §Hkali-fal§!, or a decoy planted on a §Hfvai§!; our society is based on the premise that one can never be too careful. As pioneers of new methods of surveillance, we have eyes in places other civilizations could only dream of.\n\n"
+ qt_romulan_c1_tooltip_success:0 "£trigger_yes£ Dissolve all §HNeutral Zones§! with §YUnited Federation of Planets§!"
+ qt_romulan_c1_tooltip_fail:0 "£trigger_no£ Dissolve all §HNeutral Zones§! with §YUnited Federation of Planets§!"
+
+ qt_romulan_c1_civic_tooltip:0 "§Y$civic_closet_politics$§! civic is replaced by §Y$civic_born_to_spy$§! civic, giving the following effects:\n$MOD_COUNTRY_SPIES_ROLL_BONUS_ADD$: §G+1§!\n$MOD_COUNTRY_SPY_MISSIONS_SPEED_MULT$: §G+0.15§!\n$MOD_COUNTRY_SPIES_CAP_ADD$: §G+1§!"
+
+ # C2
+ qt_romulan_c2:0 "Peerless"
+ qt_romulan_c2_desc:0 "Taking the weak under our wing should not be mistaken for kindness, or a willingness to combine cultures. We intend to exploit the skills other species might have, that is if they have any at all. We do so in the name of the §HRomulan Star Empire§! alone.\n\n"
+
+ qt_romulan_c2_custom_tooltip:0 "§YAnti-Coup Measures§! Edict is unlocked"
+
+ qt_romulan_c2_effect_resource_tooltip:0 "§G+100§! £influence£ when each assimilation process is completed successfully"
+ 
+ # C3
+ qt_romulan_c3:0 "Reclaiming Vulcan"
+ qt_romulan_c3_desc:0 "To some, following the tenet of pure logic seems like an advantage. But to us, such a path is a pitfall. Those who rejected §HSurak§! and marched beneath the raptor's wings saw what Vulcans could not; controlled emotion is the key to prosperity.\n\n"
+ 
+ ### D1
+ qt_romulan_d1:0 "Paradigm Shift"
+ qt_romulan_d1_desc:0 "Sometimes, change is driven by people with misleading objectives. We cannot afford to become stubborn in our ways; innovation is the backbone of our civilization. Those who push for outdated methods will not prevail. There will be no revolution without evolution of consciousness.\n\n"
+ qt_romulan_d1_effect_tooltip:0 "§R+1§! £energy£ $energy$ upkeep from $district_city_plural$\n§G+1§! £unity£ $unity$ from £job_praetorian_guard_romulan£ $job_praetorian_guard_romulan$"
+
+ qt_romulan_d1_non_romulan_pops_fail:0 "£trigger_no£ Non-romulan pops: §Y[This.qt_romulan_d1_non_romulan_pops]§!/§Y20§!" 
+ qt_romulan_d1_non_romulan_pops_success:0 "£trigger_yes£ Non-romulan pops: §Y[This.qt_romulan_d1_non_romulan_pops]§!/§Y20§!"
+
+ qt_romulan_d1_civic_tooltip:0 "§Y$civic_state_vigilance$§! civic is replaced by §Y$civic_in_rihannsu_we_trust$§! civic, giving the following effects:\n$MOD_COUNTRY_POP_APPEARING_ALIGNED_FOR_EVERY_SUCCESSFUL_COUNTER_ESPIONAGE_CHANCE$: §G+5%§!"
+
+ # D2
+ qt_romulan_d2:0 "Technological Apogee"
+ qt_romulan_d2_desc:0 "Budgeting for large-scale advancements in our technological abilities will give us a superior command of the universe.\n\n"
+
+ qt_romulan_d2_custom_tooltip:0 "§YPrecision Industries§! Edict is unlocked"
+ 
+ # D3
+ qt_romulan_d3:0 "Unification"
+ qt_romulan_d3_desc:0 "The rift between Romulan and Vulcan societies that once seemed so impassable has at last been repaired. May the healing we have worked hard to secure last for the next ten thousand years.\n\n"
+ qt_romulan_d3_trigger_1_fail:0 "$TRIGGER_FAIL$ Vulcan pops across the empire: §Y[This.number_of_vulcan_pops]§!/§Y30§!"
+ qt_romulan_d3_trigger_1_success:0 "$TRIGGER_PASS$ Vulcan pops across the empire: §Y[This.number_of_vulcan_pops]§!/§Y30§!"
+ qt_romulan_d3_trigger_2_fail:0 "$TRIGGER_FAIL$ §YVulcan Species§! have §Y$species_profile_romulan_spartan_conditions$§! species profile"
+ qt_romulan_d3_trigger_2_success:0 "$TRIGGER_PASS$ §YVulcan Species§! have §Y$species_profile_romulan_spartan_conditions$§! species profile"
+
+ qt_romulan_control_khitomer_01:0 "Control Khitomer"
+ qt_romulan_control_khitomer_01_desc:0 "Now that Khitomer is in our hands is time to tighten our grip and fully control the population."
+ 
+ qt_romulan_empower_tal_shiar_02:0 "Empower the Tal Shiar"
+ qt_romulan_empower_tal_shiar_02_desc:0 "Increase our espionage intelligence by means of carrying out operations so that nothing goes unnoticed to our agents."
+
+ qt_romulan_challenge_khitomer_accords_03:0 "Challenge the Khitomer Accords"
+ qt_romulan_challenge_khitomer_accords_03_desc:0 "Face the Klingon and Federation in an all out war to prove the superiority of our species."
+ 
+ qt_romulan_reman_covert_ops_04:0 "Reman Covert Ops"
+ qt_romulan_reman_covert_ops_04_desc:0 "Establish a base of operations for our espionage endeavors at Remus."
+
+ qt_romulan_enforce_isolationism_05:0 "Enforce Isolationism"
+ qt_romulan_enforce_isolationism_05_desc:0 "Our culture is more than enough to serve our needs. If we ever need anything from outsiders we will simply expand our borders through the appropriate means."
+ 
+ qt_romulan_break_isolationism_06:0 "Break Isolationism"
+ qt_romulan_break_isolationism_06_desc:0 "Open our minds and borders to other species so that we can enlighten them with the wonders of the Romulan culture."
+ qt_romulan_vulcan_ambition_07:0 "Vulcan Ambitions"
+ qt_romulan_vulcan_ambition_07_desc:0 "Bring our rebellious cousins back into the fold by conquering Vulcan."
+
+ qt_romulan_claim_superiority_08:0 "Claim Superiority"
+ #qt_romulan_claim_superiority_08_desc:0 "Bring other nations and species under the Romulan banner and pave your road to becoming a galactic superpower."
+ qt_romulan_claim_superiority_08_desc:0 "Lorem Ipsum."
+
+ qt_romulan_sabotage_alliance_09:0 "Sabotage Alliance"
+ #qt_romulan_sabotage_alliance_09_desc:0 "Use the Tal Shiar espionage expertise to advance our plans and end the fellowship between the Federation and the Klingon Empire."
+ qt_romulan_sabotage_alliance_09_desc:0 "Lorem Ipsum."
+ 
+ qt_romulan_aqcuire_foreign_technologies_10:0 "Aqcuire Foreign Technologies"
+ qt_romulan_aqcuire_foreign_technologies_10_desc:0 "Have our envoys establish connections with the galactic powers and procure technological advances for the betterment of all Romulans."
+ 
+ qt_romulan_befriend_vulcans_11:0 "Befriend Vulcans"
+ qt_romulan_befriend_vulcans_11_desc:0 "Lorem Ipsum."
+ 
+ qt_romulan_conquer_terok_nor_12:0 "Conquer Terok Nor"
+ qt_romulan_conquer_terok_nor_12_desc:0 "This particular section of the galaxy has captured the interest of many powers for far too long. It is time for the Romulan Empire to make its rightful claim of the system."
+ 
+ qt_romulan_push_back_dominion_13:0 "Push Back Dominion"
+ qt_romulan_push_back_dominion_13_desc:0 "Prove to the intruding Dominion that the Romulan fleets stand ready to deter any invasion to our quadrant."
+
+ qt_romulan_support_dissidents_14:0 "Support Dissidents"
+ qt_romulan_support_dissidents_14_desc:0 "Use the covert talents of some or our most valued Tal Shiar members to incite rebellions so that we can have our pick of the spoils."
+
+ qt_romulan_uproot_the_grass_15:0 "Uproot the Grass"
+ qt_romulan_uproot_the_grass_15_desc:0 "Lorem Ipsum."
+
+ qt_romulan_sow_the_unity_16:0 "Sow the Unity"
+ qt_romulan_sow_the_unity_16_desc:0 "Lorem Ipsum."
+
+ qt_romulan_integrate_vulcans_17:0 "Integrate Vulcans"
+ qt_romulan_integrate_vulcans_17_desc:0 "Lorem Ipsum."
+
+ qt_romulan_weaponize_supernova_18:0 "Weaponize the Supernova"
+ qt_romulan_weaponize_supernova_18_desc:0 "Lorem Ipsum."
+
+ qt_romulan_contain_supernova_19:0 "Contain the Supernova"
+ qt_romulan_contain_supernova_19_desc:0 "Lorem Ipsum."
+
+ qt_romulan_evacuate_homeworld_20:0 "Evacuate the Homeworld"
+ qt_romulan_evacuate_homeworld_20_desc:0 "Lorem Ipsum."
+
+ qt_romulan_embrace_suraks_teachings_21:0 "Embrace Surak's Teachings"
+ qt_romulan_embrace_suraks_teachings_21_desc:0 "Lorem Ipsum."
+
+ qt_romulan_romulan_overlords_22:0 "Romulan Overlords"
+ qt_romulan_romulan_overlords_22_desc:0 "Take our rightful place as the strongest empire by integrating one of the major powers into Romulan borders."
+
+ qt_romulan_conquer_the_neutral_zone_23:0 "Conquer the Neutral Zone"
+ qt_romulan_conquer_the_neutral_zone_23_desc:0 "Lorem Ipsum."
+
+ qt_romulan_new_beginings_24:0 "New Beginings"
+ qt_romulan_new_beginings_24_desc:0 "Lorem Ipsum."
+
+ # Cardassian Quests
+ 
+ ### A1
+ qt_cardassian_a1:0 "Our Shared Labor"
+ qt_cardassian_a1_desc:0 "Exploitation is only a matter of perspective. Our ways may seem rigorous to those unfamiliar with Cardassian history. But our own recognize that our ascension is based on hard work and discipline. We provide our workers with a more meaningful life, contributing to the continued resurrection of our prosperous §HCardassia§!.\n\n"
+ qt_cardassian_a1_custom_districts_success:0 "£trigger_yes£ §YLabor Camp§! Districts §Y[This.qt_cardassian_a1_districts]§!/§Y3§!."
+ qt_cardassian_a1_custom_districts_fail:0 "£trigger_no£ §YLabor Camp§! Districts §Y[This.qt_cardassian_a1_districts]§!/§Y3§!."
+
+ # A2
+ qt_cardassian_a2:0 "Education is Power"
+ qt_cardassian_a2_desc:0 "The §HCardassian educational system§! is unparalleled. From intensive mind-training programs to recital of the fundamental tenets of the §HState§!, our young are taught obedience from an early age.\n\n"
+ qt_cardassian_a2_tech_world:0 "§Y+35%§! £job_researcher£ $job_researcher$ job output from $col_research$."
+ qt_cardassian_a2_scientist_trait:0 "Random $SCIENTIST$ gains the §Y$leader_trait_advocate$§! trait, granting the following effects:\n$MOD_SHIP_ANOMALY_GENERATION_CHANCE$:  §Y+10%§!"
+
+ qt_cardassian_a2_custom_tooltip:0 "§YDeluge of Ships§! Edict is unlocked"
+
+ # A3
+ qt_cardassian_a3:0 "Insidious"
+ qt_cardassian_a3_desc:0 "Our extensive research records date back to the very beginnings of our kind. Every detail is described, every move is logged. Those who underestimate us suffer from ill-preparedness, a weakness we have not tolerated since the times of the §HAncient Civilization§!.\n\n"
+ qt_cardassian_a3_tooltip_success:0 "£trigger_yes£ Have a Starbase with 1 §Y$sm_listening_post$§! in a system adjacent to any other Power"
+ qt_cardassian_a3_tooltip_fail:0 "£trigger_no£ Have a Starbase with 1 §Y$sm_listening_post$§! in a system adjacent to any other Power"
+ 
+ # A4
+ qt_cardassian_a4:0 "Ruthless Expansion"
+ qt_cardassian_a4_desc:0 "While we Cardassians have proven ourselves worthy, it is clear that other species do not share our experience of successfully overcoming hardship. Our galactic domination is not only natural, but generous. We give the gift of ascending to greatness to those who could not achieve it themselves.\n\n"
+
+ qt_cardassian_a4_custom_tooltip:0 "§YCritical Mass§! Edict is unlocked"
+
+ # A5
+ qt_cardassian_a5:0 "Unflinching"
+ qt_cardassian_a5_desc:0 "We pride ourselves on the efficiency of our centralization. Though hierarchies are inevitable to the functioning of Cardassian society, we remain servants of the §HPeople§!, ensuring they are freed from any misguided ideologies.\n\n"
+ 
+ qt_cardassian_a5_special_project_fail:0 "£trigger_no£ Has completed special project §H$WOULD_BE_DEBRIS$§!"
+ qt_cardassian_a5_special_project_success:0 "£trigger_yes£ Has completed special project §H$WOULD_BE_DEBRIS$§!"
+ qt_cardassian_a5_administarive_capacity_chairperson_tooltip:0 "Administrative Capacity from £job_chairperson_cardassian£ $job_chairperson_cardassian$: §G+2§!"
+
+ ### B1
+ qt_cardassian_b1:0 "Bajor Thrives"
+ qt_cardassian_b1_desc:0 "The beauty of our integration policies lies in our ability to allow all of our subjects to rise up and serve a higher purpose. Cardassians do not discriminate, rather, we elevate. And who would not want to join us in our mission? Endless resources, opulent family dinners, breath-taking architecture, all under the protection of the most impartial §HState§! in the §HGalaxy§!. Even the Bajorans would be obligated to agree.\n\n"
+ 
+ qt_cardassian_b1_custom_tooltip_fail:0 "£trigger_no£ Bajor is part of the §HCardassian Union§!."
+ qt_cardassian_b1_custom_tooltip_success:0 "£trigger_yes£ Bajor is part of the §HCardassian Union§!."
+ 
+ # B2
+ qt_cardassian_b2:0 "Bajor's Zenith"
+ qt_cardassian_b2_desc:0 "§HBajor§! has been reshaped in the image of §HCardassia§! in ways unfathomable. The clever work of our §HState§! has allowed the planet to reach its full potential. With less focus on spiritualistic charlatanry, we have been able to train the Bajorans to become rigorous, deserving workers. To see a species with such a pitiful origin reach its socioeconomic apex is a credit to Cardassian methodologies.\n\n"
+ #HRB TO DO: bajor   and cardassia name, §Y$PRESCRIPTED_species_plural_cardassian$§!"
+ qt_cardassian_b2_bajor_is_cardassian_fail:0 "£trigger_no£ §YBajor XI§! is owned by §HCardassian Union§!" 
+ qt_cardassian_b2_bajor_is_cardassian_succes:0 "£trigger_yes£ §YBajor XI§! is owned by §HCardassian Union§!"
+
+ ### C1
+ qt_cardassian_c1:0 "Ideological Mission"
+ qt_cardassian_c1_desc:0 "Survival is as intrinsic to our kind as the atoms that make up our bodies. And in return, our resilience was rewarded with superiority. Let it be known: greatness begets survival as much as survival begets greatness.\n\n"
+ qt_cardassian_c1_effect_tooltip:0 "Crime from Non-Cardassian §Y$pop_cat_worker_plural$§!: §R+1§!"
+ qt_cardassian_c1_army_invasions_fail:0 "£trigger_no£ Successful Army Invasions: §Y[This.qt_cardassian_c1_armies_invasions_counter]§!/§Y7§!"
+ qt_cardassian_c1_army_invasions_success:0 "£trigger_yes£ Successful Army Invasions: §Y[This.qt_cardassian_c1_armies_invasions_counter]§!/§Y7§!"
+ qt_cardassian_c1_reeducate_pops_fail:0 "£trigger_no£ §Y$gov_reeducate_pops$§! missions in different Colonies: §Y[This.qt_cardassian_c1_reeducate_pops]§!/§Y3§!"
+ qt_cardassian_c1_reeducate_pops_success:0 "£trigger_yes£ §Y$gov_reeducate_pops$§! missions in different Colonies: §Y[This.qt_cardassian_c1_reeducate_pops]§!/§Y3§!"
+ qt_cardassian_c1_owned_colonies_fail:0 "£trigger_no£ Colonized Planets: §Y[This.qt_cardassian_c1_owned_colonies]§!/§Y10§!"
+ qt_cardassian_c1_owned_colonies_success:0 "£trigger_yes£ Colonized Planets: §Y[This.qt_cardassian_c1_owned_colonies]§!/§Y10§!"
+ 
+ # C2
+ qt_cardassian_c2:0 "Obsidian Order"
+ qt_cardassian_c2_desc:0 "There is not much that can be confirmed nor denied about the §HCardassian Intelligence Bureau§!. Suffice to say that such a high level of secrecy is what has allowed the organization to be the most efficient of its kind in the §HGalaxy§!. From the moment a Cardassian citizen takes their first breath, every move they make is logged and safely stored in a classified location. There is no word that goes unheard, no ritual that goes unseen, no exchange that goes unknown.\n\n"
+
+ qt_cardassian_c2_custom_tooltip:0 "§YSocietal Harmony§! Edict is unlocked"
+ 
+ # C3
+ qt_cardassian_c3:0 "Terok Nor"
+ qt_cardassian_c3_desc:0 "Our space station was a labor of tough love. Built by Bajoran subjects under our guidance, §HTerok Nor§! is now the most important station this §HGalaxy§! has ever seen, politically and strategically. \n\n"
+
+ qt_cardassian_c3_custom_tooltip:0 "£job_torturer_cardassian£ §Y$job_torturer_cardassian$§! Jobs gives §G+2§! £amenities£ §Y$MOD_PLANET_AMENITIES_MULT$§!\n§Y$building_mineral_purification_plant$§! adds §G+1§! £job_forced_miner_cardassian£ §Y$job_forced_miner_cardassian$§! Jobs.\n§Y$district_labor_camp$§! have no upkeep"
+
+ qt_cardassian_c3_custom_tooltip_1_success:0 "£trigger_yes£ Have the §HBajor§! starbase at least in §YStarhold§! tier"
+ qt_cardassian_c3_custom_tooltip_1_fail:0 "£trigger_no£ Have the §HBajor§! starbase at least in §YStarhold§! tier"
+
+ qt_cardassian_c3_custom_tooltip_2_success:0 "£trigger_yes£ §Y$district_labor_camp$§! built in §HBajor§!: §Y[This.qt_cardassian_c3_bajor_labor_camps]§!/§Y5§!"
+ qt_cardassian_c3_custom_tooltip_2_fail:0 "£trigger_no£ §Y$district_labor_camp$§! built in §HBajor§!: §Y[This.qt_cardassian_c3_bajor_labor_camps]§!/§Y5§!"
+
+ qt_cardassian_c3_custom_tooltip_3_success:0 "£trigger_yes£ §Y$building_mineral_purification_plant$§! or §Y$building_mineral_purification_hub$§! building in §HBajor§!: §Y[This.qt_cardassian_c3_bajor_mineral_buildings]§!/§Y1§!"
+ qt_cardassian_c3_custom_tooltip_3_fail:0 "£trigger_no£ §Y$building_mineral_purification_plant$§! or §Y$building_mineral_purification_hub$§! building in §HBajor§!: §Y[This.qt_cardassian_c3_bajor_mineral_buildings]§!/§Y1§!"
+
+ 
+ # C4
+ qt_cardassian_c4:0 "Crush Them All"
+ qt_cardassian_c4_desc:0 "We rose from the ashes, rebuilt our §HUnion§!, and refortified our ideals. No one suspected our genius, yet we proved them all wrong. Our only mission now is to eradicate the rebels terrorizing our §HGalaxy§!, to make it a safer place for all.\n\n"
+ qt_cardassian_c4_tooltip_denobula_check_success:0 "£trigger_yes£ §YDenobula§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_denobula_check_fail:0 "£trigger_no£ §YDenobula§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_cordian_check_success:0 "£trigger_yes£ §YCordian§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_cordian_check_fail:0 "£trigger_no£ §YCordian§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_effect_tooltip:0 "Adds the §Y$qt_cardassian_c4_effect$§! planet modifier to newly integrated colonies giving the following effects:\n $mod_planet_forced_farmers_upkeep_mult$ : §G-30%§!\n $mod_planet_forced_miners_upkeep_mult$ : §G-30%§!\n$mod_deposit_blockers_cost_mult$ : §G-15%§!"
+ 
+ ### D1
+ qt_cardassian_d1:0 "Clean Slate"
+ qt_cardassian_d1_desc:0 "The burden of scientific advancement is that we must grow with our understanding of the universe, even if that growth requires society-wide overhauls. Then again, overhauls are easy when every individual is on board with our goals by default.\n\n"
+
+ qt_cardassian_d1_district_fail:0 "£trigger_no£ Have §Y0§! §Y$district_labor_camp$§!: §Y[This.qt_cardassian_d1_labor_camp]§!"
+ qt_cardassian_d1_district_success:0 "£trigger_yes£ Have §Y0§! §Y$district_labor_camp$§!: §Y[This.qt_cardassian_d1_labor_camp]§!"
+
+ qt_cardassian_d1_civic_tooltip:0 "§Y$civic_intelligence_zeal$§! civic is replaced by §Y$civic_reparations$§! civic, giving the following effects:\n$civic_tooltip_reparations_effects$\n$MOD_ENVOY_IMPROVE_RELATIONS_ADD_MINORS$: §G+5§!\n\n"
+
+ qt_cardassian_d1_tooltip:0 "Non-Cardassian species can now have the §Y$species_profile_cardassian_new_basics$§! profile\nCardassian species can now have the §Y$species_profile_cardassian_new_order$§! profile"
+
+ # D2
+ qt_cardassian_d2:0 "Reform"
+ qt_cardassian_d2_desc:0 "A shift in belief marks the end of some of our old ways. Cardassians no longer take pleasure in gratuitous torment. We now see that a forcing hand can only yield temporary results. In the end, upholding the rights and dignity of all will lead to substantial progress.\n\n"
+  
+ qt_cardassian_d2_custom_tooltip:0 "§YSizeable Restructuring§! Edict is unlocked"
+ qt_cardassian_d2_1_success:0 "£trigger_yes£ Have less than §Y10§! §YSlaves Pop§!: §Y[This.qt_cardassian_d2_slave_pops]§!/§Y10§!"
+ qt_cardassian_d2_1_fail:0 "£trigger_no£ Have less than §Y10§! §YSlaves Pop§!: §Y[This.qt_cardassian_d2_slave_pops]§!/§Y10§!"
+
+ qt_cardassian_d2_2_success:0 "£trigger_yes£ Have §Y0§! Unemployed pops in the §YCapital§!: §Y[This.qt_cardassian_d2_unemployed_capital_pops]§!"
+ qt_cardassian_d2_2_fail:0 "£trigger_no£ Have §Y0§! Unemployed pops in the §YCapital§!: §Y[This.qt_cardassian_d2_unemployed_capital_pops]§!"
+
+ #qt_cardassian_d2_3_success:0 "£trigger_yes£ §Y$building_communal_lodgings_cardassian$§! or §Y$building_stately_household_cardassian$§! building: §Y#[This.qt_cardassian_d2_housing_buildings]§!/§Y5§!"
+ #qt_cardassian_d2_3_fail:0 "£trigger_no£ §Y$building_communal_lodgings_cardassian$§! or §Y$building_stately_household_cardassian$§! building: §Y[This.#qt_cardassian_d2_housing_buildings]§!/§Y5§!"
+ qt_cardassian_d2_3_success:0 "£trigger_yes£ §Y$building_communal_lodgings_cardassian$§! building: §Y[This.qt_cardassian_d2_housing_buildings]§!/§Y5§!"
+ qt_cardassian_d2_3_fail:0 "£trigger_no£ §Y$building_communal_lodgings_cardassian$§! building: §Y[This.qt_cardassian_d2_housing_buildings]§!/§Y5§!"
+
+ # D3
+ qt_cardassian_d3:0 "Reversal"
+ qt_cardassian_d3_desc:0 "Diversification has led to improvements in our civilization's interpersonal skills. Through peaceful integration, we have overcome the greatest obstacle of all: the scars of our past that led us to adopt an incomplete and unkind approach to our §HGalaxy§!.\n\n"
+
+ qt_cardassian_d3_stable_colonies_fail:0 "£trigger_no£ Colonies with at least §G70%§! Stability: §Y[This.qt_cardassian_d3_stable_colonies]§!/§Y3§!"
+ qt_cardassian_d3_stable_colonies_success:0 "£trigger_yes£ Colonies with at least §G70%§! Stability: §Y[This.qt_cardassian_d3_stable_colonies]§!/§Y3§!"
+
+ qt_cardassian_d3_non_cardassian_pops_fail:0 "£trigger_no£ Non-cardassian pops: §Y[This.qt_cardassian_d3_non_cardassian_pops]§!/§Y60§!" 
+ qt_cardassian_d3_non_cardassian_pops_success:0 "£trigger_yes£ Non-cardassian pops: §Y[This.qt_cardassian_d3_non_cardassian_pops]§!/§Y60§!"
+ 
+ # D4
+ qt_cardassian_d4:0 "Age of Diplomacy"
+ qt_cardassian_d4_desc:0 "We have learned much about intercultural exchange and the benefits of resource-sharing. In the past, our attempts to bribe our enemies with §Hjevonite§! or §Hregova eggs§! was nothing but a ruse. Now, we hope to forge sincere relations with our galactic neighbors in the name of collective prosperity.\n\n"
+ qt_cardassian_d4_embassy_count_success:0 "£trigger_yes£ Embassies established: §Y[This.qt_cardassian_d4_embassy_count]§!/§Y4§!"
+ qt_cardassian_d4_embassy_count_fail:0 "£trigger_no£ Embassies established: §Y[This.qt_cardassian_d4_embassy_count]§!/§Y4§!"
+
+#  qt_cardassian_prepare_for_glory_01:0 "Prepare for Glory"
+#  qt_cardassian_prepare_for_glory_01_desc:0 "Increase the fleet power of the Cardassian Union by building more military ships."
+
+#  qt_cardassian_face_the_resource_crisis_02:0 "Face the Resource Crisis"
+#  #qt_cardassian_face_the_resource_crisis_02_desc:0 "Face the worrying food shortages by increasing food production and stockpiles."
+#  qt_cardassian_face_the_resource_crisis_02_desc:0 "Lorem Ipsum."
+
+#  qt_cardassian_create_reclamation_colonies_03:0 "Create Reclamation Colonies"
+#  qt_cardassian_create_reclamation_colonies_03_desc:0 "Extend the reach of the Cardassian Union by building reclamation colonies."
+ 
+#  qt_cardassian_massacre_the_weak_04:0 "Massacre the Weak"
+#  # qt_cardassian_massacre_the_weak_04_desc:0 "Show the rest of the galaxy what happens to those not willing to allign themselves with the Union."
+#  qt_cardassian_massacre_the_weak_04_desc:0 "Lorem Ipsum."
+
+#  qt_cardassian_revitalize_jevonite_industry_05:0 "Revitalize the Jevonite Industry"
+#  qt_cardassian_revitalize_jevonite_industry_05_desc:0 "Inject the jevonite industry with the necessary resources and infrastructure."
+
+#  qt_cardassian_empower_obsidian_order_06:0 "Empower the Obsidian Order"
+#  qt_cardassian_empower_obsidian_order_06_desc:0 "Give our covert operation experts the tools to keep the galaxy under tight surveillance."
+
+#  qt_cardassian_claim_the_borders_07:0 "Claim the Borders"
+#  qt_cardassian_claim_the_borders_07_desc:0 "Claim the territories that rightfully belong to the Union and bring glory to all Cardassians."
+
+#  qt_cardassian_establish_terok_nor_08:0 "Establish Terok Nor"
+#  qt_cardassian_establish_terok_nor_08_desc:0 "Conquer the strategic planet of Bajor and establish an orbital stronghold to launch the Union's operations from." 
+
+#  qt_cardassian_establish_koret_nor_09:0 "Establish Koret Nor"
+#  qt_cardassian_establish_koret_nor_09_desc:0 "Improve your relations with the Bajorans to the point that they admit that joining the Union is in their best interest."
+
+#  qt_cardassian_policies_reform_10:0 "Policies Reform"
+#  qt_cardassian_policies_reform_10_desc:0 "Take a step forward in matters of galactic coexistence."
+
+#  qt_cardassian_exploit_bajor_11:0 "Exploit Bajor"
+#  qt_cardassian_exploit_bajor_11_desc:0 "Conclude our Bajoran operations by stripping the planet's resources bare for the greater good of the Union."
+
+#  qt_cardassian_complete_bajoran_operations_12:0 "Complete Bajoran Operations"
+#  qt_cardassian_complete_bajoran_operations_12_desc:0 "Complete the administration phase of the Union's Bajoran operations."
+
+#  qt_cardassian_develop_bajor_13:0 "Develop Bajor"
+#  qt_cardassian_develop_bajor_13_desc:0 "Develop Bajor into a flourishing trade hub."
+
+#  qt_cardassian_crush_the_maquis_14:0 "Crush the Maquis"
+#  qt_cardassian_crush_the_maquis_14_desc:0 "Rid the region of pirates, rebels and other types of lowlifes."
+
+#  qt_cardassian_plan_the_trap_15:0 "Plan the Trap"
+#  qt_cardassian_plan_the_trap_15_desc:0 "Lure the unaware Federation to their demise."
+
+#  qt_cardassian_encourage_diplomacy_16:0 "Encourage Diplomacy"
+#  qt_cardassian_encourage_diplomacy_16_desc:0 "Improve our relationships with the neighbouring powers"
+
+#  qt_cardassian_develop_the_colonies_17:0 "Develop the Colonies"
+#  qt_cardassian_develop_the_colonies_17_desc:0 "Bring the superiority of the Cardassian way of life to every extent of the Union."
+
+#  qt_cardassian_support_the_rebellion_18: "Support the Rebellion"
+#  qt_cardassian_support_the_rebellion_18_desc:0 "Encourage minor powers to rebel against their overlords so that we can pick up the scraps later on."
+
+#  qt_cardassian_create_mayhem_19:0 "Create Mayhem"
+#  qt_cardassian_create_mayhem_19_desc:0 "Shake the balance of power in the galaxy by creating widespread mayhem."
+
+#  qt_cardassian_join_the_dominion_20:0 "Join the Dominion"
+#  qt_cardassian_join_the_dominion_20_desc:0 "Venture into the unknown by controling a black hole and contacting superior beings."
+ 
+#  qt_cardassian_joint_crisis_committee_21:0 "Joint Crisis Committee"
+#  qt_cardassian_joint_crisis_committee_21_desc:0 "Unite forces with other major powers and lead the defense efforts against possible external menaces."
+
+#  qt_cardassian_crush_the_klingon_22:0 "Crush the Klingon"
+#  qt_cardassian_crush_the_klingon_22_desc:0 "Make sure that the savage Klingons are under the mighty Cardassian banner or that there are no more."
+
+#  qt_cardassian_rebel_from_dominion_23:0 "Rebel from Dominion"
+#  qt_cardassian_rebel_from_dominion_23_desc:0 "Strengthen our fleet and overall fighting capacity so that we can once more stand proudly as the owners of the galaxy!"
+
+#  qt_cardassian_great_hebitian_temple_24:0 "Great Hebitian Temple"
+#  #qt_cardassian_great_hebitian_temple_24_desc:0 "Build a magnificent Hebitian temple and bring the glory of old to the present so that all galaxy-dwellers know which is the truly superior nation."
+#  qt_cardassian_great_hebitian_temple_24_desc:0 "Lorem Ipsum"
+ ########
+
+ built_outpost:0 "Outposts built"
+ built_colony:0 "Colonies built"
+ built_military_ship:0 "Military Ships built"
+ military_ships_built:0 "Military Ships built"
+ built_cardassian_colony:0 "Colonies built"
+ bombarded_planet:0 "Bombarded planets"
+
+ pop_reward:0 "Bonus population added to the homeworld planet."
+ genius_reward:0 "A random Cardassian scientist receives the Spark of Genius trait."
+ 
+ minors_contact_made:0 "Minor Powers contacted"
+ t1_relation_reached:0 "Tier 1 relations reached"
+
+ # Chain events
+ quest_enterprise_chain_title:0 ""
+ quest_enterprise_chain_desc:0 ""
+
+ quest_diplomatic_zeal_chain_title:0 ""
+ quest_diplomatic_zeal_chain_desc:0 ""
+
+ quest_paradigm_shift_chain_title:0 ""
+ quest_paradigm_shift_chain_desc:0 ""
+
+ quest_prepare_for_glory_chain_title:0 ""
+ quest_prepare_for_glory_chain_desc:0 ""
+
+ quest_face_the_resource_crisis_chain_title:0 ""
+ quest_face_the_resource_crisis_chain_desc:0 ""
+
+ quest_create_reclamation_colonies_chain_title:0 ""
+ quest_create_reclamation_colonies_chain_desc:0 ""
+
+ quest_massacre_the_weak_chain_title:0 ""
+ quest_massacre_the_weak_chain_desc:0 ""

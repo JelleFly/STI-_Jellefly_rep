@@ -1,4 +1,6 @@
 ufop_illyria_initializer = {
+	flags = { purple }
+
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -7,7 +9,6 @@ ufop_illyria_initializer = {
 		has_ring = no
 
 		init_effect = {
-			create_purple_nebula_1 = yes
 			prevent_anomaly = yes
 		}
 	}

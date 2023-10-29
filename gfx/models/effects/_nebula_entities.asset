@@ -1158,6 +1158,18 @@ entity = {
 	}
 
 	entity = {
+		name = "orange_nebula_1_1_entity"
+		locator = { name = "root" rotation = { 0 0 0 } }
+		scale = 1
+	
+			#nebulas
+			attach = { "root" = "nebula_core_orange_entity" }
+	
+			
+			
+		}
+
+	entity = {
 		name = "purple_nebula_1_entity"
 		locator = { name = "root" rotation = { 0 0 0 } }
 		scale = 1

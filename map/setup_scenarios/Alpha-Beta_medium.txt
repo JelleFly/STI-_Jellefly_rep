@@ -7,13 +7,13 @@ bespoke_procedural_scenario = {
 	num_stars = 1280
 	radius = 800
 
-	num_empires = { min = 24 max = 24 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
-	num_empire_default = 24		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
+	num_empires = { min = 25 max = 25 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
+	num_empire_default = 25		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
 	advanced_empire_default = 0
 	fallen_empire_default = 0
 	fallen_empire_max = 0
-	marauder_empire_default = 2
-	marauder_empire_max = 2
+	marauder_empire_default = 0
+	marauder_empire_max = 0
 
 	colonizable_planet_odds = 0.5
 	primitive_odds = 1.0
@@ -46,23 +46,23 @@ bespoke_procedural_scenario = {
 	nebula_size = 60
 	nebula_min_dist = 200
 
-	nebula = { name = "Briar Patch" position = { x = -13 y = 407 } radius = 10 }
-	nebula = { name = "Badlands" position = { x = 72 y = 370 } radius = 8 }
-	nebula = { name = "Typhon Expanse" position = { x = -48 y = 252 } radius = 15 }
-	nebula = { name = "Azure Nebula" position = { x = -86 y = 394} radius = 4}
-	nebula = { name = "Rolor Nebula" position = { x = 81 y = 360} radius = 3}
+	nebula = { name = "Briar Patch" position = { x = -13 y = 407 } radius = 10 }	#orange nebula, use flags = { orange } in system initalizers
+	nebula = { name = "Badlands" position = { x = 72 y = 370 } radius = 8 }			#orange nebula, use flags = { orange } in system initalizers
+	nebula = { name = "Typhon Expanse" position = { x = -48 y = 252 } radius = 15 } #light blue/slight green, WIP
+	nebula = { name = "Azure Nebula" position = { x = -86 y = 394} radius = 4}      #dark blue/slight purple, WIP
+	nebula = { name = "Rolor Nebula" position = { x = 81 y = 360} radius = 3}		#purple nebula, use flags = { purple } in system initalizers
 	nebula = { name = "Argolis Cluster" position = { x = 21 y = 397} radius = 5}
-	nebula = { name = "Vaulterra Nebula" position = { x = 56 y = 454} radius = 9}
-	nebula = { name = "Mutara Nebula" position = { x = -53 y = 604} radius = 16}
-	nebula = { name = "Mutara Nebula" position = { x = 59 y = 552} radius = 7}
-	nebula = { name = "Basen Rift" position = { x = -16 y = 330 } radius = 7}
+	nebula = { name = "Vaulterra Nebula" position = { x = 56 y = 454} radius = 9}	#Red, WIP
+	nebula = { name = "Mutara Nebula" position = { x = -53 y = 604} radius = 16}	#purple nebula, use flags = { purple } in system initalizers
+	nebula = { name = "Mutara Nebula" position = { x = 59 y = 552} radius = 7}		#purple nebula, use flags = { purple } in system initalizers
+	nebula = { name = "Basen Rift" position = { x = -16 y = 330 } radius = 7}		#green, WIP
 
 	num_wormhole_pairs = { min = 0 max = 0 }
 	num_wormhole_pairs_default = 0
 	num_gateways = { min = 0 max = 0 }
 	num_gateways_default = 0
-	num_hyperlanes = 1
-	num_hyperlanes_default = 1
+	num_hyperlanes = 0
+	num_hyperlanes_default = 0
 
 	#--------- Highway Systems ---------#
 	#------ String 1 ------#
@@ -120,7 +120,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Athos" position = { x = 82 y = 373 }
-		initializer = athos_initializer spawn_weight = { base = 1 } 
+		initializer = uncontrolled_athos_initializer spawn_weight = { base = 1 } 
 	}
 
 	system = {
@@ -342,7 +342,12 @@ bespoke_procedural_scenario = {
 		name = "NAME_Ferenginar" position = { x = 63 y = 322 }
 		initializer = ferengi_ferenginar_initializer spawn_weight = { base = 1 } 
 	}
-
+	#system = {
+	#	name = "NAME_Thalos" position = { x = 61 y = 319 }
+	#	initializer = ferengi_thalos_initializer spawn_weight = { base = 1 } 
+	#	
+	#}
+	
 	system = {
 		name = "NAME_Hupyrian" position = { x = 72 y = 305 }
 		initializer = hupyrian_initializer spawn_weight = { base = 1 } 
