@@ -1,0 +1,56 @@
+namespace = XL_MAP
+
+# Bolian starting relationship with the UFOP + treaties
+event = {
+	id = XL_MAP.220
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:bolian_country
+		exists = event_target:ufop_country
+	}
+
+	immediate = {
+		event_target:ufop_country = {
+			establish_contact = { who = event_target:bolian_country hidden = yes }
+			establish_communications_no_message = event_target:bolian_country
+			
+			guarantee_country = event_target:bolian_country
+			set_closed_borders = {
+				who = event_target:bolian_country
+				status = no
+				forced = 5
+			}
+			add_trust = {
+				amount = 50
+				who = event_target:bolian_country
+			}
+		}
+
+		event_target:bolian_country = {
+			establish_contact = { who = event_target:ufop_country hidden = yes }
+			establish_communications_no_message = event_target:ufop_country
+			
+			set_closed_borders = {
+				who = event_target:ufop_country
+				status = no
+				forced = 5
+			}
+			add_trust = {
+				amount = 50
+				who = event_target:ufop_country
+			}
+			add_opinion_modifier = {
+				who = event_target:ufop_country
+				modifier = opinion_civic_diplomatic_expertise
+			}
+
+			# add_opinion_modifier = {
+			# 	who = event_target:bolian_country
+			# 	modifier = opinion_major_supported_us_in_war
+			# }	
+		}
+	}
+}

@@ -12,6 +12,7 @@ event = {
 			}
 
 			last_created_neutral_zone = { 
+				log = "Adding Systems to Romulan Neutral Zone"
 				add_system_to_neutral_zone = event_target:eden_star.solar_system
 				add_system_to_neutral_zone = event_target:iconia_star.solar_system
 				add_system_to_neutral_zone = event_target:draken_star.solar_system

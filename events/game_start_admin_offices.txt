@@ -1,0 +1,31 @@
+namespace = XL_MAP
+
+planet_event = {
+	id = XL_MAP.002
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_planet_flag = special_start_planet } }
+
+			owner = {
+				switch = {
+					trigger = has_country_id
+					ufop = {
+						log = "Generating Admin Offices for the UFOP"
+						PREV = { generate_start_building_admin_offices = yes } 
+					}
+					klingon = {
+						log = "Generating Admin Offices for the Klingons"
+						PREV = { generate_start_building_admin_offices = yes } 
+					}
+					#default = {
+					#	log = "Generating Admin Offices for the [this.GetName]s"
+					#	PREV = { generate_start_building_admin_offices = yes }
+					#}
+				}
+			}
+		}
+	}
+}

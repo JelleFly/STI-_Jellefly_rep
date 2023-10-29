@@ -9,7 +9,7 @@ bolian = {
 	shuffle_starting_position = no
 	is_minor = yes
 	is_bespoke = yes
-	in_previous_contact = no
+	in_previous_contact = yes
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_bolian"
 

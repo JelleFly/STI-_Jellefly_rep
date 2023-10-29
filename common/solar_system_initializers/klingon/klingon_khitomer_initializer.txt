@@ -50,6 +50,7 @@ klingon_khitomer_initializer = {
 
 		late_init_effect = {
 			create_khitomer_colony = yes
+			add_building = building_bureaucratic_1
 		}
 	}
 	

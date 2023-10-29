@@ -55,7 +55,7 @@ bespoke_procedural_scenario = {
 	nebula = { name = "Vaulterra Nebula" position = { x = 56 y = 454} radius = 9}	#Red, WIP
 	nebula = { name = "Mutara Nebula" position = { x = -53 y = 604} radius = 16}	#purple nebula, use flags = { purple } in system initalizers
 	nebula = { name = "Mutara Nebula" position = { x = 59 y = 552} radius = 7}		#purple nebula, use flags = { purple } in system initalizers
-	nebula = { name = "Basen Rift" position = { x = -16 y = 330 } radius = 7}		#green, WIP
+	nebula = { name = "Bassen Rift" position = { x = -16 y = 330 } radius = 7}		#green, WIP
 
 	num_wormhole_pairs = { min = 0 max = 0 }
 	num_wormhole_pairs_default = 0

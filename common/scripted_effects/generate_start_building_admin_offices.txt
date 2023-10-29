@@ -1,0 +1,11 @@
+generate_start_building_admin_offices = {
+	if = {
+		limit = { 
+			owner = { 
+				is_regular_empire = yes
+			} 
+		}
+
+		add_building = building_bureaucratic_1
+	}
+}
