@@ -1,9 +1,9 @@
 bespoke_procedural_scenario = {
-	name = "Star Charts - Large"
-	default = yes
-	priority = 2
+	name = "tutorial"
+	tutorial = yes
+	priority = 0					#priority decides in which order the scenarios are listed
 
-	# Everything below this line should be copied to tutorial.txt
+	# Everything below this line should be a copy of Alpha-Beta_medium
 	num_stars = 1280
 	radius = 800
 
