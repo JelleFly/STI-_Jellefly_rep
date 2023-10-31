@@ -1,4 +1,4 @@
-version="0.1"
+version="0.1.2"
 tags={
 	"Planets"
 	"Colonies"
@@ -8,6 +8,6 @@ tags={
 	"Klingon"
 	"Romulan"
 }
-name="Jellefly / Jebus's Infinite Rework"
+name="Canonized Map and Events"
 supported_version="1.0.*"
 remote_file_id="3064100709"
