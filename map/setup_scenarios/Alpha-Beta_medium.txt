@@ -7,8 +7,8 @@ bespoke_procedural_scenario = {
 	num_stars = 1280
 	radius = 800
 
-	num_empires = { min = 25 max = 25 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
-	num_empire_default = 25		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
+	num_empires = { min = 24 max = 24 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
+	num_empire_default = 24		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
 	advanced_empire_default = 0
 	fallen_empire_default = 0
 	fallen_empire_max = 0
@@ -341,7 +341,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Ferenginar" position = { x = 63 y = 322 }
-		initializer = ferengi_ferenginar_initializer spawn_weight = { base = 1 } 
+		initializer = uncontrolled_system_initializer spawn_weight = { base = 1 } 
 	}
 	#system = {
 	#	name = "NAME_Thalos" position = { x = 61 y = 319 }

@@ -1,5 +1,5 @@
 empire_init_capital_planet = {
 	events = {
-		XL_MAP.002
+		XL_MAP.002	# Extra Admin offices for those who need them
 	}
 }
