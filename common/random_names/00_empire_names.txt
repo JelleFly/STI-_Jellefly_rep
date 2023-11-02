@@ -2382,7 +2382,6 @@ empire_name_format = {
 				has_government = "gov_scientocracy"
 				has_government = "gov_parliamentary_republic"
 				has_government = "gov_matriarchal_aristocracy"
-				has_government = "gov_fer"
 			}
 			is_pirate = no
 			is_primitive = no
