@@ -59,33 +59,61 @@
 ship_design = {
 	name = "NAME_Neghvar_flagship"
 	ship_size = neghvar_flagship
-	is_event_design = yes
+	is_event_design = NO
 
 	section = {
-		template = "NEGHVAR_MID"
+		template = "NEGHVAR_FLAGSHIP_MID"
 		slot = "mid"
 		
 		component = {
 			slot = "EXTRA_LARGE_GUN_01"
-			template = "PHASER_SPINAL_LANCE"
+			template = "SIEGE_DISRUPTOR"
 		}
-
-		
-
+		component = {
+			slot = "EXTRA_LARGE_GUN_02"
+			template = "SIEGE_DISRUPTOR"
+		}
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "LARGE_PHASER_CANNON"
 		}
-
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "LARGE_PHASER_CANNON"
 		}
-
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "LARGE_PHASER_CANNON"
 		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHOTON_TORPEDOES_1"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHOTON_TORPEDOES_1"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PHOTON_TORPEDOES_1"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "QUANTUM_TORPEDOES"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "QUANTUM_TORPEDOES"
+		}
+
 
 		
 		
@@ -159,7 +187,74 @@ ship_design = {
 			slot = "AUX_UTILITY_2"
 			template = "SHIELD_BOOSTER"
 		}
+
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "SUBSPACE_DOS_FLOODER"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "SUBSPACE_DOS_FLOODER"
+		}
 	}
+
+	section = {
+		template = "NEGHVAR_FLAGSHIP_BOW"
+		slot = "bow"
+		
+		component = {
+			slot = "EXTRA_LARGE_GUN_01"
+			template = "SIEGE_DISRUPTOR"
+		}
+		component = {
+			slot = "EXTRA_LARGE_GUN_02"
+			template = "SIEGE_DISRUPTOR"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_PHASER_CANNON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHOTON_TORPEDOES_1"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHOTON_TORPEDOES_1"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PHOTON_TORPEDOES_1"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "QUANTUM_TORPEDOES"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "QUANTUM_TORPEDOES"
+		}
+
+	}
+
+	
 
 	required_component = "TITAN_FUSION_REACTOR"
 	required_component = "WARP_DRIVE_1"

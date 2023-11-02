@@ -1,0 +1,13 @@
+﻿l_english:
+
+#########################
+# Species Traits #
+#########################
+
+trait_traditionalists_ferengi:0 "Traditional Ferengi Culture"
+trait_traditionalists_ferengi_desc:0 "Ferengi have a rigid culture and tradition, they do not welcome changes to them"
+trait_traditionalists_ferengi_effect_desc:0 ""
+trait_eye_for_business_ferengi:0 "Eye for Business"
+trait_eye_for_business_ferengi_desc:0 "Ferengi have a keen eye for busines, earning a profit is core to their culture"
+trait_eye_for_business_ferengi_effect_desc:0 ""
+

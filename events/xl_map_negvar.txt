@@ -1,6 +1,6 @@
 namespace = XL_MAP
 country_event = {
-	id = XL_MAP.002
+	id = XL_MAP.003
 	hide_window = yes
 	is_triggered_only = yes
 

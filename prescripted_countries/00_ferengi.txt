@@ -29,10 +29,10 @@ ferengi = {
 
 	room = "minor_01_transmission_room" # HRB_TODO: Define a proper room
 
-	#authority = "auth_dictatorial_fer_alliance"
-	authority = "auth_oligarchic"
-	civics = { "void_civic" "civic_forthcoming" } #HRB_TODO
-	government = gov_matriarchal_aristocracy
+	authority = "auth_dictatorial_fer_alliance"
+	#authority = "auth_oligarchic"
+	civics = { "void_civic" "void_civic" } #HRB_TODO
+	government = gov_fer
 
 	ethic = "ethic_fanatic_materialist" #HRB_TODO
 	ethic = "ethic_authoritarian" #HRB_TODO
@@ -56,12 +56,12 @@ ferengi = {
 	graphical_culture = "minor_01" #HRB_TODO
 	city_graphical_culture = "minor_01" #HRB_TODO
 
-	emblem_key = "flag_Betazoid_34"	#TODOS
+	emblem_key = "flag_Ferengi_35"	#TODOS
 
 	empire_flag = {
 		icon= {
 			category = "emblem"
-			file = "flag_Betazoid_34.dds"
+			file = "flag_Ferengi_35.dds"
 		}
 		background= {
 			category = "backgrounds"

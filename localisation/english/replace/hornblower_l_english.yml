@@ -16,3 +16,14 @@
  ################################
 
  pc_node_black_hole_desc: "While some §HSpacetime Distortions§! appear to be §HBlack Holes§!, they behave in almost opposite ways. By bending the spacetime continuum, they allow for travel through the §HGalaxy§! via §H$HIGHWAY_GALACTIC$§!."
+
+ ################################
+ # Ferengi Localisations
+ ################################
+
+gov_fer:0 "Nagus Government"
+gov_fer_desc:0 "The Ferengi are ruled by a Grand Nagus, who ultimately has control over every financial decision in the Ferengi Alliance"
+auth_dictatorial_fer_alliance:0 "Olicharhical"
+auth_dictatorial_fer_alliance_desc:0 "Upon the death or retirement of a Grand Nagus, he will select a new Grand Nagus"
+RT_NAGUS:0 "Grand Nagus"
+RT_NAGUS_FEMALE:0 "$Grand Nagus$"

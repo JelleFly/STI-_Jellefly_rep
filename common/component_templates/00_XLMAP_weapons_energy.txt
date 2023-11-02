@@ -1,0 +1,80 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+# Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+#NOTE that values from weapon_components.csv will override values from this file
+
+# ####################
+#  Phasers
+# ####################
+
+### Phaser Cannon
+
+
+# Siege Phaser
+weapon_component_template = {
+	key = "SIEGE_DISRUPTOR"
+	size = extra_large
+	type = instant
+
+	entity = "invisible_turret_entity"
+	
+	icon = "GFX_ship_weapon_siege_phaser"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	firing_arc = 55.0
+	min_range = 30.0
+	use_ship_kill_target = no
+	
+	prerequisites = { value = none }
+	component_set = "SIEGE_DISRUPTOR"
+	projectile_gfx = "disruptor_1_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			dilithium = @l_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @l_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = dilithium }
+		}
+	}
+}

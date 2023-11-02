@@ -63,16 +63,18 @@ neghvar_flagship = {
 	fleet_slot_size = 8
 	graphical_culture = no
 	
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = { "mid" = { locator = "part1" }
+	"bow" = { locator = "part2" } }
 	
 	num_target_locators = 2
 	is_space_station = no
 	icon_frame = @titan_size_icon_frame
 	base_buildtime = @neghvar_build_time
 	can_have_federation_design = yes
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
 	is_designable = no 
-	is_civilian = yes 
+	is_civilian = no 
+	
 
 	default_behavior = "hrb_artillery"
 
