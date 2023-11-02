@@ -1,0 +1,98 @@
+ktarian_initializer = {
+	name = "NAME_Ktarian"
+	class = sc_f
+	usage = custom_empire
+	flags = { ktarian ktarian_system ktarian_home_system capital }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { change_pc = pc_f_star }
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 2
+		orbit_distance = { min = 20 max = 50 }
+		class = rl_unhabitable_planets
+	}
+	
+	planet = {
+		name = "NAME_Ktarian_Home_Planet"
+		orbit_distance = 30
+		class = pc_savannah
+		subclass = psc_class_m
+		size = 12
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		home_planet = yes
+		flags = { mipo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:ktarian_country # Since we already created a Starbase with an owner, it isn't necessary to set the owner here too
+			}
+		}
+
+		moon = {
+			name = "Iza"
+			count = 1
+			orbit_distance = 6
+			class = pc_barren_cold
+			has_ring = no
+			size = 3
+		}
+	}
+
+	planet = {
+		count = 3
+		orbit_distance = { min = 20 max = 50 }
+		class = rl_unhabitable_planets
+	}
+
+	planet = {
+		name = "Kataria VII"
+		count = 1
+		size = 8
+		orbit_distance = { min = 20 max = 50 }
+		class = pc_arctic
+		subclass = psc_class_l
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
+
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = ktarian
+				}
+
+				save_global_event_target_as = ktarian_country
+			}
+		}
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			owner = event_target:ktarian_country
+		}
+	}
+}

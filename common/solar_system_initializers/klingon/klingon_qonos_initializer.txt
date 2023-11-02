@@ -1,0 +1,90 @@
+klingon_qonos_initializer = {
+	name = "NAME_Qonos"
+	class = "sc_k"
+	usage = custom_empire
+	flags = { empire_home_system qonos_system qonos klingon_system klingon }
+	
+	planet = {
+		name = "NAME_Qonos_Star"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+
+		init_effect = {
+			change_pc = pc_k_star
+			save_global_event_target_as = klingon_primary_star
+		}
+	}
+	
+	change_orbit = 50
+
+	planet = {
+		count = 1
+		orbit_distance = { min = 25 max = 35 }
+		class = rl_unhabitable_planets
+	}
+
+	planet = {
+		name = "NAME_Qonos"
+		class = "pc_tropical"
+		subclass = psc_class_m
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 24
+		starting_planet = yes
+		has_ring = yes
+		deposit_blockers = none
+		modifiers = none
+		home_planet = yes
+		entity = "tropical_planet"
+
+		flags = { planet_qonos mapo_colony }
+		
+		moon = {
+			name = "NAME_Praxis"
+			class = "pc_toxic"
+			subclass = psc_class_h
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+			entity = "broken_planet_01_entity"
+		}
+		
+		init_effect = {
+			save_global_event_target_as = klingon_homeworld
+			prevent_anomaly = yes
+        
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+		}
+	}
+	
+	planet = {
+		count = { min = 2 max = 4 }
+		orbit_distance = { min = 25 max = 35 }
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = klingon
+				}
+
+				save_global_event_target_as = klingon_country
+			}
+		}
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+}

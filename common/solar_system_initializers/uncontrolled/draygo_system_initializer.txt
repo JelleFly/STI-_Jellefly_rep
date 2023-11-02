@@ -1,0 +1,56 @@
+draygo_system_initializer = {
+	name = "NAME_Draygo"
+	class = "rl_all_stars"
+	usage = static_system_init
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { change_pc = pc_k_star }
+	}
+	
+	change_orbit = 30
+	
+	planet = {
+		count = 3
+		orbit_distance = { min = 8 max = 12}
+		size = { min = 8 max = 35 }
+		orbit_angle = { min = 0 max = 300 }
+		class = rl_unhabitable_planets
+		home_planet = no
+	}
+
+	planet = {
+		count = 1
+		class = pc_continental
+		subclass = psc_class_m
+		size = 18
+		orbit_distance = 18
+		home_planet = no
+
+		moon = {
+			name = "NAME_Draygo_IV_Moon_I"
+			class = rl_unhabitable_planets
+			size = 5
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+		}
+
+		moon = {
+			name = "NAME_Draygo_IV_Moon_II"
+			count = 1
+			orbit_distance = 4
+			class = rl_unhabitable_planets
+			has_ring = no
+			size = 3
+		}
+
+	}
+
+}
