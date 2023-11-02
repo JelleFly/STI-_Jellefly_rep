@@ -1,0 +1,99 @@
+# D3
+qt_cardassian_d3 = {
+	position = { x = 5 y = 3 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_d2
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	on_before_possible = {
+		set_variable = {
+			which = qt_cardassian_d3_stable_colonies
+			value = 0
+		}
+
+		every_owned_planet = {
+			limit = {
+				planet_stability >= 70
+			}
+			
+			owner = {
+				change_variable = {
+					which = qt_cardassian_d3_stable_colonies		
+					value = 1
+				}
+			}		
+		}
+
+		set_variable = {
+			which = qt_cardassian_d3_non_cardassian_pops
+			value = 0
+		}
+
+		every_owned_pop = {
+			limit = {
+				NOT = {
+					is_species = "Cardassian"
+				}
+			}
+
+			owner = {
+				change_variable = {
+					which = qt_cardassian_d3_non_cardassian_pops
+					value = 1
+				}
+			}
+
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			success_text = qt_cardassian_d3_stable_colonies_success
+			fail_text = qt_cardassian_d3_stable_colonies_fail
+		
+			check_variable = {
+				which = qt_cardassian_d3_stable_colonies
+				value >= 3
+			}
+		}
+	
+		custom_tooltip = {
+			success_text = qt_cardassian_d3_non_cardassian_pops_success
+			fail_text = qt_cardassian_d3_non_cardassian_pops_fail
+		
+			check_variable = {
+				which = qt_cardassian_d3_non_cardassian_pops
+				value >= 60
+			}
+		}
+	}
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		add_modifier = {
+			modifier = qt_cardassian_d3_effect
+		} 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}
