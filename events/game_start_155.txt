@@ -1,0 +1,14 @@
+# HRB Non Tutorial Initializer
+event = {
+	id = game_start.155
+	hide_window = yes
+	is_triggered_only = yes
+ 
+	immediate = {
+		every_country = {
+			every_owned_leader = {
+				add_traits_to_scientists = yes
+			}
+		}
+	}
+}

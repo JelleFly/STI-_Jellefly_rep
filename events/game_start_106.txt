@@ -1,0 +1,77 @@
+# Bajoran subject of Cardassia
+event = {
+	id = game_start.106
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:bajoran_country
+		exists = event_target:cardassian_country
+	}
+
+	immediate = {
+		event_target:bajoran_country = {
+			set_subject_of = {
+				who = event_target:cardassian_country
+				subject_type = occupied_state
+			}
+
+			every_owned_leader = {
+				limit = { leader_class = ruler }
+				PREV = {
+					create_leader = {
+						class = ruler
+						species = event_target:cardassian_country.owner_species
+					}
+					assign_leader = last_created_leader
+				}
+			}
+
+			every_owned_planet = {
+				every_owned_pop = {
+					limit = {
+						OR = {
+							has_job_category = ruler
+							has_job_category = specialist
+						}
+					}
+					change_species = event_target:cardassian_country.owner_species
+				}
+			}
+		}
+
+		# HRB_DESIGN: TODO
+		# HRB_NOTE: this can be an issue for the Tutorial
+		# The modifier lasts 10 years, but we know that some players are taking
+		# around that time to finish the Tutorial, so this will be expired
+		event_target:cardassian_country = {
+			add_modifier = {
+				modifier = assimilation_unity_bonus
+				days = 3600
+			}
+		}
+
+		# HRB_DESIGN: TODO
+		# HRB_NOTE: this does not work and didn't work before
+		# At this stage of the game, the Minor Powers don't know each other or the Cardassians
+		every_country = {
+			limit = {
+				NOT = { is_same_value = event_target:bajoran_country }
+				
+				is_minor = yes
+				has_communications = event_target:bajoran_country
+				
+				opinion_level = {
+					who = event_target:bajoran_country
+					level >= good
+				}
+			}
+
+			add_opinion_modifier = {
+				who = event_target:cardassian_country
+				modifier = opinion_occupation
+			}
+		}
+	}
+}

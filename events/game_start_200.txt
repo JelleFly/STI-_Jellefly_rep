@@ -1,0 +1,17 @@
+# Setup Correct Names for Pre-Warp Civs
+event = {
+	id = game_start.200
+	hide_window = yes
+	is_triggered_only = yes
+ 
+	immediate = {
+		every_system = {
+			if = {
+				limit = {
+					has_star_flag = primitive_system
+				}
+				setup_pre_warp_civilization_system_names = yes
+			}
+		}
+	}
+}
