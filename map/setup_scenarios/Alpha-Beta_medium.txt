@@ -4,7 +4,7 @@ bespoke_procedural_scenario = {
 	priority = 2
 
 	# Everything below this line should be copied to tutorial.txt
-	num_stars = 1280
+	num_stars = 999
 	radius = 800
 
 	num_empires = { min = 24 max = 24 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
@@ -73,7 +73,7 @@ bespoke_procedural_scenario = {
 		#position_set = { x = -196 y = 112 } 
 		#position_set = { x = 451 y = 442 }
 		#position_set = { x = 539 y = 158 }
-		position = { x = -400 y = -150 }
+		position = { x = -45 y = 262 }
 		initializer = highway_system_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -85,7 +85,7 @@ bespoke_procedural_scenario = {
 		#position_set = { x = 505 y = 215 } 
 		#position_set = { x = 556 y = 187 }
 		#position_set = { x = -379 y = 623 }
-		position = { x = -45 y = 262 }
+		position = { x = -400 y = -150 }
 		initializer = highway_system_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -692,6 +692,11 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
+		name = "NAME_Dewa" position = { x = -133 y = 369 }
+		initializer = romulan_dewa_initializer spawn_weight = { base = 1 } 
+	}
+
+	system = {
 		name = "NAME_Glintara" position = { x = -49 y = 300 }
 		initializer = romulan_glintara_initializer spawn_weight = { base = 1 } 
 	}
@@ -751,11 +756,6 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Devoras" position = { x = -95 y = 358 }
-		initializer = romulan_outpost_initializer spawn_weight = { base = 1 } 
-	}
-
-	system = {
-		name = "NAME_Dewa" position = { x = -133 y = 369 }
 		initializer = romulan_outpost_initializer spawn_weight = { base = 1 } 
 	}
 
