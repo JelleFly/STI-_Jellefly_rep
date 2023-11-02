@@ -1,0 +1,97 @@
+klingon_narendra_initializer = {
+	name = "NAME_Narendra"
+	class = sc_binary_11
+	flags = { klingon klingon_system colony narendra_colony narendra }
+
+	planet = {
+		name = "NAME_Narendra-B"
+		count = 1
+		class = star
+		orbit_distance = 40
+		size = { min = 10 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect
+			change_pc = pc_k_star 
+			set_deposit = d_deuterium_3
+			save_global_event_target_as = narendra_star
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:klingon_country
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Narendra-A"
+		count = 1
+		class = star
+		orbit_distance = 0
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect
+			change_pc = pc_a_star
+			set_deposit = d_deuterium_5 
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:klingon_country
+			}
+		}
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 2
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+	
+	planet = {
+		name = "NAME_Narendra_III"
+		orbit_distance = 35
+		class = pc_arid
+		subclass = psc_class_m
+		size = 17
+		modifiers = none
+		has_ring = no
+		flags = { planet_narendra bespoke_colony mapo_colony }
+		
+		moon = {
+			name = "NAME_Narendra_III_a"
+			count = 1
+			orbit_distance = 6
+			class = rl_unhabitable_planets
+			has_ring = no
+			size = 5
+		}
+
+		late_init_effect = {
+			create_narendra_III_colony = yes
+		}
+	}
+
+	planet = {
+		count = { min = 2 max = 3 }
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:klingon_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
