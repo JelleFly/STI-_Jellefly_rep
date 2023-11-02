@@ -14,7 +14,7 @@ event = {
 					has_star_flag = orange
 				}
 
-				log = "Adding orange nebula to [from.GetStarName]"
+				log = "Adding orange nebula to [this.GetName]"
 				create_orange_nebula_1 = yes
 			
 			}
@@ -24,7 +24,7 @@ event = {
 					has_star_flag = purple
 				}
 
-				log = "Adding orange nebula to [from.GetStarName]"
+				log = "Adding orange nebula to [this.GetName]"
 				create_purple_nebula_1 = yes
 			}
 		}
