@@ -1,4 +1,5 @@
 {
 	"editor.insertSpaces": false,
-	"prettier.endOfLine": "crlf"
+	"prettier.endOfLine": "crlf",
+	"files.defaultLanguage": "paradox"
 }
