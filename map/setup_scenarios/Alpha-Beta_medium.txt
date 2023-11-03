@@ -696,6 +696,11 @@ bespoke_procedural_scenario = {
 		initializer = romulan_glintara_initializer spawn_weight = { base = 1 } 
 	}
 
+	system = {
+		name = "NAME_Hobus" position = { x = -39 y = 315 }
+		initializer = romulan_hobus_initializer spawn_weight = { base = 1 } 
+	}
+
 	system = { position = { x = -63 y = 328 }
 		initializer = romulan_outpost_initializer spawn_weight = { base = 1 } 
 	}
@@ -786,11 +791,6 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Hinq" position = { x = -120 y = 285 }
-		initializer = romulan_outpost_initializer spawn_weight = { base = 1 } 
-	}
-
-	system = {
-		name = "NAME_Hobus" position = { x = -39 y = 315 }
 		initializer = romulan_outpost_initializer spawn_weight = { base = 1 } 
 	}
 

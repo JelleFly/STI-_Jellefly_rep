@@ -14,7 +14,7 @@ klingon_boreth_initializer = {
 		init_effect = { 
 			set_planet_flag = ignore_startup_effect
 			change_pc = pc_m_star 
-			set_deposit = d_deuterium_5
+			set_deposit = d_energy_5
 		}
 
 		late_init_effect = {

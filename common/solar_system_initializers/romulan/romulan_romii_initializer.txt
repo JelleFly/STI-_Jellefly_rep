@@ -13,9 +13,18 @@ romulan_romii_initializer = {
 		
 		init_effect = { 
 			change_pc = pc_k_star
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
+
+			save_global_event_target_as = romii_star
 		}
 
-		init_effect = { save_global_event_target_as = romii_star }
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:klingon_country
+			}
+		}
 	}
 
 	change_orbit = 30
