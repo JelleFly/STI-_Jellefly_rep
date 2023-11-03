@@ -1,0 +1,112 @@
+# C3
+qt_cardassian_c3 = {
+	position = { x = 1 y = 3 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_c2
+	} 
+	 
+	blocked_by = { 
+ 
+	}
+
+	on_before_possible = {
+		set_variable = {
+			which = qt_cardassian_c3_bajor_labor_camps
+			value = 0
+		}
+
+		set_variable = {
+			which = qt_cardassian_c3_bajor_mineral_buildings
+			value = 0
+		}
+
+		every_owned_planet = {
+			limit = {
+				has_planet_flag = bajor
+			}
+			
+			owner = {
+				change_variable = {
+					which = qt_cardassian_c3_bajor_labor_camps
+					value = prev.value:get_num_districts|TYPE|district_labor_camp|
+				}
+
+				change_variable = {
+					which = qt_cardassian_c3_bajor_mineral_buildings
+					value = prev.value:get_owned_buildings_by_type|TYPE|building_mineral_purification_plant|
+				}
+				change_variable = {
+					which = qt_cardassian_c3_bajor_mineral_buildings
+					value = prev.value:get_owned_buildings_by_type|TYPE|building_mineral_purification_hub|
+				}
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			success_text = qt_cardassian_c3_custom_tooltip_1_success
+			fail_text = qt_cardassian_c3_custom_tooltip_1_fail
+
+			event_target:bajoran_system = {
+				if = {
+					limit = { exists = starbase }	
+					starbase = {
+						owner = { is_cardassian = yes }	
+						
+						OR = {
+							has_starbase_size = starbase_starhold
+							has_starbase_size = starbase_starfortress
+						}			
+					}
+				}
+			}
+		}
+
+		custom_tooltip = {
+			success_text = qt_cardassian_c3_custom_tooltip_2_success
+			fail_text = qt_cardassian_c3_custom_tooltip_2_fail
+
+			check_variable = {
+				which = qt_cardassian_c3_bajor_labor_camps
+				value >= 5
+			}
+		}
+		
+		custom_tooltip = {
+			success_text = qt_cardassian_c3_custom_tooltip_3_success
+			fail_text = qt_cardassian_c3_custom_tooltip_3_fail
+
+			check_variable = {
+				which = qt_cardassian_c3_bajor_mineral_buildings
+				value >= 1
+			}
+		}
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {	
+		add_modifier = { 
+			modifier = qt_cardassian_c3_effect
+		}		 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

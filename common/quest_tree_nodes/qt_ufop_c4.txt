@@ -1,0 +1,68 @@
+# C4
+qt_ufop_ds9_station = {
+	position = { x = 1 y = 6 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_dead_to_life
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+		custom_tooltip = {
+			any_system_within_border = {
+				has_star_flag = bajoran_system
+			}
+			fail_text = qt_ufop_ds9_station_fail_tooltip
+			success_text = qt_ufop_ds9_station_possible_tooltip
+		}	
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+
+		every_country = {
+
+			random_system_within_border = {
+				limit = {
+					has_star_flag = bajoran_system
+				}
+				every_system_planet = {
+					limit = {
+						has_planet_flag = bajor							
+					}
+					
+					add_modifier = {
+						modifier = qt_ufop_ds9_station_effect
+					}
+				}				
+			}
+
+		}
+
+		add_resource = {
+			influence = 150
+		}
+
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

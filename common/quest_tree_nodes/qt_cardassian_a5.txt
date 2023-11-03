@@ -1,0 +1,55 @@
+# A5
+qt_cardassian_a5 = {
+	position = { x = 9 y = 3 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a4
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	possible = {
+		fleet_power >= 5000
+		custom_tooltip = { 
+			success_text = 	qt_cardassian_a5_special_project_success 
+			fail_text = qt_cardassian_a5_special_project_fail
+
+			has_country_flag = abnomimal_readings_success
+		}
+	} 
+ 
+	on_started = { 
+		enable_special_project = {
+			name = "WOULD_BE_DEBRIS"
+			location = capital_scope
+			owner = root
+		}
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		add_modifier = {
+			modifier = qt_cardassian_a5_effect
+		}
+
+		add_resource = {
+			unity = 3500
+		}		 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

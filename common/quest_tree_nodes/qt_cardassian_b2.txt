@@ -1,0 +1,57 @@
+# B2
+qt_cardassian_b2 = {
+	position = { x = 11 y = 3 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a4
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	possible = {
+		custom_tooltip = { 
+			success_text = qt_cardassian_b2_bajor_is_cardassian_succes
+			fail_text = qt_cardassian_b2_bajor_is_cardassian_fail
+			event_target:bajoran_planet = {
+				
+				owner = { is_cardassian = yes }
+			}
+		}
+
+		event_target:bajoran_planet = {
+			num_pops >= 50
+			planet_crime <= 10
+			planet_stability >= 75
+		}
+		
+	} 
+ 
+	on_started = {
+ 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		event_target:bajoran_planet = {
+			add_modifier = {
+				modifier = qt_cardassian_b2_effect
+			}			 
+		}
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

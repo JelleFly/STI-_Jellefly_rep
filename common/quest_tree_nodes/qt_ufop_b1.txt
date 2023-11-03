@@ -1,0 +1,48 @@
+#### B1
+qt_ufop_build_the_enterprise_4 = {
+	position = { x = 10 y = 1 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_where_none_has_gone_before_1
+	}
+	
+	blocked_by = {
+		# This quest has an inverse blocked condition
+		# Must NOT have claimed Empower Section 31
+		# This expression is only able to be written in "possible" tag   
+	}
+
+	possible = {
+		resource_stockpile_compare = { resource = alloys value >= 3500 } 
+	}
+
+	on_started = {
+	
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		country_event = { id = quest.1 } # Triggers Space is not the limit (reward)		
+	
+		hidden_effect = {
+			add_resource = {
+				alloys = -3500
+			}
+		}
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
