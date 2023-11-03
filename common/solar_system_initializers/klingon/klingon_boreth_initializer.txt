@@ -1,0 +1,75 @@
+klingon_boreth_initializer = {
+	name = "NAME_Boreth"
+	class = "sc_m"
+	usage = custom_empire
+	flags = { klingon klingon_system colony }
+	
+	planet = {
+		name = "NAME_Boreth-A"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect
+			change_pc = pc_m_star 
+			set_deposit = d_deuterium_5
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:klingon_country
+			}
+		}
+	}
+	
+	change_orbit = 20
+
+	planet = {
+		name = "NAME_Boreth"
+		class = "pc_alpine"
+
+		subclass = psc_class_m
+		orbit_distance = 25
+		size = 20
+		starting_planet = yes
+		has_ring = no
+		modifiers = none
+		flags = { planet_boreth bespoke_colony mapo_colony }
+		
+		moon = {
+			name = "NAME_Boreth_a"
+			count = 1
+			orbit_distance = 6
+			class = rl_unhabitable_planets
+			has_ring = no
+			size = 5
+		}
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			create_boreth_colony = yes
+		}
+	}
+	
+	planet = {
+		count = { min = 2 max = 4 }
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:klingon_country
+		}
+	}
+}

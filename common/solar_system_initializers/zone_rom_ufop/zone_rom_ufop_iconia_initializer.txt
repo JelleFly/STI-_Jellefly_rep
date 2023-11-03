@@ -12,8 +12,9 @@ zone_rom_ufop_iconia_initializer = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 
-		init_effect = { 
-			change_pc = pc_k_star 
+		init_effect = {
+			change_pc = pc_k_star
+			save_global_event_target_as = iconia_star
 		}
 	}
 	
@@ -25,9 +26,8 @@ zone_rom_ufop_iconia_initializer = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = iconia_star
+		init_effect = {
+			change_pc = pc_g_star
 		}
 	}
 	
@@ -40,10 +40,14 @@ zone_rom_ufop_iconia_initializer = {
 		home_planet = no
 	}
 
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
 	late_init_effect = {
 		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+			size = starbase_outpost
+			owner = event_target:romulan_country
 		}
 	}
 }

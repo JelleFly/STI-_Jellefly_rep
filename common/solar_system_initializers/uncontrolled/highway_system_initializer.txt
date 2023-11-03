@@ -1,0 +1,21 @@
+highway_system_initializer = {
+	class = sc_highway_node
+	usage_odds = 0
+	prevent_anomalies = yes
+
+	planet = {
+		count = 1
+		class = "pc_node_black_hole"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 20
+		has_ring = no
+		starting_planet = no
+		home_planet = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+}

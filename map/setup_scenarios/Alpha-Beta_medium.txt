@@ -325,11 +325,6 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
-		name = "NAME_Dorvan" position = { x = 44 y = 395 }
-		initializer = dorvan_system_initializer spawn_weight = { base = 1 } 
-	}
-
-	system = {
 		name = "NAME_Draygo" position = { x = 42 y = 393 }
 		initializer = draygo_system_initializer spawn_weight = { base = 1 } 
 	}
@@ -1115,6 +1110,11 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Camor" position = { x = 39 y = 414 }
 		initializer = uncontrolled_system_initializer spawn_weight = { base = 1 } 
+	}
+
+	system = {
+		name = "NAME_Dorvan" position = { x = 44 y = 395 }
+		initializer = uncontrolled_dorvan_system_initializer spawn_weight = { base = 1 } 
 	}
 
 	system = {

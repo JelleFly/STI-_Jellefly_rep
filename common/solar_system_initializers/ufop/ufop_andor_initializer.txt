@@ -1,0 +1,119 @@
+ufop_andor_initializer = {
+	name = "NAME_Andor"
+	class = sc_a
+	flags = { ufop ufop_system colony }
+
+	planet = {
+		name = "NAME_ProcyonA"
+		count = 1
+		class = star
+		orbit_distance = 30
+		orbit_angle = 0
+		size = 35
+		has_ring = no
+
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect
+			change_pc = pc_b_star 
+			set_deposit = d_deuterium_5
+			set_deposit = d_research_5 #HRB_Research_Rework
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:ufop_country
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_ProcyonB"
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 10
+		has_ring = no
+		
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect		
+			change_pc = pc_f_star
+			set_deposit = d_deuterium_3
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:ufop_country
+			}
+		}
+	}
+	
+	change_orbit = 20
+
+	planet = {
+		count = 2
+		class = "rl_unhabitable_planets"
+		orbit_distance = { min = 35 max = 45 }
+	}
+	
+	planet = {
+		name = "NAME_Andor"
+		orbit_distance = 50
+		class = pc_gas_giant
+		subclass = psc_class_j
+		size = 45
+		deposit_blockers = none
+		modifiers = none
+		has_ring = yes
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		change_orbit = 10
+		
+		moon = {
+			count = 1
+			orbit_distance = 6
+			class = rl_unhabitable_planets
+			has_ring = no
+		}
+
+		planet = {
+			name = "NAME_Andoria"
+			orbit_distance = 6
+			class = pc_arctic
+			subclass = psc_class_m
+			size = 15
+			deposit_blockers = none
+			modifiers = none
+			has_ring = no
+			flags = { planet_andoria bespoke_colony mapo_colony }
+	
+			init_effect = {
+				prevent_anomaly = yes
+			}
+			
+			late_init_effect = {
+				create_andor_colony = yes
+			}
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		class = "rl_unhabitable_planets"
+		orbit_distance = { min = 40 max = 50 }
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:ufop_country
+		}
+	}
+}

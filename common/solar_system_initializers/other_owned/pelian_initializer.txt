@@ -1,0 +1,109 @@
+pelian_initializer = {
+	name = "NAME_Pelian"
+	class = sc_m
+	usage = custom_empire
+	flags = { pelian pelian_system pelian_home_system capital }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { change_pc = pc_g_star }
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 2
+		orbit_distance = 15
+		size = 12
+		class = rl_unhabitable_planets
+	}
+	
+	planet = {
+		name = "NAME_Pelian_Home_Planet"
+		orbit_distance = 30
+		class = pc_ocean
+		subclass = psc_class_m
+		size = 12
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		home_planet = yes
+		flags = { mipo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:pelian_country # Since we already created a Starbase with an owner, it isn't necessary to set the owner here too
+			}
+		}
+
+		moon = {
+			name = "NAME_Pelian_Moon_1"
+			class = pc_ocean
+			subclass = psc_class_l
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 120
+			has_ring = no
+
+		}
+
+		moon = {
+			name = "NAME_Pelian_Moon_2"
+			class = pc_ocean
+			subclass = psc_class_l
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 280
+			has_ring = no
+		}
+	}
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 110
+	}
+
+	change_orbit = 40
+
+	planet = {
+		count = { min = 3 max = 4 } 
+		orbit_distance = {min = 15 max = 30}
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
+
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = pelian
+				}
+
+				save_global_event_target_as = pelian_country
+			}
+		}
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			owner = event_target:pelian_country
+		}
+	}
+}
