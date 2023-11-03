@@ -1,0 +1,48 @@
+### B1
+qt_cardassian_b1 = {
+	position = { x = 11 y = 2 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a3
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	possible = {
+		custom_tooltip = {
+			success_text = 	qt_cardassian_b1_custom_tooltip_success
+			fail_text = 	qt_cardassian_b1_custom_tooltip_fail		
+			has_country_flag = bajor_integrated_to_cardassian
+		}
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		add_modifier = {
+			modifier = qt_cardassian_b1_effect
+		}
+		add_resource = { 
+			unity = 2000
+		} 		 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

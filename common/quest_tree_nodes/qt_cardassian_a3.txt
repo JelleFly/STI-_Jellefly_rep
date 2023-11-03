@@ -1,0 +1,58 @@
+# A3
+qt_cardassian_a3 = {
+	position = { x = 9 y = 1 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a2
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	possible = {
+		custom_tooltip = {
+			success_text = 	qt_cardassian_a3_tooltip_success
+			fail_text =  qt_cardassian_a3_tooltip_fail
+			any_owned_starbase = {
+				has_starbase_building = listening_post
+				solar_system = {
+					any_neighbor_system_euclidean = {
+						owner = {
+							NOT = {
+								has_country_id = cardassian
+							}
+						}
+					}
+				}
+			}
+		}
+		has_technology = tech_sensor_2
+		successful_spy_mission_count >= 10
+	} 
+ 
+	on_started = { 
+
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		add_modifier = {
+			modifier = qt_cardassian_a3_effect
+		}	
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

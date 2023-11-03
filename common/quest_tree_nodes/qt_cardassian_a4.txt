@@ -1,0 +1,46 @@
+# A4
+qt_cardassian_a4 = {
+	position = { x = 9 y = 2 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a3
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	possible = {
+		successful_assimilation_count >= 3
+		controlled_systems >= 25
+		resource_stockpile_compare = { resource = influence value >= 500 } 
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+
+		custom_tooltip = qt_cardassian_a4_custom_tooltip
+
+		add_modifier = {
+			modifier = qt_cardassian_a4_effect
+		}		 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

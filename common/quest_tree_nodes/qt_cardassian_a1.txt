@@ -1,0 +1,47 @@
+### A1
+qt_cardassian_a1 = {
+	position = { x = 4 y = 0 } 
+
+	potential = {
+		has_country_id = cardassian		
+	}
+
+	parents = { 
+	}
+	
+	blocked_by = {
+
+	}
+	
+	possible = {
+		has_monthly_income = {
+			resource = food
+			value >= 55
+		}
+		num_districts = { type = district_labor_camp value >= 7 }
+	}
+
+	on_started = {
+
+	}
+	
+	on_blocked = {
+		hidden_effect = {
+			end_event_chain = quest_prepare_for_glory_chain
+		}
+	}
+	
+	on_finished = { 
+		add_modifier = { 
+			modifier = qt_cardassian_a1_effect
+			years = 25 
+		} 
+	}
+
+	modifier = {
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

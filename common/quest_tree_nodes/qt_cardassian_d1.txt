@@ -1,0 +1,73 @@
+### D1
+qt_cardassian_d1 = {
+	position = { x = 6 y = 1 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a1
+	} 
+
+	dotted_parents = { 
+		qt_cardassian_a1
+	} 
+	 
+	blocked_by = { 
+		qt_cardassian_c1
+	} 
+ 
+	on_before_possible = {
+		set_variable = {
+			which = qt_cardassian_d1_labor_camp
+			value = value:get_num_districts|TYPE|district_labor_camp|
+		}
+	}
+
+	possible = {
+		has_policy_flag = first_contact_proactive
+		country_stability > 80
+
+		custom_tooltip = { 
+			success_text = qt_cardassian_d1_district_success 
+			fail_text = qt_cardassian_d1_district_fail
+
+			check_variable = {
+				which = qt_cardassian_d1_labor_camp
+				value <= 0
+			}
+		}
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		
+		custom_tooltip = qt_cardassian_d1_civic_tooltip
+		custom_tooltip = qt_cardassian_d1_tooltip
+		
+		hidden_effect = {
+			force_remove_civic = civic_intelligence_zeal
+			force_add_civic = civic_reparations
+		}
+		
+		add_modifier = {
+			modifier = qt_cardassian_d1_effect
+			days = 3600 
+		}
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

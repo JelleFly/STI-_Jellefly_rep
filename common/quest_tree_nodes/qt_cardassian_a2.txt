@@ -1,0 +1,73 @@
+# A2
+qt_cardassian_a2 = {
+	position = { x = 9 y = 0 }
+
+	potential = {
+		has_country_id = cardassian		
+	}
+
+	parents = { 
+		qt_cardassian_a1
+	}
+	
+	blocked_by = {
+		
+	}
+
+	on_before_possible = {
+
+	}
+	
+	possible = {
+		num_buildings = { type = building_research_lab_1 value >= 3 }
+		num_researched_techs >= qt_cardassian_a2_required_researched_techs
+	}
+
+	on_started = {
+			
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+
+		custom_tooltip = qt_cardassian_a2_custom_tooltip
+		custom_tooltip = qt_cardassian_a2_tech_world
+
+		#HRB: This is to update triggered modifiers in planet has colony type tech world
+		every_owned_planet = {
+			limit = {
+				colony_type = col_research
+			}
+			set_colony_type = col_research
+		}
+
+		custom_tooltip = qt_cardassian_a2_scientist_trait
+		hidden_effect = {
+			random_owned_leader = {
+				limit = { 
+					leader = { leader_class = scientist }
+					NOT = {
+						has_trait = leader_trait_advocate
+					}
+				}
+				add_trait = leader_trait_advocate
+			}
+		}
+	}
+
+	modifier = {				
+	}
+
+	ai_weight = {
+		set = 0
+		modifier = {
+			is_quest_tree_node_possible = {
+				key = qt_cardassian_a1
+			}
+			set = 1000
+		}
+	}
+}

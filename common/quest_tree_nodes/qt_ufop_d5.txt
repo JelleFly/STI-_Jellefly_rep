@@ -1,0 +1,78 @@
+# D5
+qt_ufop_exodus = {
+	position = { x = 5 y = 6 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_starburst
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+		custom_tooltip = {
+			success_text = 	qt_ufop_exodus_custom_tooltip_success
+			fail_text = 	qt_ufop_exodus_custom_tooltip_fail		
+			has_country_flag = send_bulk_carrier_activated
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	blocked = {
+		custom_tooltip = {
+			success_text = 	qt_ufop_exodus_immediate_evacuation_blocked_tooltip_success
+			fail_text = 	qt_ufop_exodus_immediate_evacuation_blocked_tooltip_fail		
+			has_country_flag = immediate_evacuation_fail
+		}
+	}
+
+	on_finished = {	
+		custom_tooltip = qt_ufop_exodus_tooltip
+		add_resource = { influence = 350 }
+
+		hidden_effect = {
+			remove_country_flag = send_bulk_carrier_activated
+
+			if = {
+				limit = { exists = event_target:romulan_country }
+				
+				event_target:ufop_country = {
+					add_opinion_modifier = {
+						who = event_target:romulan_country
+						modifier = opinion_qt_ufop_exodus
+					}
+				}
+		
+				event_target:romulan_country = {
+					add_opinion_modifier = {
+						who = event_target:ufop_country
+						modifier = opinion_qt_ufop_exodus
+					}
+				}
+			}
+			else = {
+				# or...
+			}
+		}
+	}
+
+	modifier = {
+		species_leader_exp_gain = 0.35
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

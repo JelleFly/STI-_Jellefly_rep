@@ -1,0 +1,50 @@
+# D3
+qt_ufop_bajoran_membership = {
+	position = { x = 3 y = 6 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_liberate_the_oppressed
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		event_target:bajoran_planet = {
+			is_owned_by = event_target:ufop_country
+			num_pops >= 65
+			planet_crime <= 10
+			planet_stability >= 75
+			free_district_slots <= 4
+
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {
+		add_resource = { 
+			unity = 125000 
+			influence = 250
+		}			
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
