@@ -1,0 +1,83 @@
+bolian_bolarus_initializer = {
+	name = "NAME_Bolarus"
+	class = sc_m
+	usage = custom_empire
+	flags = { bolian bolian_system bolian_home_system capital }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { change_pc = pc_m_star }
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 5
+		orbit_distance = { min = 20 max = 35 }
+		class = rl_unhabitable_planets
+	}
+	
+	planet = {
+		name = "NAME_Bolarus_IX"
+		orbit_distance = 40
+		class = pc_desert
+		subclass = psc_class_m
+		size = 14
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		home_planet = yes
+		flags = { mipo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:bolian_country # Since we already created a Starbase with an owner, it isn't necessary to set the owner here too
+			}
+		}
+
+		moon = {
+			count = 2
+			orbit_distance = 6
+			class = rl_unhabitable_planets
+			has_ring = no
+			size = 5
+		}
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
+
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = bolian
+				}
+
+				save_global_event_target_as = bolian_country
+			}
+		}
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			owner = event_target:bolian_country
+		}
+		
+	}
+}

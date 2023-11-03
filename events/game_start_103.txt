@@ -1,0 +1,14 @@
+# Bespoke UFoP-Klingon Defensive Pact
+event = {
+	id = game_start.103
+	hide_window = yes  
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:ufop_country = {
+			set_defensive_pact = {
+				target = event_target:klingon_country
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+klingon_tygokor_initializer = {
+	name = "NAME_TyGokor"
+	class = "rl_all_stars"
+	flags = { outpost klingon_system klingon }
+	usage = static_system_init
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = {
+			change_pc = pc_g_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = 2
+		class = pc_molten
+		size = { min = 8 max = 12}
+		orbit_distance = 20
+		home_planet = no
+	}
+
+	planet = {
+		name = "NAME_TyGokor"
+		count = 1
+		class = pc_desert
+		subclass = psc_class_l
+		size = 12
+		orbit_distance = 30
+		orbit_angle = 170
+		has_ring = no
+	}
+
+	planet = {
+		count = 3
+		class = rl_unhabitable_planets
+		size = { min = 10 max = 22}
+		orbit_distance = 30
+		orbit_angle = 170
+	}
+
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:klingon_country
+		}
+	}
+}

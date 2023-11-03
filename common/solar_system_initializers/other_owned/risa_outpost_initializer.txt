@@ -1,0 +1,92 @@
+risa_outpost_initializer = {
+	class = sc_g
+	flags = { outpost ufop_system ufop risa_system }
+	usage = static_system_init
+
+	planet = {
+		class = pc_g_star
+		name = "Epsilon Ceti A"
+		orbit_distance = -110
+		orbit_angle = 47
+		size = { min = 25 max = 35 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 15
+
+		planet = {
+			count = 3
+			class = rl_unhabitable_planets
+			orbit_distance = 20
+			home_planet = no
+		}
+	}
+
+	planet = {
+		class = pc_f_star
+		name = "Epsilon Ceti B"
+		orbit_distance = 200
+		orbit_angle = 0
+		size = { min = 20 max = 30 }
+		has_ring = no
+	
+		change_orbit = 15
+	
+		planet = {
+			count = 2
+			class = rl_unhabitable_planets
+			orbit_distance = 20
+			home_planet = no
+		}
+
+		planet = {
+			name = "NAME_Risa"
+			class = "pc_gaia"
+			subclass = psc_class_m
+			orbit_distance = 25
+			orbit_angle = 60
+			size = 9
+			has_ring = no	
+			flags = { planet_risa }
+
+			moon = {
+				name = "Suraya"
+				class = rl_unhabitable_planets
+				subclass = psc_class_h
+				size = 13
+				orbit_distance = 10
+				orbit_angle = 80
+				has_ring = no
+			}
+			moon = {
+				name = "Simonibi"
+				class = rl_unhabitable_planets
+				subclass = psc_class_h
+				size = 6
+				orbit_distance = 8
+				orbit_angle = -155
+				has_ring = no
+			}
+		}
+
+		planet = {
+			count = 1
+			class = rl_unhabitable_planets
+			orbit_distance = 20
+			home_planet = no
+		}
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		# Creating a Starbase
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:ufop_country
+		}
+	}
+	
+}

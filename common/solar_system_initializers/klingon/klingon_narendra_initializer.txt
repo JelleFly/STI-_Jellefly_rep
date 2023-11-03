@@ -13,8 +13,8 @@ klingon_narendra_initializer = {
 
 		init_effect = { 
 			set_planet_flag = ignore_startup_effect
-			change_pc = pc_k_star 
-			set_deposit = d_deuterium_3
+			change_pc = pc_k_star
+			set_deposit = d_energy_10
 			save_global_event_target_as = narendra_star
 		}
 
@@ -34,9 +34,10 @@ klingon_narendra_initializer = {
 		has_ring = no
 
 		init_effect = { 
-			set_planet_flag = ignore_startup_effect
 			change_pc = pc_a_star
-			set_deposit = d_deuterium_5 
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
 		}
 
 		late_init_effect = {
@@ -90,8 +91,8 @@ klingon_narendra_initializer = {
 
 	late_init_effect = {
 		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:klingon_country # Using the event_target saved on ufop_system_initializer
+			size = starbase_outpost
+			owner = event_target:klingon_country
 		}
 	}
 }

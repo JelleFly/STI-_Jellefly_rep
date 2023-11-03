@@ -1,0 +1,87 @@
+### C1
+qt_cardassian_c1 = {
+	position = { x = 2 y = 1 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_a1
+	} 
+
+	dotted_parents = { 
+		qt_cardassian_a1
+	} 
+	 
+	blocked_by = { 
+		qt_cardassian_d1
+	} 
+	
+	on_before_possible = {
+		set_variable = {
+			which = qt_cardassian_c1_owned_colonies		
+			value = value:get_owned_colonies
+		}
+		set_variable = {
+			which = qt_cardassian_c1_reeducate_pops			
+			value = value:get_reeducate_pops_missions_count
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			success_text = qt_cardassian_c1_reeducate_pops_success
+			fail_text = qt_cardassian_c1_reeducate_pops_fail
+			
+			check_variable = {
+				which = qt_cardassian_c1_reeducate_pops
+				value >= 3
+			}
+		}
+
+		custom_tooltip = {
+			success_text = qt_cardassian_c1_army_invasions_success
+			fail_text = qt_cardassian_c1_army_invasions_fail
+			
+			check_variable = {
+				which = qt_cardassian_c1_armies_invasions_counter
+				value >= 7
+			}
+		}
+
+		custom_tooltip = {
+			success_text = qt_cardassian_c1_owned_colonies_success
+			fail_text = qt_cardassian_c1_owned_colonies_fail
+			
+			check_variable = {
+				which = qt_cardassian_c1_owned_colonies
+				value >= 10
+			}
+		}
+	} 
+ 
+	on_started = { 
+		set_country_flag = qt_cardassian_c1_started
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {			
+		add_modifier = {
+			modifier = qt_cardassian_c1_effect		 
+		}
+		hidden_effect = {
+			remove_country_flag = qt_cardassian_c1_started
+		}	 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

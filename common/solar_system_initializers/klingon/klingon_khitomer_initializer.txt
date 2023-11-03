@@ -14,7 +14,7 @@ klingon_khitomer_initializer = {
 		init_effect = { 
 			set_planet_flag = ignore_startup_effect
 			change_pc = pc_k_star
-			set_deposit = d_deuterium_6
+			set_deposit = d_energy_4
 		}
 
 		late_init_effect = {
@@ -66,8 +66,8 @@ klingon_khitomer_initializer = {
 
 	late_init_effect = {
 		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:klingon_country # Using the event_target saved on ufop_system_initializer
+			size = starbase_outpost
+			owner = event_target:klingon_country
 		}
 	}
 }

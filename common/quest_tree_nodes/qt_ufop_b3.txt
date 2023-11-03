@@ -1,0 +1,42 @@
+# B3
+qt_ufop_lightyears_experienced_25 = {
+	position = { x = 8 y = 2 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_build_the_enterprise_4
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		anomaly_research_count = { flag = enterprise value >= 3 }
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		add_modifier = {
+			modifier = qt_ufop_lightyears_experienced_25_effect
+		}
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

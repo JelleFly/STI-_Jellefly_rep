@@ -1,0 +1,109 @@
+ufop_tellar_initializer = {
+	name = "NAME_61-Cygni"
+	class = sc_binary_7
+	flags = { ufop ufop_system colony }
+
+	planet = {
+		name = "NAME_61-Cygni-A"
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect		
+			change_pc = pc_g_star 
+			set_deposit = d_deuterium_3
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:ufop_country
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_61-Cygni-B"
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 120
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			set_planet_flag = ignore_startup_effect		
+			change_pc = pc_g_star 
+			set_deposit = d_deuterium_3
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:ufop_country
+			}
+		}
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = { min = 3 max = 4 }
+		class = "rl_unhabitable_planets"
+		orbit_distance = { min = 20 max = 35 }
+	}
+	
+	planet = {
+		name = "NAME_Tellar_Prime"
+		orbit_distance = 40
+		class = pc_alpine
+		subclass = psc_class_m
+		size = 22
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		flags = { planet_tellar_prime bespoke_colony mapo_colony }
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			create_tellar_colony = yes
+		}
+
+		change_orbit = 10
+
+		moon = {
+			name = "NAME_Tellar_MoonA"
+			class = "pc_barren_cold"
+			subclass = psc_class_h
+			size = 4
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+		}
+		moon = {
+			name = "NAME_Tellar_MoonB"
+			class = "pc_barren_cold"
+			subclass = psc_class_h
+			size = 6
+			orbit_distance = 4
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:ufop_country
+		}
+	}
+}

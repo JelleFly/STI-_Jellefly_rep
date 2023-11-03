@@ -1,0 +1,78 @@
+# D4
+qt_cardassian_d4 = {
+	position = { x = 7 y = 3 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_d2
+	} 
+	 
+	blocked_by = {
+		
+	}
+
+	on_before_possible = {
+		set_variable = {
+			which = qt_cardassian_d4_embassy_count	
+			value = 0
+		}
+
+		every_country = {
+			limit = { 
+				root = { has_embassy = prev }
+			}
+
+			root = {
+				change_variable = {
+					which = qt_cardassian_d4_embassy_count
+					value = 1
+				}
+			}
+		}
+	}
+
+	possible = {		
+		num_diplo_actions_entered = { 
+			type = action_send_gift
+			value >= 20
+		}
+
+		custom_tooltip = { 
+			success_text = 	qt_cardassian_d4_embassy_count_success 
+			fail_text = 	qt_cardassian_d4_embassy_count_fail
+
+			check_variable = {		
+				which = qt_cardassian_d4_embassy_count
+				value >= 4
+			}
+		}
+		
+		num_migration_pacts >= 4
+		num_commercial_pacts >= 4
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+		add_modifier = {
+			modifier = qt_cardassian_d4_effect
+		}
+		add_resource = { influence = 350 }	 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

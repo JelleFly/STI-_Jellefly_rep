@@ -1,0 +1,102 @@
+iyaaran_initializer = {
+	name = "NAME_Iyaaran"
+	class = sc_m
+	usage = custom_empire
+	flags = { iyaaran iyaaran_system iyaaran_home_system capital }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { change_pc = pc_k_star }
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 2
+		orbit_distance = { min = 13 max = 16 }
+		size = { min = 13 max = 16 }
+		class = rl_unhabitable_planets
+	}
+	
+	planet = {
+		name = "NAME_Iyaaran_Home_Planet"
+		orbit_distance = 30
+		class = pc_desert
+		subclass = psc_class_m
+		size = 15
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		home_planet = yes
+		flags = { mipo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:iyaaran_country # Since we already created a Starbase with an owner, it isn't necessary to set the owner here too
+			}
+		}
+
+		moon = {
+			name = "NAME_Iyaaran_Moon_1"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 110
+			has_ring = no
+		}
+
+		moon = {
+			name = "NAME_Iyaaran_Moon_2"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 14
+			orbit_angle = 220
+			has_ring = no
+		}
+	}
+
+	change_orbit = 5
+
+
+	planet = {
+		count = {min = 3 max = 5}
+		orbit_distance = {min = 15 max = 30}
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
+
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = iyaaran
+				}
+
+				save_global_event_target_as = iyaaran_country
+			}
+		}
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			owner = event_target:iyaaran_country
+		}
+	}
+}

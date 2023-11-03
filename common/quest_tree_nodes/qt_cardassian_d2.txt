@@ -1,0 +1,106 @@
+# D2
+qt_cardassian_d2 = {
+	position = { x = 6 y = 2 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_d1
+	} 
+	 
+	blocked_by = {
+		
+	}
+
+	on_before_possible = {
+		set_variable = {
+			which = qt_cardassian_d2_slave_pops			
+			value = value:get_slave_pops
+		}
+
+		set_variable = {
+			which = qt_cardassian_d2_unemployed_capital_pops			
+			value = 0
+		}
+
+		every_owned_planet = {
+			limit = {
+				is_capital = yes
+			}
+
+			owner = {
+				change_variable = {
+					which = qt_cardassian_d2_unemployed_capital_pops			
+					value = prev.trigger:num_unemployed
+				}
+			}
+		}
+
+		set_variable = {
+			which = qt_cardassian_d2_housing_buildings
+			value = value:get_owned_buildings_by_type|TYPE|building_communal_lodgings_cardassian|
+		}
+		change_variable = {
+			which = qt_cardassian_d2_housing_buildings
+			value = value:get_owned_buildings_by_type|TYPE|building_stately_household_cardassian|
+		}
+	}
+
+	possible = {
+		custom_tooltip = { 
+			success_text = 	qt_cardassian_d2_1_success 
+			fail_text = 	qt_cardassian_d2_1_fail 
+ 
+			check_variable = {
+				which = qt_cardassian_d2_slave_pops
+				value <= 10
+			}
+		}
+
+		custom_tooltip = { 
+			success_text = 	qt_cardassian_d2_2_success 
+			fail_text = 	qt_cardassian_d2_2_fail
+
+			check_variable = {
+				which = qt_cardassian_d2_unemployed_capital_pops
+				value <= 0
+			}
+		}
+		
+		custom_tooltip = { 
+			success_text = qt_cardassian_d2_3_success 
+			fail_text = qt_cardassian_d2_3_fail
+
+			check_variable = {
+				which = qt_cardassian_d2_housing_buildings
+				value >= 5
+			}
+		}
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+
+			custom_tooltip = qt_cardassian_d2_custom_tooltip
+
+			add_modifier = {
+				modifier = qt_cardassian_d2_effect
+			}			 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

@@ -1,0 +1,76 @@
+# D2
+qt_ufop_liberate_the_oppressed = {
+	position = { x = 3 y = 5 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_grow_the_federation_5
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		if = {
+			limit = { exists = event_target:bajoran_country }
+
+			custom_tooltip = {
+				fail_text = qt_ufop_liberate_the_oppressed_fail_a_tooltip
+				success_text = qt_ufop_liberate_the_oppressed_success_a_tooltip
+
+				has_country_flag = bajoran_liberated_by_ufop
+			} 
+		}
+		else = {
+			event_target:bajoran_system = {
+				is_owned_by = event_target:ufop_country
+			}
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		
+		if = {
+			limit = { exists = event_target:bajoran_country }
+
+			event_target:bajoran_country = {
+				add_opinion_modifier = {
+					who = ROOT	
+					modifier = opinion_ufop_quest_liberate_the_oppressed
+				}
+			}
+		}
+		else = {
+			event_target:bajoran_planet = {
+				add_deposit = d_trade_value_10
+			}
+		}
+
+		custom_tooltip = qt_ufop_liberate_the_oppressed_custom_tooltip
+
+		add_resource = {
+			unity = 90000
+			influence = 250
+		}
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

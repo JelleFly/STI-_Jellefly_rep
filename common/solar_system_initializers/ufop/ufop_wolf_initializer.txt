@@ -41,6 +41,10 @@ ufop_wolf_initializer = {
 		}
 	}
 
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
 	late_init_effect = {
 		create_starbase = {
 			size = starbase_outpost

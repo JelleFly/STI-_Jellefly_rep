@@ -1,0 +1,15 @@
+# HRB Non Tutorial Initializer
+event = {
+	id = game_start.150
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_tutorial_active = no
+	}
+ 
+	immediate = {
+		enable_custom_ai_ministers = yes
+		show_complete_ui_non_tutorial = yes
+	}
+}

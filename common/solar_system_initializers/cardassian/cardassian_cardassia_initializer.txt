@@ -14,7 +14,17 @@ cardassian_cardassia_initializer = {
 
 		init_effect = {
 			change_pc = pc_k_star
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
+
 			save_global_event_target_as = cardassian_primary_star
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:cardassian_country
+			}
 		}
 	}
 	
@@ -109,7 +119,7 @@ cardassian_cardassia_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		every_neighbor_system = { set_star_flag = empire_cluster }
-		
+
 		every_country = {
 			if = {
 				limit = {
