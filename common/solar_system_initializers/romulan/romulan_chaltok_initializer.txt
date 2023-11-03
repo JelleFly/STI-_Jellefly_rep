@@ -12,9 +12,10 @@ romulan_chaltok_initializer = {
 		size = 30
 		has_ring = no
 		init_effect = { 
-			set_planet_flag = ignore_startup_effect
 			change_pc = pc_m_star 
-			set_deposit = d_deuterium_5
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
 		}
 
 		late_init_effect = {
