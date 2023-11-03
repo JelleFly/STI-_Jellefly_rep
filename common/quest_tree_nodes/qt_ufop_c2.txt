@@ -1,0 +1,44 @@
+# C2
+qt_ufop_expand_memory_alpha_8 = {
+	position = { x = 1 y = 4 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_establish_trade_affiliations_11
+	}
+	
+	blocked_by = {
+		
+	}
+
+	possible = {		
+		num_buildings = { type = building_research_lab_1 value >= 8 }
+		num_orbital_stations = { type = research_station value >= 10 }
+		num_districts = { type = district_culture value >= 10 }
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		add_modifier = {
+			modifier = qt_ufop_expand_memory_alpha_8_effect
+		}
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

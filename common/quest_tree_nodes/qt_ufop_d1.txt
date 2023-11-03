@@ -1,0 +1,53 @@
+#### D1
+qt_ufop_grow_the_federation_5 = {
+	position = { x = 3 y = 4 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_multilateral_accords
+	}
+
+	dotted_parents = {
+		qt_ufop_multilateral_accords
+	}
+	
+	blocked_by = {
+		qt_ufop_empower_section_31_9
+	}
+
+	possible = {
+		successful_assimilation_count >= 2
+	}
+
+	on_started = {
+	
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		add_modifier = {
+			modifier = qt_ufop_grow_the_federation_5_effect
+		}
+
+		country_event = { id = quest.50 } # Universal Rights
+
+		add_resource = {
+			unity = 5000
+			influence = 200
+		}
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

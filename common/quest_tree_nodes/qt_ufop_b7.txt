@@ -1,0 +1,49 @@
+# B7
+qt_ufop_upgrade_the_enterprise = {
+	position = { x = 10 y = 3 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_empathic_diplomacy_26
+		qt_ufop_lightyears_experienced_25
+		qt_ufop_positronic_computation_28
+		qt_ufop_worf_klingon_might_28
+		qt_ufop_doctors_orders_27
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		has_quest_tree_node = qt_ufop_empathic_diplomacy_26
+		has_quest_tree_node = qt_ufop_lightyears_experienced_25
+		has_quest_tree_node = qt_ufop_positronic_computation_28
+		has_quest_tree_node = qt_ufop_worf_klingon_might_28
+		has_quest_tree_node = qt_ufop_doctors_orders_27
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		give_technology = { tech = tech_defiant }
+		country_event = { id = quest.70 } # Upgrade the Enterprise - Special Project Enabled
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

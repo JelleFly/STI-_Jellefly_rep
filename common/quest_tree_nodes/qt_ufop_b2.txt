@@ -1,0 +1,48 @@
+# B2
+qt_ufop_empathic_diplomacy_26 = {
+	position = { x = 6 y = 2 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_build_the_enterprise_4
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		successful_mipo_mission_count = { flag = enterprise value >= 3  }
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		add_modifier = {
+			modifier = qt_ufop_empathic_diplomacy_26_effect
+		}
+		hidden_effect = {
+			country_event = { id = country.2939 }
+		}
+
+		custom_tooltip = qt_ufop_empathic_diplomacy_26_recruit_deanna_tooltip
+
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

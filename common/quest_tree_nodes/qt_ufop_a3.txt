@@ -1,0 +1,43 @@
+# A3
+qt_ufop_first_contacts_3 = {
+	position = { x = 4 y = 2 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_understand_the_unknown_2
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		minor_contacts_count >= 5
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		add_modifier = {
+			modifier = qt_ufop_first_contacts_3_effect
+			years = 40
+		}
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

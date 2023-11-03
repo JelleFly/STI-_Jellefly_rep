@@ -1,0 +1,54 @@
+# E5
+qt_ufop_major_strike = {
+	position = { x = 7 y = 8 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_control_neutral_zone
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		fleet_power >= 6500
+		custom_tooltip = {
+			success_text = 	qt_ufop_major_strike_custom_tooltip_success
+			fail_text = 	qt_ufop_major_strike_custom_tooltip_fail
+			has_country_flag = conquest_planet_capital
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {
+		custom_tooltip = qt_ufop_major_strike_admiral_add_skill
+		every_owned_leader = {
+			limit = { leader_class = admiral }
+			add_skill = 3
+		}
+
+		add_resource = {
+			influence = 400
+		}
+	}
+
+	modifier = {
+		country_war_exhaustion_mult = -0.15
+		country_claim_influence_cost_mult = -0.40
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

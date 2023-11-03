@@ -1,0 +1,92 @@
+# E2
+qt_ufop_reform_the_charters_12 = {
+	position = { x = 7 y = 5 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_empower_section_31_9
+	}
+	
+	blocked_by = {
+
+	}
+
+	# HRB_NOTE: block of effects to be called before possible
+	# Use it with caution, ideally just to set dynamic variables with triggers
+	on_before_possible = {
+		set_variable = {
+			which = qt_ufop_reform_the_charters_12_admiral_cap
+			value = value:get_country_leader_class_cap|LEADER_CLASS|admiral|
+		}
+		set_variable = {
+			which = qt_ufop_reform_the_charters_12_admirals_assigned_to_fleets
+			value = value:get_country_leader_class_assigned_to_fleets|LEADER_CLASS|admiral|
+		}
+	}
+
+	possible = {
+		num_buildings = { 
+			type = building_starfleet_academy_ufop 
+			value >= 6 
+		}
+		
+		num_buildings = {
+			type = building_planetary_defense_system_ufop
+			value >= 6
+		}
+		
+		# HRB_NOTE: No. of Admirals assigned to Fleets is equal to Admiral Cap
+		custom_tooltip = {
+			success_text = 	qt_ufop_reform_the_charters_12_custom_tooltip_success
+			fail_text = 	qt_ufop_reform_the_charters_12_custom_tooltip_fail
+
+			check_variable = {
+				which = qt_ufop_reform_the_charters_12_admirals_assigned_to_fleets
+				value >= qt_ufop_reform_the_charters_12_admiral_cap
+			}
+		}
+			 
+		fleet_power >= 4500
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+
+		custom_tooltip = qt_ufop_reform_the_charters_12_custom_tooltip
+
+		add_modifier = {
+			modifier = qt_ufop_reform_the_charters_12_effect
+			days = -1
+		}
+
+		if = {
+			limit = { has_quest_tree_node = qt_ufop_build_the_enterprise_4 }
+			custom_tooltip = qt_ufop_reform_the_charters_picard_resigns
+		}
+		country_event = { id = quest.101 }
+
+		add_resource = { 
+			unity = 5000 
+			influence = 200
+		}	
+		
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
