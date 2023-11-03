@@ -62,6 +62,15 @@ klingon_qonos_initializer = {
 				days = -1
 			}
 		}
+
+		late_init_effect = {
+			while = {
+				count = 30
+				create_pop = {
+				species = random
+				}
+			}
+		}
 	}
 	
 	planet = {
@@ -72,6 +81,7 @@ klingon_qonos_initializer = {
 
 	init_effect = {
 		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
 
 		every_country = {
 			if = {
@@ -82,9 +92,5 @@ klingon_qonos_initializer = {
 				save_global_event_target_as = klingon_country
 			}
 		}
-	}
-
-	init_effect = {
-		every_neighbor_system = { set_star_flag = empire_cluster }
 	}
 }
