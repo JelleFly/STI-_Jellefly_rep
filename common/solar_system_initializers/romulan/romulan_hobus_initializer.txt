@@ -1,8 +1,8 @@
-cardassian_sheva_initializer = {
+romulan_hobus_initializer = {
+	name = "NAME_Hobus"
 	class = "rl_all_stars"
-	flags = { outpost cardassian_system cardassia }
 	usage = static_system_init
-  flags = { sheva }
+	flags = { romulan romulan_sytem hobus }
 
 	planet = {
 		class = star
@@ -11,18 +11,17 @@ cardassian_sheva_initializer = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 
-		init_effect = { 	
-			change_pc = pc_f_star 
+		init_effect = {
 			set_planet_flag = starting_mining_target
 			set_planet_flag = starting_deposit
 			set_deposit = d_energy_10
 
-			save_global_event_target_as = sheva_star
+			save_global_event_target_as = hobus_star
 		}
 
 		late_init_effect = {
 			create_mining_station = {
-				owner = event_target:cardassian_country
+				owner = event_target:romulan_country
 			}
 		}
 	}
@@ -30,7 +29,7 @@ cardassian_sheva_initializer = {
 	change_orbit = 50
 	
 	planet = {
-		count = { min = 3 max = 8 }
+		count = 3
 		class = rl_unhabitable_planets
 		orbit_distance = { min = 20 max = 30 }
 		home_planet = no
@@ -42,10 +41,8 @@ cardassian_sheva_initializer = {
 
 	late_init_effect = {
 		create_starbase = {
-			size = starbase_starport
-			owner = event_target:cardassian_country
-			module = gun_battery
-			module = missile_battery
+			size = starbase_outpost
+			owner = event_target:romulan_country
 		}
 	}
 }

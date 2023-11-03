@@ -14,7 +14,7 @@ klingon_khitomer_initializer = {
 		init_effect = { 
 			set_planet_flag = ignore_startup_effect
 			change_pc = pc_k_star
-			set_deposit = d_deuterium_6
+			set_deposit = d_energy_4
 		}
 
 		late_init_effect = {
