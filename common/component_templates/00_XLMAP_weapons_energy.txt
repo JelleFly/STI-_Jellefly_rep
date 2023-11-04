@@ -26,7 +26,7 @@ weapon_component_template = {
 	
 	icon = "GFX_ship_weapon_siege_phaser"
 	icon_frame = 1
-	#color = { 0.1 1.0 0.1 1 }
+	color = { 0.1 1.0 0.1 1 }
 
 	firing_arc = 55.0
 	min_range = 30.0
@@ -78,3 +78,38 @@ weapon_component_template = {
 		}
 	}
 }
+
+ ## Klingon/Romulan Disruptors
+ weapon_component_template = {
+ 	key = "KLINGON_DISRUPTOR_1"
+ 	size = large
+ 	type = instant
+
+ 	entity = "invisible_turret_entity"
+ 	icon = "GFX_ship_part_disruptor_1"
+ 	icon_frame = 1
+ 	#color = { 1.0 1.0 1.0 1 }
+
+ 	prerequisites = { "tech_klingon_disruptor" }
+ 	component_set = "KLINGON_DISRUPTOR_1"
+ 	projectile_gfx = "disruptor_1_large"
+ 	tags = { weapon_type_energy }
+ 	ai_tags = { weapon_role_anti_hull }
+ 	ai_tag_weight = 5
+ 	resources = {
+ 		category = ship_components
+ 		cost = {
+ 			alloys = @s_t1_cost
+ 		}
+ 		upkeep = {
+ 			trigger = {
+ 				exists = FROM
+ 				FROM = { NOT = { has_country_id = romulan } }
+ 			}
+ 			deuterium = @s_t1_upkeep_deuterium
+ 		}
+ 		upkeep = {
+ 			alloys = @s_t1_upkeep_alloys
+ 		}
+ 	}
+ }

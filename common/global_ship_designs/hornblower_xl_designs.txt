@@ -75,43 +75,43 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "LARGE_NEGATRON_DISRUPTOR"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PHASER_CANNON"
+			template = "LARGE_NEGATRON_DISRUPTOR"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PHASER_CANNON"
+			template = "LARGE_NEGATRON_DISRUPTOR"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_PHASER_CANNON"
+			template = "LARGE_NEGATRON_DISRUPTOR"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_PHASER_CANNON"
+			template = "LARGE_NEGATRON_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHOTON_TORPEDOES_1"
+			template = "SMALL_SHIELD_DISRUPTOR_1"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PHOTON_TORPEDOES_1"
+			template = "SMALL_SHIELD_DISRUPTOR_1"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_PHOTON_TORPEDOES_1"
+			template = "SMALL_SHIELD_DISRUPTOR_1"
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "QUANTUM_TORPEDOES"
+			template = "SMALL_SHIELD_DISRUPTOR_1"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "QUANTUM_TORPEDOES"
+			template = "SMALL_SHIELD_DISRUPTOR_1"
 		}
 
 

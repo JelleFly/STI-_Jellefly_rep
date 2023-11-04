@@ -40,7 +40,7 @@
 
 neghvar_flagship = {
 	formation_priority = @neghvar_formation_priority
-	max_speed = @neghvar_speed
+	max_speed = 30
 	acceleration = 0.17
 	rotation_speed = 0.3
 	collision_radius = @neghvar_collision_radius
@@ -63,8 +63,7 @@ neghvar_flagship = {
 	fleet_slot_size = 8
 	graphical_culture = no
 	
-	section_slots = { "mid" = { locator = "part1" }
-	"bow" = { locator = "part2" } }
+	section_slots = { "mid" = { locator = "part1" } }
 	
 	num_target_locators = 2
 	is_space_station = no
