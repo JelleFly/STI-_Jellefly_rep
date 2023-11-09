@@ -1,0 +1,9 @@
+remus_prison_colony = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_create_forced_labor_camps.dds"
+	planet_jobs_worker_produces_mult = 0.5
+	planet_jobs_worker_upkeep_mult = -0.25
+	planet_crime_mult = -0.25
+	pop_growth_speed = -0.25
+	#change
+}
+
