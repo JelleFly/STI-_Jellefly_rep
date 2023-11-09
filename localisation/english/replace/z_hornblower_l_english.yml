@@ -27,3 +27,7 @@ auth_dictatorial_fer_alliance:0 "Olicharhical"
 auth_dictatorial_fer_alliance_desc:0 "Upon the death or retirement of a Grand Nagus, he will select a new Grand Nagus"
 RT_NAGUS:0 "Grand Nagus"
 RT_NAGUS_FEMALE:0 "$Grand Nagus$"
+
+ ################################
+ # Romulan Localisations
+ ################################
