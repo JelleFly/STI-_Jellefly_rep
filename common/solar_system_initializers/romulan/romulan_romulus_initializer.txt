@@ -103,10 +103,11 @@ romulan_romulus_initializer = {
 	
 	planet = {
 		name = "NAME_Remus"
-		class = pc_barren
+		class = pc_barren_d
+		subclass = psc_class_d
 		orbit_distance = 17
 		orbit_angle = -6
-		size = 16
+		size = 21
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none

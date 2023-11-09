@@ -1,0 +1,627 @@
+#################################
+##   		 Variables	       ##
+#################################
+
+@base_cost = 300
+@city_cost = 500
+
+##########################################
+##		    Romulan Districts   	    ##
+##########################################
+
+#################################
+##      Special Disctricts     ##
+#################################
+
+# Civil Forum
+district_remus = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	icon = district_mining
+
+	potential = {
+		exists = owner
+        owner = { is_romulan = yes }
+		has_planet_flag = "planet_remus"
+	}
+
+	show_on_uncolonized = {
+		is_colonizable = yes
+		uses_district_set = reman
+		from = { is_romulan = yes }
+	}
+
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			energy = 3
+			#food = 1
+		}
+
+		# HRB_TODO: the "upkeep" trigger does not allow planet scope checks
+		# upkeep = {
+		# 	trigger = {
+		# 		exists = planet
+		# 		planet = { has_deposit = d_homeworld_resemblance }
+		# 	}
+		# 	energy = -2
+		# }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_city
+		district_industrial
+	}
+
+	planet_modifier = {
+		planet_housing_add = 4
+		planet_crime_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_miner_add = 2
+		}
+	}
+
+	# Special Effect by Deposit
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+				planet = {
+					has_deposit = d_frozen_hangar_caves
+				}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_miner_effect_desc
+	}
+
+	# AI Praetorian Guard x1
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		 }
+		 officers = 1
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		 }
+		 influence = 1 # Only accepts Integer
+	}
+
+	# AI Researcher Production x1
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		minerals = 10
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			owner = {
+				has_tradition = tr_klingon_legendary
+			}
+		}
+		unity = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_whispering_mounds
+			}
+		}
+		energy = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_apex_predators
+			}
+		}
+		research = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_apex_predators
+			}
+		}
+		food = 3
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_behemotic_fossils
+			}
+		}
+		research = 3
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_behemotic_fossils
+			}
+		}
+		unity = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_abandoned_ruins
+			}
+		}
+		research = 2
+	}
+	
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		officers = 12
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				exists = owner
+				planet = { has_designation = col_fortress }
+			}
+		}
+		influence = 1 # Only takes integers
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { has_tradition = tr_defense_oath_citizenship }
+		}
+		unity = 4
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { has_quest_tree_node = qt_klingon_e2 }
+		}
+		unity = 4
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			planet = {
+				has_modifier = kahless_festival
+			}
+		}
+		unity = 12
+	}
+
+}
+
+####################################
+## 			REMAN LIVING QUARTERS
+####################################
+
+
+district_remans_living = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	icon = district_city
+
+	potential = {
+		exists = owner
+        owner = { is_romulan = yes }
+		has_planet_flag = "planet_remus"
+	}
+
+	show_on_uncolonized = {
+		is_colonizable = yes
+		uses_district_set = reman
+		from = { is_romulan = yes }
+	}
+
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			energy = 1
+			food = 2
+		}
+		
+		produces = {
+			trigger = {
+				planet = {has_district = district_remus}
+			}
+			minerals = 5
+		}
+
+		# HRB_TODO: the "upkeep" trigger does not allow planet scope checks
+		# upkeep = {
+		# 	trigger = {
+		# 		exists = planet
+		# 		planet = { has_deposit = d_homeworld_resemblance }
+		# 	}
+		# 	energy = -2
+		# }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_city
+		district_industrial
+	}
+
+	planet_modifier = {
+		planet_crime_add = -5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+
+			job_reman_job_add = 1
+		}
+	}
+
+		
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+
+		}
+		modifier = {
+			planet_amenities_add = 3
+			planet_stability_add = 5
+		}
+	}
+
+	# Special Effect by Deposit
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+				planet = {
+					has_deposit = d_frozen_hangar_caves
+				}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_reman_job_effect_desc
+	}
+
+	# AI Praetorian Guard x1
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		 }
+		 officers = 1
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		 }
+		 influence = 1 # Only accepts Integer
+	}
+
+	# AI Researcher Production x1
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		minerals = 10
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			owner = {
+				has_tradition = tr_klingon_legendary
+			}
+		}
+		unity = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_whispering_mounds
+			}
+		}
+		energy = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_apex_predators
+			}
+		}
+		research = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_apex_predators
+			}
+		}
+		food = 3
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_behemotic_fossils
+			}
+		}
+		research = 3
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_behemotic_fossils
+			}
+		}
+		unity = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_abandoned_ruins
+			}
+		}
+		research = 2
+	}
+	
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		officers = 12
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				exists = owner
+				planet = { has_designation = col_fortress }
+			}
+		}
+		influence = 1 # Only takes integers
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { has_tradition = tr_defense_oath_citizenship }
+		}
+		unity = 4
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { has_quest_tree_node = qt_klingon_e2 }
+		}
+		unity = 4
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			planet = {
+				has_modifier = kahless_festival
+			}
+		}
+		unity = 12
+	}
+
+}
+
+
+
+####################################
+## 			Millitary Camp
+####################################
+
+soldier_camp_remus = {
+	base_buildtime = 480
+	category = worker
+	is_capped_by_modifier = no
+	condition_string = SOLDIER_JOB_TRIGGER
+	building_icon = building_stronghold
+	clothes_texture_index = 4
+	icon = district_civil_forum
+
+	potential = {
+		exists = owner
+        owner = { is_romulan = yes }
+
+	}
+		
+	pop_modifier = {
+		pop_defense_armies_add = 1
+	}
+		
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			food = 0
+		} 
+				
+		produces = {
+			officers = 3
+		}
+		
+		produces = {
+			trigger = {
+				exists = planet
+				planet = {
+					exists = owner
+					planet = { has_designation = col_fortress }
+				}
+			}
+			influence = 0.1
+		}
+			
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_defense_oath_citizenship }
+			}
+			unity = 1
+		}
+
+		# Recruitment Campaign, Decision
+		produces = {
+			trigger = {
+				exists = owner
+				exists = planet
+				planet = {
+					has_modifier = recruitment_campaign
+				}
+			}
+			officers = 3
+		}
+	}
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_enslaved = no
+	}
+		
+	possible = {
+		soldier_job_check_trigger = yes
+	}
+
+	# War Measures, Decision
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			exists = planet
+			planet = {
+				has_modifier = war_measures
+			}
+		}
+		pop_defense_armies_add = 3
+	}
+
+	# Fortress World, Planet Designation
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				exists = owner
+				planet = { has_designation = col_fortress }
+			}
+		}
+		pop_defense_armies_add = 1
+	}
+
+	# Extra Ration, Edict
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = extra_rations }
+		}
+		pop_defense_armies_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+
+			job_praetorian_guard_romulan_add = 1
+			job_centurion_romulan_add = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_slave_produces_mult = 0.2
+	}
+
+	weight = {
+		weight = @soldier_job_weight
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+            owner = { is_romulan = yes }
+		}
+		text = job_praetorian_guard_romulan_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_romulan = yes }
+		}
+		text = job_centurion_romulan_effect_desc
+	}
+}

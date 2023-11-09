@@ -1,0 +1,62 @@
+objectTypes = {
+
+#FEMALE
+	
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	
+	
+	pdxmesh = {
+		name = "portrait_reman_female_01_mesh"
+		file = "gfx/models/portraits/reman/reman_female_01_portrait.mesh"
+		animation = { id = "idle"	type = "reman_female_01_happy_animation" }
+		scale = 1.0
+	}	
+		
+
+	pdxmesh = {
+		name = "portrait_reman_female_02_mesh"
+		file = "gfx/models/portraits/reman/reman_female_02_portrait.mesh"
+		animation = { id = "idle"	type = "reman_female_02_happy_animation" }
+		scale = 1.0
+	}	
+	
+
+	pdxmesh = {
+		name = "portrait_reman_female_03_mesh"
+		file = "gfx/models/portraits/reman/reman_female_03_portrait.mesh"
+		animation = { id = "idle"	type = "reman_female_03_happy_animation" }
+		scale = 1.0
+	}	
+
+
+	pdxmesh = {
+		name = "portrait_reman_female_04_mesh"
+		file = "gfx/models/portraits/reman/reman_female_04_portrait.mesh"
+		animation = { id = "idle"	type = "reman_female_04_happy_animation" }
+		scale = 1.0
+	}	
+
+#MALE
+	
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	
+		
+	pdxmesh = {
+		name = "portrait_reman_male_01_mesh"
+		file = "gfx/models/portraits/reman/reman_male_01_portrait.mesh"
+		animation = { id = "idle"	type = "reman_male_01_happy_animation" }
+
+		scale = 1.0
+	}	
+		
+		
+	pdxmesh = {
+		name = "portrait_reman_male_02_mesh"
+		file = "gfx/models/portraits/reman/reman_male_02_portrait.mesh"
+		animation = { id = "idle"	type = "reman_male_02_happy_animation" }
+
+		scale = 1.0
+	}
+}
