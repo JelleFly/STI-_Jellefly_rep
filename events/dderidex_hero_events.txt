@@ -3,15 +3,15 @@ country_event = {
 	id = XL_MAP.004
 	hide_window = no
 	is_triggered_only = yes
-	title = "XL_MAP.1.name"
-	desc = "XL_MAP.1.desc"
+	title = "XL_MAP.004.name"
+	desc = "XL_MAP.004.desc"
 	picture = GFX_evt_shipyard_repair_service_romulan
 	location = from
 
 	
 
-		name = "XL_MAP.1.a"
-		custom_tooltip = "XL_MAP.1.tt"
+		name = "XL_MAP.004.a"
+		custom_tooltip = "XL_MAP.004.tt"
 		immediate = {
 			create_fleet = {
 				name = "I.R.W. Haakona"
