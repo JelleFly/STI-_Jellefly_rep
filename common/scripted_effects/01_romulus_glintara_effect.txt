@@ -1,0 +1,58 @@
+
+create_glintara_colony = {
+	prevent_anomaly = yes
+	set_owner = event_target:romulan_country 
+	set_colony_type = col_default
+
+	add_deposit = d_veiny_cliffs 
+	add_deposit = d_lush_jungle  
+
+	add_building = building_capital
+
+	while = {
+		count = 1
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_city
+		}
+	}
+	while = {
+		count = 2
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_generator
+		}
+	}
+	while = {
+		count = 0
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_industrial
+		}
+	}
+	while = {
+		count = 1
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_mining
+		}
+	}
+	while = {
+		count = 0
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_farming
+		}
+	}
+	while = {
+		count = 0
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_district_civil_forumfarming
+		}
+	}
+
+
+	while = {
+		#one less than intended, casue this colony has to create_colony{} first (adding 1 pop ion the process)
+		count = 10
+		create_pop = {
+			species = romulan
+		}
+	}
+	
+}

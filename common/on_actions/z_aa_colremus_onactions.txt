@@ -1,0 +1,7 @@
+on_game_start = {
+	events = {
+		aa_colremus.1000
+	}
+}
+
+#whatever

@@ -13,7 +13,17 @@ cardassian_sheva_initializer = {
 
 		init_effect = { 	
 			change_pc = pc_f_star 
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
+
 			save_global_event_target_as = sheva_star
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:cardassian_country
+			}
 		}
 	}
 	

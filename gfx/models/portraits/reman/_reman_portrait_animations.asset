@@ -1,0 +1,53 @@
+	
+	#FEMALE
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+	animation = {
+		name = "reman_female_01_happy_animation"
+		file = "reman_female_01_portrait_happy.anim"
+	}
+			
+	
+	animation = {
+		name = "reman_female_02_happy_animation"
+		file = "reman_female_02_portrait_happy.anim"
+	}
+	
+	
+	animation = {
+		name = "reman_female_03_happy_animation"
+		file = "reman_female_03_portrait_happy.anim"
+	}
+
+	animation = {
+		name = "reman_female_04_happy_animation"
+		file = "reman_female_04_portrait_happy.anim"
+	}
+
+	
+	
+	#MALE
+	
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	
+	animation = {
+		name = "reman_male_01_happy_animation"
+		file = "reman_male_01_portrait_happy.anim"
+	}
+
+		
+	animation = {
+		name = "reman_male_02_happy_animation"
+		file = "reman_male_02_portrait_happy.anim"
+	}
+
+	
+
+	
+	
+
+	
+	
+	

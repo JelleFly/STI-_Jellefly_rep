@@ -1,0 +1,55 @@
+namespace = aa_colremus
+
+event = {
+	id = aa_colremus.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_species = {
+			class = "HRB"
+			portrait = "reman2"
+			name = "Reman"
+			plural = "Remans"
+			adjective = "Reman"
+			name_list = "RML1"
+			
+			traits = {
+				trait = "trait_enduring"
+				trait = "trait_strong"
+				trait = "trait_unruly"
+				trait = "trait_reman_homeworld"
+				
+			}
+			effect = {
+				save_global_event_target_as = reman_species
+			}
+		}
+		
+		random_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_remus
+			}
+			clear_deposits = yes
+			create_colony = {
+				owner = event_target:romulan_country
+			}
+		}
+
+		event_target:romulan_country = {
+			random_owned_planet = {
+				limit = {
+					has_planet_flag = planet_remus
+				}
+				while = {
+					count = 5
+					create_pop = { species = "Reman" }
+				}
+				add_district = district_remus
+				add_district = soldier_camp_remus
+				add_district = district_remans_living
+
+			}
+		}
+	}
+}

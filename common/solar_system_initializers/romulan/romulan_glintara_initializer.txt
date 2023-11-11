@@ -2,7 +2,7 @@ romulan_glintara_initializer = {
 	name = "NAME_Glintara"
 	class = "rl_all_stars"
 	usage = static_system_init
-	flags = { glintara }
+	flags = { romulan romulan_sytem glintara }
 
 	planet = {
 		class = star
@@ -11,27 +11,46 @@ romulan_glintara_initializer = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 
-		init_effect = { save_global_event_target_as = glintara_star }
+		init_effect = {
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
+
+			save_global_event_target_as = glintara_star
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:romulan_country
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Glintara"
+		class = "pc_continental"	
+		subclass = psc_class_m
+		orbit_distance = 35
+		size = 24
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		flags = { mapo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:romulan_country 
+			}
+			create_glintara_colony = yes
+		}
 	}
 	
 	change_orbit = 50
 	
-	planet = {
-		count = 3
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	planet = {
-		count = 1
-		class = pc_savannah
-		subclass = psc_class_m
-		orbit_distance = { min = 20 max = 30 }
-		size = 8
-		home_planet = no
-	}
-
 	planet = {
 		count = 1
 		class = rl_unhabitable_planets
