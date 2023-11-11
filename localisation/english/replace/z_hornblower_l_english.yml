@@ -21,13 +21,24 @@
  # Ferengi Localisations
  ################################
 
-gov_fer:0 "Nagus Government"
-gov_fer_desc:0 "The Ferengi are ruled by a Grand Nagus, who ultimately has control over every financial decision in the Ferengi Alliance"
-auth_dictatorial_fer_alliance:0 "Olicharhical"
-auth_dictatorial_fer_alliance_desc:0 "Upon the death or retirement of a Grand Nagus, he will select a new Grand Nagus"
-RT_NAGUS:0 "Grand Nagus"
-RT_NAGUS_FEMALE:0 "$Grand Nagus$"
+ #gov_fer:0 "Nagus Government"
+ #gov_fer_desc:0 "The Ferengi are ruled by a Grand Nagus, who ultimately has control over every financial decision in the Ferengi Alliance"
+ #auth_dictatorial_fer_alliance:0 "Olicharhical"
+ #auth_dictatorial_fer_alliance_desc:0 "Upon the death or retirement of a Grand Nagus, he will select a new Grand Nagus"
+ #RT_NAGUS:0 "Grand Nagus"
+ #RT_NAGUS_FEMALE:0 "$Grand Nagus$"
 
  ################################
  # Romulan Localisations
  ################################
+ XL_MAP.1.name:0 "Build The D'Deridax"
+ XL_MAP.1.desc:0 "We must attain superiority over our enemies, the D'Deridax is a powerful vessel which can bring fear to our enemies"
+ NAME_dderidex_hero:0 "D'deridex flagship"
+ NAME_dderidex_hero.name:0 "D'deridex flagship"
+ dderidex_hero:0 "D'deridex flagship"
+ dderidex_hero.name:0 "D'deridex flagship"
+ qt_romulan_a6:0 "Building the D'Deridax" 
+ qt_romulan_a6_desc:0 "Building the new flagship or the Romulan Imperial Navy, D'Deridax class. Beginning with the I.R.W. Haakona, the class's flagship"
+ NAME_Dderidex_hero:0 "Haakona"
+ NAME_Dderidex_hero.name:0 "Haakona"
+ dderidex_hero-design:0 "I.R.W. Haakona"

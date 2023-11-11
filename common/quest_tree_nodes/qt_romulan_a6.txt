@@ -1,0 +1,45 @@
+# A5
+qt_romulan_a6 = {
+	position = { x = 14 y = 3 } 
+ 
+	potential = { 
+		has_country_id = romulan 
+	} 
+ 
+	parents = { 
+		qt_romulan_a3
+	} 
+	 
+	blocked_by = { 
+		
+	} 
+	on_before_possible = {
+
+	}
+	possible = {
+		resource_stockpile_compare = { resource = alloys value >= 3500 } 
+	} 
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = { 
+		 
+	} 
+ 
+	on_finished = {
+
+		country_event = {
+			id = XL_MAP.004
+		}
+
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}

@@ -1,0 +1,88 @@
+
+dderidex_hero = {
+	formation_priority = @dderidex_formation_priority
+	max_speed = @dderidex_speed
+	acceleration = 0.3
+	rotation_speed = 0.35
+	collision_radius = @dderidex_collision_radius
+	max_hitpoints = @dd_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_dderidex"
+	entity = dderidex_entity
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @dd_evasion
+		#ship_piracy_suppression_add = 120
+	}
+
+	size_multiplier = 8
+	fleet_slot_size = 4
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @dderidex_build_time
+	can_have_federation_design = no
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	is_destroyable = no
+
+	default_behavior = "hrb_line"
+
+	prerequisites = { }
+
+	potential_country = {
+		has_country_id = romulan
+	}
+
+	combat_disengage_chance = 1.20
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @dderidex_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @dderidex_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
