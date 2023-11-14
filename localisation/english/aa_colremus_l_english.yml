@@ -1,13 +1,13 @@
-﻿l_english:   
+l_english:   
  pc_barren_d: "Barren (Subterranean)"
  pc_barren_d_desc: "Thanks to subterranean environments, this normally uninhabitable planetoid can support a small population."
  district_remus_romulan: "Reman Mining Camp"
-district_remus_romulan_plural: "Reman Mining Camps"
+ district_remus_romulan_plural: "Reman Mining Camps"
  district_remus_romulan_desc: "Mining for valueble minerals is not a appealing job. This planet is rich in both mineral veins and humanoids who can do this unappealing job. This presents an interesting oppotunity for the Romulan Star Empire"
  job_reman_job_effect_desc:  "Reman Living Quartars produce £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! and Reman £mod_pop_growth_speed£ §Y$MOD_POP_GROWTH_SPEED$§!\n\n"
- mod_job_reman_job_add:0 "Reman Living Booster Jobs"
- job_reman_job_desc:0 "Remans need a place to live, and to fullfill their basic needs, this will make sure the population will obey us and we continue to have a supply of workers"
- job_reman_job:0 "Reman Living Quartars"
+ mod_job_reman_job_add: "Reman Living Booster Jobs"
+ job_reman_job_desc: "Remans need a place to live, and to fullfill their basic needs, this will make sure the population will obey us and we continue to have a supply of workers"
+ job_reman_job: "Reman Living Quartars"
  district_remans_living_romulan: "Reman Living Quarters"
  district_remans_living_romulan_desc: "A place for remans to fullfull their basic needs, to ensure a new pool of workers and prevent treasanous behaviour."
  district_remans_living_romulan_plural: "Reman Living Quarters"
