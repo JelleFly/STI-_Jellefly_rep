@@ -6,34 +6,30 @@ qt_ufop_lightyears_experienced_25 = {
 		has_country_id = ufop
 	}
 
-	parents = { 
+	parents = {
 		qt_ufop_build_the_enterprise_4
 	}
-	
-	blocked_by = {
 
+	blocked_by = {
 	}
 
 	possible = {
-		anomaly_research_count = { flag = enterprise value >= 3 }
+		anomaly_research_count = { flag = enterprise value >= 1 }
 	}
 
 	on_started = {
-		
 	}
 
 	on_blocked = {
-		
 	}
 
-	on_finished = {	
+	on_finished = {
 		add_modifier = {
 			modifier = qt_ufop_lightyears_experienced_25_effect
 		}
 	}
 
 	modifier = {
-
 	}
 
 	ai_weight = {

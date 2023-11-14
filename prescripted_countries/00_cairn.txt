@@ -5,7 +5,7 @@ cairn = {
 	adjective = "PRESCRIPTED_adjective_cairn"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = yes
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ cairn = {
 		plural = "PRESCRIPTED_species_plural_cairn"
 		adjective = "PRESCRIPTED_species_adjective_cairn"
 		name_list = "CAIR"
-		
 		trait = "trait_uninhibited_cairn"
-	 	trait = "trait_telepathic_cairn"
+		trait = "trait_telepathic_cairn"
 		trait = "trait_pacifists_cairn"
+		home_planet_key = "NAME_Cairn_Home_Planet"
 	}
 
 	room = "minor_04_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ cairn = {
 	emblem_key = "flag_Cairn_31" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Cairn_31.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Cairn"
 			"black"
 			"null"

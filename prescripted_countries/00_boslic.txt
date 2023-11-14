@@ -23,6 +23,7 @@ boslic = {
 		trait = "trait_smugglers_boslic"
 		trait = "trait_roamers_boslic"
 		trait = "trait_amoral_boslic"
+		home_planet_key = "NAME_Boslic"
 	}
 
 	room = "minor_04_transmission_room"
@@ -52,15 +53,15 @@ boslic = {
 	emblem_key = "flag_Boslic_17"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Boslic_17.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Boslic"
 			"black"
 			"null"

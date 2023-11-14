@@ -5,7 +5,7 @@ tanugan = {
 	adjective = "PRESCRIPTED_adjective_tanugan"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = yes
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ tanugan = {
 		plural = "PRESCRIPTED_species_plural_tanugan"
 		adjective = "PRESCRIPTED_species_adjective_tanugan"
 		name_list = "TANU"
-		
-		trait = "trait_inquisitive_tanugan" 
-		trait = "trait_law_abiding_tanugan" 
+		trait = "trait_inquisitive_tanugan"
+		trait = "trait_law_abiding_tanugan"
 		trait = "trait_skeptics_tanugan"
+		home_planet_key = "NAME_Tanugan_Home_Planet"
 	}
 
 	room = "minor_04_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ tanugan = {
 	emblem_key = "flag_Tanugan_25" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Tanugan_25.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Tanugan"
 			"black"
 			"null"

@@ -1,27 +1,26 @@
 # D2
 qt_cardassian_d2 = {
-	position = { x = 6 y = 2 } 
- 
-	potential = { 
-		has_country_id = cardassian 
-	} 
- 
-	parents = { 
+	position = { x = 6 y = 2 }
+
+	potential = {
+		has_country_id = cardassian
+	}
+
+	parents = {
 		qt_cardassian_d1
-	} 
-	 
+	}
+
 	blocked_by = {
-		
 	}
 
 	on_before_possible = {
 		set_variable = {
-			which = qt_cardassian_d2_slave_pops			
+			which = qt_cardassian_d2_slave_pops
 			value = value:get_slave_pops
 		}
 
 		set_variable = {
-			which = qt_cardassian_d2_unemployed_capital_pops			
+			which = qt_cardassian_d2_unemployed_capital_pops
 			value = 0
 		}
 
@@ -32,7 +31,7 @@ qt_cardassian_d2 = {
 
 			owner = {
 				change_variable = {
-					which = qt_cardassian_d2_unemployed_capital_pops			
+					which = qt_cardassian_d2_unemployed_capital_pops
 					value = prev.trigger:num_unemployed
 				}
 			}
@@ -49,19 +48,35 @@ qt_cardassian_d2 = {
 	}
 
 	possible = {
-		custom_tooltip = { 
-			success_text = 	qt_cardassian_d2_1_success 
-			fail_text = 	qt_cardassian_d2_1_fail 
- 
+		custom_tooltip = {
+			success_text = qt_cardassian_d2_0_success
+			fail_text = qt_cardassian_d2_0_fail
+
+			any_galaxy_species = {
+				hidden_trigger = {
+					exists = event_target:cardassian_country
+				}
+				NOT = { is_species = "Cardassian" }
+				has_species_profile = {
+					type =  species_profile_cardassian_new_basics
+					country = event_target:cardassian_country
+				}
+			}
+		}
+
+		custom_tooltip = {
+			success_text = qt_cardassian_d2_1_success 
+			fail_text = qt_cardassian_d2_1_fail 
+
 			check_variable = {
 				which = qt_cardassian_d2_slave_pops
 				value <= 10
 			}
 		}
 
-		custom_tooltip = { 
-			success_text = 	qt_cardassian_d2_2_success 
-			fail_text = 	qt_cardassian_d2_2_fail
+		custom_tooltip = {
+			success_text = qt_cardassian_d2_2_success 
+			fail_text = qt_cardassian_d2_2_fail
 
 			check_variable = {
 				which = qt_cardassian_d2_unemployed_capital_pops
@@ -69,7 +84,7 @@ qt_cardassian_d2 = {
 			}
 		}
 		
-		custom_tooltip = { 
+		custom_tooltip = {
 			success_text = qt_cardassian_d2_3_success 
 			fail_text = qt_cardassian_d2_3_fail
 
@@ -78,29 +93,27 @@ qt_cardassian_d2 = {
 				value >= 5
 			}
 		}
-	} 
- 
-	on_started = { 
-		 
-	} 
- 
-	on_blocked = { 
-		 
-	} 
- 
+	}
+
+	on_started = {
+	}
+
+	on_blocked = {
+	}
+
 	on_finished = {
 
 			custom_tooltip = qt_cardassian_d2_custom_tooltip
 
 			add_modifier = {
 				modifier = qt_cardassian_d2_effect
-			}			 
-	} 
- 
-	modifier = { 
- 
-	} 
-	ai_weight = { 
-		factor = 1000 
-	} 
+			}
+	}
+
+	modifier = {
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
 }

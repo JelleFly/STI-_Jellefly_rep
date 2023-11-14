@@ -102,8 +102,8 @@ cardassian_cardassia_initializer = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { mapo_colony }
-		
+		flags = { planet_cardassia_v bespoke_colony mapo_colony }
+
 		init_effect = {
 			prevent_anomaly = yes
 		}

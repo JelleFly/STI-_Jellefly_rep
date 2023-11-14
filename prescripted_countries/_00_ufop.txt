@@ -23,6 +23,7 @@ ufop = {
 		trait = "trait_universal_settlers"
 		trait = "trait_natural_explorers"
 		trait = "trait_high_maintenance"
+		home_planet_key = "NAME_Earth"
 	}
 
 	additional_species = {
@@ -43,6 +44,7 @@ ufop = {
 			trait = "trait_vulcan_longevity"
 			trait = "trait_logical_mind"
 			trait = "trait_low_reproduction_rate"
+			home_planet_key = "NAME_Vulcan"
 		}
 
 		##Andorians
@@ -56,6 +58,7 @@ ufop = {
 			trait = "trait_environmental_resistance"
 			trait = "trait_militaristic_life"
 			trait = "trait_andorian_code_of_honor"
+			home_planet_key = "NAME_Andoria"
 		}
 
 		##Tellarites
@@ -69,6 +72,7 @@ ufop = {
 			trait = "trait_tellarite_dyspnea"
 			trait = "trait_born_to_argue"
 			trait = "trait_sharp_wits"
+			home_planet_key = "NAME_Tellar_Prime"
 		}
 	}
 
@@ -98,10 +102,19 @@ ufop = {
 	home_planet_initial_pops = 26
 
 	conquered_system_initializers = {
-		"ufop_andor_initializer" "ufop_vulcan_initializer" "ufop_tellar_initializer"
-		"ufop_outpost_initializer" "zone_rom_ufop_eden_initializer" "zone_rom_ufop_draken_initializer"
-		"denobula_outpost_initializer" "risa_outpost_initializer" "cordian_outpost_initializer"
-		"ufop_wolf_initializer" "ufop_qualor_initializer" "ufop_setlik_initializer" "ufop_illyria_initializer"
+		"ufop_andor_initializer"
+		"ufop_vulcan_initializer"
+		"ufop_tellar_initializer"
+		"ufop_outpost_initializer"
+		"zone_rom_ufop_eden_initializer"
+		"zone_rom_ufop_draken_initializer"
+		"denobula_outpost_initializer"
+		"risa_outpost_initializer"
+		"cordian_outpost_initializer"
+		"ufop_wolf_initializer"
+		"ufop_qualor_initializer"
+		"ufop_setlik_initializer"
+		"ufop_illyria_initializer"
 	}
 
 	graphical_culture = "ufop_01"
@@ -110,15 +123,15 @@ ufop = {
 	emblem_key = "flag_UFOP_10"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_UFOP_10.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"ufop"
 			"black"
 			"null"

@@ -20,10 +20,10 @@ iyaaran = {
 		plural = "PRESCRIPTED_species_plural_iyaaran"
 		adjective = "PRESCRIPTED_species_adjective_iyaaran"
 		name_list = "IYAA"
-		
 		trait = "trait_leisureless_iyaaran"
-	 	trait = "trait_undemanding_iyaaran"
+		trait = "trait_undemanding_iyaaran"
 		trait = "trait_unhurried_iyaaran"
+		home_planet_key = "NAME_Iyaaran_Home_Planet"
 	}
 
 	room = "minor_03_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ iyaaran = {
 	emblem_key = "flag_Iyaaran_32" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Iyaaran_32.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Iyaaran"
 			"black"
 			"null"

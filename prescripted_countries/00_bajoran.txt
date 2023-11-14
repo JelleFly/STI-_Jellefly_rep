@@ -23,6 +23,7 @@ bajoran = {
 		trait = "trait_survivors_bajoran"
 		trait = "trait_prophetic_believer_bajoran"
 		trait = "trait_selective_researchers_bajoran"
+		home_planet_key = "NAME_Bajor"
 	}
 
 	room = "minor_06_transmission_room"
@@ -50,15 +51,15 @@ bajoran = {
 	emblem_key = "flag_Bajoran_15"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Bajoran_15.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Bajoran"
 			"black"
 			"null"

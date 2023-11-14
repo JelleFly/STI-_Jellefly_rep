@@ -9,24 +9,21 @@ qt_ufop_empathic_diplomacy_26 = {
 	parents = { 
 		qt_ufop_build_the_enterprise_4
 	}
-	
-	blocked_by = {
 
+	blocked_by = {
 	}
 
 	possible = {
-		successful_mipo_mission_count = { flag = enterprise value >= 3  }
+		successful_mipo_mission_count = { flag = enterprise value >= 3 }
 	}
 
 	on_started = {
-		
 	}
 
 	on_blocked = {
-		
 	}
 
-	on_finished = {	
+	on_finished = {
 		add_modifier = {
 			modifier = qt_ufop_empathic_diplomacy_26_effect
 		}
@@ -35,11 +32,9 @@ qt_ufop_empathic_diplomacy_26 = {
 		}
 
 		custom_tooltip = qt_ufop_empathic_diplomacy_26_recruit_deanna_tooltip
-
 	}
 
 	modifier = {
-
 	}
 
 	ai_weight = {
