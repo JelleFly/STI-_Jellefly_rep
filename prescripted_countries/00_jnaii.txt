@@ -20,10 +20,10 @@ jnaii = {
 		plural = "PRESCRIPTED_species_plural_jnaii"
 		adjective = "PRESCRIPTED_species_adjective_jnaii"
 		name_list = "JNAI" # TODO: Add later
-		
 		trait = "trait_kindred_jnaii"
 		trait = "trait_enlightened_jnaii"
 		trait = "trait_conformist_jnaii"
+		home_planet_key = "NAME_Jnaii_Home_Planet"
 	}
 
 	room = "minor_02_transmission_room"
@@ -53,19 +53,19 @@ jnaii = {
 	emblem_key = "flag_Jnaii_19"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Jnaii_19.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Jnaii"
 			"black"
 			"null"
-			"null"		
+			"null"
 		}
 	}
 

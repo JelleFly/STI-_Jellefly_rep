@@ -5,7 +5,7 @@ malcorian = {
 	adjective = "PRESCRIPTED_adjective_malcorian"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = no
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ malcorian = {
 		plural = "PRESCRIPTED_species_plural_malcorian"
 		adjective = "PRESCRIPTED_species_adjective_malcorian"
 		name_list = "MALC"
-		
 		trait = "trait_transcendentalists_malcorian"
-	 	trait = "trait_traditionalists_malcorian"
+		trait = "trait_traditionalists_malcorian"
 		trait = "trait_cynical_malcorian"
+		home_planet_key = "NAME_Malcorian_Home_Planet"
 	}
 
 	room = "minor_02_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ malcorian = {
 	emblem_key = "flag_Malcorian_33"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Malcorian_33.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Malcorian"
 			"black"
 			"null"

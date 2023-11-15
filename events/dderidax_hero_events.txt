@@ -1,0 +1,43 @@
+namespace = XL_MAP
+country_event = {
+	id = XL_MAP.004
+	hide_window = no
+	is_triggered_only = yes
+	title = "XL_MAP.1.name"
+	desc = "XL_MAP.1.desc"
+	picture = GFX_evt_shipyard_repair_service_romulan
+	location = from
+
+	
+
+		name = "XL_MAP.1.a"
+		custom_tooltip = "XL_MAP.1.tt"
+		immediate = {
+			create_fleet = {
+				name = "I.R.W. Haakona"
+				effect = {
+					set_owner = prev
+					create_ship = {
+						name = "Haakona"
+						design = NAME_Dderidex_hero
+					}
+					set_location = {
+						target = event_target:romulan_homeworld
+						distance = 10
+						angle = random
+					}
+					assign_leader = last_created_leader
+					set_fleet_flag = dderidax
+				}
+				settings = {
+					can_upgrade = no
+					can_change_leader = yes
+					can_change_composition = no
+					can_disband = no
+				}
+			}
+		}
+	}
+
+
+

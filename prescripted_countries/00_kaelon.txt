@@ -20,10 +20,10 @@ kaelon = {
 		plural = "PRESCRIPTED_species_plural_kaelon"
 		adjective = "PRESCRIPTED_species_adjective_kaelon"
 		name_list = "KAEL"
-		
 		trait = "trait_conservative_kaelon"
 		trait = "trait_resourceful_kaelon"
-		trait = "trait_secluded_kaelon" 
+		trait = "trait_secluded_kaelon"
+		home_planet_key = "NAME_Kaelon_Home_Planet"
 	}
 
 	room = "minor_06_transmission_room"
@@ -51,15 +51,15 @@ kaelon = {
 	emblem_key = "flag_Kaelon_23"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Kaelon_23.dds" # TODO: Adding the actual .dds
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Kaelon"
 			"black"
 			"null"

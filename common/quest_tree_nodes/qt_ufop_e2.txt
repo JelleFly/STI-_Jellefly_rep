@@ -6,12 +6,11 @@ qt_ufop_reform_the_charters_12 = {
 		has_country_id = ufop
 	}
 
-	parents = { 
+	parents = {
 		qt_ufop_empower_section_31_9
 	}
 	
 	blocked_by = {
-
 	}
 
 	# HRB_NOTE: block of effects to be called before possible
@@ -29,7 +28,7 @@ qt_ufop_reform_the_charters_12 = {
 
 	possible = {
 		num_buildings = { 
-			type = building_starfleet_academy_ufop 
+			type = building_starfleet_academy_ufop
 			value >= 6 
 		}
 		
@@ -40,28 +39,25 @@ qt_ufop_reform_the_charters_12 = {
 		
 		# HRB_NOTE: No. of Admirals assigned to Fleets is equal to Admiral Cap
 		custom_tooltip = {
-			success_text = 	qt_ufop_reform_the_charters_12_custom_tooltip_success
-			fail_text = 	qt_ufop_reform_the_charters_12_custom_tooltip_fail
+			success_text = qt_ufop_reform_the_charters_12_custom_tooltip_success
+			fail_text = qt_ufop_reform_the_charters_12_custom_tooltip_fail
 
 			check_variable = {
 				which = qt_ufop_reform_the_charters_12_admirals_assigned_to_fleets
 				value >= qt_ufop_reform_the_charters_12_admiral_cap
 			}
 		}
-			 
+
 		fleet_power >= 4500
 	}
 
 	on_started = {
-		
 	}
 
 	on_blocked = {
-		
 	}
 
-	on_finished = {	
-
+	on_finished = {
 		custom_tooltip = qt_ufop_reform_the_charters_12_custom_tooltip
 
 		add_modifier = {
@@ -75,15 +71,15 @@ qt_ufop_reform_the_charters_12 = {
 		}
 		country_event = { id = quest.101 }
 
-		add_resource = { 
-			unity = 5000 
+		add_resource = {
+			unity = 5000
 			influence = 200
-		}	
-		
+		}
+
+		enable_dark_uniform = yes
 	}
 
 	modifier = {
-
 	}
 
 	ai_weight = {

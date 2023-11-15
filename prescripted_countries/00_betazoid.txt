@@ -5,7 +5,7 @@ betazoid = {
 	adjective = "PRESCRIPTED_adjective_betazoid"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = no
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ betazoid = {
 		plural = "PRESCRIPTED_species_plural_betazoid"
 		adjective = "PRESCRIPTED_species_adjective_betazoid"
 		name_list = "BETA"
-		
 		trait = "trait_empath_betazoid"
 		trait = "trait_matriarcal_houses_betazoid"
 		trait = "trait_hard_to_please_betazoid"
+		home_planet_key = "NAME_Betazoid_Home_Planet"
 	}
 
 	room = "minor_01_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ betazoid = {
 	emblem_key = "flag_Betazoid_34"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Betazoid_34.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Betazoid"
 			"black"
 			"null"

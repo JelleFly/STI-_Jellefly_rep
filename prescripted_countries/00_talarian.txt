@@ -23,6 +23,7 @@ talarian = {
 		trait = "trait_vigilant_talarian"
 		trait = "trait_undying_duty_talarian"
 		trait = "trait_chaste_talarian"
+		home_planet_key = "NAME_Talaria"
 	}
 
 	room = "minor_07_transmission_room"
@@ -50,15 +51,15 @@ talarian = {
 	emblem_key = "flag_Talarian_14"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Talarian_14.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Talarian"
 			"black"
 			"null"

@@ -5,7 +5,7 @@ lissepian = {
 	adjective = "PRESCRIPTED_adjective_lissepian"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = yes
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ lissepian = {
 		plural = "PRESCRIPTED_species_plural_lissepian"
 		adjective = "PRESCRIPTED_species_adjective_lissepian"
 		name_list = "LISS"
-		
 		trait = "trait_eye_for_business_lissepian"
 		trait = "trait_timely_lissepian"
 		trait = "trait_intermediaries_lissepian"
+		home_planet_key = "NAME_lissepian_Home_Planet"
 	}
 
 	room = "minor_02_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ lissepian = {
 	emblem_key = "flag_Lissepian_26" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Lissepian_26.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Lissepian"
 			"black"
 			"null"

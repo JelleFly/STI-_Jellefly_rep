@@ -20,10 +20,10 @@ farian = {
 		plural = "PRESCRIPTED_species_plural_farian"
 		adjective = "PRESCRIPTED_species_adjective_farian"
 		name_list = "FARI"
-		
 		trait = "trait_cunning_farians"
 		trait = "trait_entrepreneurial_farians"
-		trait = "trait_exploitative_farians" 
+		trait = "trait_exploitative_farians"
+		home_planet_key = "NAME_Farian_Home_Planet"
 	}
 
 	room = "minor_05_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ farian = {
 	emblem_key = "flag_Farian_24"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Farian_24.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Farian"
 			"black"
 			"null"

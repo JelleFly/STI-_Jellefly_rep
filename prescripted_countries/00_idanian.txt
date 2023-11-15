@@ -5,7 +5,7 @@ idanian = {
 	adjective = "PRESCRIPTED_adjective_idanian"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = yes
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ idanian = {
 		plural = "PRESCRIPTED_species_plural_idanian"
 		adjective = "PRESCRIPTED_species_adjective_idanian"
 		name_list = "IDAN"
-		
 		trait = "trait_secretive_idanian"
-	 	trait = "trait_observant_idanian"
+		trait = "trait_observant_idanian"
 		trait = "trait_reserved_idanian"
+		home_planet_key = "NAME_Idanian_Home_Planet"
 	}
 
 	room = "minor_06_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ idanian = {
 	emblem_key = "flag_Idanian_28" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Idanian_28.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Idanian"
 			"black"
 			"null"

@@ -5,7 +5,7 @@ pelian = {
 	adjective = "PRESCRIPTED_adjective_pelian"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = yes
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ pelian = {
 		plural = "PRESCRIPTED_species_plural_pelian"
 		adjective = "PRESCRIPTED_species_adjective_pelian"
 		name_list = "PELI"
-		
 		trait = "trait_smart_workers_pelian"
 		trait = "trait_organized_pelian"
 		trait = "trait_busy_minds_pelian"
+		home_planet_key = "NAME_pelian_Home_Planet"
 	}
 
 	room = "minor_03_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ pelian = {
 	emblem_key = "flag_Pelian_27" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Pelian_27.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Pelian"
 			"black"
 			"null"
