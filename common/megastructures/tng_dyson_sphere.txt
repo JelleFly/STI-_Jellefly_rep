@@ -1,0 +1,34 @@
+dyson_sphere_tng_0 = {
+	entity = "machine_planet_01_entity"
+	#construction_entity = "dyson_sphere_part_4_entity"
+	portrait = "GFX_megastructure_dyson_sphere_background"
+	build_time = 3600
+
+	possible = {
+		always = no
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 3000
+			unity = 1000
+			influence = 125
+		}
+
+		produces = {
+			energy = 75
+			engineering_research = 75
+			society_research = 75
+		}
+	}
+
+	
+
+
+	#prerequisites = { "tech_dyson_sphere" }
+	show_prereqs = yes
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}

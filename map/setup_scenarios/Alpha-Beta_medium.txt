@@ -1312,6 +1312,11 @@ bespoke_procedural_scenario = {
 		initializer = zone_rom_ufop_theta_curry_initializer spawn_weight = { base = 1 } 
 	}
 
+	system = {
+		name = "NAME_Dyson" position = { x = 115 y = 225 }
+		initializer = dyson_start spawn_weight = { base = 1 } 
+	}
+
 
 
 	#--------- Bespoke Hazards ---------#
