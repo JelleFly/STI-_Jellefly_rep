@@ -341,7 +341,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Ferenginar" position = { x = 63 y = 322 }
-		initializer = uncontrolled_system_initializer spawn_weight = { base = 1 } 
+		initializer = ferengi_ferenginar_initializer spawn_weight = { base = 1 } 
 	}
 	#system = {
 	#	name = "NAME_Thalos" position = { x = 61 y = 319 }

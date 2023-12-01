@@ -1,0 +1,261 @@
+ferengi_ferenginar_initializer = {
+	name = "NAME_Ferenginar"
+	class = sc_a
+	usage = custom_empire
+	flags = { ferengi ferengi_system ferengi_home_system capital }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_f_star 
+			if = {
+				limit = {
+					NOT = {
+						exists = event_target:GuardiansTradersPlanet
+					}
+				}
+				save_event_target_as = GuardiansTradersPlanet
+				set_planet_flag = guardians_traders_planet
+
+				create_country = {
+					name = "NAME_Muutagan_Merchant_Guild"
+					species = "Ferengi"
+					country_id = "ferengi"
+					type = enclave
+					authority = "auth_oligarchic_ferengi_2"
+					civics = {
+						civic = civic_wealth_trust
+						civic = civic_cumulative_knowledge
+					}
+					origin = "origin_default"
+					flag = {
+						icon = {
+							category = "enclaves"
+							file = "enclaves_flag_trader.dds"
+						}
+						background = {
+							category = "backgrounds"
+							file = "pattern_01.dds"
+						}
+						colors={
+							"green"
+							"dark_green"
+							"null"
+							"null"
+						}
+					}
+					ethos = {
+						ethic = ethic_xenophile
+						ethic = ethic_materialist
+						ethic = ethic_egalitarian
+					}
+					ignore_initial_colony_error = yes
+				}
+				last_created_country = {
+					set_country_flag = trader_enclave_country
+					set_country_flag = trader_enclave_country_3
+					set_country_flag = ferengi
+					set_graphical_culture = mammalian_01
+					create_fleet = {
+						name = "NAME_Muutag_Station"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Trader_Enclave_Station"
+								initial_officers_perc = 1
+								graphical_culture = prev
+							}
+							set_location = {
+								target = prevprev
+								distance = 90
+							}
+							save_event_target_as = CustomCapital
+							prev = {
+								set_custom_capital_location = event_target:CustomCapital
+							}
+							set_fleet_flag = trader_enclave_station
+						}
+					}
+					create_leader = {
+						class = ruler
+						species = this
+						name = "PRESCRIPTED_ruler_name_ferengi_1"
+						skill = 5
+					}
+					set_leader = last_created_leader
+				}
+			}
+		
+		
+		}
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 3
+		orbit_distance = { min = 20 max = 50 }
+		class = rl_unhabitable_planets
+	}
+	
+	
+	planet = {
+		name = "NAME_Ferenginar"
+		orbit_distance = 30
+		class = pc_tropical
+		subclass = psc_class_m
+		size = 15
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		home_planet = yes
+		flags = { mipo_colony }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = home_planet
+				days = -1
+			}
+
+			
+		}
+
+		late_init_effect = {
+			create_colony = {
+				owner = event_target:ferengi_country # Since we already created a Starbase with an owner, it isn't necessary to set the owner here too
+			}
+		}
+
+		moon = {
+			name = "NAME_Ferengi_Moon"
+			count = 1
+			orbit_distance = 8
+			class = pc_barren_cold
+			has_ring = no
+			size = 5
+		
+		init_effect = {
+			prevent_anomaly = yes
+			if = {
+				limit = {
+					NOT = {
+						exists = event_target:GuardiansTradersPlanet_2
+					}
+				}
+				save_event_target_as = GuardiansTradersPlanet_2
+				set_planet_flag = guardians_traders_planet_2
+	
+				create_country = {
+					name = "NAME_XuraCorp"
+					species = "Ferengi"
+					country_id = "ferengi"
+					type = enclave
+					authority = "auth_oligarchic_ferengi_1"
+					civics = {
+						civic = civic_wealth_trust
+						civic = civic_cumulative_knowledge
+					}
+					origin = "origin_default"
+					flag = {
+						icon = {
+							category = "enclaves"
+							file = "enclaves_flag_trader.dds"
+						}
+						background = {
+							category = "backgrounds"
+							file = "00_solid.dds"
+						}
+						colors={
+							"green"
+							"dark_green"
+							"null"
+							"null"
+						}
+					}
+					ethos = {
+						ethic = ethic_xenophile
+						ethic = ethic_fanatic_materialist
+					}
+					ignore_initial_colony_error = yes
+				}
+				last_created_country = {
+					set_country_flag = trader_enclave_country
+					set_country_flag = trader_enclave_country_1
+					set_country_flag = ferengi
+					set_graphical_culture = mammalian_01
+					create_fleet = {
+						name = "NAME_XuraCorp_HQ"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Trader_Enclave_Station"
+								initial_officers_perc = 1
+								graphical_culture = prev
+							}
+							set_location = {
+								target = prevprev
+								distance = 90
+							}
+							save_event_target_as = CustomCapital
+							prev = {
+								set_custom_capital_location = event_target:CustomCapital
+							}
+							set_fleet_flag = trader_enclave_station
+						}
+					}
+					create_leader = {
+						class = ruler
+						species = this
+						name = "PRESCRIPTED_ruler_name_ferengi_2"
+						skill = 5
+					}
+					set_leader = last_created_leader
+				}
+			}
+		}
+
+		}
+		
+	}
+
+	planet = {
+		orbit_distance = 20
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 20 max = 40 }
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = { set_star_flag = empire_cluster }
+
+		every_country = {
+			if = {
+				limit = {
+					has_country_flag = ferengi
+				}
+
+				save_global_event_target_as = ferengi_country
+			}
+		}
+		
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			owner = event_target:ferengi_country
+		}
+	}
+}
