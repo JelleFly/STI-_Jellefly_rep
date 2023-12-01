@@ -20,10 +20,10 @@ trill = {
 		plural = "PRESCRIPTED_species_plural_trill"
 		adjective = "PRESCRIPTED_species_adjective_trill"
 		name_list = "TRIL"
-		
 		trait = "trait_joined_elite_trill"
 		trait = "trait_experience_seekers_trill" 
 		trait = "trait_private_trill"
+		home_planet_key = "NAME_Trill_Home_Planet"
 	}
 
 	room = "minor_01_transmission_room"
@@ -52,15 +52,15 @@ trill = {
 	emblem_key = "flag_Trill_21"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Trill_21.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Trill"
 			"black"
 			"null"

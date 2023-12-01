@@ -1,0 +1,52 @@
+#### C1
+qt_ufop_establish_trade_affiliations_11 = {
+	position = { x = 1 y = 3 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_first_contacts_3
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		capital_scope.solar_system = {
+			has_system_trade_hub_value >= 100
+		}
+		modules_built_in_starbases = {
+			who = trading_hub
+			value >= 6
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {		
+		custom_tooltip = qt_ufop_establish_trade_affiliations_11_tooltip
+		owner = {
+			set_country_flag = trade_conversion_ufop_quest_unity
+		}
+		add_modifier = {
+			modifier = qt_ufop_establish_trade_affiliations_11_effect
+		}		
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

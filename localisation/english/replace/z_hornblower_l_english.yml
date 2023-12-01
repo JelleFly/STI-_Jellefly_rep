@@ -1,0 +1,38 @@
+l_english:
+
+ #######################
+ #
+ #      Bypasses
+ #
+ #######################
+
+ HIGHWAY_GALACTIC: "Transwarp Conduit"
+ HIGHWAY_DESC: "This system contains a §Y$HIGHWAY_GALACTIC$§!"
+ HIGHWAY_DESC_UNEXPLORED: "This system contains an §Runexplored§! §Y$HIGHWAY_GALACTIC$§!"
+ HIGHWAY_COUNTRY_CANNOT_USE: "$TRIGGER_FAIL$ We do not have the means to use the §Y$HIGHWAY_GALACTIC$!."
+
+ ################################
+ # Star Classes
+ ################################
+
+ pc_node_black_hole_desc: "While some §HSpacetime Distortions§! appear to be §HBlack Holes§!, they behave in almost opposite ways. By bending the spacetime continuum, they allow for travel through the §HGalaxy§! via §H$HIGHWAY_GALACTIC$§!."
+
+ ################################
+ # Ferengi Localisations
+ ################################
+
+
+ ################################
+ # Romulan Localisations
+ ################################
+ XL_MAP.004.name: "Build The D'Deridex"
+ XL_MAP.004.desc: "We must attain superiority over our enemies, the D'Deridex is a powerful vessel which can bring fear to our enemies"
+ NAME_dderidex_hero: "D'deridex flagship"
+ NAME_dderidex_hero.name: "D'deridex flagship"
+ dderidex_hero: "D'deridex flagship"
+ dderidex_hero.name: "D'deridex flagship"
+ qt_romulan_a6: "Building the D'Deridex" 
+ qt_romulan_a6_desc: "Building the new flagship or the Romulan Imperial Navy, D'Deridex class. Beginning with the I.R.W. Haakona, the class's flagship"
+ NAME_Dderidex_hero: "Haakona"
+ NAME_Dderidex_hero.name: "Haakona"
+ dderidex_hero-design: "I.R.W. Haakona"

@@ -23,6 +23,7 @@ bolian = {
 		trait = "trait_entrepreneurial_bolian"
 		trait = "trait_blueblood_bolian"
 		trait = "trait_digestor_bolian"
+		home_planet_key = "NAME_Bolarus"
 	}
 
 	room = "minor_05_transmission_room"
@@ -50,15 +51,15 @@ bolian = {
 	emblem_key = "flag_Bolian_16"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Bolian_16.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Bolian"
 			"black"
 			"null"

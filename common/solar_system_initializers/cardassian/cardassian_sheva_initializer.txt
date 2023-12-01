@@ -13,7 +13,17 @@ cardassian_sheva_initializer = {
 
 		init_effect = { 	
 			change_pc = pc_f_star 
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
+
 			save_global_event_target_as = sheva_star
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:cardassian_country
+			}
 		}
 	}
 	
@@ -26,10 +36,14 @@ cardassian_sheva_initializer = {
 		home_planet = no
 	}
 
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
 	late_init_effect = {
 		create_starbase = {
-			size = starbase_starport # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:cardassian_country # Using the event_target saved on ufop_system_initializer
+			size = starbase_starport
+			owner = event_target:cardassian_country
 			module = gun_battery
 			module = missile_battery
 		}

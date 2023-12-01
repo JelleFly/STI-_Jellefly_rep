@@ -5,7 +5,7 @@ Hupyrian = {
 	adjective = "PRESCRIPTED_adjective_hupyrian"
 	spawn_enabled = always 
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = no
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ Hupyrian = {
 		plural = "PRESCRIPTED_species_plural_hupyrian"
 		adjective = "PRESCRIPTED_species_adjective_hupyrian"
 		name_list = "HUPY"
-		
 		trait = "trait_devout_hupyrian"
-	 	trait = "trait_sturdy_hupyrian"
+		trait = "trait_sturdy_hupyrian"
 		trait = "trait_great_needs_hupyrian"
+		home_planet_key = "NAME_Hupyrian_Home_Planet"
 	}
 
 	room = "minor_01_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ Hupyrian = {
 	emblem_key = "flag_Hupyrian_30" #HRB_TODO
 
 	empire_flag = { #HRB_TODO
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Hupyrian_30.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Hupyrian"
 			"black"
 			"null"

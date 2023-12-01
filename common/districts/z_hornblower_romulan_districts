@@ -1,0 +1,252 @@
+#################################
+##   		 Variables	       ##
+#################################
+
+@base_cost = 300
+@city_cost = 500
+
+##########################################
+##		    Romulan Districts   	    ##
+##########################################
+
+#################################
+##      Special Disctricts     ##
+#################################
+
+# Civil Forum
+district_civil_forum = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+
+	potential = {
+		exists = owner
+        owner = { is_romulan = yes }
+		NOT = {has_planet_flag = planet_remus }
+	}
+
+	show_on_uncolonized = {
+		is_colonizable = yes
+		uses_district_set = standard
+		from = { is_romulan = yes }
+	}
+
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			energy = 3
+			#food = 1
+		}
+
+		# HRB_TODO: the "upkeep" trigger does not allow planet scope checks
+		# upkeep = {
+		# 	trigger = {
+		# 		exists = planet
+		# 		planet = { has_deposit = d_homeworld_resemblance }
+		# 	}
+		# 	energy = -2
+		# }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_city
+		district_industrial
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_praetorian_guard_romulan_add = 1
+			job_researcher_add = 1
+			job_bureaucrat_add = 1
+		}
+	}
+
+	# Special Effect by Deposit
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+				planet = {
+					has_deposit = d_frozen_hangar_caves
+				}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_praetorian_guard_romulan_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_bureaucrat_effect_desc
+	}
+
+	# AI Praetorian Guard x1
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		 }
+		 officers = 1
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		 }
+		 influence = 1 # Only accepts Integer
+	}
+
+	# AI Researcher Production x1
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		research = 10
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			owner = {
+				has_tradition = tr_klingon_legendary
+			}
+		}
+		unity = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_whispering_mounds
+			}
+		}
+		energy = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_apex_predators
+			}
+		}
+		research = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_apex_predators
+			}
+		}
+		food = 3
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_behemotic_fossils
+			}
+		}
+		research = 3
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_behemotic_fossils
+			}
+		}
+		unity = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				has_deposit = d_abandoned_ruins
+			}
+		}
+		research = 2
+	}
+	
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		officers = 12
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = planet
+			planet = {
+				exists = owner
+				planet = { has_designation = col_fortress }
+			}
+		}
+		influence = 1 # Only takes integers
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { has_tradition = tr_defense_oath_citizenship }
+		}
+		unity = 4
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { has_quest_tree_node = qt_klingon_e2 }
+		}
+		unity = 4
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			planet = {
+				has_modifier = kahless_festival
+			}
+		}
+		unity = 12
+	}
+
+}
+
+
+

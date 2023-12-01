@@ -21,6 +21,7 @@ romulan1 = {
 		trait = "trait_everlasting"
 		trait = "trait_quick_learners"
 		trait = "trait_solitary"
+		home_planet_key = "NAME_Romulus"
 	}
 
 	additional_modules = {
@@ -48,15 +49,30 @@ romulan1 = {
 	planet_subclass = psc_class_m
 	initializer = "romulan_romulus_initializer"
 
-	conquered_system_initializers = { 
-		"romulan_romulus_initializer" "romulan_kithomer_initializer" "romulan_unroth_initializer"
-		"romulan_chaltok_initializer" "romulan_achernar_initializer" "romulan_outpost_initializer" 
-		"romulan_romii_initializer" "romulan_rator_initializer" "romulan_cheron_initializer"
-		"romulan_glintara_initializer" "romulan_dewa_initializer" "zone_rom_ufop_galorndon_core_initializer"
-		"zone_rom_ufop_devron_initializer" "zone_rom_ufop_iota_pavonis_initializer"
-		"zone_rom_ufop_fenris_initializer" "zone_rom_ufop_belcer_initializer" "zone_rom_ufop_moores_star_initializer"
-		"zone_rom_ufop_epsilon_legato_initializer" "zone_rom_ufop_theta_curry_initializer" "zone_rom_ufop_iconia_initializer"
-		"zone_rom_ufop_nelvana_initializer" "zone_rom_ufop_nimbus_initializer"
+	conquered_system_initializers = {
+		"romulan_romulus_initializer"
+		"romulan_kithomer_initializer"
+		"romulan_unroth_initializer"
+		"romulan_chaltok_initializer"
+		"romulan_achernar_initializer"
+		"romulan_outpost_initializer"
+		"romulan_romii_initializer"
+		"romulan_rator_initializer"
+		"romulan_cheron_initializer"
+		"romulan_glintara_initializer"
+		"romulan_dewa_initializer"
+		"romulan_hobus_initializer"
+		"zone_rom_ufop_galorndon_core_initializer"
+		"zone_rom_ufop_devron_initializer"
+		"zone_rom_ufop_iota_pavonis_initializer"
+		"zone_rom_ufop_fenris_initializer"
+		"zone_rom_ufop_belcer_initializer"
+		"zone_rom_ufop_moores_star_initializer"
+		"zone_rom_ufop_epsilon_legato_initializer"
+		"zone_rom_ufop_theta_curry_initializer"
+		"zone_rom_ufop_iconia_initializer"
+		"zone_rom_ufop_nelvana_initializer"
+		"zone_rom_ufop_nimbus_initializer"
 	}
 
 	graphical_culture = "romulan_01"
@@ -65,15 +81,15 @@ romulan1 = {
 	emblem_key = "flag_Romulan_12"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Romulan_12.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Romulan"
 			"black"
 			"null"

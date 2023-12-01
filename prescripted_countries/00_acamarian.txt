@@ -20,10 +20,10 @@ acamarian = {
 		plural = "PRESCRIPTED_species_plural_acamarian"
 		adjective = "PRESCRIPTED_species_adjective_acamarian"
 		name_list = "ACAM"
-
 		trait = "trait_stubborn_resilience_acamarian" 
 		trait = "trait_divergent_acamarian"
 		trait = "trait_combative_acamarian"
+		home_planet_key = "NAME_Acamarian_Home_Planet"
 	}
 
 	room = "minor_07_transmission_room"
@@ -51,15 +51,15 @@ acamarian = {
 	emblem_key = "flag_Acamarians_22"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Acamarians_22.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Acamarians"
 			"black"
 			"null"

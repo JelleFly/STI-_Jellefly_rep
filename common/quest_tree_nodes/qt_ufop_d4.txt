@@ -1,0 +1,89 @@
+# D4
+qt_ufop_starburst = {
+	position = { x = 5 y = 5 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_grow_the_federation_5
+	}
+
+	blocked_by = {
+	}
+
+	blocked = {
+		custom_tooltip = {
+			success_text = 	qt_ufop_starburst_suspicious_flares_blocked_tooltip_success
+			fail_text = 	qt_ufop_starburst_suspicious_flares_blocked_tooltip_fail		
+			has_country_flag = suspicious_flares_situation_fail
+		}
+	}
+
+	possible = {
+		if = {
+			limit = { exists = event_target:romulan_country }
+
+			opinion_level = {
+				who = event_target:romulan_country
+				level >= neutral
+			}
+		}
+		else = {
+			# or...
+		}
+
+		custom_tooltip = {
+			success_text = 	qt_ufop_starburst_custom_tooltip_success
+			fail_text = 	qt_ufop_starburst_custom_tooltip_fail		
+			has_country_flag = suspicious_flares_situation_success
+		}
+	}
+
+	on_started = {
+	}
+
+	on_blocked = {
+	}
+
+	on_finished = {
+		custom_tooltip = qt_ufop_starburst_custom_tooltip_on_finished
+
+		hidden_effect = {
+			set_country_flag = bulk_carrier_flag
+			upgrade_ship_designs = yes
+
+			if = {
+				limit = { exists = event_target:romulan_country }
+
+				# +100 mutual opinion is added, +200 in total
+				event_target:ufop_country = {
+					add_opinion_modifier = {
+						who = event_target:romulan_country
+						modifier = opinion_qt_ufop_starburst
+					}
+				}
+				
+				event_target:romulan_country = {
+					add_opinion_modifier = {
+						who = event_target:ufop_country
+						modifier = opinion_qt_ufop_starburst
+					}
+				}
+			}
+			else = {
+				# or...
+			}
+		}
+		
+		add_resource = { research = 4000 }	
+	}
+
+	modifier = {
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

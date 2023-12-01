@@ -1,0 +1,22 @@
+# Romulan starting relationship with the UFOP + treaties
+event = {
+	id = game_start.240
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:romulan_country
+		exists = event_target:ufop_country
+	}
+
+	immediate = {
+		event_target:romulan_country = {
+			
+			add_opinion_modifier = {
+				who = event_target:ufop_country
+				modifier = opinion_romulan_generation
+			}
+		}
+	}
+}

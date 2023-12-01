@@ -22,6 +22,7 @@ klingon1 = {
 		trait = "trait_traditional"
 		trait = "trait_strong"
 		trait = "trait_unruly"
+		home_planet_key = "NAME_Qonos"
 	}
 
 	additional_modules = {
@@ -48,10 +49,23 @@ klingon1 = {
 	planet_subclass = psc_class_m
 	initializer = "klingon_qonos_initializer"
 	conquered_system_initializers = {
-		"klingon_qonos_initializer" "klingon_boreth_initializer" "klingon_narendra_initializer"
-		"klingon_ogat_initializer" "klingon_outpost_initializer" "klingon_tygokor_initializer"
-		"krios_system_initializer" "klingon_hatoria_initializer" "quvat_system_initializer"
+		"klingon_qonos_initializer"
+		"klingon_beta_thoridor_initializer"
+		"klingon_boreth_initializer"
+		"klingon_chidan_initializer"
+		"klingon_ganalda_initializer"
+		"klingon_hatoria_initializer"
 		"klingon_khitomer_initializer"
+		"klingon_mempa_initializer"
+		"klingon_narendra_initializer"
+		"klingon_nomat_initializer"
+		"klingon_ogat_initializer"
+		"klingon_pheben_initializer"
+		"klingon_quvat_initializer"
+		"klingon_teroka_initializer"
+		"klingon_tygokor_initializer"
+		"klingon_outpost_initializer"
+		"krios_system_initializer"
 	}
 
 	graphical_culture = "klingon_01"
@@ -60,15 +74,15 @@ klingon1 = {
 	emblem_key = "flag_Klingon_11"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Klingon_11.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Klingon"
 			"black"
 			"null"

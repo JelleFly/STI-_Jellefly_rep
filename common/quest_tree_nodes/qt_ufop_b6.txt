@@ -1,0 +1,38 @@
+# B6
+qt_ufop_doctors_orders_27 = {
+	position = { x = 14 y = 2 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = {
+		qt_ufop_build_the_enterprise_4
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+		systems_in_hazards_surveyed_count = { flag = enterprise value >= 1 }
+	}
+
+	on_started = {
+	}
+
+	on_blocked = {
+	}
+
+	on_finished = {
+		add_modifier = {
+			modifier = qt_ufop_doctors_orders_27_effect
+		}
+	}
+
+	modifier = {
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -5,7 +5,7 @@ kesprytt = {
 	adjective = "PRESCRIPTED_adjective_kesprytt"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
-	match_home_system_initializer = yes	
+	match_home_system_initializer = yes
 	shuffle_starting_position = no
 	is_minor = yes
 	is_bespoke = yes
@@ -20,10 +20,10 @@ kesprytt = {
 		plural = "PRESCRIPTED_species_plural_kesprytt"
 		adjective = "PRESCRIPTED_species_adjective_kesprytt"
 		name_list = "KESP"
-		
 		trait = "trait_disbelieving_kesprytt"
-	 	trait = "trait_utilitarian_kesprytt"
+		trait = "trait_utilitarian_kesprytt"
 		trait = "trait_ununified_kesprytt"
+		home_planet_key = "NAME_Kesprytt_Home_Planet"
 	}
 
 	room = "minor_05_transmission_room" # HRB_TODO: Define a proper room
@@ -51,15 +51,15 @@ kesprytt = {
 	emblem_key = "flag_Kesprytt_29"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Kesprytt_29.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Kesprytt"
 			"black"
 			"null"

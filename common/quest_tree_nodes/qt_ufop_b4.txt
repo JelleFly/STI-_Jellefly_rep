@@ -1,0 +1,46 @@
+# B4
+qt_ufop_positronic_computation_28 = {
+	position = { x = 10 y = 2 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_build_the_enterprise_4
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+		surveyed_systems_count = { flag = enterprise value >= 5  }
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+		add_modifier = {
+			modifier = qt_ufop_positronic_computation_28_effect
+			days = -1
+		}
+		
+		custom_tooltip = qt_ufop_positronic_computation_28_tooltip
+
+		hidden_effect = { country_event = { id = country.2937 } } # Recruit Data
+	}
+
+	modifier = {
+
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

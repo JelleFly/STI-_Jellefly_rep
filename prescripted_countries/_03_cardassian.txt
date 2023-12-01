@@ -23,6 +23,7 @@ cardassian1 = {
 		trait = "trait_talented"
 		trait = "trait_enduring"
 		trait = "trait_decadent"
+		home_planet_key = "NAME_Cardassia_Prime"
 	}
 
 	additional_species = {
@@ -43,6 +44,7 @@ cardassian1 = {
 			trait = "trait_survivors_bajoran"
 			trait = "trait_prophetic_believer_bajoran"
 			trait = "trait_selective_researchers_bajoran"
+			home_planet_key = "NAME_Bajor"
 		}
 
 		##Andorians
@@ -56,6 +58,7 @@ cardassian1 = {
 			trait = "trait_environmental_resistance"
 			trait = "trait_militaristic_life"
 			trait = "trait_andorian_code_of_honor"
+			home_planet_key = "NAME_Andoria"
 		}
 
 		##Tellarites
@@ -69,6 +72,7 @@ cardassian1 = {
 			trait = "trait_tellarite_dyspnea"
 			trait = "trait_born_to_argue"
 			trait = "trait_sharp_wits"
+			home_planet_key = "NAME_Tellar_Prime"
 		}
 	}
 
@@ -96,10 +100,16 @@ cardassian1 = {
 	planet_class = "pc_continental"
 	planet_subclass = psc_class_m
 	initializer = "cardassian_cardassia_initializer"
-	conquered_system_initializers = { 
-		"cardassian_cardassia_initializer" "cardassian_cardassia_initializer" "cardassian_amleth_initializer"
-		"cardassian_septimus_initializer" "cardassian_outpost_initializer" "cardassian_celtris_initializer"
-		"cardassian_velos_initializer" "cardassian_sheva_initializer" "cardassian_avenal_initializer"
+	conquered_system_initializers = {
+		"cardassian_cardassia_initializer"
+		"cardassian_cardassia_initializer"
+		"cardassian_amleth_initializer"
+		"cardassian_septimus_initializer"
+		"cardassian_outpost_initializer"
+		"cardassian_celtris_initializer"
+		"cardassian_velos_initializer"
+		"cardassian_sheva_initializer"
+		"cardassian_avenal_initializer"
 		"cardassian_unefra_initializer"
 	}
 
@@ -109,15 +119,15 @@ cardassian1 = {
 	emblem_key = "flag_Cardassian_13"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Cardassian_13.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Cardassian"
 			"black"
 			"null"

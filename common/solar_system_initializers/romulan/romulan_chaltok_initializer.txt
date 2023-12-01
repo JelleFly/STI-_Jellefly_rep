@@ -1,0 +1,74 @@
+romulan_chaltok_initializer = {
+	name = "NAME_Chaltok"
+	class = "sc_m"
+	usage = custom_empire
+	flags = { romulan romulan_system colony }
+	
+	planet = {
+		name = "NAME_Chaltok-A"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+		init_effect = { 
+			change_pc = pc_m_star 
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+			set_deposit = d_energy_10
+		}
+
+		late_init_effect = {
+			create_mining_station = {
+				owner = event_target:romulan_country
+			}
+		}
+	}
+
+	change_orbit = 20
+	
+	planet = {
+		count = 3
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+
+	planet = {
+		name = "NAME_Chaltok_IV"
+		class = "pc_continental"
+
+		subclass = psc_class_m
+		orbit_distance = 25
+		size = 17
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		flags = { planet_chaltok bespoke_colony mapo_colony }
+				
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		late_init_effect = {
+			create_chaltok_IV_colony = yes
+		}
+	}
+	
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 30 max = 45 }
+		class = rl_unhabitable_planets
+	}
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost
+			owner = event_target:romulan_country
+		}
+	}
+}

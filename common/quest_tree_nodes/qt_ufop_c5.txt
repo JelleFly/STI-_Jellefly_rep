@@ -1,0 +1,109 @@
+# C5
+qt_ufop_inevitable = {
+	position = { x = 1 y = 7 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_ds9_station
+	}
+	
+	blocked_by = {
+	}
+
+	on_before_possible = {
+		
+		# Starbase with 2 or more Shipyards Modules
+		###################################################################################
+		set_variable = {
+			which = qt_ufop_inevitable_starbase_with_shipyards
+			value = 0
+		}
+
+		every_owned_starbase = {
+			# Set variable to the Scoped Starbase
+			set_variable = {
+				which = number_of_shipyards_aux
+				value = value:get_starbase_modules_count|TYPE|shipyard|
+			}
+
+			if = {
+				limit = {
+					# Check against Owner Scoped Variable (Country)
+					check_variable = {
+						which = number_of_shipyards_aux
+
+						# Owner because qt_ufop_inevitable_starbase_with_shipyards is a Country var
+						value >= owner.qt_ufop_inevitable_starbase_with_shipyards
+					}
+				}
+
+				# Owner because qt_ufop_inevitable_starbase_with_shipyards is a Country var
+				owner = {
+					set_variable = {
+						which = qt_ufop_inevitable_starbase_with_shipyards
+						value = prev.number_of_shipyards_aux # Note the Prev to get the Starbase Scope		
+					}
+				}
+
+				save_event_target_as = qt_ufop_inevitable_starbase
+			}
+			
+			clear_variable = number_of_shipyards_aux
+		}
+		###################################################################################
+
+		# Sovereign Ships
+		set_variable = {
+			which = qt_ufop_inevitable_sovereign_ships
+			value = value:get_owned_ships_count_by_size|SIZE|sovereign|
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			success_text = 	qt_ufop_inevitable_shipyard_custom_tooltip_success
+			fail_text = 	qt_ufop_inevitable_shipyard_custom_tooltip_fail
+			
+			check_variable = {
+				which = qt_ufop_inevitable_starbase_with_shipyards
+				value >= 2
+			}
+		}
+
+		custom_tooltip = {
+			success_text = 	qt_ufop_inevitable_sovereign_custom_tooltip_success
+			fail_text = 	qt_ufop_inevitable_sovereign_custom_tooltip_fail
+
+			check_variable = {
+				which = qt_ufop_inevitable_sovereign_ships
+				value >= 15
+			}
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {
+		add_modifier = {
+			modifier = qt_ufop_inevitable_effect		
+			days = 3650 
+		}
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

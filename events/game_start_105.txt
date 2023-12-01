@@ -1,0 +1,26 @@
+# Major Powers obtain Intel about Systems owned by Majors
+event = {
+	id = game_start.105
+	hide_window = yes
+	is_triggered_only = yes
+ 
+	immediate = {
+		every_country = {
+			limit = { is_major = yes }
+			save_event_target_as = from_country
+			
+			every_country = {
+				limit = {
+					is_major = yes
+					NOT = { is_same_value = event_target:from_country }
+				}
+
+				every_system_within_border = {
+					event_target:from_country = {
+						set_visited = prev
+					}
+				}
+			}
+		}
+	}
+}

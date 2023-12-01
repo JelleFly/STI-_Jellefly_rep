@@ -20,10 +20,10 @@ ktarian = {
 		plural = "PRESCRIPTED_species_plural_ktarian"
 		adjective = "PRESCRIPTED_species_adjective_ktarian"
 		name_list = "KTAR"
-		
 		trait = "trait_deceivers_ktarian"
 		trait = "trait_neuro_engineers_ktarian"
 		trait = "trait_disruptive_ktarian"
+		home_planet_key = "NAME_Ktarian_Home_Planet"
 	}
 
 	room = "minor_03_transmission_room"
@@ -52,15 +52,15 @@ ktarian = {
 	emblem_key = "flag_Ktarian_20"
 
 	empire_flag = {
-		icon= {
+		icon = {
 			category = "emblem"
 			file = "flag_Ktarian_20.dds"
 		}
-		background= {
+		background = {
 			category = "backgrounds"
 			file = "00_solid.dds"
 		}
-		colors={
+		colors = {
 			"Ktarian"
 			"black"
 			"null"

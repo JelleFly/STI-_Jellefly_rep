@@ -1,0 +1,9 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_qt_romulan_a6"
+		texturefile = "gfx/interface/questtree/ImageNode/qt_menacing_romulan.dds"
+		masking_texture = "gfx/interface/questtree/Componets/ImageNode_musk.dds"
+		alwaystransparent = yes
+	}
+
+}

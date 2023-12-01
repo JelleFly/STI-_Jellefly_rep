@@ -1,0 +1,43 @@
+# C3
+qt_ufop_dead_to_life = {
+	position = { x = 1 y = 5 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_expand_memory_alpha_8
+	}
+	
+	blocked_by = {
+	}
+
+	possible = {
+		terraformed_planets = { value >= 3 }
+		terraformed_planets = { flag = M value >= 1 }
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {		
+		add_modifier = {
+			modifier = qt_ufop_dead_to_life_effect
+		}
+		country_event = { id = quest.110 }
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

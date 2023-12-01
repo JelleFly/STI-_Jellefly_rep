@@ -1,0 +1,57 @@
+# C6
+qt_ufop_extermination_futile = {
+	position = { x = 1 y = 8 }
+
+	potential = {
+		has_country_id = ufop
+	}
+
+	parents = { 
+		qt_ufop_inevitable
+	}
+	
+	blocked_by = {
+
+	}
+
+	possible = {
+		custom_tooltip = {
+			success_text = qt_ufop_extermination_futile_tooltip_success
+			fail_text = qt_ufop_extermination_futile_tooltip_fail		
+			has_global_flag = borg_crisis_won
+		}
+	}
+
+	on_started = {
+		
+	}
+
+	on_blocked = {
+		
+	}
+
+	on_finished = {	
+
+		add_modifier = {
+			modifier = qt_ufop_extermination_futile_effect
+		}
+
+		add_global_tension = {
+			amount = -30
+			type = extermination_futile
+			country = this.owner
+		}
+		
+		add_resource = {
+			alloys = 15000
+		}			
+	}
+
+	modifier = {
+				
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

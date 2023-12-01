@@ -1,0 +1,44 @@
+# C2
+qt_cardassian_c2 = {
+	position = { x = 2 y = 2 } 
+ 
+	potential = { 
+		has_country_id = cardassian 
+	} 
+ 
+	parents = { 
+		qt_cardassian_c1
+	} 
+	 
+	blocked_by = { 
+ 
+	} 
+ 
+	possible = {
+		num_buildings = { type = building_information_control_center_cardassian value >= 2 }
+		successful_spy_mission_on_major_countries_count >= 15
+	}
+ 
+	on_started = { 
+		 
+	} 
+ 
+	on_blocked = {
+	} 
+ 
+	on_finished = {
+
+		custom_tooltip = qt_cardassian_c2_custom_tooltip
+
+		add_modifier = {
+			modifier = qt_cardassian_c2_effect
+		}			 
+	} 
+ 
+	modifier = { 
+ 
+	} 
+	ai_weight = { 
+		factor = 1000 
+	} 
+}
