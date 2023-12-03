@@ -2,5 +2,6 @@ on_game_start = {
 	events = {
 		XL_MAP.001	#Modded nebulas
 		XL_MAP.220  #Bolian-UFOP relations
+		XL_MAP.006
 	}
 }

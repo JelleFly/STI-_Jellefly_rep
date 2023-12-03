@@ -2,7 +2,7 @@ bajoran_bajor_initializer = {
 	name = "NAME_Bajoran_System"
 	class = sc_g
 	usage = custom_empire
-	flags = { bajoran bajoran_system bajoran_home_system capital }
+	flags = { bajoran bajoran_system bajoran_home_system capital w1_flag }
 
 	planet = {
 		name = "NAME_Bajor_Star"

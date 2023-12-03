@@ -57,8 +57,8 @@ bespoke_procedural_scenario = {
 	nebula = { name = "Mutara Nebula" position = { x = 59 y = 552} radius = 7}		#purple nebula, use flags = { purple } in system initalizers
 	nebula = { name = "Bassen Rift" position = { x = -16 y = 330 } radius = 7}		#green, WIP
 
-	num_wormhole_pairs = { min = 0 max = 0 }
-	num_wormhole_pairs_default = 0
+	num_wormhole_pairs = { min = 1 max = 1 }
+	num_wormhole_pairs_default = 1
 	num_gateways = { min = 0 max = 0 }
 	num_gateways_default = 0
 	num_hyperlanes = 0
@@ -112,6 +112,424 @@ bespoke_procedural_scenario = {
 	#}
 
 	#--------- Bespoke Systems ---------#
+
+	system = {
+		
+	name = "NAME_Bajoran_wormhole" position = { x = 391 y = -400 }
+		initializer = bajor_wormhole_gamma_initializer spawn_weight = { base = 1 }
+	}
+    system = {
+        id = "0"
+        position = {
+            x = 401.1395
+            y = -389.7858
+        }
+    }
+
+    system = {
+        id = "1"
+        position = {
+            x = 407.9892
+            y = -403.4863
+        }
+    }
+
+    system = {
+        id = "2"
+        position = {
+            x = 392.1496
+            y = -404.7703
+        }
+    }
+
+    system = {
+        id = "3"
+        position = {
+            x = 387.0124
+            y = -386.3609
+        }
+    }
+
+    system = {
+        id = "4"
+        position = {
+            x = 370.316
+            y = -396.6366
+        }
+    }
+
+    system = {
+        id = "5"
+        position = {
+            x = 380.1627
+            y = -418.4696
+        }
+    }
+
+    system = {
+        id = "6"
+        position = {
+            x = 404.136
+            y = -429.1714
+        }
+    }
+
+    system = {
+        id = "7"
+        position = {
+            x = 419.9755
+            y = -414.188
+        }
+    }
+
+    system = {
+        id = "8"
+        position = {
+            x = 427.682
+            y = -396.6366
+        }
+    }
+
+    system = {
+        id = "9"
+        position = {
+            x = 414.4105
+            y = -378.2284
+        }
+    }
+
+    system = {
+        id = "10"
+        position = {
+            x = 393.8615
+            y = -370.522
+        }
+    }
+
+    system = {
+        id = "11"
+        position = {
+            x = 418.2637
+            y = -354.2546
+        }
+    }
+
+    system = {
+        id = "12"
+        position = {
+            x = 432.8192
+            y = -375.2308
+        }
+    }
+
+    system = {
+        id = "13"
+        position = {
+            x = 397.7147
+            y = -353.8262
+        }
+    }
+
+    system = {
+        id = "14"
+        position = {
+            x = 376.3094
+            y = -364.5279
+        }
+    }
+
+    system = {
+        id = "15"
+        position = {
+            x = 354.4764
+            y = -379.5125
+        }
+    }
+
+    system = {
+        id = "16"
+        position = {
+            x = 352.3356
+            y = -352.5422
+        }
+    }
+
+    system = {
+        id = "17"
+        position = {
+            x = 375.0255
+            y = -334.9896
+        }
+    }
+
+    system = {
+        id = "18"
+        position = {
+            x = 407.133
+            y = -326.8547
+        }
+    }
+
+    system = {
+        id = "19"
+        position = {
+            x = 437.9565
+            y = -334.9896
+        }
+    }
+
+    system = {
+        id = "20"
+        position = {
+            x = 386.1562
+            y = -314.0122
+        }
+    }
+
+    system = {
+        id = "21"
+        position = {
+            x = 354.4764
+            y = -322.1459
+        }
+    }
+
+
+    system = {
+        id = "23"
+        position = {
+            x = 333.0712
+            y = -305.0217
+        }
+    }
+
+    system = {
+        id = "24"
+        position = {
+            x = 410.9856
+            y = -293.8916
+        }
+    }
+
+    system = {
+        id = "25"
+        position = {
+            x = 329.6464
+            y = -359.8203
+        }
+    }
+
+    system = {
+        id = "26"
+        position = {
+            x = 360.0421
+            y = -298.6016
+        }
+    }
+
+    system = {
+        id = "27"
+        position = {
+            x = 454.6523
+            y = -375.2308
+        }
+    }
+
+    system = {
+        id = "28"
+        position = {
+            x = 459.7895
+            y = -409.0508
+        }
+    }
+
+    system = {
+        id = "29"
+        position = {
+            x = 443.5215
+            y = -407.7656
+        }
+    }
+
+    system = {
+        id = "30"
+        position = {
+            x = 436.2435
+            y = -441.1595
+        }
+    }
+
+    system = {
+        id = "31"
+        position = {
+            x = 398.9987
+            y = -455.286
+        }
+    }
+
+    system = {
+        id = "32"
+        position = {
+            x = 422.1163
+            y = -459.9949
+        }
+    }
+
+    system = {
+        id = "33"
+        position = {
+            x = 459.7895
+            y = -462.5641
+        }
+    }
+
+    system = {
+        id = "34"
+        position = {
+            x = 472.632
+            y = -436.0211
+        }
+    }
+
+    system = {
+        id = "35"
+        position = {
+            x = 445.234
+            y = -428.743
+        }
+    }
+
+    system = {
+        id = "36"
+        position = {
+            x = 374.1693
+            y = -460.8517
+        }
+    }
+
+    system = {
+        id = "37"
+        position = {
+            x = 378.8781
+            y = -441.5867
+        }
+    }
+
+    system = {
+        id = "38"
+        position = {
+            x = 355.7604
+            y = -418.898
+        }
+    }
+
+    system = {
+        id = "39"
+        position = {
+            x = 339.9209
+            y = -397.4922
+        }
+    }
+
+    system = {
+        id = "40"
+        position = {
+            x = 355.7604
+            y = -449.292
+        }
+    }
+
+    system = {
+        id = "41"
+        position = {
+            x = 336.0677
+            y = -426.1761
+        }
+    }
+
+    system = {
+        id = "42"
+        position = {
+            x = 313.3784
+            y = -397.0638
+        }
+    }
+
+    system = {
+        id = "43"
+        position = {
+            x = 320.6565
+            y = -381.6533
+        }
+    }
+
+    system = {
+        id = "44"
+        position = {
+            x = 302.6761
+            y = -357.6794
+        }
+    }
+
+    system = {
+        id = "45"
+        position = {
+            x = 300.5353
+            y = -329.424
+        }
+    }
+
+    system = {
+        id = "46"
+        position = {
+            x = 309.0974
+            y = -302.0253
+        }
+    }
+
+    system = {
+        id = "48"
+        position = {
+            x = 384.4437
+            y = -284.9011
+        }
+    }
+
+    system = {
+        id = "49"
+        position = {
+            x = 442.6653
+            y = -296.0324
+        }
+    }
+
+    system = {
+        id = "50"
+        position = {
+            x = 455.5085
+            y = -324.2867
+        }
+    }
+
+    system = {
+        id = "51"
+        position = {
+            x = 460.6457
+            y = -351.6854
+        }
+    }
+
+    system = {
+        id = "52"
+        position = {
+            x = 286.8365
+            y = -375.6592
+        }
+    }
+
+
+
+	## new additions above here
 
 	system = {
     id = "2"
@@ -1333,10 +1751,10 @@ bespoke_procedural_scenario = {
 	# step 2
 	camera_limits_max_zoom =
 	{
-		camera_limit_min_x = -800
-		camera_limit_max_x = 800
-		camera_limit_min_y = -150
-		camera_limit_max_y = 800
+		camera_limit_min_x = -1400
+		camera_limit_max_x = 1400
+		camera_limit_min_y = -1400
+		camera_limit_max_y = 1400
 		camera_limit_min_pitch = 40
 		camera_limit_max_pitch = 85
 	}
@@ -1345,7 +1763,7 @@ bespoke_procedural_scenario = {
 	{
 		camera_limit_min_x = -768
 		camera_limit_max_x = 768
-		camera_limit_min_y = -100
+		camera_limit_min_y = -800
 		camera_limit_max_y = 800
 		camera_limit_min_pitch = 40
 		camera_limit_max_pitch = 85
@@ -1355,7 +1773,7 @@ bespoke_procedural_scenario = {
 	{
 		camera_limit_min_x = -640
 		camera_limit_max_x = 640
-		camera_limit_min_y = -60
+		camera_limit_min_y = -750
 		camera_limit_max_y = 750
 		camera_limit_min_pitch = 65
 		camera_limit_max_pitch = 85
@@ -1365,7 +1783,7 @@ bespoke_procedural_scenario = {
 	{
 		camera_limit_min_x = -576
 		camera_limit_max_x = 576
-		camera_limit_min_y = 0
+		camera_limit_min_y = -700
 		camera_limit_max_y = 700
 		camera_limit_min_pitch = 65
 		camera_limit_max_pitch = 85
@@ -1375,7 +1793,7 @@ bespoke_procedural_scenario = {
 	{
 		camera_limit_min_x = -416
 		camera_limit_max_x = 416
-		camera_limit_min_y = 100
+		camera_limit_min_y = -592
 		camera_limit_max_y = 592
 		camera_limit_min_pitch = 65
 		camera_limit_max_pitch = 85
@@ -1385,9 +1803,11 @@ bespoke_procedural_scenario = {
 	{
 		camera_limit_min_x = -384
 		camera_limit_max_x = 384
-		camera_limit_min_y = 140
+		camera_limit_min_y = -544
 		camera_limit_max_y = 544
 		camera_limit_min_pitch = 85
 		camera_limit_max_pitch = 85
 	}
+
+	
 }
