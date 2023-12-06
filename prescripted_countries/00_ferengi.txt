@@ -46,15 +46,19 @@ malcorian = {		#Malcorian overwritten to be the new ferengi
 	planet_subclass = psc_class_m
 	initializer = "ferengi_ferenginar_initializer"
 
+	conquered_system_initializers = {
+		"ferengi_thalos_initializer"
+	}
+
 	graphical_culture = "minor_01" #HRB_TODO
 	city_graphical_culture = "minor_01" #HRB_TODO
 
-	emblem_key = "flag_Malcorian_33"
+	emblem_key = "flag_Ferengi_35"
 
 	empire_flag = {
 		icon = {
 			category = "emblem"
-			file = "flag_Malcorian_33.dds"
+			file = "flag_Ferengi_35.dds"
 		}
 		background = {
 			category = "backgrounds"

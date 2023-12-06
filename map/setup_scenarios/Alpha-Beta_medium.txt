@@ -338,11 +338,11 @@ bespoke_procedural_scenario = {
 		name = "NAME_Ferenginar" position = { x = 63 y = 322 }
 		initializer = ferengi_ferenginar_initializer spawn_weight = { base = 1 } 
 	}
-	#system = {
-	#	name = "NAME_Thalos" position = { x = 61 y = 319 }
-	#	initializer = ferengi_thalos_initializer spawn_weight = { base = 1 } 
-	#	
-	#}
+	system = {
+		name = "NAME_Thalos" position = { x = 61 y = 319 }
+		initializer = ferengi_thalos_initializer spawn_weight = { base = 1 } 
+		
+	}
 	
 	system = {
 		name = "NAME_Hupyrian" position = { x = 72 y = 305 }
