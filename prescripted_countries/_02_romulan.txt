@@ -73,6 +73,7 @@ romulan1 = {
 		"zone_rom_ufop_iconia_initializer"
 		"zone_rom_ufop_nelvana_initializer"
 		"zone_rom_ufop_nimbus_initializer"
+		"carraya_system_initializer"
 	}
 
 	graphical_culture = "romulan_01"
