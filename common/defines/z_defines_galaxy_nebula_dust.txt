@@ -1,0 +1,19 @@
+NGraphics = {
+	GALAXY_NEBULA_DUST_SIZE_EXTRA 		= 5.0	# This is what makes nebulas not adhere to their set radius?
+	
+	BORDER_TEXTURE_SIZE					= 6144
+	BORDER_SYSTEM_RADIUS 				= 52.0
+	BORDER_OWNERLESS_SYSTEM_RADIUS 		= 47.0
+
+	SHOW_FLEETS_ZOOM 			= 300 # Show fleet icons instead of ship icons above this height
+
+	ZOOM_STEPS_GALAXY 			  = { 400 1000 2000 3000 4000 5000 } 	# Galaxy zoom steps
+
+	BORDER_NAMES_FADEOUT_ZOOM	= 2200 
+	BORDER_FLAG_FADEOUT_ZOOM	= 2200
+	NEBULA_NAMES_FADEOUT_ZOOM	= 250
+}
+
+NGameplay = {
+	BORDER_SYSTEM_RANGE_RADIUS = 50.0										# Systems in this Radius are considered Neighbors
+}

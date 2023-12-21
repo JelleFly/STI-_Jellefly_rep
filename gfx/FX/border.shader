@@ -222,8 +222,8 @@ PixelShader =
 			
 			float vEdgeWidth = 0.0005f + 0.1f * vCamDistFactor;
 
-			const float vEdgeSharpness = 30.0f; //innerBorderEdge			
-			float vBlackBorderWidth = vEdgeWidth * 0.25f;
+			const float vEdgeSharpness = 300.0f; //innerBorderEdge			
+			float vBlackBorderWidth = vEdgeWidth * 0.99f;
 			const float vBlackBorderSharpness = 25.0f;
 
 			//vAlphaOuterEdge makes the outermost edge smoother
