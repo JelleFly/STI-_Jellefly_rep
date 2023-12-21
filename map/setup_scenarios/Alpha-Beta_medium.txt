@@ -4,7 +4,7 @@ bespoke_procedural_scenario = {
 	priority = 2
 
 	# Everything below this line should be copied to tutorial.txt
-	num_stars = 2421
+	num_stars = 2433
 	radius = 1000
 
 	num_empires = { min = 24 max = 24 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
@@ -1194,7 +1194,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Hinq"
-		position = { x = -171 y = -216 }
+		position = { x = -116 y = -177 }
 		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -1236,7 +1236,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_T-met"
-		position = { x = -3 y = -202 }
+		position = { x = -3 y = -188 }
 		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -1334,7 +1334,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Illyria"
 		position = { x = 264 y = 202 }
-		initializer = ufop_illyria_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1348,7 +1348,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Organia"
 		position = { x = 91 y = 167 }
-		initializer = ufop_organia_initializer
+		initializer = ufop_outpost_initializer #ufop_organia_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1598,7 +1598,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Sherman-s_Planet"
 		position = { x = 69 y = 149 }
-		initializer = ufop_shermans_planet_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1640,7 +1640,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Kzin"
 		position = { x = 147 y = -241 }
-		initializer = uncontrolled_kzin_initializer
+		initializer = ufop_outpost_initializer #uncontrolled_kzin_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1654,7 +1654,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Pi_3_Orionis"
 		position = { x = 114 y = 10 }
-		initializer = uncontrolled_orion_initializer
+		initializer = ufop_outpost_initializer #uncontrolled_orion_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1715,7 +1715,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Camor"
 		position = { x = 221 y = 104 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1750,7 +1750,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Galador"
 		position = { x = 209 y = 20 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1806,7 +1806,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Melona"
 		position = { x = 211 y = 124 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1820,7 +1820,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Minos_Korva"
 		position = { x = 186 y = 89 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1890,7 +1890,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Sona"
 		position = { x = 86 y = 105 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1994,7 +1994,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Iconia"
-		position = { x = -232 y = -25 }
+		position = { x = -2 y = -210 }
 		initializer = zone_rom_ufop_iconia_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -2168,7 +2168,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 196 y = 155 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2264,7 +2264,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 157 y = 94 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2372,7 +2372,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 241 y = 151 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2444,7 +2444,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 254 y = 142 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2540,7 +2540,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 289 y = 72 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2570,7 +2570,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 108 y = 123 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2648,7 +2648,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 251 y = 154 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -2942,7 +2942,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 183 y = 166 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3014,7 +3014,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 117 y = 169 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3032,7 +3032,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 337 y = 101 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3176,7 +3176,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 209 y = 39 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3320,7 +3320,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 61 y = 114 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3440,7 +3440,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 59 y = 172 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3470,7 +3470,13 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 351 y = 86 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 235 y = 89 }
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3518,13 +3524,13 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 158 y = 126 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
 	system = {
 		position = { x = 153 y = 157 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -3608,7 +3614,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 360 y = 43 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4214,7 +4220,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 383 y = 8 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4436,7 +4442,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 291 y = 135 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4490,7 +4496,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 246 y = 165 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4502,7 +4508,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 146 y = 103 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4646,7 +4652,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 130 y = 175 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4682,7 +4688,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 342 y = 43 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4718,7 +4724,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 299 y = 46 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4760,7 +4766,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 134 y = 61 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4856,7 +4862,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 267 y = 63 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4927,8 +4933,9 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
+		name = "Kalandra"
 		position = { x = 216 y = 27 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5090,7 +5097,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 177 y = 144 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5126,7 +5133,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 393 y = 27 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5156,7 +5163,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 185 y = 47 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5252,7 +5259,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 148 y = 63 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5330,7 +5337,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 198 y = 103 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5546,13 +5553,13 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 198 y = 119 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
 	system = {
 		position = { x = 320 y = 107 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5624,7 +5631,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		NAME = "NAME_Alpha-Centauri"
-		position = { x = 126 y = -358 }
+		position = { x = 126 y = -58 }
 		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -5704,7 +5711,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 233 y = 65 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5765,6 +5772,13 @@ bespoke_procedural_scenario = {
 	system = {
 		position = { x = 229 y = -384 }
 		initializer = uncontrolled_system_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "AR-558"
+		position = { x = 229 y = -44 }
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -5962,7 +5976,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 93 y = 72 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6016,7 +6030,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 310 y = 66 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6322,7 +6336,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 152 y = 171 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6394,7 +6408,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 324 y = 78 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6592,7 +6606,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 181 y = 76 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6615,8 +6629,15 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
+		name = "Mazar"
 		position = { x = 117 y = 63 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 63 y = 25 }
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6820,7 +6841,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 377 y = 16 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -6934,7 +6955,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 280 y = 120 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7054,7 +7075,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 79 y = -262 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7102,7 +7123,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 333 y = 67 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7180,7 +7201,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 147 y = -39 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7251,7 +7272,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 222 y = -73 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7329,7 +7350,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 96 y = 38 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7549,7 +7570,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "Ydridia"
 		position = { x = 34 y = 57 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7603,7 +7624,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 170 y = -7 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7705,7 +7726,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 214 y = -116 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7771,7 +7792,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 200 y = -92 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -7910,7 +7931,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 207 y = -30 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -8457,7 +8478,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 185 y = -111 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -8475,7 +8496,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 172 y = -21 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -8926,9 +8947,34 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -176 y = -104 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
+
+	system = {
+		position = { x = -176 y = -74 }
+		initializer = romulan_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = -145 y = -112 }
+		initializer = romulan_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = -129 y = -61 }
+		initializer = romulan_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = -128 y = -94 }
+		initializer = romulan_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
 
 	system = {
 		position = { x = -575 y = 529 }
@@ -9191,7 +9237,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 113 y = -176 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -9449,7 +9495,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 155 y = -127 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -9665,7 +9711,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 192 y = -89 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -9761,7 +9807,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 61 y = -232 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -9992,13 +10038,13 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 142 y = -22 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
 	system = {
 		position = { x = 141 y = 37 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -10016,7 +10062,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -186 y = -91 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -10058,7 +10104,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 384 y = 59 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -10118,7 +10164,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 57 y = -254 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -10558,7 +10604,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -110 y = -42 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -10798,7 +10844,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 284 y = 253 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11240,7 +11286,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 249 y = -44 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11288,7 +11334,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -2 y = -61 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11312,7 +11358,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 238 y = 195 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11432,7 +11478,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 80 y = -246 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11480,7 +11526,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 162 y = -24 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11546,7 +11592,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 204 y = 206 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -11939,7 +11985,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 183 y = -21 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -12053,7 +12099,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -176 y = -114 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -12083,7 +12129,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 213 y = -57 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -12281,7 +12327,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 224 y = -196 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -12335,7 +12381,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 99 y = 189 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -12948,7 +12994,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 99 y = -203 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13157,7 +13203,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 198 y = -220 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13295,7 +13341,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 81 y = 98 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13325,8 +13371,9 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
+		name = "Barisa"
 		position = { x = 254 y = -12 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13584,7 +13631,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 133 y = -194 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13608,7 +13655,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 94 y = 124 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13650,7 +13697,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 113 y = -238 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13698,7 +13745,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 78 y = 145 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13716,7 +13763,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 104 y = 142 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13914,7 +13961,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 62 y = 124 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13974,7 +14021,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 184 y = 99 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14100,7 +14147,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -185 y = -19 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14136,7 +14183,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 182 y = -239 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14154,7 +14201,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 157 y = 142 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14256,13 +14303,13 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 250 y = -26 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
 	system = {
 		position = { x = 235 y = 187 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14503,7 +14550,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 377 y = 0 }
-		initializer = uncontrolled_system_initializer
+		initializer = cardassian_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14588,7 +14635,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -79 y = -89 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14654,7 +14701,37 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 80 y = 157 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 133 y = -220 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 173 y = -203 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 189 y = -175 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 155 y = -164 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 172 y = -185 }
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14793,7 +14870,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 188 y = 148 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -14859,7 +14936,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -63 y = -150 }
-		initializer = uncontrolled_system_initializer
+		initializer = romulan_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
