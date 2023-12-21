@@ -61,7 +61,7 @@ klingon1 = {
 		"klingon_nomat_initializer"
 		"klingon_ogat_initializer"
 		"klingon_pheben_initializer"
-		"klingon_quvat_initializer"
+		"quvat_system_initializer"
 		"klingon_teroka_initializer"
 		"klingon_tygokor_initializer"
 		"klingon_outpost_initializer"

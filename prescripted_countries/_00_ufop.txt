@@ -115,6 +115,8 @@ ufop = {
 		"ufop_qualor_initializer"
 		"ufop_setlik_initializer"
 		"ufop_illyria_initializer"
+		"ufop_archanis_initializer"
+		"ufop_japori_initializer"
 	}
 
 	graphical_culture = "ufop_01"
