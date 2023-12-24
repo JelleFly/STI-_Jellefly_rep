@@ -108,6 +108,9 @@ ufop = {
 		"ufop_outpost_initializer"
 		"zone_rom_ufop_eden_initializer"
 		"zone_rom_ufop_draken_initializer"
+		"zone_rom_ufop_generic_initializer"
+		"zone_rom_ufop_generic1_initializer"
+		"zone_rom_ufop_generic2_initializer"
 		"denobula_outpost_initializer"
 		"risa_outpost_initializer"
 		"cordian_outpost_initializer"
@@ -117,6 +120,7 @@ ufop = {
 		"ufop_illyria_initializer"
 		"ufop_archanis_initializer"
 		"ufop_japori_initializer"
+		"zone_rom_ufop_tomed_initializer"
 	}
 
 	graphical_culture = "ufop_01"

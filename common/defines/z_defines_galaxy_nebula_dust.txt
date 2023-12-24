@@ -17,3 +17,7 @@ NGraphics = {
 NGameplay = {
 	BORDER_SYSTEM_RANGE_RADIUS = 50.0										# Systems in this Radius are considered Neighbors
 }
+
+Ncamera = {
+	GALAXY_SHOW_STARNAME_ZOOM 		= 1600 # Camera zoom interval to show star name
+}

@@ -26,6 +26,10 @@ event = {
 				add_system_to_neutral_zone = event_target:epsilon_legato_star.solar_system
 				add_system_to_neutral_zone = event_target:theta_curry_star.solar_system
 				add_system_to_neutral_zone = event_target:nimbus_star.solar_system
+				add_system_to_neutral_zone = event_target:zone_star.solar_system
+				add_system_to_neutral_zone = event_target:zone1_star.solar_system
+				add_system_to_neutral_zone = event_target:zone2_star.solar_system
+				add_system_to_neutral_zone = event_target:tomed_star.solar_system
 				# HRB-2033: Add more Systems here
 			}
 		}

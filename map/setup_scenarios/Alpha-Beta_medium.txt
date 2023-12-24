@@ -4,8 +4,8 @@ bespoke_procedural_scenario = {
 	priority = 2
 
 	# Everything below this line should be copied to tutorial.txt
-	num_stars = 2433
-	radius = 1000
+	num_stars = 2450
+	radius = 1
 
 	num_empires = { min = 24 max = 24 }	# HRB_NOTE: { min = 1 max = 24 }, out of this values the game may crash. Use the max value to ensure appear the 4 Mapos.
 	num_empire_default = 24		 		# HRB_NOTE: min = 1, max = 24, out of this values the game crash. Use the max value to ensure appear the 4 Mapos.
@@ -208,7 +208,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Farian"
-		position = { x = 209 y = 21 }
+		position = { x = 203 y = 23 }
 		initializer = farian_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -297,26 +297,6 @@ bespoke_procedural_scenario = {
 		spawn_weight = { base = 1 }
 	}
 
-	system = {
-		name = "Breen"
-		position = { x = 399 y = -112 }
-		initializer = breenanchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Breen"
-		position = { x = 389 y = -132 }
-		initializer = breenanchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Breen"
-		position = { x = 379 y = -142 }
-		initializer = breenanchor_initializer
-		spawn_weight = { base = 1 }
-	}
 
 	system = {
 		name = "NAME_Amleth"
@@ -563,6 +543,71 @@ bespoke_procedural_scenario = {
 		spawn_weight = { base = 1 }
 	}
 
+	
+	system = {
+		name = "Tholian"
+		position = { x = 512 y = 228 }
+		initializer = tholiananchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Tholian"
+		position = { x = 507 y = 220 }
+		initializer = tholiananchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Tholian"
+		position = { x = 497 y = 217 }
+		initializer = tholiananchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Tholian"
+		position = { x = 487 y = 223 }
+		initializer = tholiananchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Borderlands"
+		position = { x = 152 y = 10 }
+		initializer = orionanchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Borderlands"
+		position = { x = 142 y = 25 }
+		initializer = orionanchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+
+	system = {
+		name = "Breen"
+		position = { x = 399 y = -112 }
+		initializer = breenanchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Breen"
+		position = { x = 389 y = -132 }
+		initializer = breenanchor_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Breen"
+		position = { x = 379 y = -142 }
+		initializer = breenanchor_initializer
+		spawn_weight = { base = 1 }
+	 }
+
 	system = {
 		name = "Gorn"
 		position = { x = 172 y = 327 }
@@ -595,7 +640,7 @@ bespoke_procedural_scenario = {
 		name = "NAME_Iyaaran"
 		position = { x = -868 y = -365 }
 		initializer = iyaaran_initializer
-		spawn_weight = { base = 1 }
+		spawn_weight = { base = 1 } 
 	}
 
 	system = {
@@ -979,31 +1024,11 @@ bespoke_procedural_scenario = {
 		spawn_weight = { base = 1 }
 	}
 
-	system = {
-		name = "Borderlands"
-		position = { x = 162 y = 3 }
-		initializer = orionanchor_initializer
-		spawn_weight = { base = 1 }
-	}
+	
 
 	system = {
-		name = "Borderlands"
-		position = { x = 157 y = 28 }
-		initializer = orionanchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Borderlands"
-		position = { x = 152 y = 10 }
-		initializer = orionanchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Borderlands"
-		position = { x = 142 y = 25 }
-		initializer = orionanchor_initializer
+		position = { x = 114 y = 10 }
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1262,33 +1287,6 @@ bespoke_procedural_scenario = {
 		spawn_weight = { base = 1 }
 	}
 
-	system = {
-		name = "Tholian"
-		position = { x = 512 y = 228 }
-		initializer = tholiananchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Tholian"
-		position = { x = 507 y = 220 }
-		initializer = tholiananchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Tholian"
-		position = { x = 497 y = 217 }
-		initializer = tholiananchor_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		name = "Tholian"
-		position = { x = 487 y = 223 }
-		initializer = tholiananchor_initializer
-		spawn_weight = { base = 1 }
-	}
 
 	system = {
 		name = "NAME_Andor"
@@ -1339,7 +1337,7 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
-		name = "NAME_Japori"
+		name = "Japori"
 		position = { x = -25 y = 38 }
 		initializer = ufop_japori_initializer
 		spawn_weight = { base = 1 }
@@ -1549,7 +1547,7 @@ bespoke_procedural_scenario = {
 	system = {
 		name = "NAME_Tomed"
 		position = { x = -19 y = -13 }
-		initializer = ufop_outpost_initializer
+		initializer = zone_rom_ufop_tomed_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -1651,12 +1649,7 @@ bespoke_procedural_scenario = {
 		spawn_weight = { base = 1 }
 	}
 
-	system = {
-		name = "NAME_Pi_3_Orionis"
-		position = { x = 114 y = 10 }
-		initializer = ufop_outpost_initializer #uncontrolled_orion_initializer
-		spawn_weight = { base = 1 }
-	}
+
 
 	system = {
 		NAME = "Zantedeschia"
@@ -1895,6 +1888,53 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
+		position = { x = 72 y = -209 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = 29 y = -238 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Xyrillia"
+		position = { x = 136 y = -7 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Sirius"
+		position = { x = 108 y = -38 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		name = "Norkan"
+		position = { x = -12 y = -240 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system  = {
+		name = "Vega"
+		position = { x = 184 y = -73 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system  = {
+		name = "Terra Nova"
+		position = { x = 172 y = -25 }
+		initializer = ufop_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
 		name = "NAME_Tohvun"
 		position = { x = 313 y = 120 }
 		initializer = uncontrolled_system_initializer
@@ -1949,6 +1989,26 @@ bespoke_procedural_scenario = {
 		initializer = zone_rom_ufop_belcer_initializer
 		spawn_weight = { base = 1 }
 	}
+
+	system = {
+		position = { x = -19 y = -209 }
+		initializer = zone_rom_ufop_generic_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = -39 y = -204 }
+		initializer = zone_rom_ufop_generic1_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
+		position = { x = -65 y = -207 }
+		initializer = zone_rom_ufop_generic2_initializer
+		spawn_weight = { base = 1 }
+	}
+
+
 
 	system = {
 		name = "NAME_Devron"
@@ -2545,6 +2605,12 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
+		position = { x = 319 y = 34 }
+		initializer = cardassian_outpost_initializer
+		spawn_weight = { base = 1 }
+	}
+
+	system = {
 		position = { x = 50 y = -449 }
 		initializer = uncontrolled_system_initializer
 		spawn_weight = { base = 1 }
@@ -2828,7 +2894,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 2 y = -262 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4478,7 +4544,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = -27 y = -280 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4778,7 +4844,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		position = { x = 29 y = -269 }
-		initializer = uncontrolled_system_initializer
+		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -4957,11 +5023,6 @@ bespoke_procedural_scenario = {
 		spawn_weight = { base = 1 }
 	}
 
-	system = {
-		position = { x = -39 y = -204 }
-		initializer = uncontrolled_system_initializer
-		spawn_weight = { base = 1 }
-	}
 
 	system = {
 		position = { x = -556 y = 161 }
@@ -5631,7 +5692,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		NAME = "NAME_Alpha-Centauri"
-		position = { x = 126 y = -58 }
+		position = { x = 126 y = -68 }
 		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
@@ -8491,12 +8552,6 @@ bespoke_procedural_scenario = {
 	system = {
 		position = { x = -888 y = -713 }
 		initializer = uncontrolled_system_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
-		position = { x = 172 y = -21 }
-		initializer = ufop_outpost_initializer
 		spawn_weight = { base = 1 }
 	}
 
@@ -13642,12 +13697,6 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
-		position = { x = -19 y = -209 }
-		initializer = uncontrolled_system_initializer
-		spawn_weight = { base = 1 }
-	}
-
-	system = {
 		position = { x = 463 y = -764 }
 		initializer = uncontrolled_system_initializer
 		spawn_weight = { base = 1 }
@@ -15070,6 +15119,24 @@ bespoke_procedural_scenario = {
 	}
 	# step 7
 	camera_limits_max_zoom =
+	{
+		camera_limit_min_x = -2000
+		camera_limit_max_x = 2000
+		camera_limit_min_y = -2000
+		camera_limit_max_y = 2000
+		camera_limit_min_pitch = 85
+		camera_limit_max_pitch = 85
+	}
+
+	{
+		camera_limit_min_x = -2000
+		camera_limit_max_x = 2000
+		camera_limit_min_y = -2000
+		camera_limit_max_y = 2000
+		camera_limit_min_pitch = 85
+		camera_limit_max_pitch = 85
+	}
+
 	{
 		camera_limit_min_x = -2000
 		camera_limit_max_x = 2000
