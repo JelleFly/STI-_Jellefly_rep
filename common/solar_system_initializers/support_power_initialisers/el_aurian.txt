@@ -1,0 +1,153 @@
+
+# El-Aurians, The Circle of Listeners
+guardians_curator_init_01 = {
+	name = "NAME_Elaurian"
+	class = "rl_standard_stars"
+	usage = misc_system_init
+	
+	usage_odds = {
+		base = 100
+	}
+	
+
+	max_instances = 1
+	spawn_chance = 100
+	#sigma (2) always spawns
+	
+	flags = { guardians_curators_system enclave }
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		
+		init_effect = {
+			if = {
+				limit = {
+					NOT = { has_built_species = "El-Aurian" }
+				}
+				
+				create_species = {
+					class = "HRB" # TODO: Create custom class
+					portrait = "elaurian"
+					name = "PRESCRIPTED_species_name_elaurian"
+					plural = "PRESCRIPTED_species_plural_elaurian"
+					adjective = "PRESCRIPTED_species_adjective_elaurian"
+					name_list = "ELAU"
+					traits = {
+						trait = trait_roamers_boslic
+						trait = trait_observant_idanian
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { exists = event_target:curator_enclave_country }
+				}
+
+				create_country = {
+					name = "NAME_Curator_Order"
+					species = "El-Aurian"
+					country_id = "elaurian"
+					type = enclave
+					authority = "auth_oligarchic_elaurian"
+					civics = {
+						civic = civic_past_guides_future
+						civic = civic_question_everything
+					}
+					origin = "origin_default"
+					flag = {
+						icon = {
+							category = "enclaves"
+							file = "enclaves_flag_curator.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "vertical.dds"
+						}
+						colors={
+							"blue"
+							"dark_blue"
+							"null"
+							"null"
+						}
+					}
+					ethos = {
+						ethic = ethic_fanatic_materialist
+						ethic = ethic_pacifist
+					}
+					ignore_initial_colony_error = yes
+				}
+				last_created_country = {
+					set_country_flag = curator_enclave_country
+					set_graphical_culture = mammalian_01
+					save_global_event_target_as = curator_enclave_country
+					set_country_flag = elaurian
+					create_fleet = {
+						name = "NAME_Curator_Alpha_Enclave"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Curator_Enclave_Station"
+								initial_officers_perc = 1
+								graphical_culture = prev
+							}
+							set_location = {
+								target = prevprev
+								angle = random
+								distance = 100
+							}
+							save_event_target_as = CustomCapital
+							prev = {
+								set_custom_capital_location = event_target:CustomCapital
+							}
+						}
+					}
+					create_leader = {
+						class = ruler
+						species = this
+						name = "PRESCRIPTED_ruler_name_elaurian"
+						skill = 5
+					}
+					set_leader = last_created_leader
+				}
+				else = {
+					event_target:curator_enclave_country = {
+						create_fleet = {
+							name = "NAME_Curator_Alpha_Enclave"
+							settings = { spawn_debris = no }
+							effect = {
+								set_owner = prev
+								create_ship = {
+									name = random
+									design = "NAME_Curator_Enclave_Station"
+									graphical_culture = prev
+								}
+								set_location = {
+									target = prevprev
+									distance = 120
+								}
+								save_event_target_as = CustomCapital
+								prev = {
+									set_custom_capital_location = event_target:CustomCapital
+								}	
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	change_orbit = 60
+
+	planet = {
+		count = 3
+		orbit_distance = 25
+		class = "rl_unhabitable_planets"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 25 }
+	}
+}

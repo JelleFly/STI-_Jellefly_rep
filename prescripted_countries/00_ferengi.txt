@@ -1,4 +1,4 @@
-malcorian = {		#Malcorian overwritten to be the new ferengi
+ferengi = {		#Malcorian overwritten to be the new ferengi
 	name = "Ferengi Alliance"
 	short_name = "EMPIRE_SHORT_NAME_Ferengi"
 	country_id = "ferengi_country"
@@ -8,10 +8,13 @@ malcorian = {		#Malcorian overwritten to be the new ferengi
 	match_home_system_initializer = yes
 	shuffle_starting_position = no
 	is_minor = yes
+	is_major = yes
 	is_bespoke = yes
 	in_previous_contact = no
+	#set_country_type = contender
+	
 
-	ship_prefix = "PRESCRIPTED_ship_prefix_malcorian"
+	ship_prefix = "PRESCRIPTED_ship_prefix_ferengi"
 
 	species = {
 		class = "HRB" # TODO: Create custom class
@@ -24,7 +27,7 @@ malcorian = {		#Malcorian overwritten to be the new ferengi
 		trait = "trait_traditionalists_ferengi"
 		trait = "trait_eye_for_business_ferengi"
 		trait = "trait_high_maintenance"
-		home_planet_key = "NAME_Malcorian_Home_Planet"
+		home_planet_key = "NAME_Ferengi_Home_Planet"
 	}
 
 	room = "minor_02_transmission_room" # HRB_TODO: Define a proper room
@@ -38,19 +41,22 @@ malcorian = {		#Malcorian overwritten to be the new ferengi
 
 	origin = "origin_default"
 
-	flags = { human_2 malcorian starting_gov }
+	flags = { human_2 ferengi starting_gov }
 
 	system_name = "NAME_Ferenginar"
 	planet_name = "NAME_Ferengi_Home_Planet"
-	planet_class = "pc_tropical" #HRB_TODO
+	planet_class = "pc_tropical" #HRB_TODO  
 	planet_subclass = psc_class_m
 	initializer = "ferengi_ferenginar_initializer"
 
 	conquered_system_initializers = {
 		"ferengi_thalos_initializer"
+		"ferengi_lappa_initializer"
+		"ferengi_balancar_initializer"
+
 	}
 
-	graphical_culture = "minor_01" #HRB_TODO
+	graphical_culture = "ferengi_01" #HRB_TODO
 	city_graphical_culture = "minor_01" #HRB_TODO
 
 	emblem_key = "flag_Ferengi_35"
@@ -73,9 +79,9 @@ malcorian = {		#Malcorian overwritten to be the new ferengi
 	}
 
 	ruler = {
-		name = "PRESCRIPTED_ruler_name_malcorian" #HRB_TODO
+		name = "PRESCRIPTED_ruler_name_ferengi" #HRB_TODO
 		portrait = "ferengi_male_01" # HRB_TODO: Change Ruler Portrait
-		gender = female
+		gender = male
 		texture = 0
 		hair = 0
 		clothes = 0

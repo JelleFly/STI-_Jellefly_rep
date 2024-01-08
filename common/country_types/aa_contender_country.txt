@@ -1,0 +1,399 @@
+contender = {
+	has_difficulty_bonuses = yes
+	counts_for_victory = no
+	pop_growth = yes
+	playable = no
+	has_pulse_events = yes
+	piracy_risk = no
+	randomize_ethos = no
+	shuffle_pop_ethos = no
+	needs_survey = yes
+	diplomatic_wars = yes
+	ship_disengagement = yes
+	army_disengagement = yes
+	relations = yes
+	observable = yes
+	can_use_invalid_technology = no
+	can_receive_envoys = yes
+	show_in_contacts_list = yes
+
+	ai = {
+		enabled = yes
+		declare_war = yes
+		min_navy_for_wars = 0.01
+		min_assault_armies_for_wars = @armies_for_declaring_war	
+		colonizer = yes
+		internal_policies = yes
+		modification = yes
+		government = yes
+		traditions = yes
+		construction = yes
+		follow = yes
+		can_use_market = yes
+		espionage = no
+		quest_tree = no
+		modules = {
+			military_minister_module
+			foreign_minister_module
+			interior_minister_module
+		}
+
+		# This is a custom modifier and not a Paradox modifier. The only condition is is_minor
+		hostile_threshold_mult = {
+			base = 1.00
+			modifier = {
+				cardassian = {
+					is_minor = yes
+					factor = 2.50
+				}
+				klingon = {
+					is_minor = yes
+					factor = 2.50
+				}
+			}
+		}
+
+		ship_data = {
+			constructor = {
+				min = 2
+				max = 2
+			}
+
+			science	= {
+				min = 2
+				max = 2
+			}
+
+			colonizer = {
+				fraction = {
+					base = 0.1
+					modifier = {
+						OR ={
+							count_planet_within_border = {
+								count > 0
+								limit = {
+									is_under_colonization = yes
+								}
+							}
+							ai_colonize_plans < 1
+							count_owned_ship = {
+								count >= 1
+								limit = { is_ship_class = shipclass_colonizer }
+							}
+							resource_stockpile_compare = {
+								resource = food
+								value < 250
+							}
+							resource_stockpile_compare = {
+								resource = energy
+								value < 500
+							}
+						}
+						factor = 0
+					}
+				}
+				min = 0
+				max = 1
+			}
+
+			### Tholian ships ###
+			
+			tholianbattleship = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 5
+						has_country_id = "tholian"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			tholiandestroyer = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 25
+						has_country_id = "tholian"
+						has_technology = tech_destroyer_unlock
+					}
+					modifier = {
+						add = -5
+						has_country_id = "tholian"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			tholiancorvette = {
+				fraction = {
+					base = 100
+					modifier = {
+						add = -25
+						has_technology = tech_destroyer_unlock
+						has_country_id = "tholian"
+					}
+				}
+			}
+			
+			### Gorn ships ###
+			
+			gornbattleship = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 5
+						has_country_id = "gorn"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			gorndestroyer = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 25
+						has_country_id = "gorn"
+						has_technology = tech_destroyer_unlock
+					}
+					modifier = {
+						add = -5
+						has_country_id = "gorn"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			gorncorvette = {
+				fraction = {
+					base = 100
+					modifier = {
+						add = -25
+						has_technology = tech_destroyer_unlock
+						has_country_id = "gorn"
+					}
+				}
+			}
+		
+			### Orion ships ###
+			
+			orionbattleship = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 5
+						has_country_id = "orion"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			oriondestroyer = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 25
+						has_country_id = "orion"
+						has_technology = tech_destroyer_unlock
+					}
+					modifier = {
+						add = -5
+						has_country_id = "orion"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			orioncorvette = {
+				fraction = {
+					base = 100
+					modifier = {
+						add = -25
+						has_technology = tech_destroyer_unlock
+						has_country_id = "orion"
+					}
+				}
+			}
+
+			### Breen ships ###
+			
+			breenbattleship = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 5
+						has_country_id = "breen"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			breendestroyer = {
+				fraction = {
+					base = 0
+					modifier = {
+						add = 25
+						has_country_id = "breen"
+						has_technology = tech_destroyer_unlock
+					}
+					modifier = {
+						add = -5
+						has_country_id = "breen"
+						OR = {
+							has_technology = tech_battleship_unlock
+							has_technology = tech_cruiser_unlock
+						}
+					}
+				}
+			}
+
+			breencorvette = {
+				fraction = {
+					base = 100
+					modifier = {
+						add = -25
+						has_technology = tech_destroyer_unlock
+						has_country_id = "breen"
+					}
+				}
+			}
+
+			### Default for contenders without own shipset ###
+			large_nausicaan = {
+				fraction = {
+					modifier = {
+						factor = 0
+						or = {
+							has_country_id = "breen"
+							has_country_id = "tholian"
+							has_country_id = "orion"
+							has_country_id = "gorn"
+						}
+					}
+					modifier = {
+						add = 35
+						has_technology = tech_battleship_unlock
+					}
+				}
+			}
+
+			medium_nausicaan = {
+				fraction = {
+					modifier = {
+						factor = 0
+						or = {
+							has_country_id = "breen"
+							has_country_id = "tholian"
+							has_country_id = "orion"
+							has_country_id = "gorn"
+						}
+					}
+					modifier = {
+						add = 35
+						has_technology = tech_cruiser_unlock
+					}
+					modifier = {
+						add = -10
+						has_technology = tech_battleship_unlock
+					}
+				}
+			}
+
+			small_nausicaan = {
+				fraction = {
+					base = 100
+					modifier = {
+						factor = 0
+						or = {
+							has_country_id = "breen"
+							has_country_id = "tholian"
+							has_country_id = "orion"
+							has_country_id = "gorn"
+						}
+					}
+					modifier = {
+						add = -25
+						has_technology = tech_destroyer_unlock
+					}
+					modifier = {
+						add = -45
+						has_technology = tech_cruiser_unlock
+					}
+					modifier = {
+						add = -5
+						has_technology = tech_battleship_unlock
+					}
+				}
+			}
+		}
+
+		army_data = {
+			assault_army = {
+				fraction = {
+					factor = 100
+				}
+			}
+		}
+	}
+
+	trade_routes_available = {
+		always = yes
+	}
+
+	modules = {
+		standard_event_module = {}
+		standard_economy_module = {}
+		standard_leader_module = {}
+		standard_diplomacy_module = { contact_rule = does_first_contact_sites }
+		standard_technology_module = {}
+		standard_trade_routes_module = {}
+		standard_pop_factions_module = {}
+		standard_expansion_module = {}
+		standard_species_rights_module = {}
+		standard_quest_tree_module = {}
+	}
+
+	resources = {
+		category = country_base
+		produces = {
+			energy = 35
+			minerals = 35
+			research = 20
+			influence = 3
+			unity = 10
+			alloys = 10
+			food = 20
+		}
+	}
+
+	# planet scope
+	branch_office_resources = {
+		category = planet_branch_offices
+		cost = {
+			energy = 1000
+			influence = 50
+		}
+	}
+}

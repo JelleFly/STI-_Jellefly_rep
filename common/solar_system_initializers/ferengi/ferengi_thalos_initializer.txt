@@ -71,7 +71,7 @@ ferengi_thalos_initializer = {
 	late_init_effect = {
 		create_starbase = {
 			size = starbase_starport
-			owner = event_target:ferengi_country_MiPo
+			owner = event_target:ferengi_country
 		}
 	}
 }

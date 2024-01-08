@@ -60,7 +60,7 @@ ferengi_ferenginar_initializer = {
 				last_created_country = {
 					set_country_flag = trader_enclave_country
 					set_country_flag = trader_enclave_country_3
-					set_country_flag = ferengi
+					set_country_flag = ferengi_02
 					set_graphical_culture = mammalian_01
 					create_fleet = {
 						name = "NAME_Muutag_Station"
@@ -124,6 +124,10 @@ ferengi_ferenginar_initializer = {
 			add_modifier = {
 				modifier = home_planet
 				days = -1
+
+				# create_country = {
+				#	
+				 #}
 			}
 
 			
@@ -190,7 +194,7 @@ ferengi_ferenginar_initializer = {
 				last_created_country = {
 					set_country_flag = trader_enclave_country
 					set_country_flag = trader_enclave_country_1
-					set_country_flag = ferengi
+					set_country_flag = ferengi_01
 					set_graphical_culture = mammalian_01
 					create_fleet = {
 						name = "NAME_XuraCorp_HQ"

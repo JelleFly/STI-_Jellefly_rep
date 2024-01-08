@@ -1,0 +1,711 @@
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+
+#############
+# OFFICERS  #
+#############
+@operative_officers1 = -10
+
+####################
+# DEFAULT COMPUTER #
+####################
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	ship_behavior = "default"
+	prerequisites = { "tech_computer_1" }
+	operative_officers = @operative_officers1
+	hidden = yes
+
+	class_restriction = { shipclass_military }
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+########################
+# BASIC SHIP COMPUTERS #
+########################
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_SWARM_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "swarm"
+	prerequisites = { "tech_computer_1" }
+
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengicorvette }
+	component_set = "combat_computers"
+	upgrades_to = "FER_COMBAT_COMPUTER_SWARM_BASIC"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_PICKET_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "picket"
+	prerequisites = { "tech_computer_1" }
+
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengidestroyer }
+	component_set = "combat_computers"
+	upgrades_to = "FER_COMBAT_COMPUTER_PICKET_BASIC"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_LINE_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "line"
+	prerequisites = { "tech_computer_1" }
+
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengibattlecruiser }
+	component_set = "combat_computers"
+	upgrades_to = "FER_COMBAT_COMPUTER_LINE_BASIC"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_ARTILLERY_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "artillery"
+	prerequisites = { "tech_computer_1" }
+
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { ferbattleship }
+	component_set = "combat_computers"
+	upgrades_to = "FER_COMBAT_COMPUTER_ARTILLERY_BASIC"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_PLATFORM_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_platform"
+	icon_frame = 1
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	prerequisites = { "tech_computer_1" }
+	class_restriction = { shipclass_military_station }
+	component_set = "combat_computers"
+	ship_behavior = "platform"
+	upgrades_to = "FER_COMBAT_COMPUTER_PLATFORM_BASIC"
+
+	ship_modifier = {
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#####################
+# 'SWARM' COMPUTERS #
+#####################
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_SWARM_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_basic"
+	icon_frame = 1
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengicorvette}
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_computer_2" }
+	upgrades_to = "FER_COMBAT_COMPUTER_SWARM_ADVANCED"
+
+	modifier = {
+		ship_evasion_mult = 0.05
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_SWARM_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_advanced"
+	icon_frame = 1
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengicorvette }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_computer_3" }
+	upgrades_to = "FER_COMBAT_COMPUTER_SWARM_SAPIENT"
+
+	modifier = {
+		ship_evasion_mult = 0.10
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_SWARM_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengicorvette }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	#prerequisites = { "tech_computer_4" }
+
+	modifier = {
+		ship_evasion_mult = 0.25
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_SWARM_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengicorvette }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	#prerequisites = { "tech_computer_4" }
+
+	modifier = {
+		ship_evasion_mult = 0.25
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+######################
+# 'PICKET' COMPUTERS #
+######################
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_PICKET_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_picket_basic"
+	icon_frame = 1
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengidestroyer }
+	component_set = "combat_computers"
+	ship_behavior = "picket"
+	prerequisites = { "tech_computer_2" }
+	upgrades_to = "FER_COMBAT_COMPUTER_PICKET_ADVANCED"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_PICKET_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_picket_advanced"
+	icon_frame = 1
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengidestroyer }
+	component_set = "combat_computers"
+	ship_behavior = "picket"
+	prerequisites = { "tech_computer_3" }
+	upgrades_to = "FER_COMBAT_COMPUTER_PICKET_SAPIENT"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_tracking_add = 20
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_PICKET_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_picket_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengidestroyer }
+	component_set = "combat_computers"
+	ship_behavior = "picket"
+	#prerequisites = { "tech_computer_4" }
+
+	modifier = {
+		ship_evasion_mult = 0.10
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_tracking_add = 30
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_PICKET_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_picket_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengidestroyer }
+	component_set = "combat_computers"
+	ship_behavior = "picket"
+	#prerequisites = { "tech_computer_4" }
+
+	modifier = {
+		ship_evasion_mult = 0.10
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_tracking_add = 30
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+####################
+# 'LINE' COMPUTERS #
+####################
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_LINE_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_line_basic"
+	icon_frame = 1
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengibattlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	prerequisites = { "tech_computer_2" }
+	upgrades_to = "FER_COMBAT_COMPUTER_LINE_ADVANCED"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_accuracy_add = 5
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_LINE_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_line_advanced"
+	icon_frame = 1
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengibattlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	prerequisites = { "tech_computer_3" }
+	upgrades_to = "FER_COMBAT_COMPUTER_LINE_SAPIENT"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_accuracy_add = 10
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_LINE_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_line_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_military_special }
+	size_restriction = { ferengibattlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	#prerequisites = { "tech_computer_4" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_accuracy_add = 20
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_LINE_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_line_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { ferengibattlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	#prerequisites = { "tech_computer_4" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_accuracy_add = 20
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+######################
+# 'ARTILLERY' COMPUTERS #
+######################
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_ARTILLERY_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_basic"
+	icon_frame = 1
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { ferbattleship}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_computer_2" }
+	upgrades_to = "FER_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_advanced"
+	icon_frame = 1
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { ferbattleship  }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_computer_3" }
+	upgrades_to = "FER_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_weapon_range_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { ferbattleship }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	#prerequisites = { "tech_computer_4" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "FER_COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @power3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { ferbattleship }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	#prerequisites = { "tech_computer_4" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

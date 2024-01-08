@@ -97,8 +97,7 @@ bespoke_procedural_scenario = {
 		highway_node_id = "1"
 	}
 
-	#system = {
-		# Borg transwarp conduit
+	#system = {		# Borg transwarp conduit
 		# Needs to be first system, before Bespoke systems
 	#	name = "NAME_Highway_Node" position = { x = -400 y = -150 }
 	#	spawn_weight = { base = 1 } 
@@ -342,6 +341,16 @@ bespoke_procedural_scenario = {
 		name = "NAME_Thalos" position = { x = 61 y = 319 }
 		initializer = ferengi_thalos_initializer spawn_weight = { base = 1 } 
 		
+	}
+
+	system = {
+		name = "NAME_Lappa" position = { x = 73 y = 318 }
+		initializer = ferengi_lappa_initializer spawn_weight = { base = 1 } 
+	}
+
+	system = {
+		name = "NAME_Balancar" position = { x = 83 y = 318 }
+		initializer = ferengi_balancar_initializer spawn_weight = { base = 1 } 
 	}
 	
 	system = {
@@ -642,7 +651,7 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
-		name = "NAME_Lissepian" position = { x = 64 y = 321 }
+		name = "NAME_Lissepian" position = { x = 97 y = 314 }
 		initializer = lissepian_initializer spawn_weight = { base = 1 } 
 	}
 

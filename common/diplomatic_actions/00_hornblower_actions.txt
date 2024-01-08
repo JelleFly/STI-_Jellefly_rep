@@ -1,0 +1,1052 @@
+# Variables:
+#  is_listed, boolean, decides if this diplomactic action type is listed in diplomatic view.
+#  prerequisites, list, the technologies required to enable the player to send this diplomatic action.
+#  requires_actor_peace, boolean, false by default, will require the actor to be at peace for this action to pass the possible check.
+#  requires_alliance_vote, boolean, false by default, will require the alliance of the actor to vote for this action before passing it on to the recipient.
+#  requires_actor_independence, boolean, true by default, will require the actor to be independent.
+#  requires_recipient_independence, boolean, true by default, will require the recipient to be independent.
+#  requires_actor_federation_leader, boolean, false by default, if the actor is in a federation, he has to be the leader of it.
+#  requires_recipient_federation_leader, boolean, true by default, if the recipient is in a federation, he has to be the leader of it.
+#  show_decline_to_alliance_members, boolean, false by default, will show your alliance members when you decline a proposal of this type.
+#  should_show_accept_message, decides whether actor gets a response on acceptance (otherwise just on decline)
+#  should_remove_response_message_when_not_possible, boolean, decides if diplomatic response messages should be removed when the 'possible' check fails.
+#  should_show_auto_accept_message_recipient, boolean, decides if the recipient gets a message showing the diplomatic action.
+#  should_open_auto_accept_message_recipient, boolean, decides if the recipient automatically opens this message.
+#  should_notify_auto_recipient_on_vote_fail, boolean, decides if recipient is notified of vote failure if action was auto accepted.
+#  should_show_auto_accept_message_actor, boolean, decides if the actor gets a reply showing the diplomatic action.
+#  should_notify_all_communications, boolean, decides if a message notification is sent to all countries who have communications with actor or recipient
+#  AI_acceptance_base_value, default = 0
+#  potential, trigger, root is actor, from is recipient, decides if the action is shown
+#  possible, trigger, root is actor, from is recipient, prev is either requester (if action is done in response to an ask_xxx counterpart) or same as root, decides if the action is still possible
+#  proposable, trigger, root is actor, from is recipient, decides if the action is proposable
+
+# Offer Membership
+#action_offer_membership = {
+#	icon = "GFX_diplomacy_improve_relation"
+#	auto_accepted = yes
+#	requires_actor_independence = no
+#	requires_recipient_independence = no
+#	action_type = positive
+#
+#	potential = {
+#		hidden_trigger = {
+#			is_country_type = default
+#			from = { is_country_type = default }
+#		}
+#
+#		hidden_trigger = {
+#			is_major = yes
+#			from = { is_minor = yes }
+#		}
+#	}
+#
+#	# Always false
+#	# possible = {
+#		
+#	# }
+#}
+
+# Send Gift
+action_send_gift = {
+	icon = "GFX_diplomacy_improve_relation"
+	auto_accepted = yes
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	action_type = positive
+
+	potential = {
+		hidden_trigger = {
+			is_country_type = default
+			from = { is_country_type = default }
+		}
+
+		hidden_trigger = {
+			is_major = yes
+			from = { is_minor = yes }
+		}
+	}
+
+	possible = {
+		resource_stockpile_compare = { resource = energy value >= 6000 }
+		custom_tooltip = {
+			fail_text = "diplo_action_puppet_state_prevents_opinion_inc"
+			OR = {
+				is_major = no
+				from = { NOT = { is_subject_type = puppet_state } }
+				from = {
+					exists = overlord
+					overlord = {
+						is_same_value = root
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		hidden_effect = {
+			add_resource = { energy = -6000 }
+		}
+	}
+}
+
+# Request Mission
+action_request_mission = {
+	icon = "GFX_diplomacy_improve_relation"
+	auto_accepted = yes
+	requires_actor_independence = no
+	requires_recipient_independence = yes
+	action_type = positive
+
+	potential = {
+		hidden_trigger = {
+			is_country_type = default
+			from = { is_country_type = default }
+		}
+
+		hidden_trigger = {
+			is_major = yes
+			from = { is_minor = yes }
+		}
+	}
+
+	possible = {
+		resource_stockpile_compare = { resource = energy value >= 600 }
+		custom_tooltip = {
+			fail_text = "diplo_action_puppet_state_prevents_opinion_inc"
+			OR = {
+				is_major = no
+				from = { NOT = { is_subject_type = puppet_state } }
+				from = {
+					exists = overlord
+					overlord = {
+						is_same_value = root
+					}
+				}
+			}
+		}
+	}
+}
+
+### HRB_NOTE: Rivalries removal ###
+# Instigate Rivalry
+# action_instigate_rivalry = {
+# 	icon = "GFX_diplomacy_harm_relation"
+# 	requires_actor_independence = no # You are able to declare war only on your overlord when being a vassal, this special case is handled in code instead.
+# 	requires_recipient_independence = no
+# 	requires_alliance_vote = yes
+# 	requires_unanimous_vote = yes
+# 	auto_accepted = yes
+# 	should_show_auto_accept_message_actor = yes
+# 	should_show_auto_accept_message_recipient = yes
+# 	should_open_auto_accept_message_recipient = yes
+# 	should_notify_all_communications = yes
+# 	action_type = aggressive
+
+# 	potential = {
+# 		hidden_trigger = {
+# 			OR = {
+# 				is_minor_major_relation = yes
+# 				is_major_minor_relation = yes
+# 			}
+# 		}
+# 	}
+
+# 	possible = {
+# 		#resource_stockpile_compare = { resource = energy value >= 100 }
+
+# 		custom_tooltip = {
+# 			fail_text = requires_relation_tier_2_or_better
+# 			opinion_level = {
+# 				who = FROM
+# 				level >= neutral # Tier 2 relation
+# 			}
+# 		}
+# 	}
+
+# 	on_accept = {
+# 		#hidden_effect = {
+# 		#	add_resource = { energy = -100 }
+# 		#}
+# 	}
+# }
+
+# # Support Against Rival
+# action_support_rivalry = {
+# 	icon = "GFX_diplomacy_harm_relation"
+# 	requires_actor_independence = no # You are able to declare war only on your overlord when being a vassal, this special case is handled in code instead.
+# 	requires_recipient_independence = no
+# 	requires_alliance_vote = no
+# 	requires_unanimous_vote = no
+# 	auto_accepted = yes
+# 	should_show_auto_accept_message_actor = yes
+# 	should_show_auto_accept_message_recipient = yes
+# 	should_open_auto_accept_message_recipient = yes
+# 	should_notify_all_communications = yes
+# 	action_type = aggressive
+
+# 	potential = {
+# 		hidden_trigger = {
+# 			OR = {
+# 				is_minor_major_relation = yes
+# 				is_major_minor_relation = yes
+# 			}
+# 		}
+# 	}
+
+# 	possible = {
+# 		# resource_stockpile_compare = { resource = energy value >= 100 }
+
+# 		custom_tooltip = {
+# 			fail_text = "DIPLOMACY_STATUS_WAR"
+# 			NOT = { is_at_war_with = From }
+# 		}
+
+# 		# HRB_TODO: enable this before QA testing
+# 		custom_tooltip = {
+# 			fail_text = requires_relation_tier_2_or_better
+# 			opinion_level = {
+# 				who = FROM
+# 				level >= neutral # Tier 2 relation
+# 			}
+# 		}
+# 	}
+
+# 	on_accept = {
+# 		#hidden_effect = {
+# 		#
+# 		#}
+# 	}
+# }
+
+@intervene_in_war_global_tension_threshold = 30
+
+# Intervene in war
+action_intervene_in_war = {
+	icon = "GFX_diplomacy_harm_relation"
+	requires_actor_independence = no # You are able to declare war only on your overlord when being a vassal, this special case is handled in code instead.
+	requires_recipient_independence = no
+	requires_alliance_vote = no
+	requires_unanimous_vote = no
+	auto_accepted = yes
+	should_show_auto_accept_message_actor = no
+	should_show_auto_accept_message_recipient = no
+	should_open_auto_accept_message_recipient = no
+	should_notify_all_communications = no # HRB-TODO: We need a a notification for this diplo action -> icon + locs. After that change to yes
+	
+	action_type = positive
+
+	potential = {
+		hidden_trigger = {
+			OR = {
+				from = {
+					is_country_type = contender
+				}
+				is_major_minor_relation = yes
+				is_major_major_relation = yes
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "IS_NOT_AT_WAR"
+			from = { is_at_war = yes }
+		}
+
+		custom_tooltip = {
+			fail_text = fails_intervene_in_war_requirements
+			if = {
+				limit = {
+					from = {
+						is_minor = yes
+					}
+				}
+				or = {
+					global_tension >= @intervene_in_war_global_tension_threshold
+					opinion_level = {
+						who = FROM
+						level >= neutral # Tier 2 relation
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					from = {
+						is_major = yes
+					}
+				}
+				from = { 
+					is_war_leader = yes 
+					any_war = { 
+						is_war_participant = { 
+							who = from 
+						} 
+						using_war_goal = { 
+							type = wg_liberation_war 
+							owner = from 
+						} 
+					}
+					OR = {
+						balance_of_power_score = {
+							relative < @bop_intervene_liberation_threshold
+						}
+						global_tension >= @gt_intervene_liberation_threshold
+					}
+				}
+			}
+		}
+
+		from = {
+			count_war = {
+				count > 0
+				limit = {
+					not = {
+						is_war_participant = {
+							who = root
+						}
+					}
+					
+				}
+			}
+		}
+	}
+
+	proposable = {
+		hidden_trigger = {
+			if = {
+				limit = { is_ai = yes }
+
+				OR = {
+					# 1st check -> MAPO 
+					if = {
+						limit = { from = { is_major = yes } }
+
+						OR = {
+							# (1) is at war (2) is Attacker (3) Defender is MiPo (4) Attacker has < X civics
+							from = {
+								is_war_leader = yes
+								civics_count < 8
+								any_war = {
+									is_war_participant = {
+										who = from
+										side = attacker
+									}
+									count_defender = {
+										limit = {
+											is_war_leader = yes
+											is_minor = yes
+											has_communications = root
+										}
+										count > 0
+									}
+								}
+							}
+		
+							# 2nd Check -> MaPo (1) BoP Score < X
+							from = {
+								is_war_leader = yes
+								balance_of_power_score = {
+									relative < 0.35
+								}
+								any_war = {
+									is_war_participant = {
+										who = from
+										side = attacker
+									}
+									count_war_participant ={
+										limit = {
+											is_war_leader = yes
+											is_minor = yes
+											has_communications = root
+										}
+										count > 0
+									}
+								}
+								
+							}
+
+							# 3rd Check -> Enemy MaPo has a subject and someone is trying to liberate it 
+							from = { 
+								is_war_leader = yes 
+								any_war = { 
+									is_war_participant = { 
+										who = from 
+									} 
+									using_war_goal = { 
+										type = wg_liberation_war 
+										owner = from 
+									} 
+								} 
+							}
+						}
+					}
+					else_if = {
+						limit = { from = { is_minor = yes } }
+						always = yes
+					}
+				}
+			}
+		}
+	}
+	
+	on_accept = {
+		
+	}
+}
+
+action_form_protection_pact = {
+	icon = "GFX_diplomacy_status_guarantee"
+	auto_accepted = no
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	should_show_auto_accept_message_recipient = yes
+	should_notify_all_communications = yes
+	action_type = positive
+
+	potential = {
+		hidden_trigger = {
+			is_minor_major_relation = yes
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_good_or_better_opinion"
+			opinion_level = { who = from level >= good }
+		}
+	}
+
+	on_accept = {
+		add_global_tension = {
+			amount = @gt_decrease_tier3
+			type = protection_pact
+			country = root
+		}
+	}
+}
+
+action_break_protection_pact = {
+	icon = "GFX_diplomacy_status_guarantee"
+	auto_accepted = yes
+	requires_actor_peace = yes
+	should_notify_all_communications = yes
+	should_show_auto_accept_message_recipient = yes
+	action_type = negative
+
+	potential = {
+		hidden_trigger = {
+			is_minor_major_relation = yes
+		}
+	}
+
+	possible = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			opinion_level = { who = from level < neutral }
+		}
+	}
+}
+
+# This was never implemented
+action_patronage = {
+	icon = "GFX_diplomacy_status_protection_pact"
+	requires_recipient_independence = yes
+	requires_actor_independence = yes
+	action_type = neutral
+
+	potential = {
+		always = no
+	}
+
+	# Always false
+	possible = {
+		
+	}
+}
+
+action_ask_to_start_integration_process = {
+	icon = "GFX_diplomacy_status_start_integration_process"
+	auto_accepted = no
+	should_notify_all_communications = yes
+	requires_actor_peace = yes
+	action_type = neutral
+
+	potential = {
+		hidden_trigger = {
+			has_country_id = "ufop"
+			from = { is_minor = yes }
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "NOT_A_POSSITIVE_RELATION"
+			opinion_level = { who = from level >= good }
+		}	
+		from = {
+			is_at_war = no
+		}
+	}
+
+	proposable = {
+		hidden_trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+					years_passed < 80
+				}
+
+				OR = {
+					empire_sprawl_cap_fraction < 1
+					balance_of_power_score = {
+						relative < 0.35
+					}
+					global_tension < 45
+				}
+			}
+			else_if = {
+				limit = {
+					is_ai = yes
+					years_passed >= 80
+					years_passed < 160
+				}
+
+				and = {
+					empire_sprawl_cap_fraction < 1.2
+					balance_of_power_score = {
+						relative < 0.45
+					}
+					global_tension < 75
+				}
+			}
+			else_if = {
+				limit = { 
+					is_ai = yes
+					years_passed >= 160
+				}
+
+				always = yes
+			}
+		}
+	}
+}
+
+action_start_integration_process = {
+	icon = "GFX_diplomacy_status_start_integration_process"
+	auto_accepted = yes
+	requires_actor_peace = yes
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	should_show_auto_accept_message_recipient = no
+	should_show_auto_accept_message_actor = no
+	should_notify_all_communications = no
+	action_type = neutral
+	require_envoy = yes
+	envoy_assignment = state_integration
+
+	potential = {
+		hidden_trigger = {
+			has_country_id = "ufop"
+			from = { is_minor = yes }
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "NOT_A_POSSITIVE_RELATION"
+			opinion_level = { who = from level >= good }
+		}	
+		from = {
+			is_at_war = no
+		}
+	}
+
+	proposable = {
+
+	}
+}
+
+action_request_integration_process = {
+	icon = "GFX_diplomacy_status_request_integration_process"
+	auto_accepted = no
+	requires_actor_peace = yes
+	should_notify_all_communications = yes
+	action_type = neutral
+
+	potential = {
+		hidden_trigger = {
+			is_minor = yes
+			from = { has_country_id = "ufop" }
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "NOT_AN_EXCELLENT_RELATION"
+			opinion_level = { who = from level = excellent }
+		}
+		is_at_war = no
+	}
+}
+
+action_break_integration_process = {
+	icon = "GFX_diplomacy_status_start_integration_process"
+	auto_accepted = yes
+	requires_actor_peace = no
+	should_notify_all_communications = yes
+	should_show_auto_accept_message_recipient = yes
+	action_type = negative
+
+	potential = {
+		hidden_trigger = {
+			is_minor = yes
+			is_minor_major_relation = yes
+			from = { has_country_id = "ufop" }
+		}
+	}
+
+	possible = {
+		OR = {
+			opinion_level = { who = from level < neutral }
+			is_at_war_with = from
+		}
+	}
+}
+
+# Starts the Puppet State process
+action_start_puppet_state_process = {
+	icon = "GFX_diplomacy_status_start_puppet_state_process"
+	auto_accepted = yes
+	require_envoy = yes
+	envoy_assignment = puppet_state_conversion
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	should_show_auto_accept_message_recipient = no
+	should_show_auto_accept_message_actor = no
+	should_notify_all_communications = no
+	action_type = aggressive
+	
+	potential = {
+		hidden_trigger = {
+			is_major_minor_relation = yes
+			THIS = { has_country_id = romulan }
+		}
+	}
+
+	possible = {
+		
+		custom_tooltip = {
+			fail_text = "NOT_A_NEUTRAL_RELATION"
+			opinion_level = { who = FROM level >= neutral }
+		}
+		
+		custom_tooltip = {
+			fail_text = "PUPPET_STATE_FAILED"
+			NOT = {	
+				has_opinion_modifier = {
+					who = FROM
+					modifier = opinion_puppet_state_failed
+				}
+			}
+		}
+		
+		FROM = {
+			NOT = { is_subject_type = puppet_state }
+		} 
+
+		is_at_war = no
+	}
+
+	proposable = {
+		custom_tooltip = {
+			fail_text = "envoy_already_converting_puppet_state"
+			NOT = { is_conversion_puppet_state_with = FROM }
+		}
+	}
+}
+# Start the Assimilation process to the Occupied State
+action_start_assimilation_occupied_state = {
+	icon = "GFX_diplomacy_status_start_assimilation_occupied_state"
+	auto_accepted = yes	
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	should_show_auto_accept_message_actor = yes
+	should_notify_all_communications = yes
+	action_type = aggressive
+
+	potential = {
+		hidden_trigger = {
+			is_major_minor_relation = yes
+			is_cardassian = yes
+		}
+	}
+
+	possible = {
+		is_overlord_to = from
+		from = {
+			is_subject_type = occupied_state
+		}
+	}
+
+	proposable = {
+		hidden_trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+					years_passed < 80
+				}
+				if = {
+					limit = {
+						from = {
+							is_bajoran = yes
+						}
+					}
+					years_passed >= @bajor_assimilation_delay_years
+					and = {
+						empire_sprawl_cap_fraction < 1
+						balance_of_power_score = {
+							relative < 0.35
+						}
+						global_tension < 45
+					}
+				}
+				else = {
+					empire_sprawl_cap_fraction < 1
+					balance_of_power_score = {
+						relative < 0.35
+					}
+					global_tension < 45
+				}
+			}
+			else_if = {
+				limit = {
+					is_ai = yes
+					years_passed >= 80
+					years_passed < 160
+				}
+
+				and = {
+					empire_sprawl_cap_fraction < 1.2
+					balance_of_power_score = {
+						relative < 0.45
+					}
+					global_tension < 75
+				}
+			}
+			else_if = {
+				limit = { 
+					is_ai = yes
+					years_passed >= 160
+				}
+
+				always = yes
+			}
+		}
+	}
+}
+
+## Assimilates the Puppet State
+
+# HRB_NOTE: The assimilation now happens by situation log, so this diplo action was commented on.
+#action_assimilate_puppet_state = {
+#	icon = "GFX_diplomacy_status_assimilate_puppet_state"
+#	auto_accepted = yes
+#	requires_actor_independence = no
+#	requires_recipient_independence = no
+#	should_show_auto_accept_message_recipient = no
+#	should_show_auto_accept_message_actor = yes
+#	should_notify_all_communications = yes
+#	action_type = neutral
+#
+#	potential = {
+#		hidden_trigger = {
+#			is_major_minor_relation = yes
+#			this = { has_country_id = romulan }
+#		}
+#	}
+#
+#	possible = {
+#		is_overlord_to = from
+#		from = {
+#			is_subject_type = puppet_state
+#			is_at_war = no
+#		}
+#	}
+#
+#	proposable = {
+#		hidden_trigger = {
+#			if = {
+#				limit = {
+#					is_ai = yes
+#					years_passed < 80
+#				}
+#
+#				OR = {
+#					empire_sprawl_cap_fraction < 1
+#					balance_of_power_score = {
+#						relative < 0.35
+#					}
+#					global_tension < 45
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					is_ai = yes
+#					years_passed >= 80
+#					years_passed < 160
+#				}
+#
+#				and = {
+#					empire_sprawl_cap_fraction < 1.2
+#					balance_of_power_score = {
+#						relative < 0.45
+#					}
+#					global_tension < 75
+#				}
+#			}
+#			else_if = {
+#				limit = { 
+#					is_ai = yes
+#					years_passed >= 160
+#				}
+#
+#				always = yes
+#			}
+#		}
+#	}
+#}
+
+# Dissolve Neutral Zone
+action_dissolve_neutral_zone = {
+	icon = "GFX_diplomacy_harm_relation"
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	requires_alliance_vote = no
+	requires_unanimous_vote = no
+	auto_accepted = yes
+	should_show_auto_accept_message_actor = yes
+	should_show_auto_accept_message_recipient = yes
+	should_open_auto_accept_message_recipient = yes
+	should_notify_all_communications = yes
+	action_type = aggressive
+	truce_multiplier =  @dissolve_neutral_zone_base_opinion
+
+	potential = {
+		hidden_trigger = {
+			is_major_major_relation = yes
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "HAS_NO_NEUTRAL_ZONE"
+		}
+	}
+
+	on_accept = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_truce = from
+						opinion_level = { who = from level < neutral }
+					}
+				}
+
+				from = {
+					add_opinion_modifier = {
+						who = root
+						modifier = opinion_end_neutral_zone
+					}
+				}
+			}
+			
+			from = { save_event_target_as = defender_country }
+			dissolve_neutral_zone_remove_casus_belli = {
+				TARGET_COUNTRY = event_target:defender_country
+			}
+		}
+	}
+}
+
+action_initiate_negotiations = {
+	icon = "GFX_diplomacy_status_truce"
+	is_listed = no # Initiate negotiations is handled through the war overview.
+	auto_accepted = yes
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	should_notify_all_communications = yes
+	should_show_accept_message = no
+	should_remove_response_message_when_not_possible = yes
+	action_type = neutral
+
+	potential = {
+		is_ai = no
+	}
+
+	possible = {
+	}
+
+	on_accept = {
+		hidden_effect = {
+			random_war = {
+				limit = {
+					OR = {
+						AND = {
+							attacker = { is_same_value = root }
+							defender = { is_same_value = prev.from }
+						}
+						AND = {
+							attacker = { is_same_value = prev.from }
+							defender = { is_same_value = root }
+						}
+					}
+				}
+
+				save_event_target_as = war
+			}
+
+			start_global_situation = {
+				type = negotiation_situation
+				target = event_target:war
+
+				participants = {
+					who = from
+				}
+			}
+		}
+	}
+}
+
+# Share Warp
+
+action_form_share_warp_agreement = {
+	icon = "GFX_diplomacy_share_warp_deal"
+	auto_accepted = no
+	should_notify_all_communications = yes
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	diplo_view_acceptance_icon = yes
+	AI_acceptance_base_value = -50
+	action_type = positive
+	
+	potential = {
+		hidden_trigger = {
+			from = {
+				is_major = yes
+			}
+			is_major_major_relation = yes
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "ACTION_ACTOR_MUST_BE_INDEPENDENT"
+			is_subject = no
+		}
+		custom_tooltip = {
+			fail_text = "ACTION_RECIPIENT_MUST_BE_INDEPENDENT"
+			FROM = {
+				is_subject = no
+			}
+		}		
+
+		custom_tooltip = {
+			fail_text = "requires_good_or_better_opinion"
+			OR = {
+				opinion_level = {
+					who = from
+					level >= good
+				}
+				is_improving_relations_with = from
+			}
+		}
+
+		# not = {
+		# 	from = {
+		# 		has_opinion_modifier = {
+		# 			who = root
+		# 			modifier = opinion_broke_share_warp_agreement
+		# 		}
+		# 	}
+		# }
+	}
+
+	proposable = {
+		hidden_trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				AND = {
+					opinion_level = {
+						who = from
+						level >= good
+					}
+					is_improving_relations_with = from
+				}
+			}
+		}
+	}
+}
+
+action_break_share_warp_agreement = {
+	icon = "GFX_message_cancel_share_warp_deal"
+	auto_accepted = yes
+	requires_actor_peace = yes
+	should_notify_all_communications = yes
+	should_show_auto_accept_message_recipient = yes
+	action_type = negative
+
+	potential = {
+		hidden_trigger = {
+			from = {
+				is_major = yes
+			}
+			is_major_major_relation = yes
+		}
+	}
+
+	possible = {
+	}
+
+	proposable = {
+		hidden_trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				OR = {
+					is_hostile_to = from
+					AND = {
+						opinion_level = {
+							who = from
+							level < good
+						}
+						NOR = {
+							is_improving_relations_with = from
+							from = {
+								is_improving_relations_with = root
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+
+		from = {
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_broke_share_warp_agreement
+			}
+		}
+
+	
+	}
+}

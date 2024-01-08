@@ -1,0 +1,756 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+#############
+#	POWER	#
+#############
+
+@corvette_power_1 = 75
+@corvette_power_2 = 100
+@corvette_power_3 = 130
+@corvette_power_4 = 170
+@corvette_power_5 = 220
+@corvette_power_6 = 285
+
+@destroyer_power_1 = 140
+@destroyer_power_2 = 180
+@destroyer_power_3 = 240
+@destroyer_power_4 = 320
+@destroyer_power_5 = 430
+@destroyer_power_6 = 550
+
+@cruiser_power_1 = 280
+@cruiser_power_2 = 360
+@cruiser_power_3 = 480
+@cruiser_power_4 = 620
+@cruiser_power_5 = 800
+@cruiser_power_6 = 1030
+
+@battleship_power_1 = 550
+@battleship_power_2 = 720
+@battleship_power_3 = 950
+@battleship_power_4 = 1250
+@battleship_power_5 = 1550
+@battleship_power_6 = 2000
+
+@titan_power_1 = 1100
+@titan_power_2 = 1450
+@titan_power_3 = 1900
+@titan_power_4 = 2500
+@titan_power_5 = 3200
+@titan_power_6 = 4200
+
+# UFOP
+@miranda_power_1 = 75
+@miranda_power_2 = 100
+@miranda_power_3 = 130
+@miranda_power_4 = 170
+@miranda_power_5 = 220
+@miranda_power_6 = 285
+
+@intrepid_power_1 = 140
+@intrepid_power_2 = 180
+@intrepid_power_3 = 240
+@intrepid_power_4 = 320
+@intrepid_power_5 = 430
+@intrepid_power_6 = 550
+
+@excelsior_power_1 = 280
+@excelsior_power_2 = 360
+@excelsior_power_3 = 480
+@excelsior_power_4 = 620
+@excelsior_power_5 = 800
+@excelsior_power_6 = 1030
+
+@galaxy_power_1 = 550
+@galaxy_power_2 = 720
+@galaxy_power_3 = 950
+@galaxy_power_4 = 1250
+@galaxy_power_5 = 1550
+@galaxy_power_6 = 2000
+
+@sovereign_power_1 = 1100
+@sovereign_power_2 = 1450
+@sovereign_power_3 = 1900
+@sovereign_power_4 = 2500
+@sovereign_power_5 = 3200
+@sovereign_power_6 = 4200
+
+# Klingon
+@bird_of_prey_power_1 = 75
+@bird_of_prey_power_2 = 100
+@bird_of_prey_power_3 = 130
+@bird_of_prey_power_4 = 170
+@bird_of_prey_power_5 = 220
+@bird_of_prey_power_6 = 285
+
+@warbird_power_1 = 140
+@warbird_power_2 = 180
+@warbird_power_3 = 240
+@warbird_power_4 = 320
+@warbird_power_5 = 430
+@warbird_power_6 = 550
+
+@ktinga_power_1 = 280
+@ktinga_power_2 = 360
+@ktinga_power_3 = 480
+@ktinga_power_4 = 620
+@ktinga_power_5 = 800
+@ktinga_power_6 = 1030
+
+@vorcha_power_1 = 550
+@vorcha_power_2 = 720
+@vorcha_power_3 = 950
+@vorcha_power_4 = 1250
+@vorcha_power_5 = 1550
+@vorcha_power_6 = 2000
+
+@neghvar_power_1 = 1100
+@neghvar_power_2 = 1450
+@neghvar_power_3 = 1900
+@neghvar_power_4 = 2500
+@neghvar_power_5 = 3200
+@neghvar_power_6 = 4200
+
+# Romulan
+@ferrax_power_1 = 75
+@ferrax_power_2 = 100
+@ferrax_power_3 = 130
+@ferrax_power_4 = 170
+@ferrax_power_5 = 220
+@ferrax_power_6 = 285
+
+@vindius_power_1 = 140
+@vindius_power_2 = 180
+@vindius_power_3 = 240
+@vindius_power_4 = 320
+@vindius_power_5 = 430
+@vindius_power_6 = 550
+
+@valdore_power_1 = 280
+@valdore_power_2 = 360
+@valdore_power_3 = 480
+@valdore_power_4 = 620
+@valdore_power_5 = 800
+@valdore_power_6 = 1030
+
+@dderidex_power_1 = 550
+@dderidex_power_2 = 720
+@dderidex_power_3 = 950
+@dderidex_power_4 = 1250
+@dderidex_power_5 = 1550
+@dderidex_power_6 = 2000
+
+@majestus_power_1 = 1100
+@majestus_power_2 = 1450
+@majestus_power_3 = 1900
+@majestus_power_4 = 2500
+@majestus_power_5 = 3200
+@majestus_power_6 = 4200
+
+# Cardassian
+@hideki_power_1 = 75
+@hideki_power_2 = 100
+@hideki_power_3 = 130
+@hideki_power_4 = 170
+@hideki_power_5 = 220
+@hideki_power_6 = 285
+
+@galor_power_1 = 140
+@galor_power_2 = 180
+@galor_power_3 = 240
+@galor_power_4 = 320
+@galor_power_5 = 430
+@galor_power_6 = 550
+
+@keldon_power_1 = 280
+@keldon_power_2 = 360
+@keldon_power_3 = 480
+@keldon_power_4 = 620
+@keldon_power_5 = 800
+@keldon_power_6 = 1030
+
+@kazikai_power_1 = 550
+@kazikai_power_2 = 720
+@kazikai_power_3 = 950
+@kazikai_power_4 = 1250
+@kazikai_power_5 = 1550
+@kazikai_power_6 = 2000
+
+@nokoram_power_1 = 1100
+@nokoram_power_2 = 1450
+@nokoram_power_3 = 1900
+@nokoram_power_4 = 2500
+@nokoram_power_5 = 3200
+@nokoram_power_6 = 4200
+
+
+@starbase_power_1 = 1650
+@starbase_power_2 = 2170
+@starbase_power_3 = 2850
+@starbase_power_4 = 3750
+@starbase_power_5 = 4550
+@starbase_power_6 = 6200
+
+@platform_power_1 = 200
+@platform_power_2 = 260
+@platform_power_3 = 340
+@platform_power_4 = 440
+@platform_power_5 = 575
+@platform_power_6 = 750
+
+#############
+#	COST	#
+#############
+
+@corvette_cost_1 = 10
+@corvette_cost_2 = 13
+@corvette_cost_3 = 17
+@corvette_cost_4 = 22
+@corvette_cost_5 = 28
+@corvette_cost_6 = 37
+
+@destroyer_cost_1 = 20
+@destroyer_cost_2 = 26
+@destroyer_cost_3 = 34
+@destroyer_cost_4 = 44
+@destroyer_cost_5 = 56
+@destroyer_cost_6 = 74
+
+@cruiser_cost_1 = 40
+@cruiser_cost_2 = 52
+@cruiser_cost_3 = 68
+@cruiser_cost_4 = 88
+@cruiser_cost_5 = 112
+@cruiser_cost_6 = 148
+
+@battleship_cost_1 = 80
+@battleship_cost_2 = 104
+@battleship_cost_3 = 136
+@battleship_cost_4 = 176
+@battleship_cost_5 = 224
+@battleship_cost_6 = 296
+
+@titan_cost_1 = 160
+@titan_cost_2 = 208
+@titan_cost_3 = 272
+@titan_cost_4 = 352
+@titan_cost_5 = 448
+@titan_cost_6 = 592
+
+# UFOP
+@miranda_cost_1 = 10
+@miranda_cost_2 = 13
+@miranda_cost_3 = 17
+@miranda_cost_5 = 28
+@miranda_cost_4 = 22
+@miranda_cost_6 = 37
+
+@intrepid_cost_1 = 20
+@intrepid_cost_2 = 26
+@intrepid_cost_3 = 34
+@intrepid_cost_4 = 44
+@intrepid_cost_5 = 56
+@intrepid_cost_6 = 74
+
+@excelsior_cost_1 = 40
+@excelsior_cost_2 = 52
+@excelsior_cost_3 = 68
+@excelsior_cost_4 = 88
+@excelsior_cost_5 = 112
+@excelsior_cost_6 = 148
+
+@galaxy_cost_1 = 80
+@galaxy_cost_2 = 104
+@galaxy_cost_3 = 136
+@galaxy_cost_4 = 176
+@galaxy_cost_5 = 224
+@galaxy_cost_6 = 296
+
+@sovereign_cost_1 = 160
+@sovereign_cost_2 = 208
+@sovereign_cost_3 = 272
+@sovereign_cost_4 = 352
+@sovereign_cost_5 = 448
+@sovereign_cost_6 = 592
+
+# Klingon
+@bird_of_prey_cost_1 = 10
+@bird_of_prey_cost_2 = 13
+@bird_of_prey_cost_3 = 17
+@bird_of_prey_cost_4 = 22
+@bird_of_prey_cost_5 = 28
+@bird_of_prey_cost_6 = 37
+
+@warbird_cost_1 = 20
+@warbird_cost_2 = 26
+@warbird_cost_3 = 34
+@warbird_cost_4 = 44
+@warbird_cost_5 = 56
+@warbird_cost_6 = 74
+
+@ktinga_cost_1 = 40
+@ktinga_cost_2 = 52
+@ktinga_cost_3 = 68
+@ktinga_cost_4 = 88
+@ktinga_cost_5 = 112
+@ktinga_cost_6 = 148
+
+@vorcha_cost_1 = 80
+@vorcha_cost_2 = 104
+@vorcha_cost_3 = 136
+@vorcha_cost_4 = 176
+@vorcha_cost_5 = 224
+@vorcha_cost_6 = 296
+
+@neghvar_cost_1 = 160
+@neghvar_cost_2 = 208
+@neghvar_cost_3 = 272
+@neghvar_cost_4 = 352
+@neghvar_cost_5 = 448
+@neghvar_cost_6 = 592
+
+
+@platform_cost_1 = 20
+@platform_cost_2 = 26
+@platform_cost_3 = 34
+@platform_cost_4 = 44
+@platform_cost_5 = 56
+@platform_cost_6 = 74
+
+# Romulan
+@ferrax_cost_1 = 10
+@ferrax_cost_2 = 13
+@ferrax_cost_3 = 17
+@ferrax_cost_4 = 22
+
+@vindius_cost_1 = 20
+@vindius_cost_2 = 26
+@vindius_cost_3 = 34
+@vindius_cost_4 = 44
+
+@valdore_cost_1 = 40
+@valdore_cost_2 = 52
+@valdore_cost_3 = 68
+@valdore_cost_4 = 88
+
+@dderidex_cost_1 = 80
+@dderidex_cost_2 = 104
+@dderidex_cost_3 = 136
+@dderidex_cost_4 = 176
+
+@majestus_cost_1 = 160
+@majestus_cost_2 = 208
+@majestus_cost_3 = 272
+@majestus_cost_4 = 352
+
+@artificial_singularity_reactor_1_ship_evasion_mult = 0.025
+@artificial_singularity_reactor_2_ship_evasion_mult = 0.050
+@artificial_singularity_reactor_3_ship_evasion_mult = 0.075
+@artificial_singularity_reactor_4_ship_evasion_mult = 0.100
+@artificial_singularity_reactor_5_ship_evasion_mult = 0.125
+@artificial_singularity_reactor_1_ship_weapon_damage_mult = 0.025
+@artificial_singularity_reactor_2_ship_weapon_damage_mult = 0.050
+@artificial_singularity_reactor_3_ship_weapon_damage_mult = 0.075
+@artificial_singularity_reactor_4_ship_weapon_damage_mult = 0.100
+@artificial_singularity_reactor_5_ship_weapon_damage_mult = 0.125
+
+#############
+# OFFICERS  #
+#############
+@operative_officers1 = 10
+
+#############
+#  REACTORS #
+#############
+
+########################
+# Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "FER_CORVETTE_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_fusion_reactor"
+	icon_frame = 1
+	power = @corvette_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_1
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = 0.10
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = 0.01
+		}
+	}
+
+	prerequisites = { "tech_reactor_1" }
+	component_set = "power_core"
+	size_restriction = {ferengicorvette }
+	upgrades_to = "FER_CORVETTE_MATTER_ANTIMATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_DESTROYER_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_fusion_reactor"
+	icon_frame = 1
+	power = @destroyer_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_1
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = 0.20
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = 0.02
+		}
+	}
+
+	prerequisites = { "tech_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { ferengidestroyer }
+	upgrades_to = "FER_DESTROYER_MATTER_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_CRUISER_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_fusion_reactor"
+	icon_frame = 1
+	power = @cruiser_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_1
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = 0.40
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = 0.04
+		}
+
+		prerequisites = { "tech_reactor_1" }
+		component_set = "power_core"
+		size_restriction = { ferengibattlecruiser} }
+		upgrades_to = "FER_CRUISER_MATTER_ANTIMATTER_REACTOR"
+	
+		ai_weight = {
+			weight = 1
+		}
+	}
+
+
+
+
+
+
+utility_component_template = {
+	key = "FER_BATTLESHIP_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_fusion_reactor"
+	icon_frame = 1
+	power = @battleship_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_1
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = 0.80
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = 0.08
+		}
+	}
+
+	prerequisites = { "tech_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { ferbattleship }
+	upgrades_to = "FER_BATTLESHIP_MATTER_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "FER_TITAN_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_fusion_reactor"
+	icon_frame = 1
+	power = @titan_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_1
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = 1.60
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = 0.16
+		}
+	}
+
+	prerequisites = { "tech_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { fertitan }
+	upgrades_to = "FER_TITAN_MATTER_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+# utility_component_template = {
+# 	key = "MIRANDA_FUSION_REACTOR"
+# 	size = small
+# 	icon = "GFX_ship_part_fusion_reactor"
+# 	icon_frame = 1
+# 	power = @miranda_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @miranda_cost_1
+# 		}
+# 		upkeep = {
+# 			energy = 0.10
+# 			alloys = 0.01
+# 		}
+# 	}
+
+# 	prerequisites = { "tech_fission_power" }
+# 	component_set = "power_core"
+# 	size_restriction = { miranda }
+# 	upgrades_to = "MIRANDA_MATTER_ANTIMATTER_REACTOR"
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "INTREPID_FUSION_REACTOR"
+# 	size = small
+# 	icon = "GFX_ship_part_fusion_reactor"
+# 	icon_frame = 1
+# 	power = @intrepid_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @intrepid_cost_1
+# 		}
+# 		upkeep = {
+# 			energy = 0.10
+# 			alloys = 0.01
+# 		}
+# 	}
+
+# 	prerequisites = { "tech_fission_power" }
+# 	component_set = "power_core"
+# 	size_restriction = { intrepid }
+# 	upgrades_to = "INTREPID_MATTER_ANTIMATTER_REACTOR"
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "EXCELSIOR_FUSION_REACTOR"
+# 	size = small
+# 	icon = "GFX_ship_part_fusion_reactor"
+# 	icon_frame = 1
+# 	power = @excelsior_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @excelsior_cost_1
+# 		}
+# 		upkeep = {
+# 			energy = 0.10
+# 			alloys = 0.01
+# 		}
+# 	}
+
+# 	prerequisites = { "tech_fission_power" }
+# 	component_set = "power_core"
+# 	size_restriction = { excelsior }
+# 	upgrades_to = "EXCELSIOR_MATTER_ANTIMATTER_REACTOR"
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "GALAXY_FUSION_REACTOR"
+# 	size = small
+# 	icon = "GFX_ship_part_fusion_reactor"
+# 	icon_frame = 1
+# 	power = @galaxy_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @galaxy_cost_1
+# 		}
+# 		upkeep = {
+# 			energy = 0.10
+# 			alloys = 0.01
+# 		}
+# 	}
+
+# 	prerequisites = { "tech_fission_power" }
+# 	component_set = "power_core"
+# 	size_restriction = { galaxy }
+# 	upgrades_to = "GALAXY_MATTER_ANTIMATTER_REACTOR"
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SOVEREIGN_FUSION_REACTOR"
+# 	size = small
+# 	icon = "GFX_ship_part_fusion_reactor"
+# 	icon_frame = 1
+# 	power = @sovereign_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @sovereign_cost_1
+# 		}
+# 		upkeep = {
+# 			energy = 0.10
+# 			alloys = 0.01
+# 		}
+# 	}
+
+# 	prerequisites = { "tech_fission_power" }
+# 	component_set = "power_core"
+# 	size_restriction = { sovereign }
+# 	upgrades_to = "SOVEREIGN_MATTER_ANTIMATTER_REACTOR"
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
